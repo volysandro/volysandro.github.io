@@ -24,15 +24,7 @@
 }
 
 
-.left ingame{
-  left: 0;
-  background-color: #111;
-}
 
-.right ingame{
-  right: 0;
-  background-color: #FF8080;
-}
 
 .centered {
   position: absolute;
@@ -320,3 +312,85 @@ position: absolute;
     border: none;
     outline: none;
     }
+
+    #txtNewUsername{
+        background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    }
+
+
+
+#AccountEditBtn{
+      margin: auto;
+      position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#AccountView{
+    margin: auto;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#accountEditSubmitBtn{
+    margin: auto;
+    position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#accountSubmitBtn{
+    background: transparent;
+    color: #ff8080;
+    
+}
+
+#editFullName{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+}
+
+#editUsername{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+}
+#editCategory{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+}
+#editCue{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+}
+#editKozoom{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+}
+
+#accountEdit{
+    margin: auto;
+    position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.rowhalf{
+    display: table-row;
+    height: 50%;
+}
