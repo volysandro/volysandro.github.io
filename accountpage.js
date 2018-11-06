@@ -10,32 +10,44 @@
       messagingSenderId: "413155449404"
     };
     firebase.initializeApp(config);
-    const showBtn = document.getElementById('requestLogin');
     
-    
-    showBtn.addEventListener('click', e => {
-      showData();
-    })
-    
-    
-    
-    function showData(){
-      
-    return firebase.database().ref('userprofiles/' + firebase.auth().currentUser.displayName).once('value').then(function(snapshot) {
 
-      var showfullname = (snapshot.val() && snapshot.val().fullname) || 'Anonymous';
-      var showcategory = (snapshot.val() && snapshot.val().category) || 'Anonymous';
-      var showcue = (snapshot.val() && snapshot.val().cue) || 'Anonymous';
-      var showkozoom = (snapshot.val() && snapshot.val().kozoom) || 'Anonymous';
 
-      document.getElementById('name').innerHTML = showfullname;
-      document.getElementById('category').innerHTML = showcategory;
-      document.getElementById('cue').innerHTML = showcue;
-      document.getElementById('kozoom').innerHTML = showkozoom;
+    firebase.auth().onAuthStateChanged(firebaseUser => {
+      if(firebaseUser){
+        
+        showData();
+      }else{
+          window.location = 'Loginpage.html';
+      }
+    
     });
-  }
+    
+    
+    
 
-$(document).ready(showData());
+      
+      function showData(){
+
+        user = firebase.auth().currentUser;
+        const username = user.displayName;
+
+        return firebase.database().ref('userprofiles/' + username).once('value').then(function(snapshot) {
+          
+          var showfullname = (snapshot.val() && snapshot.val().fullname) || 'No full name';
+          var showcategory = (snapshot.val() && snapshot.val().category) || 'No category';
+          var showcue = (snapshot.val() && snapshot.val().cue) || 'No current cue / brand';
+          var showkozoom = (snapshot.val() && snapshot.val().kozoom) || 'No player website';
+          
+          document.getElementById('name').innerHTML = showfullname;
+          document.getElementById('category').innerHTML = showcategory;
+          document.getElementById('cue').innerHTML = showcue;
+          document.getElementById('kozoom').innerHTML = showkozoom;
+        });
+      }
+      
+      
+      
 
 
 

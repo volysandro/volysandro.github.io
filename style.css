@@ -408,3 +408,10 @@ position: absolute;
     border: none;
     outline: none;
 }
+
+#opponentUname{
+    background: rgba(0, 0, 0, 0);    
+    outline: none;
+    color: #ff8080;
+    
+}
