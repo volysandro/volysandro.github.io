@@ -1,4 +1,4 @@
-(function(){
+
 
     // Initialize Firebase
     var config = {
@@ -10,8 +10,37 @@
       messagingSenderId: "413155449404"
     };
     firebase.initializeApp(config);
+    const showBtn = document.getElementById('requestLogin');
+    
+    
+    showBtn.addEventListener('click', e => {
+      showData();
+    })
+    
+    
+    
+    function showData(){
+      
+    return firebase.database().ref('userprofiles/' + firebase.auth().currentUser.displayName).once('value').then(function(snapshot) {
 
-    const printEmail = document.getElementById('printEmail');
+      var showfullname = (snapshot.val() && snapshot.val().fullname) || 'Anonymous';
+      var showcategory = (snapshot.val() && snapshot.val().category) || 'Anonymous';
+      var showcue = (snapshot.val() && snapshot.val().cue) || 'Anonymous';
+      var showkozoom = (snapshot.val() && snapshot.val().kozoom) || 'Anonymous';
+
+      document.getElementById('name').innerHTML = showfullname;
+      document.getElementById('category').innerHTML = showcategory;
+      document.getElementById('cue').innerHTML = showcue;
+      document.getElementById('kozoom').innerHTML = showkozoom;
+    });
+  }
+
+$(document).ready(showData());
+
+
+
+
+
 
 
   
@@ -24,7 +53,3 @@
 
 
 
-
-
-    
-}());  

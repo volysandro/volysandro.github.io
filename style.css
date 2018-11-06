@@ -294,7 +294,7 @@ position: absolute;
     }
     .centerSignUpInput{
         position: absolute;
-      top: 42%;
+      top: 37%;
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
@@ -393,4 +393,18 @@ position: absolute;
 .rowhalf{
     display: table-row;
     height: 50%;
+}
+
+
+
+#newUsername{
+    background: rgba(0, 0, 0, 0);    
+    outline: none;
+    color: #ff8080;
+}
+
+#txtFullname{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
 }

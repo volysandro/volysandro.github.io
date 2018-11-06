@@ -28,7 +28,10 @@
 
 if(fullnamenew != 0 && categorynew != 0 && cuenew != 0 && kozoomnew != 0){
 
-        firebase.database().ref('userprofiles/' + fullnamenew).set({
+        user = firebase.auth().currentUser;
+        const username = user.displayName;
+
+        firebase.database().ref('userprofiles/' + username).set({
             fullname: fullnamenew,
             category: categorynew,
             cue: cuenew,
@@ -39,7 +42,7 @@ if(fullnamenew != 0 && categorynew != 0 && cuenew != 0 && kozoomnew != 0){
     } 
     else{}   
   
-window.location = 'Accountpage.html';
+
 
     });
 

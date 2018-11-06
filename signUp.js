@@ -18,19 +18,18 @@
   const btnSignUp = document.getElementById('btnSignUp');
   const txtNewEmail = document.getElementById('txtNewEmail');
   const txtNewPassword = document.getElementById('txtNewPassword');
-  const txtNewUsername = document.getElementById('txtNewUsername');
   const txtNewBirthyear = document.getElementById('txtNewBirthyear');
-
+  const newFullname = document.getElementById('txtFullname');
 
   btnSignUp.addEventListener('click', e => {
         const email = txtNewEmail.value;
         const pass = txtNewPassword.value;
         const auth = firebase.auth();
-        const uname = txtNewUsername.value;
         const born = txtNewBirthyear.value;
+        const fullname = newFullname.value;
 
-        firebase.database().ref('users/' + uname).set({
-          username: uname,
+        firebase.database().ref('users/' + fullname).set({
+
           email: email,
           password: pass,
           birthyear: born,
@@ -47,7 +46,7 @@
 
   firebase.auth().onAuthStateChanged(firebaseUser => {
     if(firebaseUser){
-      window.location = 'Mainpage.html';
+      window.location = 'Chooseusername.html';
       console.log(firebaseUser);
     }else{
       
