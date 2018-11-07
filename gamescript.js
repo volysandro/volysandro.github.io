@@ -14,18 +14,46 @@
 
       const opponentUname = document.getElementById('opponentUname');
       const btnSubmitOpponent = document.getElementById('btnSubmitOpponent');
+      
+      
+
+      if(btnSubmitOpponent){
 
       btnSubmitOpponent.addEventListener('click', e => {
+       const opponentID = opponentUname.value;
+       firebase.database().ref('userprofiles/' + opponentID).once('value').then(function(snapshot) {
+        
+        var doesOpponentExist = (snapshot.val() && snapshot.val().fullname) || '';
+        
 
-        const opponentID = opponentUname.value;
-        if (firebase.database().ref('users/' + opponentID) == true){
-            console.log('User exists');
-
+        if (doesOpponentExist != ""){
+            console.log('User Exists');
+            sessionStorage.setItem('opponent', opponentID);
+            doesOpponentExist = "";
+            window.location = 'Choosegame.html';
+            
+            
         }
         else{
-            console.log('user doesnt exist');
+            console.log('User doesnt exist');
+            document.getElementById('doesntExist').innerHTML = 'User doesnt exist';
         }
+
+
+      });
+
 
 
 
       });
+
+    }
+
+
+    if (document.getElementById('showSelectedOpponent')){
+        document.getElementById('showSelectedOpponent').innerHTML = sessionStorage.getItem('username');
+    }
+
+
+
+    window.addEventListener('load', console.log(sessionStorage.getItem('opponent')));
