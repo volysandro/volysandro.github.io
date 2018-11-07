@@ -51,7 +51,7 @@
 
 
     if (document.getElementById('showSelectedOpponent')){
-        document.getElementById('showSelectedOpponent').innerHTML = sessionStorage.getItem('username');
+        document.getElementById('showSelectedOpponent').innerHTML = sessionStorage.getItem('opponent');
     }
 
 
