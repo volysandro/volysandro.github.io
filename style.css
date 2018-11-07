@@ -419,3 +419,133 @@ position: absolute;
 #doesntExist{
     color: #ff8080;
 }
+
+#printRaceTo{
+    color: #ff8080;
+}
+
+#player1Name{
+    margin: auto;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #111;
+}
+
+#player2Name{
+    margin: auto;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ff8080;
+}
+
+
+
+#player1Score{
+    margin: auto;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #111;
+    font-size: 100px;
+}
+#player2Score{
+    margin: auto;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ff8080;
+    font-size: 100px;
+}
+
+
+#player1Up{
+    margin: auto;
+    position: absolute;
+    top: 25%;
+    left: 80%;
+    height: 100px;
+    width: 100px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #111;
+    color: #ff8080;
+    border-radius: 150px;
+    font-size: 50px;
+}
+
+
+#player1Down{
+    margin: auto;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    height: 100px;
+    width: 100px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #111;
+    color: #ff8080;
+    border-radius: 150px;
+    font-size: 50px;
+}
+
+#player2Up{
+    margin: auto;
+    position: absolute;
+    top: 75%;
+    left: 80%;
+    height: 100px;
+    width: 100px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #ff8080;
+    color: #111;
+    border-radius: 150px;
+    font-size: 50px;
+}
+
+
+#player2Down{
+    margin: auto;
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    height: 100px;
+    width: 100px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #ff8080;
+    color: #111;
+    border-radius: 150px;
+    font-size: 50px;
+}
+
+#whoWon {
+    color: #ff8080;
+    font-size: 40px;
+}
+
+#player2Warning{
+    color: #ff8080;
+
+}
+
+#player2Pwd{
+    background: rgba(0, 0, 0, 0);    
+    outline: none;
+    color: #ff8080;
+}
+
+#submitMatch{
+    color: #111;
+}
