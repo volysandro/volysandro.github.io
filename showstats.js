@@ -73,7 +73,10 @@ firebase.database().ref('userstats/' + username).once('value').then(function(sna
          console.log(gameResult.opponentscore);
          totalLost += gameResult.opponentscore;
       }
+      const quote = totalWon / totalLost;
       document.getElementById('totalLost').innerHTML = 'Total Lost: ' + totalLost;
+
+      document.getElementById('average').innerHTML = 'Win/Lose Quote: ' + quote;
           
 
 
