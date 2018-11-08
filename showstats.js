@@ -33,7 +33,7 @@ window.location = 'Mainpage.html';
 
 username = auth.currentUser.displayName;
 
-firebase.database().ref('userprofiles/' + username).once('value').then(function(snapshot) {
+firebase.database().ref('lastgame/' + username).once('value').then(function(snapshot) {
     const lastGame = (snapshot.val() && snapshot.val().lastgame) || '';
     
     console.log(lastGame);

@@ -73,12 +73,12 @@ console.log(snapshot.val());
     });
 
 
-    firebase.database().ref('userprofiles/' + player1Username + '/').set({
+    firebase.database().ref('lastgame/' + player1Username + '/').set({
       lastgame: gameID,
       
       });
 
-      firebase.database().ref('userprofiles/' + player2Username + '/').set({
+      firebase.database().ref('lastgame/' + player2Username + '/').set({
         lastgame: gameID,
         
         });
