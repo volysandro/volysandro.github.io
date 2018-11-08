@@ -549,3 +549,8 @@ position: absolute;
 #submitMatch{
     color: #111;
 }
+#wrongPwd{
+background: rgba(0, 0, 0, 0);    
+outline: none;
+color: #ff8080;
+}

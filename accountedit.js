@@ -37,6 +37,7 @@ if(fullnamenew != 0 && categorynew != 0 && cuenew != 0 && kozoomnew != 0){
             cue: cuenew,
             kozoom: kozoomnew,
             });
+        window.location = 'Accountpage.html';
 
             
     } 

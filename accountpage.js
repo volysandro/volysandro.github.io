@@ -12,6 +12,13 @@
     firebase.initializeApp(config);
     
 
+    const openStatsPage = document.getElementById('openStatsPage');
+
+    openStatsPage.addEventListener('click', e => {
+      window.location = 'Statspage.html';
+    });
+
+
 
     firebase.auth().onAuthStateChanged(firebaseUser => {
       if(firebaseUser){
