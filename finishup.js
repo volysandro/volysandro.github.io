@@ -24,7 +24,6 @@ submitMatch.addEventListener('click', e => {
           
     const player2Pwd = (snapshot.val() && snapshot.val().password) || '';
     const passwordEntered = document.getElementById('player2Pwd');
-    console.log(player2Pwd);
 
     if(player2Pwd == passwordEntered.value){
         addPointsToStats();
