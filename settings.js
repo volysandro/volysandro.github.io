@@ -30,8 +30,8 @@ changePwd.addEventListener('click', e => {
         var newPassword = document.getElementById('newPwd');
     
         if(newPassword.value == repeatNewPwd.value){
-            localStorage.setItem('checkpwd', newPassword.value);
             user.updatePassword(newPassword.value).then(function() {
+                localStorage.setItem('checkpwd', newPassword.value);
                 document.getElementById('changePwdGetResponse').innerHTML = 'Password successfully changed!';
                     firebase.database().ref('userpwds/' + fullName).set({
                         password: newPassword.value,
