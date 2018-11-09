@@ -75,7 +75,6 @@ deleteAccount.addEventListener('click', e => {
     
 });
 
-
 backToMenu.addEventListener('click', e => {
 window.location = 'Mainpage.html';
 });
