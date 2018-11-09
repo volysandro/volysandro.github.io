@@ -20,7 +20,7 @@
 
 .right {
   right: 0;
-  background-color: #FF8080;
+  background-color: #ff8080;
 }
 
 
@@ -28,6 +28,14 @@
 
 .centered {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centeredStats{
+    position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -59,7 +67,7 @@
 
 
 form {
-    border: 3px solid #FF8080;
+    border: 3px solid #ff8080;
 }
 
 
@@ -74,7 +82,7 @@ input[type=text], input[type=password] {
 
 
 button {
-    background-color: #FF8080;
+    background-color: #ff8080;
     color: black;
     padding: 14px 20px;
     margin: 8px 0;
@@ -234,14 +242,14 @@ color: #111;
 }
 
 #txtEmail{
-    background: rgba(0, 0, 0, 0);
-    border: none;
+    background: rgba(0, 0, 0, 0.377);
+    
     outline: none;
 }
 
 #txtPassword{
-    background: rgba(0, 0, 0, 0);
-    border: none;
+    background: rgba(0, 0, 0, 0.377);
+    
     outline: none;
 }
 
@@ -301,23 +309,21 @@ position: absolute;
     }
 
     #txtNewEmail{
-        background: rgba(0, 0, 0, 0);
-    border: none;
+        background: rgba(0, 0, 0, 0.377);
+    
     outline: none;
     
     }
 
     #txtNewPassword{
-        background: rgba(0, 0, 0, 0);
-    border: none;
-    outline: none;
-    }
+        background: rgba(0, 0, 0, 0.377);
+    
+        outline: none;    }
 
     #txtNewUsername{
-        background: rgba(0, 0, 0, 0);
-    border: none;
-    outline: none;
-    }
+        background: rgba(0, 0, 0, 0.377);
+    
+        outline: none;    }
 
 
 
@@ -354,32 +360,6 @@ position: absolute;
     
 }
 
-#editFullName{
-    background: rgba(0, 0, 0, 0);
-    border: none;
-    outline: none;
-}
-
-#editUsername{
-    background: rgba(0, 0, 0, 0);
-    border: none;
-    outline: none;
-}
-#editCategory{
-    background: rgba(0, 0, 0, 0);
-    border: none;
-    outline: none;
-}
-#editCue{
-    background: rgba(0, 0, 0, 0);
-    border: none;
-    outline: none;
-}
-#editKozoom{
-    background: rgba(0, 0, 0, 0);
-    border: none;
-    outline: none;
-}
 
 #accountEdit{
     margin: auto;
@@ -404,10 +384,9 @@ position: absolute;
 }
 
 #txtFullname{
-    background: rgba(0, 0, 0, 0);
-    border: none;
-    outline: none;
-}
+    background: rgba(0, 0, 0, 0.377);
+    
+    outline: none;}
 
 #opponentUname{
     background: rgba(0, 0, 0, 0);    
@@ -553,4 +532,47 @@ position: absolute;
 background: rgba(0, 0, 0, 0);    
 outline: none;
 color: #ff8080;
+}
+
+
+#deleteAccount{
+    color: #111;
+}
+
+#changePwd{
+    color: #111;
+}
+
+::placeholder{
+    color: #ff8080;
+}
+
+#newPwd{
+    background: rgba(0, 0, 0, 0);    
+    outline: none;
+    color: #ff8080;
+}
+#repeatNewPwd{
+    background: rgba(0, 0, 0, 0);    
+    outline: none;
+    color: #ff8080;
+}
+#changePwdGetResponse{
+color: #ff8080;
+    }
+
+#editCategory{
+    background: rgba(0, 0, 0, 0.404);    
+    outline: none;
+    color: #ff8080;}
+
+#editCue{
+    background: rgba(0, 0, 0, 0.404);    
+    outline: none;
+    color: #ff8080;}
+
+#editKozoom{
+    background: rgba(0, 0, 0, 0.404);    
+    outline: none;
+    color: #ff8080;
 }

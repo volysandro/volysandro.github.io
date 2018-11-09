@@ -9,19 +9,18 @@
     <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
 
 </head>
-<body style="background-color: #ff8080">
+<body style="background-color: #111">
     
-<div class="centeredStats">
+<div class="centered">
 
-<h2 id="totalWon"></h2>
-<h2 id="totalLost"></h2>
-<h2 id="average"></h2>
-<p id="8ballaverage"></p>
-<p id="9ballaverage"></p>
-<p id="10ballaverage"></p>
-<p id="straightpoolballaverage"></p>
-<h1 id="lastMatchup"></h1>
-<h2 id="lastMatchupScore"></h2>
+
+<input id="newPwd" type="password" placeholder="New password">
+<input id="repeatNewPwd" type="password" placeholder="Repeat new password">
+
+<button id="changePwd">Change Password</button>
+<p id="changePwdGetResponse"></p>
+<button id="deleteAccount">Delete Account</button>
+<p style="color: #ff8080" id="accountDeleted"></p>
 <button id="backToMenu">Back to Main Menu</button>
 
 
@@ -38,6 +37,6 @@
 
 
 
-    <script src="showstats.js"></script>
+    <script src="settings.js"></script>
 </body>
 </html>

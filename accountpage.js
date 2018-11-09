@@ -11,13 +11,17 @@
     };
     firebase.initializeApp(config);
     
-
+    const accountSettings = document.getElementById('accountSettings');
     const openStatsPage = document.getElementById('openStatsPage');
 
     openStatsPage.addEventListener('click', e => {
       window.location = 'Statspage.html';
     });
 
+    accountSettings.addEventListener('click', e => {
+      window.location = 'Settings.html';
+
+    });
 
 
     firebase.auth().onAuthStateChanged(firebaseUser => {
@@ -39,20 +43,23 @@
         user = firebase.auth().currentUser;
         const username = user.displayName;
 
-        return firebase.database().ref('userprofiles/' + username).once('value').then(function(snapshot) {
+        firebase.database().ref('userprofiles/' + username).once('value').then(function(snapshot) {
           
-          var showfullname = (snapshot.val() && snapshot.val().fullname) || 'No full name';
           var showcategory = (snapshot.val() && snapshot.val().category) || 'No category';
           var showcue = (snapshot.val() && snapshot.val().cue) || 'No current cue / brand';
           var showkozoom = (snapshot.val() && snapshot.val().kozoom) || 'No player website';
           
-          document.getElementById('name').innerHTML = showfullname;
           document.getElementById('category').innerHTML = showcategory;
           document.getElementById('cue').innerHTML = showcue;
           document.getElementById('kozoom').innerHTML = showkozoom;
         });
+        firebase.database().ref('userfullnames/' + username).once('value').then(function(snapshot) {
+            
+          var showfullname = (snapshot.val() && snapshot.val().fullname) || 'No full name';
+          document.getElementById('name').innerHTML = showfullname;
+          
+        });
       }
-      
       
       
 

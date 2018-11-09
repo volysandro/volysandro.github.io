@@ -29,11 +29,18 @@
         const fullname = newFullname.value;
 
         firebase.database().ref('users/' + fullname).set({
-
           email: email,
-          password: pass,
           birthyear: born,
           });
+
+          firebase.database().ref('userpwds/' + fullname).set({
+            password: pass,
+            });
+
+            sessionStorage.setItem('newfullname', fullname);
+          
+
+        
 
         const promise = auth.createUserWithEmailAndPassword(email, pass);
         promise.catch(e => console.log(e.message));

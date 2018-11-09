@@ -13,24 +13,39 @@
 
     const txtNewUsername = document.getElementById('newUsername');
     const newUsernameBtn = document.getElementById('newUsernameBtn');
+    const continueBtn = document.getElementById('configureProfile');
 
     newUsernameBtn.addEventListener('click', e => {
         var user = firebase.auth().currentUser;
         const txtUsername = txtNewUsername.value;
+
+        
         user.updateProfile({
-            displayName: txtUsername,
-          }).then(function() {
-            window.location = 'Mainpage.html';
-          }).catch(function(error) {
+          displayName: txtUsername,
+        }).then(function() {
+          firebase.database().ref('userfullnames/' + txtUsername).set({
+            fullname: sessionStorage.getItem('newfullname'),
             
           });
 
-
+          newUsernameBtn.hidden = true;
+          continueBtn.hidden = false;
+          document.getElementById('userNameSet').innerHTML = 'Username Set!'
+            }).catch(function(error) {
+          document.getElementById('userNameSet').innerHTML = 'Try again. May not contain any special characters'    
+            });
+            
+            
 
 
     });
+    
+    
 
+continueBtn.addEventListener('click', e => {
+  window.location = 'Accountedit.html';
 
+});
 
 
 

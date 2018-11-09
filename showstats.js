@@ -76,11 +76,112 @@ firebase.database().ref('userstats/' + username).once('value').then(function(sna
       const quote = totalWon / totalLost;
       document.getElementById('totalLost').innerHTML = 'Total Lost: ' + totalLost;
 
-      document.getElementById('average').innerHTML = 'Win/Lose Quote: ' + quote;
+      document.getElementById('average').innerHTML = 'Win/Lose Ratio: ' + quote;
           
 
 
   });
+
+
+
+
+
+
+
+
+
+
+  //8Ball
+
+  firebase.database().ref('userstatsdifferentgames/' + username + '/8-Ball').once('value').then(function(snapshot) {
+    
+    var totalWon = 0;
+  for (var gameResult of Object.values(snapshot.val())) {
+     console.log(gameResult.myscore);
+     totalWon += gameResult.myscore;
+  }
+      
+  var totalLost = 0;
+  for (var gameResult of Object.values(snapshot.val())) {
+     console.log(gameResult.opponentscore);
+     totalLost += gameResult.opponentscore;
+  }
+  const quote = totalWon / totalLost;
+
+  document.getElementById('8ballaverage').innerHTML = '8-Ball Ratio: ' + quote;
+      
+
+
+});
+
+//9Ball
+
+firebase.database().ref('userstatsdifferentgames/' + username + '/9-Ball').once('value').then(function(snapshot) {
+    
+  var totalWon = 0;
+for (var gameResult of Object.values(snapshot.val())) {
+   console.log(gameResult.myscore);
+   totalWon += gameResult.myscore;
+}
+    
+var totalLost = 0;
+for (var gameResult of Object.values(snapshot.val())) {
+   console.log(gameResult.opponentscore);
+   totalLost += gameResult.opponentscore;
+}
+const quote = totalWon / totalLost;
+
+document.getElementById('9ballaverage').innerHTML = '9-Ball Ratio: ' + quote;
+    
+
+
+});
+
+//10Ball
+
+firebase.database().ref('userstatsdifferentgames/' + username + '/10-Ball').once('value').then(function(snapshot) {
+    
+  var totalWon = 0;
+for (var gameResult of Object.values(snapshot.val())) {
+   console.log(gameResult.myscore);
+   totalWon += gameResult.myscore;
+}
+    
+var totalLost = 0;
+for (var gameResult of Object.values(snapshot.val())) {
+   console.log(gameResult.opponentscore);
+   totalLost += gameResult.opponentscore;
+}
+const quote = totalWon / totalLost;
+
+document.getElementById('10ballaverage').innerHTML = '10-Ball Ratio: ' + quote;
+    
+
+
+});
+
+//Straight Pool
+
+firebase.database().ref('userstatsdifferentgames/' + username + '/straightpool').once('value').then(function(snapshot) {
+    
+  var totalWon = 0;
+for (var gameResult of Object.values(snapshot.val())) {
+   console.log(gameResult.myscore);
+   totalWon += gameResult.myscore;
+}
+    
+var totalLost = 0;
+for (var gameResult of Object.values(snapshot.val())) {
+   console.log(gameResult.opponentscore);
+   totalLost += gameResult.opponentscore;
+}
+const quote = totalWon / totalLost;
+
+document.getElementById('straightpoolballaverage').innerHTML = 'Straight Pool Ratio: ' + quote;
+    
+
+
+});
 
 
 

@@ -17,10 +17,10 @@ var config = {
   const finalPlayer1Result = sessionStorage.getItem('player1result');
   const finalPlayer2Result = sessionStorage.getItem('player2result');
   const submitMatch = document.getElementById('submitMatch');
-
+  const gameType = sessionStorage.getItem('gametype');
 submitMatch.addEventListener('click', e => {
 
-  firebase.database().ref('users/' + player2FullName).once('value').then(function(snapshot) {
+  firebase.database().ref('userpwds/' + player2FullName).once('value').then(function(snapshot) {
           
     const player2Pwd = (snapshot.val() && snapshot.val().password) || '';
     const passwordEntered = document.getElementById('player2Pwd');
@@ -100,6 +100,14 @@ console.log(snapshot.val());
       result: finalPlayer1Result,
       });
 
+      firebase.database().ref('userstatsdifferentgames/' + player1Username + '/' + gameType + '/' + gameID).set({
+        opponent: player2FullName,
+        myscore: finalPlayer1Score,
+        opponentscore: finalPlayer2Score,
+        result: finalPlayer1Result,
+        });
+  
+
 
     
 
@@ -112,6 +120,14 @@ console.log(snapshot.val());
       opponentscore: finalPlayer1Score,
       result: finalPlayer2Result,
       });
+
+
+      firebase.database().ref('userstatsdifferentgames/' + player2Username + '/' + gameType + '/' + gameID).set({
+        opponent: player1FullName,
+        myscore: finalPlayer2Score,
+        opponentscore: finalPlayer1Score,
+        result: finalPlayer2Result,
+        });
 
 
 

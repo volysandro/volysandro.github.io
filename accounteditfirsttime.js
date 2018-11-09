@@ -16,12 +16,13 @@
     const category = document.getElementById('editCategory');
     const cue = document.getElementById('editCue');
     const kozoom = document.getElementById('editKozoom');
-    const backToAccount = document.getElementById('backToAccount');
+    const backToMenu = document.getElementById('backToMenu');
 
 
 
     accountSubmitBtn.addEventListener('click', e => {
             editAccount();
+                window.location = 'Mainpage.html';
 
             
   
@@ -43,17 +44,17 @@ if(categorynew != 0 && cuenew != 0 && kozoomnew != 0){
             cue: cuenew,
             kozoom: kozoomnew,
             });
-           document.getElementById('detailsChanged').innerHTML = 'Account Updated!'; 
-
+            
+            backToMenu.hidden = false;
             
     } 
     else{} 
 }
+backToMenu.addEventListener('click', e => {
+window.location = 'Mainpage.html';
+});
 
 
-backToAccount.addEventListener('click', e => {
-    window.location = 'Accountpage.html';
-    });
 
 
 

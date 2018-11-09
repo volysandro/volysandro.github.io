@@ -25,7 +25,7 @@
 
       btnSubmitOpponent.addEventListener('click', e => {
        const opponentID = opponentUname.value;
-       firebase.database().ref('userprofiles/' + opponentID).once('value').then(function(snapshot) {
+       firebase.database().ref('userfullnames/' + opponentID).once('value').then(function(snapshot) {
         
         var doesOpponentExist = (snapshot.val() && snapshot.val().fullname) || '';
         
@@ -70,7 +70,7 @@
             
             
 
-            return firebase.database().ref('userprofiles/' + firebaseUser.displayName).once('value').then(function(snapshot) {
+            return firebase.database().ref('userfullnames/' + firebaseUser.displayName).once('value').then(function(snapshot) {
           
                 const player1FullName = (snapshot.val() && snapshot.val().fullname) || firebaseUser.displayName;
                 sessionStorage.setItem('player1fullname', player1FullName);
