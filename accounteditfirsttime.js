@@ -22,7 +22,6 @@
 
     accountSubmitBtn.addEventListener('click', e => {
             editAccount();
-                window.location = 'Mainpage.html';
 
             
   

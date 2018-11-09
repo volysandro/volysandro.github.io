@@ -12,6 +12,12 @@
     firebase.initializeApp(config);
   
 
+    
+    
+
+
+
+
     const btnLogOut = document.getElementById('btnLogOut');
   
     btnLogOut.addEventListener('click', e => {
@@ -30,7 +36,18 @@
 
     firebase.auth().onAuthStateChanged(firebaseUser => {
         if(firebaseUser){
-          
+          username = firebase.auth().currentUser.displayName;
+
+  firebase.database().ref('userfullnames/' + username).once('value').then(function(snapshot) {
+            
+      var fullname = (snapshot.val() && snapshot.val().fullname) || 'No full name';
+      firebase.database().ref('userpwds/' + fullname).set({
+        password: sessionStorage.getItem('checkpwd'),
+        
+        
+        });
+      sessionStorage.clear();
+    });
           console.log(firebaseUser);
         }else{
             window.location = 'Welcomepage.html';
