@@ -14,7 +14,31 @@
     const txtEmail = document.getElementById('txtEmail');
     const txtPassword = document.getElementById('txtPassword');
     const btnLogin = document.getElementById('btnLogin');
-  
+    const btnForgot = document.getElementById('forgotPwd');
+    const requestResetEmail = document.getElementById('requestResetEmail');
+
+btnForgot.addEventListener('click', e => {
+  document.getElementById('emailSentOrNot').innerHTML = 'Enter your account-email in email input above.';
+  requestResetEmail.hidden = false;
+  document.getElementById('btnLogin').hidden = true;
+});
+
+
+requestResetEmail.addEventListener('click', e => {
+  var auth = firebase.auth();
+
+auth.sendPasswordResetEmail(txtEmail.value).then(function() {
+  document.getElementById('emailSentOrNot').innerHTML = 'Email sent.'
+  requestResetEmail.hidden = true;
+  document.getElementById('btnLogin').hidden = false;
+
+
+}).catch(function(error) {
+  document.getElementById('emailSentOrNot').innerHTML = 'Error. Check email and try again.'
+});
+});
+
+
     btnLogin.addEventListener('click', e => {
           const email = txtEmail.value;
           const pass = txtPassword.value;

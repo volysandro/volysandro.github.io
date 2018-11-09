@@ -260,13 +260,13 @@ color: #111;
 
 #btnLogin{
 background: transparent;
+font: bold;
 }
 
 .centerLoginBtn{
 border-radius: 50%;
 height: 100px;
 width: 100px;
-background: #b14d3ee7;
 position: absolute;
   top: 63%;
   left: 50%;
@@ -575,4 +575,10 @@ color: #ff8080;
     background: rgba(0, 0, 0, 0.404);    
     outline: none;
     color: #ff8080;
+}
+
+
+#backToMainMenu{
+    font-style: normal;
+    color: black;
 }

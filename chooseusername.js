@@ -43,7 +43,7 @@
     
 
 continueBtn.addEventListener('click', e => {
-  window.location = 'Accountedit.html';
+  window.location = 'Accounteditfirsttime.html';
 
 });
 
