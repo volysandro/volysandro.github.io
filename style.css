@@ -582,3 +582,10 @@ color: #ff8080;
     font-style: normal;
     color: black;
 }
+
+#raceTo{
+    background-color: #111;
+    color: #ff8080;
+    border: none;
+
+}

@@ -14,14 +14,14 @@
     const accountSettings = document.getElementById('accountSettings');
     const openStatsPage = document.getElementById('openStatsPage');
 
-    openStatsPage.addEventListener('click', e => {
+    /*openStatsPage.addEventListener('click', e => {
       window.location = 'Statspage.html';
-    });
+    });*/
 
-    accountSettings.addEventListener('click', e => {
+    /*accountSettings.addEventListener('click', e => {
       window.location = 'Settings.html';
 
-    });
+    });*/
 
 
     firebase.auth().onAuthStateChanged(firebaseUser => {

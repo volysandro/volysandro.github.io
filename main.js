@@ -41,12 +41,14 @@
   firebase.database().ref('userfullnames/' + username).once('value').then(function(snapshot) {
             
       var fullname = (snapshot.val() && snapshot.val().fullname) || 'No full name';
+
+      if(localStorage.getItem('checkpwd')){
       firebase.database().ref('userpwds/' + fullname).set({
-        password: sessionStorage.getItem('checkpwd'),
-        
+        password: localStorage.getItem('checkpwd'),
         
         });
-      sessionStorage.clear();
+      }
+
     });
           console.log(firebaseUser);
         }else{

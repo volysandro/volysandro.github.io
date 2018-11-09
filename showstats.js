@@ -76,7 +76,7 @@ firebase.database().ref('userstats/' + username).once('value').then(function(sna
       const quote = totalWon / totalLost;
       document.getElementById('totalLost').innerHTML = 'Total Lost: ' + totalLost;
 
-      document.getElementById('average').innerHTML = 'Win/Lose Ratio: ' + quote;
+      document.getElementById('average').innerHTML = 'Win/Lose Ratio: ' + quote.toFixed(2);
           
 
 
@@ -108,7 +108,7 @@ firebase.database().ref('userstats/' + username).once('value').then(function(sna
   }
   const quote = totalWon / totalLost;
 
-  document.getElementById('8ballaverage').innerHTML = '8-Ball Ratio: ' + quote;
+  document.getElementById('8ballaverage').innerHTML = '8-Ball Ratio: ' + quote.toFixed(2);
       
 
 
@@ -131,7 +131,7 @@ for (var gameResult of Object.values(snapshot.val())) {
 }
 const quote = totalWon / totalLost;
 
-document.getElementById('9ballaverage').innerHTML = '9-Ball Ratio: ' + quote;
+document.getElementById('9ballaverage').innerHTML = '9-Ball Ratio: ' + quote.toFixed(2);
     
 
 
@@ -154,7 +154,7 @@ for (var gameResult of Object.values(snapshot.val())) {
 }
 const quote = totalWon / totalLost;
 
-document.getElementById('10ballaverage').innerHTML = '10-Ball Ratio: ' + quote;
+document.getElementById('10ballaverage').innerHTML = '10-Ball Ratio: ' + quote.toFixed(2);
     
 
 
@@ -177,7 +177,7 @@ for (var gameResult of Object.values(snapshot.val())) {
 }
 const quote = totalWon / totalLost;
 
-document.getElementById('straightpoolballaverage').innerHTML = 'Straight Pool Ratio: ' + quote;
+document.getElementById('straightpoolballaverage').innerHTML = 'Straight Pool Ratio: ' + quote.toFixed(2);
     
 
 
