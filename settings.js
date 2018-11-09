@@ -49,10 +49,10 @@ changePwd.addEventListener('click', e => {
 
 
 
+user = auth.currentUser;
+const username = user.displayName;
 
 deleteAccount.addEventListener('click', e => {
-    user = auth.currentUser;
-    const username = user.displayName;
 
     firebase.database().ref('userfullnames/' + username).once('value').then(function(snapshot) {
         const fullName = (snapshot.val() && snapshot.val().fullname);
