@@ -52,26 +52,20 @@ changePwd.addEventListener('click', e => {
 
 deleteAccount.addEventListener('click', e => {
     var user = firebase.auth().currentUser;
-    const username = user.displayName;
+    const username = user.email.replace('@', '').replace('.', '');
+    console.log(username);
     
-    firebase.database().ref('userfullnames/' + username).once('value').then(function(snapshot) {
-        const fullName = (snapshot.val() && snapshot.val().fullname);
-        var refProfiles = firebase.database().ref('userprofiles/' + username);
-        var refPwds = firebase.database().ref('userpwds/' + fullName);
-        var refUsers = firebase.database().ref('users/' + fullName);
-        var refNames = firebase.database().ref('userfullnames/' + username);
-        
-        user.delete().then(function(){
-            refProfiles.remove();
-            refPwds.remove();
-            refUsers.remove();
-            refNames.remove();
+    firebase.database().ref('users/' + username).remove();
+    firebase.database().ref('userprofiles/' + username).remove();
+
+        firebase.auth().currentUser.delete().then(function(){
+            
             document.getElementById('accountDeleted').innerHTML = 'Account deleted!';
 
         }).catch(function(){
             
         });
-    });
+    
     
 });
 
