@@ -12,7 +12,7 @@
       firebase.initializeApp(config);
       
 
-      const opponentUname = document.getElementById('opponentUname');
+      const opponentEmail = document.getElementById('opponentEmail');
       const btnSubmitOpponent = document.getElementById('btnSubmitOpponent');
       const btnChoose8Ball = document.getElementById('choose8Ball');
       const btnChoose9Ball = document.getElementById('choose9Ball');
@@ -23,9 +23,12 @@
 
       if(btnSubmitOpponent){
 
-      btnSubmitOpponent.addEventListener('click', e => {
-       const opponentID = opponentUname.value;
-       firebase.database().ref('userfullnames/' + opponentID).once('value').then(function(snapshot) {
+          btnSubmitOpponent.addEventListener('click', e => {
+              
+              const email = opponentEmail.value;
+              const opponentEmailNC = email.replace('@', '').replace('.', '');
+              console.log(opponentEmailNC);
+       firebase.database().ref('users/' + opponentEmailNC).once('value').then(function(snapshot) {
         
         var doesOpponentExist = (snapshot.val() && snapshot.val().fullname) || '';
         
@@ -35,7 +38,7 @@
 
         if (doesOpponentExist != ""){
             console.log('User Exists');
-            sessionStorage.setItem('opponent', opponentID);
+            sessionStorage.setItem('opponent', opponentEmailNC);
             sessionStorage.setItem('player2fullname', doesOpponentExist);
 
 
@@ -68,9 +71,10 @@
         if(firebaseUser){
             sessionStorage.setItem('playerusername', firebaseUser.displayName);
             
-            
-
-            return firebase.database().ref('userfullnames/' + firebaseUser.displayName).once('value').then(function(snapshot) {
+            const playeremail = firebase.auth().currentUser.email;
+            const playeremailNC = playeremail.replace('@', '').replace('.', '');
+            window.sessionStorage.setItem('player1Username', playeremailNC);
+            return firebase.database().ref('users/' + playeremailNC).once('value').then(function(snapshot) {
           
                 const player1FullName = (snapshot.val() && snapshot.val().fullname) || firebaseUser.displayName;
                 sessionStorage.setItem('player1fullname', player1FullName);

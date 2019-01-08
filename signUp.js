@@ -20,6 +20,7 @@
   const txtNewPassword = document.getElementById('txtNewPassword');
   const txtNewBirthyear = document.getElementById('txtNewBirthyear');
   const newFullname = document.getElementById('txtFullname');
+  const newUsername = document.getElementById('txtUsername');
 
   btnSignUp.addEventListener('click', e => {
         const email = txtNewEmail.value;
@@ -27,20 +28,16 @@
         const auth = firebase.auth();
         const born = txtNewBirthyear.value;
         const fullname = newFullname.value;
+        const username = newUsername.value;
+        const userdatapath = email.replace('@', '').replace('.', '');
 
-        firebase.database().ref('users/' + fullname).set({
+        firebase.database().ref('users/' + userdatapath).set({
           email: email,
           birthyear: born,
+          fullname: fullname,
+          username: username,
+          password: pass
           });
-
-          firebase.database().ref('userpwds/' + fullname).set({
-            password: pass,
-            });
-
-            sessionStorage.setItem('newfullname', fullname);
-          
-
-        
 
         const promise = auth.createUserWithEmailAndPassword(email, pass);
         promise.catch(e => console.log(e.message));
@@ -53,7 +50,7 @@
 
   firebase.auth().onAuthStateChanged(firebaseUser => {
     if(firebaseUser){
-      window.location = 'Chooseusername.html';
+      window.location = 'Mainpage.html';
       console.log(firebaseUser);
     }else{
       

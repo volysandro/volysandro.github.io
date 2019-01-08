@@ -36,21 +36,9 @@
 
     firebase.auth().onAuthStateChanged(firebaseUser => {
         if(firebaseUser){
-          username = firebase.auth().currentUser.displayName;
 
-  firebase.database().ref('userfullnames/' + username).once('value').then(function(snapshot) {
-            
-      var fullname = (snapshot.val() && snapshot.val().fullname) || 'No full name';
-
-      if(localStorage.getItem('checkpwd')){
-      firebase.database().ref('userpwds/' + fullname).set({
-        password: localStorage.getItem('checkpwd'),
-        
-        });
-      }
-
-    });
           console.log(firebaseUser);
+
         }else{
             window.location = 'Welcomepage.html';
         }

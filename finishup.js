@@ -8,8 +8,9 @@ var config = {
   };
   firebase.initializeApp(config);
 
+  player2EmailNC = sessionStorage.getItem('opponent');
+  player1Username = sessionStorage.getItem('player1Username');
   player2Username = sessionStorage.getItem('opponent');
-  player1Username = sessionStorage.getItem('playerusername');
   player1FullName = sessionStorage.getItem('player1fullname');
   player2FullName = sessionStorage.getItem('player2fullname');
   const finalPlayer1Score = parseInt(sessionStorage.getItem('player1score'));
@@ -20,7 +21,7 @@ var config = {
   const gameType = sessionStorage.getItem('gametype');
 submitMatch.addEventListener('click', e => {
 
-  firebase.database().ref('userpwds/' + player2FullName).once('value').then(function(snapshot) {
+  firebase.database().ref('users/' + player2EmailNC).once('value').then(function(snapshot) {
           
     const player2Pwd = (snapshot.val() && snapshot.val().password) || '';
     const passwordEntered = document.getElementById('player2Pwd');
@@ -31,7 +32,7 @@ submitMatch.addEventListener('click', e => {
       }
   
     else{
-      document.getElementById('wrongPwd').innerHTML = 'Wrong password for ' + player2Username;
+      document.getElementById('wrongPwd').innerHTML = 'Wrong password for ' + player2FullName;
     }
     
     
@@ -64,6 +65,12 @@ submitMatch.addEventListener('click', e => {
 
 
   function addPointsToStats(){
+
+
+
+
+
+
     var date = new Date();
     const gameID = date + player1FullName + ' vs ' + player2FullName;
     firebase.database().ref('userstats/' + player1Username).once('value').then(function(snapshot) {

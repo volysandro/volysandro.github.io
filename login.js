@@ -48,7 +48,6 @@ auth.sendPasswordResetEmail(txtEmail.value).then(function() {
           const email = txtEmail.value;
           const pass = txtPassword.value;
           const auth = firebase.auth();
-          localStorage.setItem('checkpwd', pass);
   
           const promise = auth.signInWithEmailAndPassword(email, pass);
           promise.catch(e => console.log(e.message));

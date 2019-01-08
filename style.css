@@ -289,7 +289,7 @@ position: absolute;
     width: 100px;
     background: #b14d3ee7;
     position: absolute;
-      top: 65%;
+      top: 75%;
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
@@ -320,7 +320,7 @@ position: absolute;
     
         outline: none;    }
 
-    #txtNewUsername{
+    #txtUsername{
         background: rgba(0, 0, 0, 0.377);
     
         outline: none;    }
