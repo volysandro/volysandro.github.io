@@ -41,7 +41,7 @@
       function showData(){
 
         user = firebase.auth().currentUser;
-        const username = user.displayName;
+        const username = user.email.replace('@', '').replace('.', '');
 
         firebase.database().ref('userprofiles/' + username).once('value').then(function(snapshot) {
           
@@ -55,7 +55,7 @@
         });
         firebase.database().ref('userfullnames/' + username).once('value').then(function(snapshot) {
             
-          var showfullname = (snapshot.val() && snapshot.val().fullname) || 'No full name';
+          var showfullname = (snapshot.val() && snapshot.val().fullname) || '';
           document.getElementById('name').innerHTML = showfullname;
           
         });

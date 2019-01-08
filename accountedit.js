@@ -36,7 +36,7 @@ function editAccount(){
 if(categorynew != 0 && cuenew != 0 && kozoomnew != 0){
 
         user = firebase.auth().currentUser;
-        const username = user.displayName;
+        const username = user.email.replace('@', '').replace('.', '');
 
         firebase.database().ref('userprofiles/' + username).set({
             category: categorynew,
