@@ -50,7 +50,11 @@ auth.sendPasswordResetEmail(txtEmail.value).then(function() {
           const auth = firebase.auth();
   
           const promise = auth.signInWithEmailAndPassword(email, pass);
-          promise.catch(e => console.log(e.message));
+          promise.catch(e => {console.log(e.message)
+          
+            document.getElementById('txtWrong').innerHTML = 'Wrong password or email';
+          
+          });
 
 
 
