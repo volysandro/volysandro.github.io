@@ -148,11 +148,11 @@ span.psw {
   }
   
   .row:nth-child(1) {
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
   }
   
   .row:nth-child(2) {
-    background-color: #111;
+    background-color: #000000;
   }
 
   .row:nth-child(3) {

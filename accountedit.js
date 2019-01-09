@@ -47,7 +47,13 @@ if(categorynew != 0 && cuenew != 0 && kozoomnew != 0){
 
             
     } 
-    else{} 
+    else{
+
+        document.getElementById('detailsChanged').innerHTML = 'Some fields are empty.';
+
+
+
+    } 
 }
 
 

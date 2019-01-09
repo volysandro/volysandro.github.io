@@ -31,16 +31,50 @@
         const username = newUsername.value;
         const userdatapath = email.replace('@', '').replace('.', '');
 
-        firebase.database().ref('users/' + userdatapath).set({
-          email: email,
-          birthyear: born,
-          fullname: fullname,
-          username: username,
-          password: pass
-          });
+if (email != '' && pass != '' && born != '' && username != '' && fullname != ''){
+  
+  const promise = auth.createUserWithEmailAndPassword(email, pass);
+  promise.catch(e => {
+    
+    document.getElementById('notvalid').hidden = false;
+    
+    
+  });
+  
+  firebase.database().ref('users/' + userdatapath).set({
+    email: email,
+    birthyear: born,
+    fullname: fullname,
+    username: username,
+    password: pass
+    });
+}
 
-        const promise = auth.createUserWithEmailAndPassword(email, pass);
-        promise.catch(e => console.log(e.message));
+else if (fullname == ''){
+  console.log('fullname');
+  document.getElementById('namemissing').hidden = false;
+}
+
+else if (username == ''){
+  console.log('username');
+  document.getElementById('unamemissing').hidden = false;
+}
+
+else if (email == ''){
+  console.log('email');
+  document.getElementById('emailmissing').hidden = false;
+}
+
+else if (pass == ''){
+  console.log('password');
+  document.getElementById('pwdmissing').hidden = false;
+}
+
+else if (born == ''){
+  console.log('born');
+  document.getElementById('bornmissing').hidden = false;
+}
+
 
         
 

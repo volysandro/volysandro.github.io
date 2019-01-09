@@ -48,7 +48,7 @@
         }
         else{
             console.log('User doesnt exist');
-            document.getElementById('doesntExist').innerHTML = 'User doesnt exist';
+            document.getElementById('doesntExist').innerHTML = "User doesn't exist";
         }
 
 
