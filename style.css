@@ -1,20 +1,41 @@
 
-#welcomeBox{
-    
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%; /* full window width */
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Chewy';
+    font-style: normal;
+    font-weight: 400;
+    src: url('Chewy.ttf') format('woff2');
 }
 
 
 
+#welcomeBox{
+text-align: center;
+top: 6%;
+position: relative;
+font-family: Chewy;
+
+}
+
+
+#welcomeToPS{
+    font-size: 40px;
+    color: #66fcf1
+}
 
 
 
-
-
-
-
-
-
-
+#welcomeDescription{
+    font-size: 20px;
+    color: #c5c6c7;
+    margin-top: -7%;
+}
 
 
 
