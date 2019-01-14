@@ -1042,3 +1042,8 @@ position: absolute;
     transform: translate(-50%, -50%);
 
 }
+
+#bodyWelcomePage{
+    background-image: url('welcomebackground.png');
+    background-size: 100%;
+}
