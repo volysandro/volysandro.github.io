@@ -64,6 +64,8 @@ auth.sendPasswordResetEmail(txtEmail.value).then(function() {
 
     firebase.auth().onAuthStateChanged(firebaseUser => {
         if(firebaseUser){
+          
+          window.sessionStorage.setItem('password', txtPassword.value);
           window.location = 'Mainpage.html';
           console.log(firebaseUser);
         }else{

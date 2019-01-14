@@ -21,21 +21,30 @@ const backToMenu = document.getElementById('backToMenu');
 
 changePwd.addEventListener('click', e => {
     var user = firebase.auth().currentUser;
-    const username = user.displayName;
-    //getfullname
-    firebase.database().ref('userfullnames/' + username).once('value').then(function(snapshot) {
-        const fullName = (snapshot.val() && snapshot.val().fullname);
-        var repeatNewPwd = document.getElementById('repeatNewPwd');
-        
-        var newPassword = document.getElementById('newPwd');
-        
-        if(newPassword.value == repeatNewPwd.value){
-            user.updatePassword(newPassword.value).then(function() {
-                localStorage.setItem('checkpwd', newPassword.value);
-                document.getElementById('changePwdGetResponse').innerHTML = 'Password successfully changed!';
-                firebase.database().ref('userpwds/' + fullName).set({
-                    password: newPassword.value,
-                });
+        console.log(user);
+    var email = firebase.auth().currentUser.email;
+    var emailNC = email.replace('@', '').replace('.', '');
+    let userref = firebase.database().ref('users/' + emailNC);
+    let pwdref = userref.child('password');
+    console.log(pwdref);
+    
+    var newPassword = String(document.getElementById('newPwd').value);
+    var repeatNewPwd = String(document.getElementById('repeatNewPwd').value);
+    
+    
+    if(newPassword == repeatNewPwd){
+        var finalPassword = newPassword;
+        user.updatePassword(finalPassword).then(function() {
+            document.getElementById('changePwdGetResponse').innerHTML = 'Password successfully changed!';
+            
+            //pwdref.setValue(finalPassword);
+            pwdref.set(finalPassword);
+            
+            
+                
+
+
+
             }).catch(function(error) {
                 document.getElementById('changePwdGetResponse').innerHTML = 'Unknown error. Try again.';
             });
@@ -45,7 +54,7 @@ changePwd.addEventListener('click', e => {
         }
     });
     
-});  
+ 
 
 
 
