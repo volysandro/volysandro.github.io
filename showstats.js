@@ -31,7 +31,7 @@ window.location = 'Mainpage.html';
 
   function showStats(){
 
-username = auth.currentUser.email.replace('@', '').replace('.', '');
+username = auth.currentUser.email.replace('@', '').replace('.', '').replace('.', '').replace('.', '').replace('.', '');
 
 firebase.database().ref('lastgame/' + username).once('value').then(function(snapshot) {
     const lastGame = (snapshot.val() && snapshot.val().lastgame) || '';

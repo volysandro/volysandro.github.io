@@ -72,7 +72,7 @@
             sessionStorage.setItem('playerusername', firebaseUser.displayName);
             
             const playeremail = firebase.auth().currentUser.email;
-            const playeremailNC = playeremail.replace('@', '').replace('.', '');
+            const playeremailNC = playeremail.replace('@', '').replace('.', '').replace('.', '').replace('.', '').replace('.', '');
             window.sessionStorage.setItem('player1Username', playeremailNC);
             return firebase.database().ref('users/' + playeremailNC).once('value').then(function(snapshot) {
           

@@ -29,7 +29,7 @@
         const born = txtNewBirthyear.value;
         const fullname = newFullname.value;
         const username = newUsername.value;
-        const userdatapath = email.replace('@', '').replace('.', '');
+        const userdatapath = email.replace('@', '').replace('.', '').replace(' ', '').replace('.', '').replace('.', '');
 
 if (email != '' && pass != '' && born != '' && username != '' && fullname != ''){
   

@@ -39,7 +39,7 @@
 
           console.log(firebaseUser);
           var email = firebase.auth().currentUser.email;
-          var emailNC = email.replace('@', '').replace('.', '');
+          var emailNC = email.replace('@', '').replace('.', '').replace('.', '').replace('.', '');
       
 
 
@@ -51,8 +51,11 @@
             var storedpassword = (snapshot.val() && snapshot.val().password) || 'empty';
 
             if (password != storedpassword){
+
+              if (password){
               pwdref.set(password);
               window.sessionStorage.clear('password');
+              }
             }
             else{
               window.sessionStorage.clear('password');

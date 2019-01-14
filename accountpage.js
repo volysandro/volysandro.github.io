@@ -41,7 +41,7 @@
       function showData(){
 
         user = firebase.auth().currentUser;
-        const username = user.email.replace('@', '').replace('.', '');
+        const username = user.email.replace('@', '').replace('.', '').replace('.', '').replace('.', '').replace('.', '');
 
         firebase.database().ref('userprofiles/' + username).once('value').then(function(snapshot) {
           

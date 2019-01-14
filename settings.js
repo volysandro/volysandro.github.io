@@ -23,7 +23,7 @@ changePwd.addEventListener('click', e => {
     var user = firebase.auth().currentUser;
         console.log(user);
     var email = firebase.auth().currentUser.email;
-    var emailNC = email.replace('@', '').replace('.', '');
+    var emailNC = email.replace('@', '').replace('.', '').replace('.', '').replace('.', '').replace('.', '');
     let userref = firebase.database().ref('users/' + emailNC);
     let pwdref = userref.child('password');
     console.log(pwdref);

@@ -33,7 +33,7 @@ function editAccount(){
     const cuenew = cue.value;
     const kozoomnew = kozoom.value;
     var email = firebase.auth().currentUser.email;
-    var emailNC = email.replace('@', '').replace('.', '');
+    var emailNC = email.replace('@', '').replace('.', '').replace('.', '').replace('.', '').replace('.', '');
     let profileref = firebase.database().ref('userprofiles/' + emailNC);
 
     let categoryref = profileref.child('category');
