@@ -63,7 +63,7 @@
 
 
     if (document.getElementById('showSelectedOpponent')){
-        document.getElementById('showSelectedOpponent').innerHTML = sessionStorage.getItem('opponent');
+        document.getElementById('showSelectedOpponent').innerHTML = sessionStorage.getItem('player2fullname');
     }
 
 
