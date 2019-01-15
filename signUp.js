@@ -23,13 +23,13 @@
   const newUsername = document.getElementById('txtUsername');
 
   btnSignUp.addEventListener('click', e => {
-        const email = txtNewEmail.value;
+        const email = txtNewEmail.value.toLowerCase();
         const pass = txtNewPassword.value;
         const auth = firebase.auth();
         const born = txtNewBirthyear.value;
         const fullname = newFullname.value;
         const username = newUsername.value;
-        const userdatapath = email.replace('@', '').replace('.', '').replace(' ', '').replace('.', '').replace('.', '');
+        const userdatapath = email.replace('@', '').replace('.', '').replace(' ', '').replace('.', '').replace('.', '').toLowerCase();
 
 if (email != '' && pass != '' && born != '' && username != '' && fullname != ''){
   
