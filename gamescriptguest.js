@@ -16,6 +16,8 @@
       const btnChoose9Ball = document.getElementById('choose9Ball');
       const btnChoose10Ball = document.getElementById('choose10Ball');
       const btnChooseStraightPool = document.getElementById('chooseStraightPool');
+      const btnChooseOnePocket = document.getElementById('chooseOnePocket');
+
       const txtRaceTo = document.getElementById('raceTo');
       
 
@@ -59,6 +61,16 @@ if (btnChooseStraightPool){
     btnChooseStraightPool.addEventListener('click', e => {
         var setRaceTo = txtRaceTo.value;
         sessionStorage.setItem('gametype', 'Straight Pool');
+        sessionStorage.setItem('raceto', setRaceTo);
+        window.location = 'Gamepageguest.html';
+
+    });
+}
+
+if (btnChooseOnePocket){
+    btnChooseOnePocket.addEventListener('click', e => {
+        var setRaceTo = txtRaceTo.value;
+        sessionStorage.setItem('gametype', 'One Pocket');
         sessionStorage.setItem('raceto', setRaceTo);
         window.location = 'Gamepageguest.html';
 

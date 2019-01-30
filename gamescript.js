@@ -17,6 +17,7 @@
       const btnChoose8Ball = document.getElementById('choose8Ball');
       const btnChoose9Ball = document.getElementById('choose9Ball');
       const btnChoose10Ball = document.getElementById('choose10Ball');
+      const btnChooseOnePocket = document.getElementById('chooseOnePocket');
       const btnChooseStraightPool = document.getElementById('chooseStraightPool');
       const txtRaceTo = document.getElementById('raceTo');
       
@@ -26,7 +27,7 @@
           btnSubmitOpponent.addEventListener('click', e => {
               
               const email = opponentEmail.value;
-              const opponentEmailNC = email.replace('@', '').replace('.', '');
+              const opponentEmailNC = email.replace('@', '').replace('.', '').replace('.', '').replace('.', '').replace('.', '').replace('.', '').replace('.', '');
               console.log(opponentEmailNC);
        firebase.database().ref('users/' + opponentEmailNC).once('value').then(function(snapshot) {
         
@@ -125,6 +126,17 @@ if (btnChooseStraightPool){
 
     });
 }
+
+if (btnChooseOnePocket){
+    btnChooseOnePocket.addEventListener('click', e => {
+        var setRaceTo = txtRaceTo.value;
+        sessionStorage.setItem('gametype', 'OnePocket');
+        sessionStorage.setItem('raceto', setRaceTo);
+        window.location = 'Gamepageonepocket.html';
+
+    });
+}
+
 
 
 

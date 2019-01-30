@@ -201,6 +201,22 @@ font-family: Chewy;
 }
 
 
+#chooseOnePocket{
+    -webkit-transform: skewY(-7deg);
+    -moz-transform: skewY(-7deg);
+    -ms-transform: skewY(-7deg);
+    -o-transform: skewY(-7deg);
+    transform: skewY(-7deg);
+    margin-top: 10px;
+    height: 15%;
+    background: #0b0c10;
+    width: 100%;
+    color: #66fcf1;
+    font: normal 30px/2.2 "Chewy", Times, serif;
+        opacity: 88%;
+
+}
+
 #choose8Ball{
     -webkit-transform: skewY(-7deg);
     -moz-transform: skewY(-7deg);
@@ -425,12 +441,12 @@ span.psw {
 
   .tablebodygamepage {
     display: table;
-    height: 100%;
     margin: auto;
     padding: 0;
-    width: 100%;
+    height: 100%;
     background-image: url('gamepagebackground.jpg');
-    background-size: 100%
+    background-size: 400%;
+    background-position-x: -85%;
   }
 
 
@@ -701,7 +717,31 @@ position: absolute;
     letter-spacing: 1.7;
 }
 
+#player1NameOP{
+    margin: auto;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #66fcf1;
+    font-family: Chewy;
+    letter-spacing: 1.7;
+}
+
 #player2Name{
+    margin: auto;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #66fcf1;
+    font-family: Chewy;
+    letter-spacing: 1.7;
+}
+
+#player2NameOP{
     margin: auto;
     position: absolute;
     top: 90%;
@@ -728,6 +768,35 @@ position: absolute;
     letter-spacing: 1.7;
 
 }
+
+#player1ScoreOP{
+    margin: auto;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #66fcf1;
+    font-size: 70px;
+    font-family: Chewy;
+    letter-spacing: 1.7;
+
+}
+
+#player1Count{
+    margin: auto;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #66fcf1;
+    font-size: 55px;
+    font-family: Chewy;
+    letter-spacing: 1.7;
+
+}
+
 #player2Score{
     margin: auto;
     position: absolute;
@@ -737,6 +806,34 @@ position: absolute;
     text-align: center;
     color: #66fcf1;
     font-size: 100px;
+    font-family: Chewy;
+    letter-spacing: 1.7;
+
+}
+
+#player2ScoreOP{
+    margin: auto;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #66fcf1;
+    font-size: 70px;
+    font-family: Chewy;
+    letter-spacing: 1.7;
+
+}
+
+#player2Count{
+    margin: auto;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #66fcf1;
+    font-size: 55px;
     font-family: Chewy;
     letter-spacing: 1.7;
 
@@ -759,6 +856,202 @@ position: absolute;
     
 }
 
+#player1UpOP{
+    margin: auto;
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    height: 70px;
+    width: 70px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #1f2833;
+    color: #66fcf1;
+    border-radius: 150px;
+    font-size: 30px;
+    
+}
+
+#player1count1{
+    margin: auto;
+    position: absolute;
+    top: 35%;
+    left: 90%;
+    height: 40px;
+    width: 40px;
+    transform: translate(-50%, -50%);
+    background-color: #1f2833;
+    color: #66fcf1;
+    border-radius: 150px;
+    font-size: 10px;
+    
+}
+
+#player1count3{
+    margin: auto;
+    position: absolute;
+    top: 35%;
+    left: 80%;
+    height: 40px;
+    width: 40px;
+    transform: translate(-50%, -50%);
+    background-color: #1f2833;
+    color: #66fcf1;
+    border-radius: 150px;
+    font-size: 10px;
+    
+}
+
+#player1count5{
+    margin: auto;
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    height: 40px;
+    width: 40px;
+    transform: translate(-50%, -50%);
+    background-color: #1f2833;
+    color: #66fcf1;
+    border-radius: 150px;
+    font-size: 10px;
+    
+}
+
+#player1countm1{
+    margin: auto;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    height: 40px;
+    width: 40px;
+    transform: translate(-50%, -50%);
+    background-color: #1f2833;
+    color: #66fcf1;
+    border-radius: 150px;
+    font-size: 10px;
+    
+}
+
+#player1countm3{
+    margin: auto;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    height: 40px;
+    width: 40px;
+    transform: translate(-50%, -50%);
+    background-color: #1f2833;
+    color: #66fcf1;
+    border-radius: 150px;
+    font-size: 10px;
+    
+}
+
+#player1countm5{
+    margin: auto;
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    height: 40px;
+    width: 40px;
+    transform: translate(-50%, -50%);
+    background-color: #1f2833;
+    color: #66fcf1;
+    border-radius: 150px;
+    font-size: 10px;
+    
+}
+
+#player2count1{
+    margin: auto;
+    position: absolute;
+    top: 65%;
+    left: 90%;
+    height: 40px;
+    width: 40px;
+    transform: translate(-50%, -50%);
+    background-color: #1f2833;
+    color: #66fcf1;
+    border-radius: 150px;
+    font-size: 10px;
+    
+}
+
+#player2count3{
+    margin: auto;
+    position: absolute;
+    top: 65%;
+    left: 80%;
+    height: 40px;
+    width: 40px;
+    transform: translate(-50%, -50%);
+    background-color: #1f2833;
+    color: #66fcf1;
+    border-radius: 150px;
+    font-size: 10px;
+    
+}
+
+#player2count5{
+    margin: auto;
+    position: absolute;
+    top: 65%;
+    left: 70%;
+    height: 40px;
+    width: 40px;
+    transform: translate(-50%, -50%);
+    background-color: #1f2833;
+    color: #66fcf1;
+    border-radius: 150px;
+    font-size: 10px;
+    
+}
+
+#player2countm1{
+    margin: auto;
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    height: 40px;
+    width: 40px;
+    transform: translate(-50%, -50%);
+    background-color: #1f2833;
+    color: #66fcf1;
+    border-radius: 150px;
+    font-size: 10px;
+    
+}
+
+#player2countm3{
+    margin: auto;
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    height: 40px;
+    width: 40px;
+    transform: translate(-50%, -50%);
+    background-color: #1f2833;
+    color: #66fcf1;
+    border-radius: 150px;
+    font-size: 10px;
+    
+}
+
+#player2countm5{
+    margin: auto;
+    position: absolute;
+    top: 65%;
+    left: 30%;
+    height: 40px;
+    width: 40px;
+    transform: translate(-50%, -50%);
+    background-color: #1f2833;
+    color: #66fcf1;
+    border-radius: 150px;
+    font-size: 10px;
+    
+}
+
 
 #player1Down{
     margin: auto;
@@ -773,6 +1066,21 @@ position: absolute;
     color: #66fcf1;
     border-radius: 150px;
     font-size: 50px;
+}
+
+#player1DownOP{
+    margin: auto;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    height: 70px;
+    width: 70px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #1f2833;
+    color: #66fcf1;
+    border-radius: 150px;
+    font-size: 30px;
 }
 
 #player2Up{
@@ -790,6 +1098,22 @@ position: absolute;
     font-size: 50px;
 }
 
+#player2UpOP{
+    margin: auto;
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    height: 70px;
+    width: 70px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #1f2833;
+    color: #66fcf1;
+    border-radius: 150px;
+    font-size: 30px;
+}
+
+
 
 #player2Down{
     margin: auto;
@@ -805,6 +1129,23 @@ position: absolute;
     border-radius: 150px;
     font-size: 50px;
 }
+
+
+#player2DownOP{
+    margin: auto;
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    height: 70px;
+    width: 70px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #1f2833;
+    color: #66fcf1;
+    border-radius: 150px;
+    font-size: 30px;
+}
+
 
 #whoWon {
     color: #66fcf1;

@@ -19,7 +19,7 @@ var config = {
   document.getElementById('printGameType').innerHTML = gameType;
   document.getElementById('printRaceTo').innerHTML = 'Race-To: ' + raceTo;
   document.getElementById('player1Name').innerHTML = 'Player 1';
-  document.getElementById('player2Name').innerHTML = 'Player 1';
+  document.getElementById('player2Name').innerHTML = 'Player 2';
   var player1Score = 0;
   var player2Score = 0;
 
