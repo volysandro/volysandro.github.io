@@ -175,8 +175,8 @@ function check(){
 
 if (player1Score == raceTo || player2Score == raceTo){
 
-sessionStorage.setItem('player1ScoreOP', player1Score);
-sessionStorage.setItem('player2ScoreOP', player2Score);
+sessionStorage.setItem('player1score', player1Score);
+sessionStorage.setItem('player2score', player2Score);
 
   if(player1Score > player2Score){
     sessionStorage.setItem('player1result', 'won');
