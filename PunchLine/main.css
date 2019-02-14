@@ -1,0 +1,102 @@
+.body{
+    background-color: #EDF2F4;
+}
+
+.scroll-link {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .mouse {
+    max-width: 2.5rem;
+    width: 100%;
+    height: auto;
+  }
+
+  @keyframes scroll {
+    0%, 20% {
+    transform: translateY(0) scaleY(1);
+    }
+
+    10% {
+        opacity: 1;
+        }
+    100% {
+        transform: translateY(36px) scaleY(2);
+        opacity: 0.01;
+        }
+  }
+
+  .scroll {
+    animation-name: scroll;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.650, -0.550, 0.250, 1.500);
+    animation-iteration-count: infinite;
+    transform-origin: 50% 20.5px;
+    will-change: transform;
+  }
+
+  #welcomebox{
+    background-color: #2B2D42;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+
+  }
+
+  #welcomecontent{
+
+    background-color: white;
+    height: 1000cm;
+    width: 100%;
+  }
+
+  #title{
+
+    font-size: 75px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: auto;
+}
+
+  #boxclubinbern{
+      margin: auto;
+    
+  }
+
+#titlebox{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    
+
+}
+
+#menu{
+    
+    
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 100%;
+    width: 130px;
+    background-color: #EDF2F4;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    
+    
+}
+
+#menubutton{
+    color: #2B2D42;
+    text-decoration: none;
+}
+
+#menubuttons{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
