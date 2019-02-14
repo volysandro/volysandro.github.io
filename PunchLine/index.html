@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script> 
+        <script src="jquery.localscroll.js" type="text/javascript"></script> 
+        <script src="jquery.scrollTo.js" type="text/javascript"></script> 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>PunchLine</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $( "a.scrollLink" ).click(function( event ) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+    });
+
+    $( "a.scroll-link" ).click(function( event ) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+    });
+});
+</script>
 </head>
 <body class="body">
 
+<div id="footer">
+    <div id="footerleft">Box Club Punch Line, Schlagstrasse 17, 3001 Bern 
+            </div>
+    <div id="footerright">
+            Tel: 031 971 22 34 --- Email: info@punchline.ch </div>
 
+<div id="footermiddlewhere"><div id="footermiddle">PunchLine</div></div>
+    
+
+
+
+</div>
 
 
 
@@ -21,11 +50,11 @@
 <div id="menu">
 
     <div id="menubuttons">
-    <a id="menubutton" href="#training">Training</a><hr>
-    <a id="menubutton" href="#team">Team</a><hr>
-    <a id="menubutton" href="#kontakt">Kontakt</a><hr>
-    <a id="menubutton" href="#news">News</a><hr>
-    <a id="menubutton" href="#galerie">Galerie</a><hr>
+    <a id="menubutton" class="scrollLink" href="#training">Training</a><hr>
+    <a id="menubutton" class="scrollLink" href="#team">Team</a><hr>
+    <a id="menubutton" class="scrollLink" href="#kontakt">Kontakt</a><hr>
+    <a id="menubutton" class="scrollLink" href="#news">News</a><hr>
+    <a id="menubutton" class="scrollLink" href="#galerie">Galerie</a><hr>
     </div>
 </div>
 
@@ -37,7 +66,7 @@
         <h2 id="boxclubinbern" style="color:#EDF2F4">Dein Boxclub in Bern</h2>
 </div>
 
-    <a class="scroll-link" href="#content">
+    <a class="scroll-link" href="#training">
             <svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYMid meet">
                 <g fill="none" fill-rule="evenodd">
                     <rect width="70" height="118" x="1.5" y="1.5" stroke="#FFF" stroke-width="3" rx="36"/>
@@ -50,14 +79,56 @@
 
     </div>
 
-    <div id="content">
+    <div id="training">
 
+        <div id="titleboxright">
+            <h3 id="titleright">Unsere Trainings</h3>
+        </div>
 
+        <div id="contentright">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
 
+    </div>
+
+    <div id="team">
+
+        <div id="titleboxleft">
+            <h3 id="titleleft">Unser Team</h3>
+        </div>
+
+        <div id="contentleft">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+
+    </div>
+
+    <div id="kontakt">
+
+        <div id="titleboxright">
+            <h3 id="titleright">Kontakt</h3>
+        </div>
+
+        <div id="contentright">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+
+    </div>
+
+    <div id="news">
+
+        <div id="titleboxleft">
+            <h3 id="titleleft">News</h3>
+        </div>
+
+        <div id="contentleft">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
 
 
     </div>
 
-    
+    <div id="galerie">
+        
+
+        <div id="titleboxright">
+            <h3 id="titleright">Galerie</h3>
+        </div>
+
+        <div id="contentright">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+
+        </div>
 </body>
 </html>

@@ -45,7 +45,7 @@
     height: 100%;
     width: 100%;
     margin: 0;
-
+    z-index: 98;
   }
 
   #welcomecontent{
@@ -57,7 +57,7 @@
 
   #title{
 
-    font-size: 75px;
+    font-size: 500%;;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: auto;
 }
@@ -78,7 +78,7 @@
 #menu{
     
     
-    position: absolute;
+    position: fixed;
     right: 0%;
     top: 0%;
     height: 100%;
@@ -86,7 +86,7 @@
     background-color: #EDF2F4;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 25px;
-    
+    z-index: 99;
     
 }
 
@@ -99,4 +99,152 @@
     position: absolute;
     top: 25%;
     left: 5%;
+}
+
+#training{
+    position: absolute;
+    height: 100%;
+    width: 99%;
+    background-color: white;
+    top: 100%;
+    left: 0%;
+
+    margin: 0%;
+}
+
+#team{
+    position: absolute;
+    height: 100%;
+    width: 99%;
+    background-color: #2B2D42;
+    top: 200%;
+    left: 0%;
+
+    margin: 0%;
+}
+
+#kontakt{
+    position: absolute;
+    height: 100%;
+    width: 99%;
+    background-color: white;
+    top: 300%;
+    margin: 0%;
+    left: 0%;
+
+}
+
+#news{
+    position: absolute;
+    height: 100%;
+    width: 99%;
+    background-color: #2B2D42;
+    top: 400%;
+    margin: 0%;
+    left: 0%;
+
+}
+
+#galerie{
+    position: absolute;
+    height: 100%;
+    width: 99%;
+    background-color: white;
+    top: 500%;
+    margin: 0%;
+    left: 0%;
+}
+
+#titleboxright{
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    
+
+}
+
+#titleboxleft{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    
+
+}
+
+#titleleft{
+    font-size: 400%;;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: auto;
+    color: #EF233C;
+}
+
+#titleright{
+    font-size: 400%;;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: auto;
+    color: #2B2D42;
+}
+
+#contentright{
+    text-align-last: right;
+    position: absolute;
+    right: 20%;
+    top: 35%;
+    width: 60%;
+}
+
+#contentleft{
+    text-align: left;
+    position: absolute;
+    left: 20%;
+    top: 35%;
+    color: #EDF2F4;
+    width: 60%;
+
+}
+
+#footer{
+    position: fixed;
+    top: 90%;
+    height: 10%;
+    width: 99%;
+   background-color: #EDF2F4;
+    z-index: 97;
+    left: 0%;
+}
+
+#footerleft{
+
+    position: absolute;
+    left: 15%;
+    color: #2B2D42;
+    top: 40%;
+    text-align: left;
+
+}
+
+#footerright{
+
+    position: absolute;
+    right: 15%;
+    color: #2B2D42;
+    top: 40%;
+    text-align: right;
+
+}
+
+
+#footermiddle{
+    text-align: center;
+    color: #2B2D42;
+    font-size: 30px;
+    
+}
+
+#footermiddlewhere{
+    position: absolute;
+    top: 25%;
+    text-align: center;
+    width: 100%;
+    
 }
