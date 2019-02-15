@@ -2,11 +2,14 @@
     background-color: #EDF2F4;
 }
 
+
+
 .scroll-link {
     position: absolute;
     bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
+    
   }
   .mouse {
     max-width: 2.5rem;
@@ -37,16 +40,27 @@
     will-change: transform;
   }
 
-  #welcomebox{
-    background-color: #2B2D42;
+  .welcomebox{
+      
+    background-image: url("background.jpg");
     position: absolute;
     top: 0%;
     left: 0%;
     height: 100%;
     width: 100%;
     margin: 0;
-    z-index: 98;
+    z-index: 97;
   }
+
+
+
+ 
+
+  
+
+ 
+
+  
 
   #welcomecontent{
 
@@ -208,7 +222,7 @@
     top: 90%;
     height: 10%;
     width: 99%;
-   background-color: #EDF2F4;
+   background-color: #A9A9A9;
     z-index: 97;
     left: 0%;
 }
@@ -248,3 +262,115 @@
     width: 100%;
     
 }
+
+#trainingsplan{
+    color: #EDF2F4;
+    border-radius: 8px;
+    background-color: #2B2D42;
+    border: none;
+    font-size: 30px;
+    margin: 30px;
+    margin-top: 0px;
+}
+
+#trainingsabos{
+    color: #EDF2F4;
+    border-radius: 8px;
+    background-color: #2B2D42;
+    border: none;
+    font-size: 30px;
+    margin-top: 0px;
+}
+
+
+#infoplaene{
+
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 25%;
+    margin: auto;
+    margin-right: 10px;
+    border-style: solid;
+    border-color: #2B2D42;
+    border-width: 5px;
+    border-radius: 8px;
+    padding: 7px;
+
+}
+
+#infoabos{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 25%;
+    margin: auto;
+    margin-right: 10px;
+    border-style: solid;
+    border-color: #2B2D42;
+    border-width: 5px;
+    border-radius: 8px;
+    padding: 7px;
+}
+
+
+.svg-wrapper {
+    height: 300px;
+      margin: 0 auto;
+    position: absolute;
+    top: 25%;
+    left: 14%;
+    width: 700px;
+  }
+  
+  .shape {
+    fill: transparent;
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -400;
+    stroke-width: 8px;
+    stroke: #D90429;
+  }
+  
+  .text {
+    color: #fff;
+    font-family: 'Roboto Condensed';
+    font-size: 22px;
+    letter-spacing: 8px;
+    line-height: 32px;
+    position: absolute;
+    top: 20%;
+    left: 3%;
+  }
+  
+  @keyframes draw {
+    0% {
+      stroke-dasharray: 140 540;
+      stroke-dashoffset: -400;
+      stroke-width: 8px;
+    }
+    100% {
+      stroke-dasharray: 1500;
+      stroke-dashoffset: 0;
+      stroke-width: 5px;
+    }
+  }
+  
+  .svg-wrapper:hover .shape {
+    -webkit-animation: 0.3s draw linear forwards;
+    animation: 0.3s draw linear forwards;
+  }
+
+  #trainerprofis{
+      color: #EDF2F4;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 25px;
+      
+      
+  }
+
+  #teamlinks{
+      position: absolute;
+      top: 20%;
+      left: 45%;
+      background-color: #2B2D42;
+  }

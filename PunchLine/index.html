@@ -10,7 +10,7 @@
     <title>PunchLine</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -24,6 +24,19 @@ $(document).ready(function(){
         $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
     });
 });
+
+
+
+var fullHeight = $(document).height();
+var scrollTop = window.pageYOffset;
+
+if (scrollTop <= (fullHeight * (2/6))){
+    document.getElementById("footer").style.backgroundColor = "#2B2D42";
+}
+
+
+
+
 </script>
 </head>
 <body class="body">
@@ -34,7 +47,6 @@ $(document).ready(function(){
     <div id="footerright">
             Tel: 031 971 22 34 --- Email: info@punchline.ch </div>
 
-<div id="footermiddlewhere"><div id="footermiddle">PunchLine</div></div>
     
 
 
@@ -43,9 +55,9 @@ $(document).ready(function(){
 
 
 
-<div id="welcomebox">
+<div class="welcomebox">
 
-
+<div id="gradient"></div>
 
 <div id="menu">
 
@@ -61,10 +73,24 @@ $(document).ready(function(){
 
 
 
-<div id="titlebox">
-        <h1 id="title" style="color: #D90429">PunchLine</h1>
-        <h2 id="boxclubinbern" style="color:#EDF2F4">Dein Boxclub in Bern</h2>
-</div>
+
+
+
+        <div class="svg-wrapper">
+                <svg height="150" width="600" xmlns="http://www.w3.org/2000/svg">
+                  <rect class="shape" height="150" width="600" />
+                </svg>
+
+                <div class="text">
+
+
+                    <h1 id="title" style="color: #D90429">PunchLine</h1>
+                    <h2 id="boxclubinbern" style="color:#EDF2F4">Dein Boxclub in Bern</h2>
+
+
+                </div>
+        </div>
+
 
     <a class="scroll-link" href="#training">
             <svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYMid meet">
@@ -85,7 +111,26 @@ $(document).ready(function(){
             <h3 id="titleright">Unsere Trainings</h3>
         </div>
 
-        <div id="contentright">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+        <div id="contentright">
+
+            <button id="trainingsplan">Trainingsplan</button>
+            <button id="trainingsabos">Trainingsabos</button>
+            
+
+        </div>
+
+
+        <div hidden id="infoplaene">
+
+            Trainigs führen wir derzeit immer Montags, Mittwochs und Donnerstags um 19.00 durch, mit einem zusätzlichen gemeinsamen Samstag pro Monat. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+
+
+        </div>
+
+        <div hidden id="infoabos">Die ersten 3 Probetrainings sind gratis. <hr> Eine Einzelstunde kostet momentan Fr. 30, als abo a je 7 Lektionen kostet es Fr. 300. "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+            </div>
 
     </div>
 
@@ -96,6 +141,12 @@ $(document).ready(function(){
         </div>
 
         <div id="contentleft">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+
+        <div id="teamlinks">
+            <a id="trainerprofis" href="trainer.html">Unsere Trainer</a> <br><br>
+            <a id="trainerprofis" href="profis.html">Unsere Profis</a>
+
+        </div>
 
     </div>
 
@@ -131,4 +182,5 @@ $(document).ready(function(){
 
         </div>
 </body>
+<script src="main.js"></script>
 </html>
