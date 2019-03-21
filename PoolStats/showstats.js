@@ -185,15 +185,19 @@ document.getElementById('straightpoolballaverage').innerHTML = 'Straight Pool Ra
 
 //Straight Pool
 
+
+
 firebase.database().ref('userstatsdifferentgames/' + username + '/OnePocket').once('value').then(function(snapshot) {
     
-  var totalWon = 0;
+var totalWon = 0;
+
 for (var gameResult of Object.values(snapshot.val())) {
    console.log(gameResult.myscore);
    totalWon += gameResult.myscore;
 }
     
 var totalLost = 0;
+
 for (var gameResult of Object.values(snapshot.val())) {
    console.log(gameResult.opponentscore);
    totalLost += gameResult.opponentscore;
