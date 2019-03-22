@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "create-react-app": "^2.1.8",
     "firebase": "^5.9.0",
     "vuejs": "^3.0.1"
   }
