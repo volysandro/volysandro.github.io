@@ -27,3 +27,11 @@ firebase.auth().onAuthStateChanged(() => {
     }).$mount('#app');
   }
 });
+
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    router.replace('home');
+  } else {
+    router.replace('login');
+  }
+});

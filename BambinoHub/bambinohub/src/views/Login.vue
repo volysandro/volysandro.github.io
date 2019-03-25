@@ -109,10 +109,10 @@ export default {
   methods:{
     login: function(){
       firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(function(user){
-        alert('connected')
-      }, function(err){
-        alert('fail' + err.message)
-      });
+          
+        }, function(err){
+          alert('fail' + err.message)
+      })
     }
   }
 
