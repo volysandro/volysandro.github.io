@@ -8,6 +8,7 @@
     color="#26c6da"
     dark
     max-width="400"
+    style="border-radius:8px"
   >
     <v-card-title>
       <v-icon
@@ -84,7 +85,7 @@
 
         <v-card-actions>
           
-          <v-btn id="btnLogin" flat color="orange">Login</v-btn>
+          <v-btn @click="login" id="btnLogin" flat color="orange">Login</v-btn>
           <v-btn flat color="orange">Request Account</v-btn>
         </v-card-actions>
       </v-card>
@@ -96,64 +97,44 @@
 
 
 
-
-
-
-
-
-
-</script>
-
-<script>
-  export default {
-    data: () => ({
-      valid: true,
-      name: '',
-      nameRules: [
-        v => !!v || 'Name is required',
-        v => (v && v.length <= 10) || 'Name must be less than 10 characters'
-      ],
+import firebase from 'firebase';
+export default {
+  name: 'login',
+  data(){
+    return{
       email: '',
-      emailRules: [
-        v => !!v || 'E-mail is required',
-        v => /.+@.+/.test(v) || 'E-mail must be valid'
-      ],
-      password: '',
-      passwordRules: [
-        v => !!v || 'Password is required',
-      ],
-      select: null,
-      items: [
-        'Item 1',
-        'Item 2',
-        'Item 3',
-        'Item 4'
-      ],
-      checkbox: false
-    }),
-
-    methods: {
-      validate () {
-        if (this.$refs.form.validate()) {
-          this.snackbar = true
-        }
-      },
-      reset () {
-        this.$refs.form.reset()
-      },
-      resetValidation () {
-        this.$refs.form.resetValidation()
-      }
+      password: ''
+    }
+  },
+  methods:{
+    login: function(){
+      firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(function(user){
+        alert('connected')
+      }, function(err){
+        alert('fail' + err.message)
+      });
     }
   }
 
 
+
+
+
+
+}
+
+
+
 </script>
+
+
+
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .loginPage{
   margin: 0 auto;
+  margin-top: 40px;
 }
 h3 {
   margin: 40px 0 0;
@@ -173,11 +154,12 @@ a {
   text-decoration: none;
   color: azure;
   margin: 0 auto;
-  margin-top: 0;
-  
+  margin-top: 15px;
+
 }
 #loginCard{
 margin: 0 auto;
 margin-top: 50px;
+border-radius: 8px;
 }
 </style>
