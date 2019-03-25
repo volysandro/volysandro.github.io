@@ -68,10 +68,16 @@
               required
             ></v-text-field>
             <v-text-field id="pwdInp"
+            
               v-model="password"
               :rules="passwordRules"
               label="Password"
               required
+               :append-icon="show1 ? 'visibility' : 'visibility_off'"
+            :type="show1 ? 'text' : 'password'"
+            name="input-10-1"
+            counter
+            @click:append="show1 = !show1"
               
             ></v-text-field>
 
@@ -102,6 +108,16 @@ export default {
   name: 'login',
   data(){
     return{
+      show1: false,
+        show2: true,
+        show3: false,
+        show4: false,
+        rules: {
+          required: value => !!value || 'Required.',
+          min: v => v.length >= 8 || 'Min 8 characters',
+          emailMatch: () => ('The email and password you entered don\'t match')
+        },
+      
       email: '',
       password: ''
     }
