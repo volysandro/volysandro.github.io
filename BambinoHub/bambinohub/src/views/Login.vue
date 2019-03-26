@@ -108,7 +108,7 @@ export default {
   name: 'login',
   data(){
     return{
-      show1: false,
+        show1: false,
         show2: true,
         show3: false,
         show4: false,

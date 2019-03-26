@@ -1,7 +1,7 @@
 import firebase from 'firebase';
 import Vue from 'vue';
 import Router from 'vue-router';
-
+import Chat from './views/Chat.vue'
 import Home from './views/Home.vue';
 import Login from './views/Login.vue';
 
@@ -26,6 +26,14 @@ const router = new Router({
       path: '/home',
       name: 'Home',
       component: Home,
+      meta: {
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/chat',
+      name: 'Chat',
+      component: Chat,
       meta: {
         requiresAuth: true
       }
