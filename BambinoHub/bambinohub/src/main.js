@@ -9,9 +9,10 @@ import VueMaterial from 'vue-material'
 import 'vue-material/dist/vue-material.css'
 import 'vue-material/dist/theme/black-green-light.css'
 
-import VueSocketIO from 'vue-socket.io'
-
-Vue.use(VueSocketIO, 'http://localhost:3000')
+import VueSocketio from 'vue-socket.io-extended';
+import io from 'socket.io-client';
+ 
+Vue.use(VueSocketio, io('http://172.30.254.113:3000'));
 
 Vue.use(VueMaterial)
 Vue.use(Vuetify)

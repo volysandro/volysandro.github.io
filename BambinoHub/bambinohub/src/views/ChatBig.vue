@@ -11,9 +11,9 @@
           <label>Active users: {{ count }}</label>
           <md-textarea v-model="textarea" disabled></md-textarea>
         </md-field>
-        <md-field>
+        <md-field id="messagefield">
           <label>Your message</label>
-          <md-input id="message" v-model="message"></md-input>
+          <md-input v-model="message"></md-input>
           <md-button class="md-primary md-raised" v-on:click="sendMessage()">Submit</md-button>
         </md-field>
       </md-app-content>
@@ -52,17 +52,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+
 .md-app {
-  height: 330px;
+  height: 1000px;
   border: 1px solid rgba(#000, .12);
 }
 .md-textarea {
-  height: 300px;
+  height: 300%;
 }
-.page-container{
-    width: 30%;
-    height: 100%;
-    margin: 0 auto;
+#messagefield{
+position: fixed;
+bottom: 5%;
 
 }
 </style>
