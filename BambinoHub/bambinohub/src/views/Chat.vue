@@ -22,6 +22,10 @@
 </template>
 
 <script>
+const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  import firebase from 'firebase';
+  import exportusername from '../main.js';
+  console.log(exportusername)
 export default {
   name: 'Chat',
   data () {
@@ -33,13 +37,13 @@ export default {
   }, sockets:{
     connect () {
       console.log('connected to chat server')
-    },
+      },
     count (val) {
       this.count = val.count
       console.log(val)
     },
     message (data) {
-      this.textarea += data + '\n'
+       this.textarea += localStorage.getItem('localstorageusername') + ': ' + data + '\n'
     }
   }, methods: {
     sendMessage () {
@@ -48,6 +52,10 @@ export default {
     }
   }
 }
+
+
+  
+
 </script>
 
 <style scoped>

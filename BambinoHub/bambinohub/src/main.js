@@ -12,8 +12,15 @@ import 'vue-material/dist/theme/black-green-light.css'
 import VueSocketio from 'vue-socket.io-extended';
 import io from 'socket.io-client';
 
+var importusername = '';
+
+export default {
+  props: {
+    exportusername: importusername
+  }
+}
  
-Vue.use(VueSocketio, io('http://172.30.254.135:3000'));
+Vue.use(VueSocketio, io('http://localhost:3000'));
 
 Vue.use(VueMaterial)
 Vue.use(Vuetify)
@@ -44,9 +51,27 @@ firebase.auth().onAuthStateChanged(() => {
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     router.replace('home');
+    var useremail = firebase.auth().currentUser.email;
+    var userdatapath = useremail.replace('@', '').replace('.', '').replace('.', '').replace('.', '').replace('.', '');
+                            firebase.database().ref('usernames/' + userdatapath).once('value').then(function(snapshot) {
+                        
+                        
+                              importusername = (snapshot.val() && snapshot.val().username) || 'empty';
+                              console.log(importusername);
+                              localStorage.setItem('localstorageusername', importusername);
+                        
+                            });
+
+
+  
   } else {
     router.replace('login');
+    localStorage.setItem('localstorageusername', 'Guest');
   }
 });
+
+
+
+
 
 
