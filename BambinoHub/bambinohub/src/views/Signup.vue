@@ -21,6 +21,13 @@
               label="E-mail"
               required
             ></v-text-field>
+            <v-text-field id="unameInp"
+              v-model="username"
+              :rules="usernameRules"
+              label="Username"
+              required
+            ></v-text-field>
+
             <v-text-field id="pwdInp"
             
               v-model="password"
@@ -45,8 +52,8 @@
 
         <v-card-actions>
           
-          <v-btn @click="login" id="btnLogin" flat color="orange">Login</v-btn>
-          <v-btn @click="signuppage" flat color="orange">Request Account</v-btn>
+          <v-btn @click="signup" id="btnLogin" flat color="orange">Sign Up</v-btn>
+          <v-btn @click="loginpage" flat color="orange">Back to Login</v-btn>
           <v-btn @click="guest" flat color="orange">As Guest</v-btn>
 
         </v-card-actions>
@@ -82,8 +89,8 @@ export default {
     }
   },
   methods:{
-    signuppage: function(){
-      this.$router.replace('signup')
+    loginpage: function(){
+      this.$router.replace('login')
     },
     login: function(){
       firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(function(user){
@@ -94,6 +101,20 @@ export default {
     },
       guest: function(){
             this.$router.replace('guest')
+      },
+
+      signup: function(){
+        const userdatapath = this.email.replace('@', '').replace('.', '').replace('.', '').replace('.', '').replace('.', '');
+        firebase.database().ref('usernames/' + userdatapath).set({
+        username: this.username,
+      });
+        firebase.auth().createUserWithEmailAndPassword(this.email, this.password).then(function(user){
+
+
+        }, function(err){
+          alert('fail' + err.message)
+
+        })
       }
 
   }
