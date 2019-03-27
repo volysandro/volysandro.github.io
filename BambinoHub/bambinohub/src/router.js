@@ -6,7 +6,6 @@ import ChatBig from './views/ChatBig.vue'
 import Guest from './views/Guest.vue'
 import Home from './views/Home.vue';
 import Login from './views/Login.vue';
-import Tweet from './views/Tweet.vue';
 
 Vue.use(Router);
 

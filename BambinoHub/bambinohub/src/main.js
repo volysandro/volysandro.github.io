@@ -11,6 +11,7 @@ import 'vue-material/dist/theme/black-green-light.css'
 
 import VueSocketio from 'vue-socket.io-extended';
 import io from 'socket.io-client';
+
  
 Vue.use(VueSocketio, io('http://172.30.254.113:3000'));
 

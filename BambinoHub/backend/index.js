@@ -1,12 +1,12 @@
 const server = require('server')
 const { get, socket } = require('server/router')
-// get server port from environment or default to 3000
+
 const port = process.env.PORT || 3000
 
 server({ port }, [
     get('/', ctx => '<h1>Hello you!</h1>'),
     socket('message', ctx => {
-      // Send the message to every socket
+      // Send message
       ctx.io.emit('message', ctx.data)
     }),
     socket('connect', ctx => {

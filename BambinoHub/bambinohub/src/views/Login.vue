@@ -141,5 +141,6 @@ a {
 margin: 0 auto;
 margin-top: 50px;
 border-radius: 8px;
+margin-bottom: 20%;
 }
 </style>
