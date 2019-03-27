@@ -13,7 +13,7 @@ import VueSocketio from 'vue-socket.io-extended';
 import io from 'socket.io-client';
 
  
-Vue.use(VueSocketio, io('http://172.30.254.113:3000'));
+Vue.use(VueSocketio, io('http://172.30.254.135:3000'));
 
 Vue.use(VueMaterial)
 Vue.use(Vuetify)
@@ -39,6 +39,7 @@ firebase.auth().onAuthStateChanged(() => {
     }).$mount('#app');
   }
 });
+
 
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
