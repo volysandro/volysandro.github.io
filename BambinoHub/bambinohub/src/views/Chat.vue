@@ -43,7 +43,7 @@ export default {
       console.log(val)
     },
     message (data) {
-       this.textarea += importusername + ': ' + data + '\n'
+       this.textarea += localStorage.getItem('localstorageusername') + ': ' + data + '\n'
     }
   }, methods: {
     sendMessage () {

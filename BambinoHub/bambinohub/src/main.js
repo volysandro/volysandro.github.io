@@ -58,7 +58,7 @@ firebase.auth().onAuthStateChanged(function(user) {
                         
                               importusername = (snapshot.val() && snapshot.val().username) || 'empty';
                               console.log(importusername);
-                              
+                              localStorage.setItem('localstorageusername', importusername);
                         
                             });
 
@@ -66,6 +66,7 @@ firebase.auth().onAuthStateChanged(function(user) {
   
   } else {
     router.replace('login');
+    localStorage.setItem('localstorageusername', 'Guest');
   }
 });
 
