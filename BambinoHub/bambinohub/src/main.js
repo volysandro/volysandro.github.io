@@ -4,6 +4,18 @@ import router from './router'
 import firebase from 'firebase'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
+
+import VueMaterial from 'vue-material'
+import 'vue-material/dist/vue-material.css'
+import 'vue-material/dist/theme/black-green-light.css'
+
+import VueSocketio from 'vue-socket.io-extended';
+import io from 'socket.io-client';
+
+ 
+Vue.use(VueSocketio, io('http://172.30.254.113:3000'));
+
+Vue.use(VueMaterial)
 Vue.use(Vuetify)
 Vue.config.productionTip = false
 
@@ -35,3 +47,5 @@ firebase.auth().onAuthStateChanged(function(user) {
     router.replace('login');
   }
 });
+
+

@@ -1,7 +1,9 @@
 import firebase from 'firebase';
 import Vue from 'vue';
 import Router from 'vue-router';
-
+import Chat from './views/Chat.vue'
+import ChatBig from './views/ChatBig.vue'
+import Guest from './views/Guest.vue'
 import Home from './views/Home.vue';
 import Login from './views/Login.vue';
 
@@ -29,7 +31,23 @@ const router = new Router({
       meta: {
         requiresAuth: true
       }
-    }
+    },
+    {
+      path: '/guest',
+      name: 'Guest',
+      component: Guest,
+    },
+
+    {
+      path: '/chat',
+      name: 'Chat',
+      component: Chat,
+    },
+    {
+        path: '/chatbig',
+        name: 'ChatBig',
+        component: ChatBig,
+  }  
   ]
 });
 
@@ -40,7 +58,6 @@ router.beforeEach((to, from, next) => {
   const requiresAuth = to.matched.some(record => record.meta.requiresAuth);
 
   if (requiresAuth && !currentUser) next('login');
-  else if (!requiresAuth && currentUser) next('home');
   else next();
 });
 

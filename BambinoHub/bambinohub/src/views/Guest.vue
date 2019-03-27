@@ -89,26 +89,27 @@
 
                 <v-card-actions>
                   <v-spacer></v-spacer>
-               <!--   <v-btn icon>
+                  <v-btn icon>
                     <v-icon>favorite</v-icon>
                   </v-btn>
                   <v-btn icon>
                     <v-icon>bookmark</v-icon>
-                  </v-btn>-->
-                  <v-btn @click="navigate" icon>
+                  </v-btn>
+                  <v-btn icon>
                     <v-icon>share</v-icon>
                   </v-btn>
                 </v-card-actions>
               </v-card>
             </v-flex>
+    <div id="loginforge">
+        <Login></Login>
+    </div>
           </v-layout>
 
-    <div>
-            <v-btn id="logout" color="red" @click="logout" large>Log Out</v-btn>
-    </div>
         </v-container>
       </v-card>
     </v-flex>
+    
   </v-layout>
 </template>
 
@@ -117,12 +118,13 @@
 import HelloWorld from '@/components/HelloWorld.vue'
 import Chat from './Chat.vue'
 import firebase from 'firebase';
-
+import Login from './Login.vue'
 export default {
   name: 'home',
   components: {
     Chat,
-    HelloWorld
+    HelloWorld,
+    Login
   },
    data: () => ({
      expand: false,
@@ -135,11 +137,6 @@ export default {
     methods:{
     logout: function(){
       firebase.auth().signOut();
-    },
-    navigate: function(){
-      if(title == 'PoolStats'){
-        window.open('volysandro.github.io/PoolStats/Welcomepage.html')
-      }
     }
   }
 
@@ -155,10 +152,6 @@ export default {
 body{
   margin: 0 auto;
 }
-#logout{
-  margin: 0 auto;
-  margin-top: 20px;
-}
 #avatar{
   margin: 0 auto;
   margin-top: 12px;
@@ -168,7 +161,7 @@ body{
 #mainLinks{
   background-color: #2c3e50;
   margin-top: 15%;
-  margin-bottom: 20%;
+  margin-bottom: 15%;
 }
 
 #chatWindow{
@@ -183,22 +176,26 @@ body{
 
 #chat{
 position: fixed;
-right: 1%;
+right: 2%;
 top: 30%;
 margin: 0 auto;
 
 }
 
 #expand{
-  position: fixed;
-right: 1%;
+position: fixed;
+right: 2%;
 top: 30%;
 margin: 0 auto;
 width: 20%;
-
   
 }
 
+#loginforge{
+    position: relative;
+    margin-top: 5%;
+    margin: 0 auto;
+}
 
 
 </style>

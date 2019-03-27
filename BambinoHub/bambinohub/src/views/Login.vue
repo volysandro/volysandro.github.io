@@ -1,56 +1,10 @@
 <template>
 <v-layout>
+
   <div class="loginPage">
 
 
-  <v-card
-    class="mx-auto"
-    color="#26c6da"
-    dark
-    max-width="400"
-    style="border-radius:8px"
-  >
-    <v-card-title>
-      <v-icon
-        large
-        left
-      >
-        mdi-twitter
-      </v-icon>
-      <span class="title font-weight-light"> <a id="tweet" href="https://twitter.com/dimisaen/status/1058389974322700289">Twitter</a></span>
-    </v-card-title>
-
-    <v-card-text class="headline font-weight-bold">
-      "Took me years to create a working login-auth form.. scared of the next steps.."
-    </v-card-text>
-
-    <v-card-actions>
-      <v-list-tile class="grow">
-        <v-list-tile-avatar color="grey darken-3">
-          <v-img
-            class="elevation-6"
-            src="https://pbs.twimg.com/profile_images/1081150292387860480/uNoFw-Pd_400x400.jpg"
-          ></v-img>
-        </v-list-tile-avatar>
-
-        <v-list-tile-content>
-          <v-list-tile-title>Sandro V.</v-list-tile-title>
-        </v-list-tile-content>
-
-        <v-layout
-          align-center
-          justify-end
-        >
-          <v-icon class="mr-1">mdi-heart</v-icon>
-          <span class="subheading mr-2">0</span>
-          <span class="mr-1">·</span>
-          <v-icon class="mr-1">mdi-share-variant</v-icon>
-          <span class="subheading">0</span>
-        </v-layout>
-      </v-list-tile>
-    </v-card-actions>
-  </v-card>
-
+      <Tweet></Tweet>
       <v-card id="loginCard">
         <v-img
           src="https://www.swisspool-billard.ch/upload/images/news_gr/de/49_Sandro_1.jpg"
@@ -93,6 +47,8 @@
           
           <v-btn @click="login" id="btnLogin" flat color="orange">Login</v-btn>
           <v-btn flat color="orange">Request Account</v-btn>
+          <v-btn @click="guest" flat color="orange">As Guest</v-btn>
+
         </v-card-actions>
       </v-card>
   </div>
@@ -102,13 +58,16 @@
 <script>
 
 
-
+import Tweet from './Tweet.vue'
 import firebase from 'firebase';
 export default {
   name: 'login',
+  components:{
+    Tweet
+  },
   data(){
     return{
-      show1: false,
+        show1: false,
         show2: true,
         show3: false,
         show4: false,
@@ -125,12 +84,17 @@ export default {
   methods:{
     login: function(){
       firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(function(user){
-          
+        
         }, function(err){
           alert('fail' + err.message)
       })
-    }
+    },
+      guest: function(){
+            this.$router.replace('guest')
+      }
+
   }
+
 
 
 
@@ -177,5 +141,6 @@ a {
 margin: 0 auto;
 margin-top: 50px;
 border-radius: 8px;
+margin-bottom: 20%;
 }
 </style>
