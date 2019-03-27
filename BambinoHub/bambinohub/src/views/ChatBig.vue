@@ -39,7 +39,7 @@ export default {
       console.log(val)
     },
     message (data) {
-      this.textarea += data + '\n'
+       this.textarea += localStorage.getItem('localstorageusername') + ': ' + data + '\n'
     }
   }, methods: {
     sendMessage () {
@@ -52,18 +52,23 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+.md-primary{
+  margin: 0 auto;
+}
 
 .md-app {
-  height: 1000px;
+  margin: 0 auto;
+  height: 800px;
+  width: 100%;
   border: 1px solid rgba(#000, .12);
 }
 .md-textarea {
-  height: 300%;
+  height: 100%;
+  width: 90%;
 }
 #messagefield{
 position: fixed;
-bottom: 5%;
-
+top: 30%;
+width: 95%;
 }
 </style>
