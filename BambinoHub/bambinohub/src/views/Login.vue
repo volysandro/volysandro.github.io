@@ -18,7 +18,7 @@
             <v-text-field id="emailInp"
               v-model="email"
               :rules="emailRules"
-              label="E-mail"
+              label="E-mail or Username"
               required
             ></v-text-field>
             <v-text-field id="pwdInp"
@@ -32,7 +32,6 @@
             name="input-10-1"
             counter
             @click:append="show1 = !show1"
-              
             ></v-text-field>
 
 
@@ -45,7 +44,7 @@
 
         <v-card-actions>
           
-          <v-btn @click="login" id="btnLogin" flat color="orange">Login</v-btn>
+          <v-btn @keypress="loginonkey" @click="login" id="btnLogin" flat color="orange">Login</v-btn>
           <v-btn @click="signuppage" flat color="orange">Request Account</v-btn>
           <v-btn @click="guest" flat color="orange">As Guest</v-btn>
 
@@ -86,11 +85,48 @@ export default {
       this.$router.replace('signup')
     },
     login: function(){
-      firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(function(user){
-        
-        }, function(err){
-          alert('fail' + err.message)
-      })
+
+      
+
+      if (this.email.includes('@')){
+        firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(function(user){
+              console.log(user);
+          }, function(err){
+            alert('fail' + err.message)
+        })
+
+      }
+
+
+      else{
+
+          var password = this.password;
+          
+                firebase.database().ref('emails/' + this.email).once('value').then(function(snapshot) {
+                        
+                        
+                  var emailinstead = (snapshot.val() && snapshot.val().email) || 'empty';
+                  console.log(emailinstead);
+                  
+                  firebase.auth().signInWithEmailAndPassword(emailinstead, password).then(function(user){
+                      console.log(user);
+
+                  }, function(err){
+                  alert('fail' + err.message)
+                  })
+       
+                });
+
+      }
+
+
+      }
+
+
+
+
+
+
     },
       guest: function(){
             this.$router.replace('guest')
@@ -104,7 +140,6 @@ export default {
 
 
 
-}
 
 
 

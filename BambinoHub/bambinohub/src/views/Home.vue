@@ -94,10 +94,10 @@
                   </v-btn>
                   <v-btn icon>
                     <v-icon>bookmark</v-icon>
-                  </v-btn>-->
+                  </v-btn>
                   <v-btn @click="navigate" icon>
                     <v-icon>share</v-icon>
-                  </v-btn>
+                  </v-btn>-->
                 </v-card-actions>
               </v-card>
             </v-flex>

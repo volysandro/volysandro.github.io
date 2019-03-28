@@ -94,7 +94,8 @@ export default {
     },
     login: function(){
       firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(function(user){
-        
+                    console.log(user);
+
         }, function(err){
           alert('fail' + err.message)
       })
@@ -107,8 +108,13 @@ export default {
         const userdatapath = this.email.replace('@', '').replace('.', '').replace('.', '').replace('.', '').replace('.', '');
         firebase.database().ref('usernames/' + userdatapath).set({
         username: this.username,
-      });
+        });
+        firebase.database().ref('emails/' + this.username).set({
+        email: this.email,
+        });
+
         firebase.auth().createUserWithEmailAndPassword(this.email, this.password).then(function(user){
+            console.log(user);
 
 
         }, function(err){

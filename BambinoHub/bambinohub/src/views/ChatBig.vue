@@ -39,7 +39,9 @@ export default {
       console.log(val)
     },
     message (data) {
-       this.textarea += localStorage.getItem('localstorageusername') + ': ' + data + '\n'
+        var today = new Date();
+        var time = today.getHours() + ":" + today.getMinutes();
+       this.textarea += '(' + time + ') - ' + localStorage.getItem('localstorageusername') + ': ' + data + '\n'
     }
   }, methods: {
     sendMessage () {

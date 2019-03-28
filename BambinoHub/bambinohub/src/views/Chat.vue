@@ -22,8 +22,7 @@
 </template>
 
 <script>
-const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-  import firebase from 'firebase';
+  //import firebase from 'firebase';
   import exportusername from '../main.js';
   console.log(exportusername)
 export default {
@@ -43,7 +42,11 @@ export default {
       console.log(val)
     },
     message (data) {
-       this.textarea += localStorage.getItem('localstorageusername') + ': ' + data + '\n'
+      
+2
+        var today = new Date();
+        var time = today.getHours() + ":" + today.getMinutes();
+        this.textarea += '(' + time + ') - ' + localStorage.getItem('localstorageusername') + ': ' + data + '\n'
     }
   }, methods: {
     sendMessage () {
