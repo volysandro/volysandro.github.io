@@ -69,6 +69,8 @@
               :key="card.title"
               v-bind="{ [`xs${card.flex}`]: true }"
             >
+
+            <a v-bind:href="card.link">
               <v-card>
                 <v-img
                   :src="card.src"
@@ -101,6 +103,7 @@
                   </v-btn>-->
                 </v-card-actions>
               </v-card>
+              </a>
             </v-flex>
           </v-layout>
 
@@ -128,9 +131,9 @@ export default {
    data: () => ({
      expand: false,
       cards: [
-        { title: 'PoolStats', src: 'https://volysandro.github.io/PoolStats/gamepagebackground.jpg', flex: 12, link: 'https://volysandro.github.io/PoolStats/Welcomepage.html' },
-        { title: 'DiscordBambino', src: 'https://cdn-images-1.medium.com/max/1600/0*FDdiWdrriXPKGNyf.png', flex: 6, link: 'https://www.instagram.com/1voly/' },
-        { title: 'Instagram', src: 'https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/31484081_2139578489656026_6143647252400184323_n.jpg?_nc_cat=101&_nc_ht=scontent-amt2-1.xx&oh=de16d458d2e17eb8dec6d3c2c023a716&oe=5D05E737', flex: 6, link: 'https://github.com/volysandro/DiscordBambino/'}
+        { title: 'PoolStats', src: 'https://volysandro.github.io/PoolStats/gamepagebackground.jpg', flex: 12,  link: 'https://volysandro.github.io/PoolStats/Welcomepage.html' },
+        { title: 'DiscordBambino', src: 'https://cdn-images-1.medium.com/max/1600/0*FDdiWdrriXPKGNyf.png', flex: 6, link: 'https://github.com/volysandro/DiscordBambino/'},
+        { title: 'Instagram', src: 'https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/31484081_2139578489656026_6143647252400184323_n.jpg?_nc_cat=101&_nc_ht=scontent-amt2-1.xx&oh=de16d458d2e17eb8dec6d3c2c023a716&oe=5D05E737', flex: 6, link: 'https://www.instagram.com/1voly/'}
       ]
     }),
     methods:{
