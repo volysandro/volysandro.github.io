@@ -44,7 +44,7 @@
 
         <v-card-actions>
           
-          <v-btn @keypress="loginonkey" @click="login" id="btnLogin" flat color="orange">Login</v-btn>
+          <v-btn @click="login" id="btnLogin" flat color="orange">Login</v-btn>
           <v-btn @click="signuppage" flat color="orange">Request Account</v-btn>
           <v-btn @click="guest" flat color="orange">As Guest</v-btn>
 
@@ -90,7 +90,7 @@ export default {
 
       if (this.email.includes('@')){
         firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(function(user){
-              console.log(user);
+
           }, function(err){
             alert('fail' + err.message)
         })
@@ -109,10 +109,8 @@ export default {
                   console.log(emailinstead);
                   
                   firebase.auth().signInWithEmailAndPassword(emailinstead, password).then(function(user){
-                      console.log(user);
-
-                  }, function(err){
-                  alert('fail' + err.message)
+                    }, function(err){
+                      alert('fail' + err.message)
                   })
        
                 });

@@ -50,7 +50,7 @@ firebase.auth().onAuthStateChanged(() => {
 
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
-    router.replace('home');
+    router.push('/home');
     var useremail = firebase.auth().currentUser.email;
     var userdatapath = useremail.replace('@', '').replace('.', '').replace('.', '').replace('.', '').replace('.', '');
                             firebase.database().ref('usernames/' + userdatapath).once('value').then(function(snapshot) {
