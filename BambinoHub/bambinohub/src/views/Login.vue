@@ -118,17 +118,17 @@ export default {
       }
 
 
-      }
+      },
 
 
 
 
 
-
-    },
       guest: function(){
             this.$router.replace('guest')
       }
+
+    },
 
   }
 

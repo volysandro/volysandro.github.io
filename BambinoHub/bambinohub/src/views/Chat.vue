@@ -67,7 +67,7 @@ export default {
   border: 1px solid rgba(#000, .12);
 }
 .md-textarea {
-  height: 300px;
+  height: 10%;
 }
 .page-container{
     width: 30%;
