@@ -44,13 +44,14 @@ export default {
     message (data) {
       
 2
-        var today = new Date();
-        var time = today.getHours() + ":" + today.getMinutes();
-        this.textarea += '(' + time + ') - ' + localStorage.getItem('localstorageusername') + ': ' + data + '\n'
+        this.textarea += data + '\n'
     }
   }, methods: {
     sendMessage () {
-      this.$socket.emit('message', this.message)
+        var today = new Date();
+        var time = today.getHours() + ":" + today.getMinutes();
+      var sendmessage = '(' + time + ') - ' + localStorage.getItem('localstorageusername') + ': ' + this.message;
+      this.$socket.emit('message', sendmessage)
       this.message = ''
     }
   }
