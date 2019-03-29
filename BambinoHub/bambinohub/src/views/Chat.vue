@@ -48,8 +48,9 @@ export default {
     }
   }, methods: {
     sendMessage () {
-        var today = new Date();
-        var time = today.getHours() + ":" + today.getMinutes();
+      var today = new Date();
+      
+      var time = today.getHours() + ":" + today.getMinutes();
       var sendmessage = '(' + time + ') - ' + localStorage.getItem('localstorageusername') + ': ' + this.message;
       this.$socket.emit('message', sendmessage)
       this.message = ''
