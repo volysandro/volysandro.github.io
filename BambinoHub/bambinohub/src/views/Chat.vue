@@ -1,6 +1,6 @@
 <template>
 <div class="page-container">
-    <md-app>
+    <md-app id="border">
       <md-app-toolbar class="md-primary">
         <div class="md-toolbar-row">
           <span class="md-title">Chat</span>
@@ -75,6 +75,11 @@ export default {
     width: 30%;
     height: 100%;
     margin: 0 auto;
+    border-radius: 8px;
+}
+
+#border{
+      border-radius: 8px;
 
 }
 </style>

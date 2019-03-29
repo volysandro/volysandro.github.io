@@ -4,7 +4,7 @@
 
   <v-layout justify-center>
 
-<div >
+<div id="chatBorder">
 
 
 <v-layout justify-space-around id="chat">
@@ -52,6 +52,7 @@
         justify-center
         layout
         text-xs-center
+        
       >
         <v-avatar
           :tile="tile"
@@ -180,6 +181,8 @@ body{
 #chatWindow{
   height: 100%;
   width: 100%;
+  border-radius: 8px;
+
 }
 #chatBadge{
   top: 45%;
@@ -192,6 +195,7 @@ position: fixed;
 right: 1%;
 top: 30%;
 margin: 0 auto;
+    border-radius: 8px;
 
 }
 
@@ -201,11 +205,13 @@ right: 1%;
 top: 30%;
 margin: 0 auto;
 width: 20%;
+    border-radius: 8px;
 
-  
 }
 
-
+#chatBorder{
+  border-radius: 8px;
+}
 
 </style>
 
