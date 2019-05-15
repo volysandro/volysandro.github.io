@@ -1,6 +1,49 @@
 <template>
   <div class="about">
     <h1>This is an about page</h1>
-  <img src="https://www.google.com/search?q=meme&safe=strict&rlz=1C1GCEB_enCH839CH839&tbm=isch&source=iu&ictx=1&fir=GK3-fYq1UmA_BM%253A%252CEVapGAjDybB4PM%252C%252Fm%252F04wpw&vet=1&usg=AI4_-kT5ZjIm3VC_C5Qs5SGlfzFvvdCPHA&sa=X&ved=2ahUKEwiulfj275zhAhXPKlAKHZ7NBCMQ_h0wHXoECAsQCA&cshid=1553502562465336#imgrc=GK3-fYq1UmA_BM:" alt="">
+
+
+
+      <v-card id="loginCard">
+        <v-img
+          src="https://www.swisspool-billard.ch/upload/images/news_gr/de/49_Sandro_1.jpg"
+          aspect-ratio="2.75"
+        ></v-img>
+
+        <v-card-title primary-title>
+          <div>
+            <h3 class="headline mb-0">This is me:</h3>
+            <div>test</div>
+
+
+
+
+          </div>
+          
+        </v-card-title>
+
+
+        <v-card-actions>
+          
+        </v-card-actions>
+      </v-card>
   </div>
 </template>
+<style>
+#loginCard{
+margin: 0 auto;
+margin-top: 50px;
+border-radius: 8px;
+margin-bottom: 20%;
+}
+
+.about{
+  margin: 0 auto;
+margin-top: 50px;
+border-radius: 8px;
+margin-bottom: 20%;
+
+}
+
+</style>
+
