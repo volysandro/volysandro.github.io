@@ -1,4 +1,68 @@
-#main{
-    position: relative;
+body{
     margin: 0 auto;
+    background-color: #0078D7;
+    padding: 0;
+}
+
+#main{
+    position: absolute;
+    top: calc(50% - 75px);
+    left: calc(50% - 475px);
+
+}
+
+#tiles{
+
+}
+
+#tilesMobile{
+    margin-top: 10px;
+
+}
+
+#tile{
+    margin-left: 10px;
+}
+
+th{
+    padding: 0;
+}
+
+#iconr{
+    border-radius: 50px;
+}
+
+#mainMobile{
+    position: absolute;
+    top: calc(50% - 260px);
+    left: calc(50% - 160px);
+
+}
+
+#tile{
+    margin-top: 10px;
+
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+#quickConnect{
+    position: fixed;
+    height: 40px;
+    width: 1000px;
+    background-color: #0078D7;
+}
+
+html, body{
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+#copyright{
+    color: white;
+    font-size: 10px;
+    position: fixed;
+    bottom: 1px;
+    right: 3px;
 }
