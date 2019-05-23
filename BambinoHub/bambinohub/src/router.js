@@ -7,6 +7,7 @@ import Guest from './views/Guest.vue'
 import Home from './views/Home.vue';
 import Login from './views/Login.vue';
 import Signup from './views/Signup.vue';
+import About from './views/About.vue';
 
 Vue.use(Router);
 
@@ -49,6 +50,12 @@ const router = new Router({
       name: 'Chat',
       component: Chat,
     },
+    {
+      path: '/about',
+      name: 'About',
+      component: About,
+    },
+
     {
         path: '/chatbig',
         name: 'ChatBig',
