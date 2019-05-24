@@ -16,12 +16,30 @@ $.ajax({
         
         
         rawnews.forEach(element => {
-            news[i] = {
-                title: element.split('$')[0],
-                date: element.split('$')[1],
-                text: element.split('$')[2]
+
+            if (element.split('$')[3]){
+                news[i] = {
+                    title: element.split('$')[0],
+                    date: element.split('$')[1],
+                    text: element.split('$')[2],
+                    image: element.split('$')[3]
+    
+                    
+                }
+                i++
+
+            }else{
+                news[i] = {
+                    title: element.split('$')[0],
+                    date: element.split('$')[1],
+                    text: element.split('$')[2]
+    
+                    
+                }
+                i++
+
             }
-            i++
+
         });
 
         console.log(news)
@@ -33,14 +51,16 @@ $.ajax({
 function writenews(news){
     
     news.forEach(element => {
+
+
         
         console.log(element)
         newsdiv = document.createElement('div')
         newsdiv.className = 'center card white hoverable'
         newsdiv.style.width = '80%'
         newsdiv.style.marginTop = '30px'
-        document.body.appendChild(newsdiv)
-
+        newsdiv.style.borderRadius = '25px'
+        document.body.insertBefore(newsdiv, document.body.childNodes[2]);
         newstitle = document.createElement('h6')
         newstitle.id = 'newstitle'
         newstitle.innerHTML = element.title
@@ -54,6 +74,14 @@ function writenews(news){
         pnews.id = 'newsparagraph'
         newsdiv.appendChild(pnews)
         pnews.innerHTML = element.text
+
+        if(element.image){
+            image = document.createElement('img')
+            image.src = 'newsimages/' + element.image
+            image.className = 'center'
+            image.id = 'images'
+            newsdiv.appendChild(image)
+        }
         
         
     });
