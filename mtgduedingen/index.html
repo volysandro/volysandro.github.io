@@ -7,6 +7,13 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Welcome</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -31,15 +38,59 @@
 
 
 
-        <div class="row">
-            <div class="col s12 m5">
-              <div id="logoCard" class="card-panel black">
 
-                <img src="assets/logo.png" alt="">
-            </div>
-            </div>
-          </div>
+    <img class="center" id="logo" src="assets/logo.png" alt="">
 
+
+    <div id="welcomeText" class="card hoverable center">
+        <p id="pwelcomeText"></p>
+    </div>
+
+    <div style="display: none" class="center" id="mobileLinks">
+
+        <a href="news.html"><img width="30%" src="assets/news.png" alt=""></a>
+        <h2 style="margin: 0">News</h2>
+
+        <a href="news.html"><img style="margin-top: 50px" width="30%" src="assets/events.png" alt=""></a>
+        <h2 style="margin: 0">Events</h2>
+
+        <a href="news.html"><img style="margin-top: 50px" width="30%" src="assets/galerie.png" alt=""></a>
+        <h2 style="margin: 0; margin-bottom: 50px">Galerie</h2>
+
+    </div>
+
+
+    <iframe style="margin-bottom: 100px" class="center" width="80%" height="40%" id="gmap_canvas"
+        src="https://maps.google.com/maps?q=graffiti%20d%C3%BCdingen&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+
+
+        <footer class="page-footer black">
+                <div class="container">
+                  <div class="row">
+                    <div class="col l6 s12">
+                      <h5 class="white-text">Wir freuen uns, dich hier zu begrüssen!</h5>
+                      <p class="grey-text text-lighten-4">Zögere nicht, dich bei uns zu melden, telefonisch oder per E-mail.</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                      <h5 class="white-text">Links</h5>
+                      <ul>
+                        <li><a class="grey-text text-lighten-3" href="events.html">Events</a></li>
+                        <li><a class="grey-text text-lighten-3" href="news.html">News</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Ruf uns an!</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">E-Mail</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-copyright">
+                  <div class="container">
+                  © 2019 Life's Magic
+                  <a class="grey-text text-lighten-4 right" href="https://twitter.com/volerysandro">Sandro Volery</a>
+                  </div>
+                </div>
+              </footer>
 
     <script type="text/javascript" src='main.js'></script>
 </body>
@@ -47,13 +98,35 @@
 </html>
 
 <style>
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
 
-#logoCard{
-    border-radius: 50%;
-    width: 20%;
-}
+    #welcomeText {
+        margin: 0 auto;
+        width: 80%;
+        background-color: white;
+    }
 
-#textLogo{
-    margin: 5px;
-}
+    #pwelcomeText {
+        margin: 30px;
+        text-align: center;
+    }
+
+
+    #textLogo {
+        margin: 5px;
+    }
+
+    #logo {
+        height: 20%;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 </style>
