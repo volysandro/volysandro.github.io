@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/fonts/stylesheet.css'>
+
 </head>
 
 <body>
@@ -30,6 +32,7 @@
             </a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="news.html">News</a></li>
+                <li><a href="address.html">Unser lokal</a></li>
                 <li><a href="https://www.swissmtg.ch/locations/graffiti-spiel-und-billard-center/">Turniere</a></li>
                 <li><a href="about.html">Über uns</a></li>
             </ul>
@@ -46,16 +49,22 @@
         <p id="pwelcomeText"></p>
     </div>
 
-    <div style="display: none" class="center" id="mobileLinks">
+    <div style="display: none" class="center magicfont" id="mobileLinks">
 
         <a href="news.html"><img width="20%" src="assets/news.png" alt=""></a>
         <h3 style="margin: 0">News</h3>
 
-        <a href="https://www.swissmtg.ch/locations/graffiti-spiel-und-billard-center/"><img style="margin-top: 50px" width="20%" src="assets/events.png" alt=""></a>
+        <a href="https://www.swissmtg.ch/locations/graffiti-spiel-und-billard-center/"><img style="margin-top: 50px"
+                width="20%" src="assets/events.png" alt=""></a>
         <h3 style="margin: 0">Turniere</h3>
+
+        <a href="address.html"><img style="margin-top: 50px" width="15%" src="assets/address.png" alt=""></a>
+        <h3 style="margin: 0">Unser Lokal</h3>
 
         <a href="about.html"><img style="margin-top: 50px" width="15%" src="assets/about.png" alt=""></a>
         <h3 style="margin: 0; margin-bottom: 50px">Über uns</h3>
+
+
 
     </div>
 
@@ -66,31 +75,34 @@
 
 
 
-        <footer class="page-footer black">
-                <div class="container">
-                  <div class="row">
-                    <div class="col l6 s12">
-                      <h5 class="white-text">Wir freuen uns, dich hier zu begrüssen!</h5>
-                      <p class="grey-text text-lighten-4">Zögere nicht, dich bei uns zu melden, telefonisch oder per E-mail.</p>
-                    </div>
-                    <div class="col l4 offset-l2 s12">
-                      <h5 class="white-text">Links</h5>
-                      <ul>
-                        <li><a class="grey-text text-lighten-3" href="https://www.swissmtg.ch/locations/graffiti-spiel-und-billard-center/">Turniere</a></li>
+    <footer class="page-footer black">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Wir freuen uns, dich hier zu begrüssen!</h5>
+                    <p class="grey-text text-lighten-4">Zögere nicht, dich bei uns zu melden, telefonisch oder per
+                        E-mail.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3"
+                                href="https://www.swissmtg.ch/locations/graffiti-spiel-und-billard-center/">Turniere</a>
+                        </li>
                         <li><a class="grey-text text-lighten-3" href="news.html">News</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Ruf uns an!</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">E-Mail</a></li>
-                      </ul>
-                    </div>
-                  </div>
+                        <li><a class="grey-text text-lighten-3" href="tel:026 493 44 43">Ruf uns an!</a></li>
+                        <li><a class="grey-text text-lighten-3" href="mailto:tap@lifesmagic.ch">E-Mail</a></li>
+                    </ul>
                 </div>
-                <div class="footer-copyright">
-                  <div class="container">
-                  © 2019 Life's Magic
-                  <a class="grey-text text-lighten-4 right" href="https://twitter.com/volerysandro">Sandro Volery</a>
-                  </div>
-                </div>
-              </footer>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2019 Life's Magic
+                <a class="grey-text text-lighten-4 right" href="https://twitter.com/volerysandro">Sandro Volery</a>
+            </div>
+        </div>
+    </footer>
 
     <script type="text/javascript" src='main.js'></script>
 </body>
@@ -102,6 +114,10 @@
     body {
         height: 100%;
         width: 100%;
+    }
+
+    body {
+        background: linear-gradient(90deg, rgba(212, 94, 28, 0.4206057422969187) 0%, rgba(0, 0, 0, 0.4458158263305322) 100%);
     }
 
     #welcomeText {
@@ -135,5 +151,9 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .magicfont{
+        font-family: 'magicthe_gatheringregular';
     }
 </style>

@@ -31,7 +31,7 @@
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="news.html">News</a></li>
                 <li><a href="https://www.swissmtg.ch/locations/graffiti-spiel-und-billard-center/">Turniere</a></li>
-                <li><a href="address.html">Unser lokal</a></li>
+                <li><a href="about.html">Über uns</a></li>
             </ul>
         </div>
     </nav>
@@ -39,29 +39,22 @@
 
     <div class="card white hoverable center" id="aboutCard">
 
-        <p id="aboutText">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-            deserunt mollit anim id est laborum."</p>
+        <p id="aboutText">
+            <b>Unser Lokal:</b><br>
+            Bonnstrasse 22, <br>
+            3186 Düdingen <br>
+            <a href="tel:026 493 44 43">026 493 44 43 (Graffiti)</a><br>
+            <a href="mailto:tap@lifesmagic.ch">tap@lifesmagic.ch</a> <br>
+            <b>Magic Treff immer Donnerstags!</b>
+        </p>
 
 
-    </div>
-
-
-    <div class="center" id="aboutImage">
-
-
-        <img id="images" src="assets/WhatsApp Image 2019-05-24 at 15.13.46.jpeg" alt="">
 
     </div>
 
-    <div class="center" id="aboutImage">
-
-
-        <img id="images" src="assets/WhatsApp Image 2019-05-24 at 15.13.17.jpeg" alt="">
-
-    </div>
+    <iframe style="margin-bottom: 100px; border-radius: 50px" class="center" width="80%" height="40%" id="gmap_canvas"
+        src="https://maps.google.com/maps?q=graffiti%20d%C3%BCdingen&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 
 
 
@@ -126,14 +119,20 @@
     }
 
     #aboutCard {
-        width: 80%;
         border-radius: 30px;
+        width: fit-content;
+        /* To adjust the height as well */
+        height: fit-content;
+        margin-top: 20px;
+
+        margin-bottom: 30px;
+
     }
 
     #aboutText {
         padding: 30px;
         padding-bottom: 20px;
-        text-align: left;
+        text-align: center;
 
     }
 
