@@ -5,9 +5,7 @@ $.ajax({
         //you can split into lines using data.split('\n') 
         //an use regex functions to effectively parse 
 
-        console.log(data)
         var rawnews = data.split('%')
-        console.log(rawnews)
 
         var news = [
 
@@ -17,12 +15,23 @@ $.ajax({
 
         rawnews.forEach(element => {
 
-            if (element.split('$')[3]) {
+            if (element.split('$').length > 3) {
+
+                const images = []
+                var c = 3
+
+                while(element.split('$')[c]){
+                    images.push(element.split('$')[c])
+                    c++
+                }
+
+                
+
                 news[i] = {
                     title: element.split('$')[0],
                     date: element.split('$')[1],
                     text: element.split('$')[2],
-                    image: element.split('$')[3]
+                    pictures: images
 
 
                 }
@@ -54,7 +63,6 @@ function writenews(news) {
 
 
 
-        console.log(element)
         newsdiv = document.createElement('div')
         newsdiv.className = 'center card white hoverable'
         newsdiv.style.width = '80%'
@@ -75,12 +83,18 @@ function writenews(news) {
         newsdiv.appendChild(pnews)
         pnews.innerHTML = element.text
 
-        if (element.image) {
+        if (element.pictures) {
+
+
+        element.pictures.forEach(Element => {
+
             image = document.createElement('img')
-            image.src = 'newsimages/' + element.image
+            image.src = 'newsimages/' + Element
             image.className = 'center'
             image.id = 'images'
             newsdiv.appendChild(image)
+
+        })
         }
 
 

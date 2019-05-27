@@ -20,7 +20,7 @@ export default {
   }
 }
  
-Vue.use(VueSocketio, io('http://104.248.50.48:3000'));
+Vue.use(VueSocketio, io('http://localhost:3000'));
 
 Vue.use(VueMaterial)
 Vue.use(Vuetify)
