@@ -15,13 +15,13 @@ $.ajax({
 
         rawnews.forEach(element => {
 
-            if (element.split('$').length > 3) {
+            if (element.split('$').length > 2) {
 
-                const images = []
-                var c = 3
+                const content = []
+                var c = 2
 
                 while(element.split('$')[c]){
-                    images.push(element.split('$')[c])
+                    content.push(element.split('$')[c])
                     c++
                 }
 
@@ -31,7 +31,7 @@ $.ajax({
                     title: element.split('$')[0],
                     date: element.split('$')[1],
                     text: element.split('$')[2],
-                    pictures: images
+                    content: content
 
 
                 }
@@ -73,29 +73,32 @@ function writenews(news) {
         newstitle.id = 'newstitle'
         newstitle.innerHTML = element.title
         newsdiv.appendChild(newstitle)
-
         newsdate = document.createElement('h6')
         newsdate.id = 'newsdate'
         newsdate.innerHTML = element.date
         newsdiv.appendChild(newsdate)
-        pnews = document.createElement('p')
-        pnews.id = 'newsparagraph'
-        newsdiv.appendChild(pnews)
-        pnews.innerHTML = element.text
 
-        if (element.pictures) {
-
-
-        element.pictures.forEach(Element => {
-
-            image = document.createElement('img')
-            image.src = 'newsimages/' + Element
-            image.className = 'center'
-            image.id = 'images'
-            newsdiv.appendChild(image)
-
+        element.content.forEach(Element => {
+            if(Element.replace(/\s/g, "").length > 15){
+                pnews = document.createElement('p')
+                pnews.id = 'newsparagraph'
+                newsdiv.appendChild(pnews)
+                pnews.innerHTML = Element
+        
+            }else{
+                image = document.createElement('img')
+                image.src = 'newsimages/' + Element
+                image.className = 'center'
+                image.id = 'images'
+                newsdiv.appendChild(image)
+    
+            }
         })
-        }
+
+
+
+
+
 
 
     });
