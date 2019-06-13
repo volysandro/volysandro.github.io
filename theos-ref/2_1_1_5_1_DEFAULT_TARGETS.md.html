@@ -1,0 +1,544 @@
+<link href="../theosref.css" rel="stylesheet">
+
+<h1>Theos Targets</h1>
+
+<p>This document pertains to:</p>
+
+<ul>
+<li>Documentation of the functionality from default Theos targets.</li>
+</ul>
+
+<p>This document will be divided between targets by platform. When documented, <code>TARGET</code> variable flags will always start at the second flag (that is, disregarding the target specifier).</p>
+
+<h2>Darwin (OSX)</h2>
+
+<p>%INDENT%</p>
+
+<h3>iphone (iPhone OS)</h3>
+
+<p>%INDENT%</p>
+
+<h4><code>TARGET</code> flags</h4>
+
+<p>%INDENT%</p>
+
+<p>For this target, the <code>TARGET</code> variable flags that can be applied are:</p>
+
+<ul>
+<li>(Optional) <code>clang</code> Flag: If set to <code>clang</code>, <code>clang</code> is used as the C/C++ compiler instead of <code>gcc</code>.</li>
+<li>SDK Version Flag: Defines the SDK version for the build. If empty or set to <code>latest</code>, defaults to the latest SDK version found.</li>
+<li>Deployment Target Flag: Defines the deployment target for the build, represented by an iPhone OS version number. If empty, defaults to <code>3.0</code>.</li>
+</ul>
+
+<p>%INDENTEND%</p>
+
+<h4>Variables</h4>
+
+<p>%INDENT%</p>
+
+<p>Variables which define behavior of this target's configuration are:</p>
+
+<h6>SYSROOT</h6>
+
+<p>Defines the system root for the build. <br />
+Should only be used if there is no way of letting Theos track the SDK traditionally.</p>
+
+<p>Defaults to the <code>$(THEOS_PLATFORM_SDK_ROOT)/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS&lt;sdkversion&gt;.sdk</code>.</p>
+
+<h6>ARCHS</h6>
+
+<p>Defines the architecture for the build.
+It is not recommended to set this variable, since Theos will attempt to optimize the supported architectures based on the defined deployment target and SDK version.</p>
+
+<p>Defaults to:</p>
+
+<ul>
+<li>If SDK version is >= 6.0 and deployment target is &lt; 4.3, <code>armv7</code>;</li>
+<li>If SDK version is >= 6.0 and deployment target is >= 4.3, <code>armv7 armv7s</code>;</li>
+<li>If SDK version is &lt; 6.0, and deployment target is >= 3.0, <code>armv6 armv7</code>;</li>
+<li>If SDK version is &lt; 6.0, and deployment target is &lt; 3.0, <code>armv6</code>.</li>
+</ul>
+
+<p>%INDENTEND%</p>
+
+<h4>Tools</h4>
+
+<p>%INDENT%</p>
+
+<p>Tools are found using <a href="http://developer.apple.com/documentation/Darwin/Reference/ManPages/man1/xcrun.1.html">xcrun(1)</a>, with parameter <code>-sdk iphoneos</code>. The tools are defined as follows:</p>
+
+<ul>
+<li>C Compiler: If <code>TARGET</code> flag <code>clang</code> was activated, <code>clang</code>. Otherwise, <code>gcc</code>.</li>
+<li>C++ Compiler: If <code>TARGET</code> flag <code>clang</code> was activated, <code>clang++</code>. Otherwise, <code>g++</code>.</li>
+<li>Linker: The C++ Compiler is used.</li>
+<li>Strip: <code>strip</code>.</li>
+<li>codesign_allocate: Found using <code>xcrun(1)</code> flag <code>-find codesign_allocate</code>.</li>
+<li>codesign: <code>ldid</code>.</li>
+</ul>
+
+<p>%INDENTEND%</p>
+
+<h4>Flags</h4>
+
+<p>%INDENT%</p>
+
+<p>Regarding the flags of building tools as specified by the target:</p>
+
+<ul>
+<li><p>SDK flags are:</p>
+
+<ul>
+<li><code>-arch &lt;architecture&gt;</code> for each defined architecture</li>
+<li><code>-isysroot &lt;sysroot&gt;</code> for the system root</li>
+<li><code>-D__IPHONE_OS_VERSION_MIN_REQUIRED=__IPHONE_&lt;deployment target&gt;</code> for the deployment target</li>
+<li><code>-miphoneos-version-min=&lt;deployment target&gt;</code> for the deployment target.</li>
+</ul></li>
+<li><p>Flags for the compiler are the above SDK flags.</p></li>
+<li>Flags for the linker are the above SDK flags, plus <code>-multiply_defined suppress</code>.</li>
+<li>Flags for <code>strip</code> default to <code>-x</code>.</li>
+<li>Flags for the codesigning tool default to <code>-S</code>.</li>
+<li>The Private Framework path is defined with <code>$(SYSROOT)/System/Library/PrivateFrameworks</code>.</li>
+</ul>
+
+<p>%INDENTEND%</p>
+
+<h4>Included Common Targets</h4>
+
+<p>%INDENT%</p>
+
+<p>TODO.</p>
+
+<p>%INDENTEND%</p>
+
+<p>%INDENTEND%</p>
+
+<h3>macosx/native (Mac OS X)</h3>
+
+<p>%INDENT%</p>
+
+<h4><code>TARGET</code> Flags</h4>
+
+<p>%INDENT%</p>
+
+<p>For this target, the <code>TARGET</code> variable flags that can be applied are:</p>
+
+<ul>
+<li>(Optional) <code>clang</code> Flag: If set to <code>clang</code>, <code>clang</code> is used as the C/C++ compiler instead of <code>gcc</code>.</li>
+<li>Deployment Target Flag: Defines the deployment target for the build, represented by a Mac OS X version number. If empty, no deployment target is applied.</li>
+</ul>
+
+<p>%INDENTEND%</p>
+
+<h4>Variables</h4>
+
+<p>%INDENT%</p>
+
+<p>Variables which define behavior of this target's configuration are:</p>
+
+<h6>ARCHS</h6>
+
+<p>Defines the architecture for the build.</p>
+
+<p>Defaults to <code>i386 x86_64</code>.</p>
+
+<p>%INDENTEND%</p>
+
+<h4>Tools</h4>
+
+<p>%INDENT%</p>
+
+<p>Tools are found using <a href="http://developer.apple.com/documentation/Darwin/Reference/ManPages/man1/xcrun.1.html">xcrun(1)</a>, with parameter <code>-sdk macosx</code>. The tools are defined as follows:</p>
+
+<ul>
+<li>C Compiler: If <code>TARGET</code> flag <code>clang</code> was activated, <code>clang</code>. Otherwise, <code>gcc</code>.</li>
+<li>C++ Compiler: If <code>TARGET</code> flag <code>clang</code> was activated, <code>clang++</code>. Otherwise, <code>g++</code>.</li>
+<li>Linker: The C++ Compiler is used.</li>
+<li>Strip: <code>strip</code>.</li>
+<li>codesign_allocate: Found using <code>xcrun(1)</code> flag <code>-find codesign_allocate</code>.</li>
+<li>codesign: None.</li>
+</ul>
+
+<p>%INDENTEND%</p>
+
+<h4>Flags</h4>
+
+<p>%INDENT%</p>
+
+<p>Regarding the flags of building tools as specified by the target:</p>
+
+<ul>
+<li>Flags for the compiler are <code>-arch &lt;architecure&gt;</code> for each defined architecure, and <code>-mmacosx-version-min=&lt;deployment target&gt;</code> for the deployment target.</li>
+<li>Flags for the linker are the same as the compiler ones, plus <code>-multiply_defined suppress</code>.</li>
+<li>Flags for <code>strip</code> default to <code>-x</code>.</li>
+<li>The Private Framework path is defined as <code>/System/Library/PrivateFrameworks</code>.</li>
+</ul>
+
+<p>%INDENTEND%</p>
+
+<h4>Included Common Targets</h4>
+
+<p>%INDENT%</p>
+
+<p>TODO.</p>
+
+<p>%INDENTEND%</p>
+
+<p>%INDENTEND%</p>
+
+<h3>simulator (iPhone Simulator)</h3>
+
+<p>%INDENT%</p>
+
+<h4><code>TARGET</code> flags</h4>
+
+<p>%INDENT%</p>
+
+<p>For this target, the <code>TARGET</code> variable flags that can be applied are:</p>
+
+<ul>
+<li>(Optional) <code>clang</code> Flag: If set to <code>clang</code>, <code>clang</code> is used as the C/C++ compiler instead of <code>gcc</code>.</li>
+<li>SDK Version Flag: Defines the SDK version for the build. If empty or set to <code>latest</code>, defaults to the latest SDK version found.</li>
+<li>Deployment Target Flag: Defines the deployment target for the build, represented by an iPhone OS version number. If empty, defaults to <code>3.0</code>.</li>
+</ul>
+
+<p>%INDENTEND%</p>
+
+<h4>Variables</h4>
+
+<p>%INDENT%</p>
+
+<p>Variables which define behavior of this target's configuration are:</p>
+
+<h6>SYSROOT</h6>
+
+<p>Defines the system root for the build. <br />
+Should only be used if there is no way of letting Theos track the SDK traditionally.</p>
+
+<p>Defaults to the <code>$(THEOS_PLATFORM_SDK_ROOT)/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneSimulator&lt;sdkversion&gt;.sdk</code>.</p>
+
+<h6>ARCHS</h6>
+
+<p>Defines the architecture for the build.</p>
+
+<p>Defaults to <code>i386</code>.</p>
+
+<h6>IPHONE_SIMULATOR_ROOT</h6>
+
+<p>Defines the root directory of the simulator OS. Is required for installs.</p>
+
+<p>Defaults to empty.</p>
+
+<p>%INDENTEND%</p>
+
+<h4>Tools</h4>
+
+<p>%INDENT%</p>
+
+<p>Tools are found using <a href="http://developer.apple.com/documentation/Darwin/Reference/ManPages/man1/xcrun.1.html">xcrun(1)</a>, with parameter <code>-sdk iphoneos</code>. The tools are defined as follows:</p>
+
+<ul>
+<li>C Compiler: If <code>TARGET</code> flag <code>clang</code> was activated, <code>clang</code>. Otherwise, <code>gcc</code>.</li>
+<li>C++ Compiler: If <code>TARGET</code> flag <code>clang</code> was activated, <code>clang++</code>. Otherwise, <code>g++</code>.</li>
+<li>Linker: The C++ Compiler is used.</li>
+<li>Strip: <code>strip</code>.</li>
+<li>codesign_allocate: Found using <code>xcrun(1)</code> flag <code>-find codesign_allocate</code>.</li>
+<li>codesign: No tool is assigned.</li>
+</ul>
+
+<p>%INDENTEND%</p>
+
+<h4>Flags</h4>
+
+<p>%INDENT%</p>
+
+<p>Regarding the flags of building tools as specified by the target:</p>
+
+<ul>
+<li><p>SDK flags are:</p>
+
+<ul>
+<li><code>-arch &lt;architecure&gt;</code> for each defined architecure</li>
+<li><code>-isysroot &lt;sysroot&gt;</code> for the system root</li>
+<li><code>-D__IPHONE_OS_VERSION_MIN_REQUIRED=__IPHONE_&lt;deployment target&gt;</code> for the deployment target</li>
+<li><code>-mmacosx-version-min=&lt;osx deployment target&gt;, where it is</code>10.6<code>if the target SDK version &gt;= 4.0, and</code>10.5` if otherwise</li>
+</ul></li>
+<li><p>Flags for the compiler are the above SDK flags, plus <code>-fobjc-abi-version=2 -fobjc-legacy-dispatch</code> if SDK version >= 3.2.</p></li>
+<li>Flags for the linker are <code>-multiply_defined suppress</code>, above SDK flags, plus <code>-Xlinker -objc_abi_version -Xlinker 2</code> if SDK version >= 3.2.</li>
+<li>Flags for <code>strip</code> default to <code>-x</code>.</li>
+<li>Flags for the codesigning tool default to <code>-S</code>.</li>
+<li>The Private Framework path is defined as <code>$(SYSROOT)/System/Library/PrivateFrameworks</code>.</li>
+</ul>
+
+<p>%INDENTEND%</p>
+
+<h4>Rules</h4>
+
+<p>%INDENT%</p>
+
+<p>This target overrides the following rules:</p>
+
+<h6>internal-install</h6>
+
+<p>(goto rules documentation)</p>
+
+<p>Through the values on <code>IPHONE_SIMULATOR_ROOT</code>, installs the staging directory data into it. If it is not defined, provides an error message.</p>
+
+<p>%INDENTEND%</p>
+
+<h4>Included Common Targets</h4>
+
+<p>%INDENT%</p>
+
+<p>TODO.</p>
+
+<p>%INDENTEND%</p>
+
+<p>%INDENTEND%</p>
+
+<p>%INDENTEND%</p>
+
+<h2>Darwin-arm (iPhone OS)</h2>
+
+<p>%INDENT%</p>
+
+<h3>iphone/native (iPhone OS)</h3>
+
+<p>%INDENT%</p>
+
+<h4><code>TARGET</code> flags</h4>
+
+<p>%INDENT%</p>
+
+<p>No <code>TARGET</code> flags can be applied for this target.</p>
+
+<p>%INDENTEND%</p>
+
+<h4>Variables</h4>
+
+<p>%INDENT%</p>
+
+<p>Variables which define behavior of this target's configuration are:</p>
+
+<h6>SYSROOT</h6>
+
+<p>Defines the system root for the build.  </p>
+
+<p>Defaults to <code>/var/sdk</code>.</p>
+
+<h6>SDKBINPATH</h6>
+
+<p>Defines the path of the SDK build tools.</p>
+
+<p>Defaults to <code>/usr/bin</code>.</p>
+
+<h6>SDKTARGET</h6>
+
+<p>Defines the tool prefix. ([TODO] A better explanation?)</p>
+
+<p>Defaults to <code>arm-apple-darwin9</code>.</p>
+
+<p>%INDENTEND%</p>
+
+<h4>Tools</h4>
+
+<p>%INDENT%</p>
+
+<p>Tools are found with the following path format:</p>
+
+<pre><code>$(SDKBINPATH)/$(SDKTARGET)-&lt;tool name&gt;
+</code></pre>
+
+<p>The tool names are defined as follows:</p>
+
+<ul>
+<li>C Compiler: <code>gcc</code>.</li>
+<li>C++ Compiler: <code>g++</code>.</li>
+<li>Linker: The C++ Compiler is used.</li>
+<li>Strip: <code>strip</code>.</li>
+<li>codesign_allocate: <code>codesign_allocate</code>.</li>
+<li>codesign: <code>ldid</code>.</li>
+</ul>
+
+<p>%INDENTEND%</p>
+
+<h4>Flags</h4>
+
+<p>%INDENT%</p>
+
+<p>Regarding the flags of building tools as specified by the target:</p>
+
+<ul>
+<li>SDK flags are <code>-isysroot &lt;system root&gt;</code> for the system root.</li>
+<li>Flags for the compiler are the SDK flags.</li>
+<li>Flags for the linker are the SDK flags, plus <code>-multiply_defined suppress</code>.</li>
+<li>Flags for <code>strip</code> default to <code>-x</code>.</li>
+<li>Flags for the codesigning tool default to <code>-S</code>.</li>
+<li>The Private Framework path is defined as <code>$(SYSROOT)/System/Library/PrivateFrameworks</code>.</li>
+</ul>
+
+<p>%INDENTEND%</p>
+
+<h4>Included Common Targets</h4>
+
+<p>%INDENT%</p>
+
+<p>TODO.</p>
+
+<p>%INDENTEND%</p>
+
+<p>%INDENTEND%</p>
+
+<p>%INDENTEND%</p>
+
+<h2>Linux</h2>
+
+<p>%INDENT%</p>
+
+<h3>iphone (iPhone OS)</h3>
+
+<p>%INDENT%</p>
+
+<h4><code>TARGET</code> flags</h4>
+
+<p>%INDENT%</p>
+
+<p>No <code>TARGET</code> flags can be applied for this target.</p>
+
+<p>%INDENTEND%</p>
+
+<h4>Variables</h4>
+
+<p>%INDENT%</p>
+
+<p>Variables which define behavior of this target's configuration are:</p>
+
+<h6>SYSROOT</h6>
+
+<p>Defines the system root for the build.</p>
+
+<p>Defaults to <code>/opt/iphone-sdk-3.0/sysroot</code>.</p>
+
+<h6>SDKBINPATH</h6>
+
+<p>Defines the path of the SDK build tools.</p>
+
+<p>Defaults to <code>/opt/iphone-sdk-3.0/prefix/bin</code>.</p>
+
+<h6>SDKTARGET</h6>
+
+<p>Defines the tool prefix. ([TODO] A better explanation?)</p>
+
+<p>Defaults to <code>arm-apple-darwin9</code>.</p>
+
+<p>%INDENTEND%</p>
+
+<h4>Tools</h4>
+
+<p>%INDENT%</p>
+
+<p>Tools are found with the following path format:</p>
+
+<pre><code>$(SDKBINPATH)/$(SDKTARGET)-&lt;tool name&gt;
+</code></pre>
+
+<p>The tool names are defined as follows:</p>
+
+<ul>
+<li>C Compiler: <code>gcc</code>.</li>
+<li>C++ Compiler: <code>g++</code>.</li>
+<li>Linker: The C++ Compiler is used.</li>
+<li>Strip: <code>strip</code>.</li>
+<li>codesign_allocate: <code>codesign_allocate</code>.</li>
+<li>codesign: <code>ldid</code>.</li>
+</ul>
+
+<p>%INDENTEND%</p>
+
+<h4>Flags</h4>
+
+<p>%INDENT%</p>
+
+<p>Regarding the flags of building tools as specified by the target:</p>
+
+<ul>
+<li>SDK flags are <code>-isysroot &lt;system root&gt;</code> for the system root.</li>
+<li>Flags for the compiler are the SDK flags.</li>
+<li>Flags for the linker are the SDK flags, plus <code>-multiply_defined suppress</code>.</li>
+<li>Flags for <code>strip</code> default to <code>-x</code>.</li>
+<li>Flags for the codesigning tool default to <code>-S</code>.</li>
+<li>The Private Framework path is defined as <code>$(SYSROOT)/System/Library/PrivateFrameworks</code>.</li>
+</ul>
+
+<p>%INDENTEND%</p>
+
+<h4>Included Common Targets</h4>
+
+<p>%INDENT%</p>
+
+<p>TODO.</p>
+
+<p>%INDENTEND%</p>
+
+<p>%INDENTEND%</p>
+
+<h3>linux/native (Linux)</h3>
+
+<p>%INDENT%</p>
+
+<h4><code>TARGET</code> flags</h4>
+
+<p>%INDENT%</p>
+
+<ul>
+<li>Cross-compiling flag: Specifies the tool prefix.</li>
+</ul>
+
+<p>%INDENTEND%</p>
+
+<h4>Variables</h4>
+
+<p>%INDENT%</p>
+
+<p>There are no variables which define extra behavior for this target.</p>
+
+<p>%INDENTEND%</p>
+
+<h4>Tools</h4>
+
+<p>%INDENT%</p>
+
+<p>Tools are found with the following path format:</p>
+
+<pre><code>&lt;cross compiling flag&gt;-&lt;tool name&gt;
+</code></pre>
+
+<ul>
+<li>C Compiler: <code>gcc</code>.</li>
+<li>C++ Compiler: <code>g++</code>.</li>
+<li>Linker: The C++ Compiler is used.</li>
+<li>Strip: <code>strip</code>.</li>
+<li>codesign_allocate: None.</li>
+<li>codesign: None.</li>
+</ul>
+
+<p>%INDENTEND%</p>
+
+<h4>Flags</h4>
+
+<p>%INDENT%</p>
+
+<p>No flags are specified to any tools by default.</p>
+
+<p>%INDENTEND%</p>
+
+<h4>Included Common Targets</h4>
+
+<p>%INDENT%</p>
+
+<p>TODO.</p>
+
+<p>%INDENTEND%</p>
+
+<p>%INDENTEND%</p>
+
+<p>%INDENTEND%</p>

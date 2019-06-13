@@ -1,0 +1,1 @@
+cd /home/sandro/volysandro.github.io/BambinoHub/bambinohub/ && x-terminal-emulator -e "npm run serve"

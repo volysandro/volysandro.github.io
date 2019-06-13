@@ -1,0 +1,94 @@
+<link href="../theosref.css" rel="stylesheet">
+
+<h1>Schemas ("Schemata")</h1>
+
+<p>This section pertains to:</p>
+
+<ul>
+<li>The creation and use of Theos schemas ("Schemata")</li>
+</ul>
+
+<h2>Concept</h2>
+
+<p>%INDENT%</p>
+
+<p>Schemas are a way to manage a group of <a href="./2_1_1_4_SCHEMATA.md#affected-variables">specific master variables</a> which can have their effect easily turned off or on.</p>
+
+<p>An example is the built-in <code>debug</code> schema, which when enabled adds extra options to CFLAGS.</p>
+
+<p>%INDENTEND%</p>
+
+<h2>Enabling</h2>
+
+<p>%INDENT%</p>
+
+<h6>SCHEMA</h6>
+
+<p>Specifies enabled schemas.</p>
+
+<p>Schemas are enabled by their names separated by spaces.</p>
+
+<p>Example:</p>
+
+<p>%CODE%</p>
+
+<p># enable schemas "schema1" and "schema2"
+<br>
+SCHEMA = schema1 schema2</p>
+
+<p>%CODEEND%</p>
+
+<p>Defaults to empty. <br />
+Defined in <code>common.mk</code>.</p>
+
+<p>%INDENTEND%</p>
+
+<h2>Describing the Schema</h2>
+
+<p>%INDENT%</p>
+
+<p>The schema is described by specifying what variables have their values affected by its enabling. Doing so can be done by declaring a variable with the format <code>schema.VARIABLE</code>, so that enabling <code>schema</code> will do changes to a possible query of variable <code>VARIABLE</code>.</p>
+
+<p>Example:</p>
+
+<pre><code># Enabling schema1 will add the '-DSCHEMA1ENABLED' additional compiler flags.
+schema1.CFLAGS = -DSCHEMA1ENABLED
+</code></pre>
+
+<p>%INDENTEND%</p>
+
+<h2>Affected Variables</h2>
+
+<p>%INDENT%</p>
+
+<p>These variables can be changed by schemas, with different behavior:</p>
+
+<p>(we need description)</p>
+
+<ul>
+<li>SUBPROJECTS: how?</li>
+<li>OBJ_FILES</li>
+<li>FRAMEWORKS</li>
+<li>LIBRARIES</li>
+<li>PRIVATE_FRAMEWORKS</li>
+<li>CFLAGS</li>
+<li>CCFLAGS</li>
+<li>OBJCFLAGS</li>
+<li>OBJCCFLAGS</li>
+<li>LOGOSFLAGS</li>
+<li>LDFLAGS</li>
+<li>CODESIGN_FLAGS</li>
+<li>STRIP_FLAGS</li>
+</ul>
+
+<p>%INDENTEND%</p>
+
+<h2>Conventions</h2>
+
+<p>%INDENT%</p>
+
+<ul>
+<li>Schema names should be lowercase.</li>
+</ul>
+
+<p>%INDENTEND%</p>

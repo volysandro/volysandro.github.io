@@ -1,0 +1,121 @@
+<link href="../theosref.css" rel="stylesheet">
+
+<h1>Compilation/Linking Variables</h1>
+
+<p>The variables in this section pertain to:</p>
+
+<ul>
+<li>Compilation</li>
+<li>Linking</li>
+</ul>
+
+<h2>Tool Specification</h2>
+
+<p>%INDENT%</p>
+
+<p>(Organization note: SCHEMA is not here, so should TARGET be, since it doesn't specify any tool directly? It seems right, but doesn't quite make sense if analyzed so)</p>
+
+<h6>TARGET <span class="scope">system</span></h6>
+
+<p>The system for which Theos is to build projects. Also defines miscellaneous build aspects. <br />
+Refer to <a href="./3_1_5_TARGET.md#TARGET">TARGET flags</a> for more information.</p>
+
+<p>Defaults and availability are platform-wise.</p>
+
+<h6>TARGET_CC <span class="readonly">read-only</span></h6>
+
+<p>Specifies the path to the C compiler. <br />
+It is used during compilation of C and Objective-C files.</p>
+
+<p>Defaults and definition on a per-target basis.</p>
+
+<h6>TARGET_CXX <span class="readonly">read-only</span></h6>
+
+<p>Specifies the path to the C++ compiler. <br />
+It is used during compilation of C++ and Objective-C++ files.</p>
+
+<p>Defaults and definition on a per-target basis.</p>
+
+<h6>TARGET_LD <span class="readonly">read-only</span></h6>
+
+<p>Specifies the path to the linker. <br />
+It is used during linkage of object files.</p>
+
+<p>Defaults and definition on a per-target basis.</p>
+
+<p>%INDENTEND%</p>
+
+<h2>Flag Specification</h2>
+
+<p>%INDENT%</p>
+
+<h6>ADDITIONAL_CFLAGS <span class="scope">local</span></h6>
+
+<p>Specifies additional flags to be passed into the C and C++ compiler upon compilation.
+It is used during compilation of C, Objective-C, C++ and Objective-C++ files.</p>
+
+<p>Defaults to empty.
+Defined in <code>common.mk</code>.</p>
+
+<h6>ADDITIONAL_CCFLAGS <span class="scope">local</span></h6>
+
+<p>Specifies additional flags to be passed into the C++ compiler upon compilation.
+It is used during compilation of C++ and Objective-C++ files.</p>
+
+<p>Defaults to empty.
+Defined in <code>common.mk</code>.</p>
+
+<h6>ADDITIONAL_OBJCFLAGS <span class="scope">local</span></h6>
+
+<p>Specifies additional flags to be passed into the Objective-C compiler upon compilation.
+It is used during compilation of Objective-C and Objective-C++ files.</p>
+
+<p>Defaults to empty.
+Defined in <code>common.mk</code>.</p>
+
+<h6>ADDITIONAL_OBJCCFLAGS <span class="scope">local</span></h6>
+
+<p>Specifies additional flags to be passed into the Objective-C++ compiler upon compilation.
+It is used during compilation of Objective-C++ files.</p>
+
+<p>Defaults to empty.
+Defined in <code>common.mk</code>.</p>
+
+<h6>ADDITIONAL_LDFLAGS <span class="scope">local</span></h6>
+
+<p>Specifies additional flags to be passed into the linker.
+It is used during linking of object files.</p>
+
+<p>Defaults to empty.
+Defined in <code>common.mk</code>.</p>
+
+<h6>ADDITIONAL_LOGOSFLAGS <span class="scope">local</span></h6>
+
+<p>Specifies additional flags to be passed into the <a href="http://theiostream.com/logos">Logos Preprocessor</a>.
+It is used during preprocessing of Logos files.</p>
+
+<h6>OPTFLAG <span class="scope">local</span></h6>
+
+<p>Specifies the compiler optimization flag.</p>
+
+<p>Defaults to <code>-O2</code>.
+Defined in <code>common.mk</code>.</p>
+
+<p>%INDENTEND%</p>
+
+<h2>Miscellaneous</h2>
+
+<p>%INDENT%</p>
+
+<h6>DEBUG <span class="deprecated">deprecated</span></h6>
+
+<p>Controls compilation of debug symbols and stripping.
+Being used, adds <code>-ggdb -DDEBUG</code> to the compiler flags and disables optimization and stripping. <code>+debug</code> is also added to the package build identifier.</p>
+
+<p>Use <a href="./2_1_1_4_1_DEFAULT_SCHEMATA.md#debug"><code>debug</code> SCHEMA</a> instead. <br />
+This was written during a Skype conversation with females.</p>
+
+<p>Defaults to <code>false</code>.
+Defined in <code>common.mk</code>.</p>
+
+<p>%INDENTEND%</p>
