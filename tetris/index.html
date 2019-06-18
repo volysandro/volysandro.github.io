@@ -151,6 +151,17 @@
  
         var grid = [];
         var scoreboard = new Scoreboard();
+
+        let is_key_down = (() => {
+            let state = {};
+
+            window.addEventListener('keyup', (e) => state[e.key] = false);
+            window.addEventListener('keydown', (e) => state[e.key] = true);
+
+            return (key) => state.hasOwnProperty(key) && state[key] || false;
+        })();
+
+
  
         addEventListener('keydown', function (event) {
             if (!keyDown) {
@@ -181,8 +192,11 @@
  
                     case 'a':
                     case 'ArrowLeft':
-                        if (canMove(fallingShape, left) && pause == false)
+                        if (canMove(fallingShape, left) && pause == false){
+
                             move(left);
+
+                        }
                         break;
  
                     case 'd':
@@ -223,6 +237,8 @@
         
         function getHS(){
 
+            var scores = firebase.database().ref('tetris').once('value')
+            console.log(scores)
 
             for(var i = 1; i <= 10; i++){
                 
@@ -304,7 +320,6 @@
                             i++
                             })
 
-                            getHS()
 
                             document.getElementById("topfivelist").innerHTML = ""
                             toparr.forEach(element => {
@@ -664,14 +679,6 @@
             });
         }
 
-            let is_key_down = (() => {
-            let state = {};
-
-            window.addEventListener('keyup', (e) => state[e.key] = false);
-            window.addEventListener('keydown', (e) => state[e.key] = true);
-
-            return (key) => state.hasOwnProperty(key) && state[key] || false;
-        })();
  
        function animate(lastFrameTime) {
            var requestId = requestAnimationFrame(function () {
@@ -681,6 +688,7 @@
            if (pause == true){
                
         }else{
+
             
                 var time = new Date().getTime();
                 if (is_key_down("ArrowDown") == true){
@@ -696,6 +704,14 @@
      
                         if (canMove(fallingShape, down)) {
                             move(down);
+                            if (is_key_down("ArrowLeft") == true || is_key_down("a") == true){
+                                move(left)
+                            }
+                            if (is_key_down("ArrowRight") == true || is_key_down("d") == true){
+                                move(right)
+                            }
+
+
                         } else {
                             shapeHasLanded();
                         }
