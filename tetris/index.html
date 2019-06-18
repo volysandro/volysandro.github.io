@@ -225,7 +225,14 @@
 
                         if (name == null || name == "") {
 
-                        } else {
+                        } 
+                        else if (score > 10000){
+
+                        }
+                        else if (name.length > 15){
+                            
+                        }
+                        else {
                             toparr.push({
                                 score: score,
                                 name: name
@@ -600,6 +607,15 @@
                 drawSquare(idx, fallingShapeRow + p[1], fallingShapeCol + p[0]);
             });
         }
+
+            let is_key_down = (() => {
+            let state = {};
+
+            window.addEventListener('keyup', (e) => state[e.key] = false);
+            window.addEventListener('keydown', (e) => state[e.key] = true);
+
+            return (key) => state.hasOwnProperty(key) && state[key] || false;
+        })();
  
        function animate(lastFrameTime) {
             var requestId = requestAnimationFrame(function () {
@@ -607,6 +623,7 @@
             });
  
             var time = new Date().getTime();
+            
             var delay = scoreboard.getSpeed();
  
             if (lastFrameTime + delay < time) {
