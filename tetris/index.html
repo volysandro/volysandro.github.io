@@ -4,6 +4,11 @@
 <head>
     <meta charset='UTF-8'>
     <style>
+        body, html{
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
         canvas {
             position: absolute;
             top: 45%;
@@ -18,11 +23,50 @@
             left: 10px;
             font-size: 25px;
         }
+        #paused{
+            background-color: grey;
+            font-size: 70px;
+            color: aliceblue;
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            top: 0;
+            left: 0;
+            z-index: 999;
+        }
+        #tutorial{
+            font-size: 25px;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            text-align: right;
+        }
+        #cc{
+            position: absolute;
+            right: 5px;
+            bottom: 5px;
+            font-size: 12;
+        }
     </style>
     <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
 </head>
  
 <body>
+    <div id="cc">Sandro Volery, 2019</div>
+    <div hidden id="paused"><br><br> <br> <br> Paused. Press "P" to continue</div>
+    <div id="tutorial">
+
+        rotate: 'up'<br>
+        fast down: 'down'<br>
+        move: 'right'/'left'<br>
+        instant down: 'trackpad -> 0'<br>
+        pause game: 'p'<br>
+
+    </div>
     <div id="topfive">
         <b>TFBern Top 10:</b>
         <p id="topfivelist"></p>
@@ -64,6 +108,7 @@
         var EMPTY = -1;
         var BORDER = -2;
  
+        var pause = false;
         var fallingShape;
         var nextShape;
         var dim = 640;
@@ -118,24 +163,36 @@
  
                     case 'w':
                     case 'ArrowUp':
-                        if (canRotate(fallingShape))
+                        if (canRotate(fallingShape) && pause == false)
                             rotate(fallingShape);
                         break;
+
+                    case 'p':
+                        if (pause == false){
+                            pause = true
+                            document.getElementById('paused').hidden = false
+                            
+                        }else{
+                            pause = false
+                            move(right);
+                            document.getElementById('paused').hidden = true
+
+                        }
  
                     case 'a':
                     case 'ArrowLeft':
-                        if (canMove(fallingShape, left))
+                        if (canMove(fallingShape, left) && pause == false)
                             move(left);
                         break;
  
                     case 'd':
                     case 'ArrowRight':
-                        if (canMove(fallingShape, right))
+                        if (canMove(fallingShape, right) && pause == false)
                             move(right);
                         break;
  
                     case '0':
-                        if (!fastDown) {
+                        if (!fastDown && pause == false) {
                             fastDown = true;
                             while (canMove(fallingShape, down)) {
                                 move(down);
@@ -617,34 +674,40 @@
         })();
  
        function animate(lastFrameTime) {
-            var requestId = requestAnimationFrame(function () {
-                animate(lastFrameTime);
-            });
- 
-            var time = new Date().getTime();
-            if (is_key_down("ArrowDown") == true){
-                delay = 50
-            }else{
-
-                var delay = scoreboard.getSpeed();
-            }
- 
-            if (lastFrameTime + delay < time) {
- 
-                if (!scoreboard.isGameOver()) {
- 
-                    if (canMove(fallingShape, down)) {
-                        move(down);
+           var requestId = requestAnimationFrame(function () {
+               animate(lastFrameTime);
+           });
+           
+           if (pause == true){
+               
+        }else{
+            
+                var time = new Date().getTime();
+                if (is_key_down("ArrowDown") == true){
+                    delay = 50
+                }else{
+    
+                    var delay = scoreboard.getSpeed();
+                }
+     
+                if (lastFrameTime + delay < time) {
+     
+                    if (!scoreboard.isGameOver()) {
+     
+                        if (canMove(fallingShape, down)) {
+                            move(down);
+                        } else {
+                            shapeHasLanded();
+                        }
+                        draw();
+                        lastFrameTime = time;
+     
                     } else {
-                        shapeHasLanded();
+                        cancelAnimationFrame(requestId);
                     }
-                    draw();
-                    lastFrameTime = time;
- 
-                } else {
-                    cancelAnimationFrame(requestId);
                 }
             }
+ 
         }
  
         function startNewGame() {
