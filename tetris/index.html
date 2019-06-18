@@ -317,7 +317,42 @@
         
         
         function setTopFive (score) {
-                if (score > toparr[9].score){
+
+                if (toparr.length < 10){
+                    var name = prompt("Please enter your name", "name");
+
+                    if (name == null || name == "") {
+
+                    } 
+                    else if (score > 10000){
+
+                    }
+                    else if (name.length > 15){
+
+                    }
+                    else {
+
+                        firebase.database().ref('/tetris').push({
+                            score: score,
+                            name: name
+                        })
+
+                        document.getElementById("topfivelist").innerHTML = ""
+                        toparr.forEach(element => {
+                        if(element.score == 0){
+                            
+                        } else{
+                            document.getElementById("topfivelist").innerHTML += element.name + ":   " + element.score + "<br>"
+
+                        }
+                    });
+
+
+                    }
+
+                }
+
+                else if (score > toparr[9].score){
 
 
                     var name = prompt("Please enter your name", "name");
