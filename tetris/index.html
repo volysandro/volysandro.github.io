@@ -234,29 +234,26 @@
         var arr = []
         var toparr = []
 
+        function snapshotToArray(snapshot) {
+            var returnArr = [];
+
+            snapshot.forEach(function(childSnapshot) {
+                var item = childSnapshot.val();
+                item.key = childSnapshot.key;
+
+                returnArr.push(item);
+            });
+
+            return returnArr;
+        };
+
         
         function getHS(){
 
-            var scores = firebase.database().ref('tetris').once('value')
-            console.log(scores)
-
-            for(var i = 1; i <= 10; i++){
-                
-                firebase.database().ref('tetris/' + i).once('value').then(function(snapshot) {
-            
-                var score = (snapshot.val() && snapshot.val().score) || 0;
-                var name = (snapshot.val() && snapshot.val().name) || '-';
-                console.log(score, name)
-                arr.push({
-                    score: score,
-                    name: name
-
-                })
-                console.log(arr[i-1])
-                toparr = arr.sort((a, b) => (a.score < b.score) ? 1 : -1)
-                if (toparr.length == 10){
-                    
-                    document.getElementById("topfivelist").innerHTML = ""
+            firebase.database().ref('/tetris').on('value', function(snapshot) {
+                console.log(snapshotToArray(snapshot));
+                toparr = snapshotToArray(snapshot).sort((a, b) => (a.score < b.score) ? 1 : -1).slice(0, 10)
+                document.getElementById("topfivelist").innerHTML = ""
                     toparr.forEach(element => {
                         if(element.score == 0){
                             
@@ -264,18 +261,48 @@
                             document.getElementById("topfivelist").innerHTML += element.name + ":   " + element.score + " points.<br>"
 
                         }
-                    });
-                }
+                });
+
+            });
+
+
+
+            // for(var i = 1; i <= 10; i++){
+                
+            //     firebase.database().ref('tetris/' + i).once('value').then(function(snapshot) {
+            
+            //     var score = (snapshot.val() && snapshot.val().score) || 0;
+            //     var name = (snapshot.val() && snapshot.val().name) || '-';
+            //     console.log(score, name)
+            //     arr.push({
+            //         score: score,
+            //         name: name
+
+            //     })
+            //     console.log(arr[i-1])
+            //     toparr = arr.sort((a, b) => (a.score < b.score) ? 1 : -1)
+            //     if (toparr.length == 10){
+                    
+            //         document.getElementById("topfivelist").innerHTML = ""
+            //         toparr.forEach(element => {
+            //             if(element.score == 0){
+                            
+            //             } else{
+            //                 document.getElementById("topfivelist").innerHTML += element.name + ":   " + element.score + " points.<br>"
+
+            //             }
+            //         });
+            //     }
                 
             
-            })
+            // })
 
             
             
   
             
 
-            }
+            // }
 
 
             
@@ -305,21 +332,11 @@
 
                         }
                         else {
-                            toparr.push({
+
+                            firebase.database().ref('/tetris').push({
                                 score: score,
                                 name: name
                             })
-                            toparr = toparr.sort((a, b) => (a.score < b.score) ? 1 : -1)
-                            toparr.pop()
-                            var i = 1
-                            toparr.forEach(element => {
-                            firebase.database().ref('tetris/' + i).set({
-                                    score: element.score,
-                                    name: element.name
-                                });
-                            i++
-                            })
-
 
                             document.getElementById("topfivelist").innerHTML = ""
                             toparr.forEach(element => {
@@ -704,12 +721,6 @@
      
                         if (canMove(fallingShape, down)) {
                             move(down);
-                            if (is_key_down("ArrowLeft") == true || is_key_down("a") == true){
-                                move(left)
-                            }
-                            if (is_key_down("ArrowRight") == true || is_key_down("d") == true){
-                                move(right)
-                            }
 
 
                         } else {
