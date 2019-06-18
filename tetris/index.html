@@ -134,8 +134,7 @@
                             move(right);
                         break;
  
-                    case 's':
-                    case 'ArrowDown':
+                    case '0':
                         if (!fastDown) {
                             fastDown = true;
                             while (canMove(fallingShape, down)) {
@@ -230,7 +229,7 @@
 
                         }
                         else if (name.length > 15){
-                            
+
                         }
                         else {
                             toparr.push({
@@ -623,8 +622,12 @@
             });
  
             var time = new Date().getTime();
-            
-            var delay = scoreboard.getSpeed();
+            if (is_key_down("ArrowDown") == true){
+                delay = 50
+            }else{
+
+                var delay = scoreboard.getSpeed();
+            }
  
             if (lastFrameTime + delay < time) {
  
