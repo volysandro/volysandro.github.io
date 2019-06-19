@@ -420,6 +420,14 @@
         function rotate(s) {
             if (s === Shapes.Square)
                 return;
+
+            if (s === Shapes.IShape)
+                {
+                    if(canMove(left) == false)
+                    {
+                        return;
+                    }
+                }
  
             s.pos.forEach(function (row) {
                 var tmp = row[1];
