@@ -51,12 +51,21 @@
             bottom: 5px;
             font-size: 12;
         }
+        #counter{
+            position: absolute;
+            left: 5px;
+            bottom: 5px;
+            font-size: 12;
+        }
+
     </style>
     <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
 </head>
  
 <body>
-    <div id="cc">Sandro Volery, 2019</div>
+
+    <div id="counter"></div>
+    <div id="cc">Sandro Volery, 2019. v0.21</div>
     <div hidden id="paused"><br><br> <br> <br> Paused. Press "P" to continue</div>
     <div id="tutorial">
 
@@ -233,6 +242,7 @@
 
         var arr = []
         var toparr = []
+        var counter = []
 
         function snapshotToArray(snapshot) {
             var returnArr = [];
@@ -262,6 +272,15 @@
 
                         }
                 });
+
+            });
+
+            firebase.database().ref('/tetriscounter').on('value', function(snapshot) {
+                console.log(snapshotToArray(snapshot));
+                counter = snapshotToArray(snapshot)
+                document.getElementById("counter").innerHTML = "Total games played: " + counter.length
+
+
 
             });
 
@@ -552,7 +571,9 @@
             this.setGameOver = function () {
                 gameOver = true;
                 setTopFive(score)
-            }
+                firebase.database().ref('/tetriscounter').push({
+                            date: Date()
+                        })            }
  
             this.isGameOver = function () {
                 return gameOver;
