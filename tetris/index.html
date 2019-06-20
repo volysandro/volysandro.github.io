@@ -107,7 +107,6 @@
         canvas.height = 640;
 
 
- 
         var g = canvas.getContext('2d');
  
         var right = { x: 1, y: 0 };
@@ -229,7 +228,9 @@
         });
  
         addEventListener('click', function () {
+            if (pause == false) {
             startNewGame();
+            }
         });
  
         addEventListener('keyup', function () {
