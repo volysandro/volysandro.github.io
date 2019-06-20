@@ -65,7 +65,7 @@
 <body>
 
     <div id="counter"></div>
-    <div id="cc">Sandro Volery, 2019. v0.21</div>
+    <div id="cc">Sandro Volery, 2019. v0.22</div>
     <div hidden id="paused"><br><br> <br> <br> Paused. Press "P" to continue</div>
     <div id="tutorial">
 
@@ -107,7 +107,6 @@
         canvas.height = 640;
 
 
- 
         var g = canvas.getContext('2d');
  
         var right = { x: 1, y: 0 };
@@ -229,7 +228,9 @@
         });
  
         addEventListener('click', function () {
+            if (pause == false) {
             startNewGame();
+            }
         });
  
         addEventListener('keyup', function () {
