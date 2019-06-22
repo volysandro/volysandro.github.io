@@ -67,7 +67,6 @@ function writenews(news) {
         newsdiv.className = 'center card white hoverable'
         newsdiv.style.width = '80%'
         newsdiv.style.marginTop = '30px'
-        newsdiv.style.borderRadius = '25px'
         document.body.insertBefore(newsdiv, document.body.childNodes[2]);
         newstitle = document.createElement('h6')
         newstitle.id = 'newstitle'
