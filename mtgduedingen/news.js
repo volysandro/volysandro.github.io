@@ -67,7 +67,6 @@ function writenews(news) {
         newsdiv.className = 'center card white hoverable'
         newsdiv.style.width = '80%'
         newsdiv.style.marginTop = '30px'
-        newsdiv.style.borderRadius = '25px'
         document.body.insertBefore(newsdiv, document.body.childNodes[2]);
         newstitle = document.createElement('h6')
         newstitle.id = 'newstitle'
@@ -79,7 +78,17 @@ function writenews(news) {
         newsdiv.appendChild(newsdate)
 
         element.content.forEach(Element => {
-            if(Element.replace(/\s/g, "").length > 15){
+
+            if(Element.includes("<iframe")){
+
+                console.log("IFRAME DETECTED")
+                iframediv = document.createElement("div");
+                iframediv.className = "iframe-container center"
+                newsdiv.appendChild(iframediv)
+                iframediv.innerHTML = Element
+
+            }
+            else if(Element.replace(/\s/g, "").length > 15){
                 pnews = document.createElement('p')
                 pnews.id = 'newsparagraph'
                 newsdiv.appendChild(pnews)
