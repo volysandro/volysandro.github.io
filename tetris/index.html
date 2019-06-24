@@ -174,7 +174,7 @@
  
                     case 'w':
                     case 'ArrowUp':
-                        if (canRotate(fallingShape) && pause == false)
+                        if (canRotate(fallingShape) == true && pause == false)
                             rotate(fallingShape);
                         break;
 
@@ -396,9 +396,10 @@
         
  
         function canRotate(s) {
-            if (s === Shapes.Square)
+            if (s === Shapes.Square){
                 return false;
- 
+
+            } else {
             var pos = new Array(4);
             for (var i = 0; i < pos.length; i++) {
                 pos[i] = s.pos[i].slice();
@@ -415,25 +416,32 @@
                 var newRow = fallingShapeRow + p[1];
                 return grid[newRow][newCol] === EMPTY;
             });
+
+            }
+ 
         }
  
         function rotate(s) {
             if (s === Shapes.Square)
                 return;
 
-            if (s === Shapes.IShape)
+            else if (s === Shapes.IShape)
                 {
                     if(canMove(left) == false)
                     {
                         return;
                     }
                 }
- 
+
+            else {
             s.pos.forEach(function (row) {
                 var tmp = row[1];
                 row[1] = row[0];
                 row[0] = -tmp;
             });
+
+            }
+ 
         }
  
         function move(dir) {
