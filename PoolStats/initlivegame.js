@@ -83,9 +83,20 @@ var email
       });
 
       firebase.database().ref("live/" + opponentEmailNC).once("value").then(function(snapshot){
+
         if (opponentkey == (snapshot.val() && snapshot.val().secret)){
-            startGame(opponentkey, opponentEmailNC)
-        }else{console.log("wrong key")}
+            if (document.getElementById("raceto").value != ""){
+              startGame(opponentkey, opponentEmailNC, document.getElementById("raceto").value, document.getElementById("gametype").value)
+              console.log(document.getElementById("gametype").value)
+
+            } else {
+              document.getElementById("info").innerHTML += "<br> Enter a Race To"
+            }
+        }else{console.log("wrong key")
+        document.getElementById("info").innerHTML += "<br> Wrong Key"
+
+      
+      }
       })
 
 
@@ -95,19 +106,39 @@ var email
   })
 
 
-  function startGame(opponentkey, opponentEmailNC){
+  function startGame(opponentkey, opponentEmailNC, raceto, gametype){
+
+    var gameid = emailNC + opponentEmailNC
 
     firebase.database().ref('live/' + emailNC).set({
         secret: secret,
         started: true,
-        opponent: opponentEmailNC            
+        opponent: opponentEmailNC,
+        id: gameid,
+        player: 1            
       })
 
     firebase.database().ref("live/" + opponentEmailNC).set({
         secret: opponentkey,
         started: true,
-        opponent: emailNC
+        opponent: emailNC,
+        id: gameid,
+        player: 2
     })
+
+    firebase.database().ref("activegames/" + gameid).set({
+
+        gametype: gametype,
+        raceto: raceto,
+        player1: emailNC,
+        player2: opponentEmailNC,
+        player1score: 0,
+        player2score: 0
+
+    })
+
+
+
 
   }
 
@@ -116,8 +147,11 @@ var email
         console.log(snapshot.val())
         if(snapshot.val().started == true){
             console.log("started")
-            window.location.replace("http://9gag.com")
+            window.location.replace("livegamepage.html")
+
         }
     })
+
+
 
   }
