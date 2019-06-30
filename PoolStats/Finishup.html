@@ -6,18 +6,28 @@
     <title>Finish up</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="welcomeanimation.css">
     <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+              <!-- Compiled and minified CSS -->
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+              <!-- Compiled and minified JavaScript -->
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 </head>
 <body id="finishupbody">
     
-<div class="centered">
-<h1 id="whoWon"></h1>
+<div id="finishup" class="card centered">
 
-<p id="player2Warning">The invited player (by username) now needs to enter his password in order to submit the scores to both accounts.</p>
+
+
+
+<h1 style="color:#2196f3; margin: 10px" class="center" id="whoWon"></h1>
+
+<p id="player2Warning">The invited player (by email) now needs to enter his password in order to submit the scores to both accounts.</p>
 <input id="player2Pwd" type="password" placeholder="password...">
 <p id="wrongPwd"></p>
-<button id="submitMatch">Submit</button>
+<button class="btn btn-action blue" id="submitMatch">Submit</button>
 
 
 </div>

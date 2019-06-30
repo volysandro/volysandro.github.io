@@ -53,7 +53,7 @@
           document.getElementById('cue').innerHTML = showcue;
           document.getElementById('kozoom').innerHTML = showkozoom;
         });
-        firebase.database().ref('userfullnames/' + username).once('value').then(function(snapshot) {
+        firebase.database().ref('users/' + username).once('value').then(function(snapshot) {
             
           var showfullname = (snapshot.val() && snapshot.val().fullname) || '';
           document.getElementById('name').innerHTML = showfullname;

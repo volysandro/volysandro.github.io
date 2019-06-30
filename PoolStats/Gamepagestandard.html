@@ -8,38 +8,44 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="welcomeanimation.css">
     <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+              <!-- Compiled and minified CSS -->
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+              <!-- Compiled and minified JavaScript -->
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
 </head>
 <body class="tablebodygamepage">
-        <div class="centered">
-            <h3 style="color:#66fcf1" id="printGameType"></h3>
-            <h3 style="color:#66fcf1" id="printRaceTo"></h3>
-        </div>
-
-        <div class="rowhalf">
-            <div>
-            </div>
-        </div>
     
-            
-            
-        <div class="rowhalf">
-            <div>
-             </div>
-        </div>
+    
+    <div class="card center" id="player1">
+        
+        <h5 style="color:#2196f3" id="player1Name"></h5>
+        <h1 style="color:#2196f3" id="player1Score"></h1>
+        <button class="btn btn-action blue" id="player1Up">+</button>
+        <button class="btn btn-action blue"  id="player1Down">-</button>
+        
+    </div>
+    
+
+
+            <div id="gameon" class="clip-text clip-text_one"><b>GAME ON</b></div>
+
         
 
 
-        
-        <h1 id="player1Name"></h1>
-        <h1 id="player2Name"></h1>
-        <p id="player1Score"></p>
-        <p id="player2Score"></p>
+    <div class="card center" id="player2">
 
-        <button id="player1Up">+</button>
-        <button id="player1Down">-</button>
-        <button id="player2Up">+</button>
-        <button id="player2Down">-</button>
+            <h5 style="color:#2196f3" id="player2Name"></h5>
+            <h1 style="color:#2196f3" id="player2Score"></h1>
+    
+            <button class="btn btn-action blue" id="player2Up">+</button>
+            <button class="btn btn-action blue" id="player2Down">-</button>
+    
+    </div>
+        
                 
     
     

@@ -1,1374 +1,230 @@
-
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%; /* full window width */
-    text-align: center;
-    
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 
-@font-face {
-    font-family: 'Chewy';
-    font-style: normal;
-    font-weight: 400;
-    src: url('Chewy.ttf') format('woff2');
+body{
+    background: #56CCF2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+
+
+
+.center {
+    display: block;
+    margin: 0 auto;
 }
 
-
-
-#welcomeBox{
-text-align: center;
-top: 6%;
-position: relative;
-font-family: Chewy;
-
+.btn {
+    margin: 5px;
 }
 
+/* Welcome Page */
 
-#welcomeToPS{
-    font-size: 40px;
-    color: #66fcf1;
-}
-
-#welcomeToLogin{
-    font-size: 30px;
-    color: #66fcf1;
-    text-align: center;
-}
-
-
-#welcomeDescription{
-    font-size: 20px;
-    color: #c5c6c7;
-    margin-top: -7%;
-}
-
-#opponentEmail{
-    background-color: #0d0d11;
-    border: none;
-    border-radius: 12px;
-    font-size: 20px;
-    font-family: 'Chewy';
-    letter-spacing: 1.7;
-    color: #66fcf1;
-}
-
-#btnSubmitOpponent{
-    font-size: 23px;
-    font-family: 'Chewy';
-    
-}
 
 #welcomeButtonBoxes{
-    height: 55%;
-    width: 101%;
-    bottom: 5%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40%;
-    margin-bottom: 5%;
+    margin: 0 auto;
+    margin-top: 20%;
+    width: 80%;
+    background-color: white;
+    padding: 5px;
+    color: black;
+    line-height: 35px;
+    border-radius: 20px;
+
 }
 
-#showMeHow{
-    -webkit-transform: skewY(-7deg);
-  -moz-transform: skewY(-7deg);
-  -ms-transform: skewY(-7deg);
-  -o-transform: skewY(-7deg);
-  transform: skewY(-7deg);
-  margin-top: 10px;
-  height: 10%;
-  background: #0b0c10;
-  width: 100%;
-  color: #66fcf1;
-  font: normal 17px/2.2 "Chewy", Times, serif;
- 
+
+/* Login Page */
+
+#loginInfo{
+    margin: 0 auto;
+    margin-top: 20%;
+    width: 80%;
+    background-color: white;
+    padding: 5px;
+    color: black;
+    line-height: 35px;
+    border-radius: 20px;
+
 }
 
-.enjoy-css {
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    
-    height: 15%;
-    margin-top: 12px;
-    margin-bottom: auto;
-    padding: 20px;
-    overflow: hidden;
-    border: none;
-    -webkit-border-radius: 12px;
-    border-radius: 12px;
-    font: normal 40px/1.5 "Chewy", Times, serif;
-    
-    color: #66fcf1;
-    text-align: center;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    background: #0b0c10;
-    -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
-    box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
-    -webkit-transition: all 200ms cubic-bezier(0.25, 0.1, 0.25, 1) 10ms;
-    -moz-transition: all 200ms cubic-bezier(0.25, 0.1, 0.25, 1) 10ms;
-    -o-transition: all 200ms cubic-bezier(0.25, 0.1, 0.25, 1) 10ms;
-    transition: all 200ms cubic-bezier(0.25, 0.1, 0.25, 1) 10ms;
-  }
-
-
-
-.zoom:hover {
-    transform: scale(1.3); 
-}
-.split {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-.left {
-  left: 0;
-  background-color: #1f2833;
-}
-
-.right {
-  right: 0;
-  background-color: #1f2833;
-}
+/* Main Page */
 
 #mainPageBoxes{
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    height: 50%;
-}
-
-
-#raceToBody{
-    background-image: url('racetobackground.jpg');
-    background-size: 115%;
-}
-
-#yourOpponentIs{
-    font-size: 30px;
-    font-family: Chewy;
-    letter-spacing: 2px;
-}
-
-#showSelectedOpponent{
-    font-size: 30px;
-    font-family: Chewy;
-    letter-spacing: 2px;
-}
-
-
-#raceTo{
-    -webkit-transform: skewY(-7deg);
-    -moz-transform: skewY(-7deg);
-    -ms-transform: skewY(-7deg);
-    -o-transform: skewY(-7deg);
-    transform: skewY(-7deg);
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 15%;
-    background: #0b0c10;
-    width: 100%;
-    color: #66fcf1;
-    font: normal 30px/2.2 "Chewy", Times, serif;
-    opacity: 88%;
+    margin: 0 auto;
+    margin-top: 20%;
+    width: 80%;
+    background-color: white;
+    padding: 5px;
+    color: black;
+    line-height: 35px;
+    border-radius: 20px;
 
 }
 
-
-
-.chooseGameTopDiv{
-  margin-top: 10%;
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -130%);
-  text-align: center;
-}
-
-
-#chooseGameDiv{
-    position: absolute;
-    width: 100%;
-    top: 10%;
-}
-
-
-#chooseOnePocket{
-    -webkit-transform: skewY(-7deg);
-    -moz-transform: skewY(-7deg);
-    -ms-transform: skewY(-7deg);
-    -o-transform: skewY(-7deg);
-    transform: skewY(-7deg);
-    margin-top: 10px;
-    height: 15%;
-    background: #0b0c10;
-    width: 100%;
-    color: #66fcf1;
-    font: normal 30px/2.2 "Chewy", Times, serif;
-        opacity: 88%;
+#welcome{
+    left: calc(50% - 40%);
+    margin: 0;
+    margin-top: 100px;
+    width: 80%;
+    font-size: 300%;
+    text-align: center;
 
 }
 
-#choose8Ball{
-    -webkit-transform: skewY(-7deg);
-    -moz-transform: skewY(-7deg);
-    -ms-transform: skewY(-7deg);
-    -o-transform: skewY(-7deg);
-    transform: skewY(-7deg);
-    margin-top: 10px;
-    height: 15%;
-    background: #0b0c10;
-    width: 100%;
-    color: #66fcf1;
-    font: normal 30px/2.2 "Chewy", Times, serif;
-        opacity: 88%;
-
-}
-
-#choose9Ball{
-    -webkit-transform: skewY(-7deg);
-    -moz-transform: skewY(-7deg);
-    -ms-transform: skewY(-7deg);
-    -o-transform: skewY(-7deg);
-    transform: skewY(-7deg);
-    margin-top: 10px;
-    height: 15%;
-    background: #0b0c10;
-    width: 100%;
-    color: #66fcf1;
-    font: normal 30px/2.2 "Chewy", Times, serif;
-
-}
-
-#choose10Ball{
-    -webkit-transform: skewY(-7deg);
-    -moz-transform: skewY(-7deg);
-    -ms-transform: skewY(-7deg);
-    -o-transform: skewY(-7deg);
-    transform: skewY(-7deg);
-    margin-top: 10px;
-    height: 15%;
-    background: #0b0c10;
-    width: 100%;
-    color: #66fcf1;
-    font: normal 30px/2.2 "Chewy", Times, serif;
-
-}
-
-.diagonalDiv{
-
-  -webkit-transform: skewY(-7deg);
-  -moz-transform: skewY(-7deg);
-  -ms-transform: skewY(-7deg);
-  -o-transform: skewY(-7deg);
-  transform: skewY(-7deg);
-  margin-top: 10px;
-  height: 20%;
-  background: #0b0c10;
-  width: 100%;
-  color: #66fcf1;
-  font: normal 30px/2.3 "Chewy", Times, serif;
-}
-
-#bodyMainPage{
-    background-size: 127%;
-    background-image: url('backgroundcropped.jpeg');
-}
-
-#bodyChooseOpponent{
-    background-image: url('backgroundChooseopponent.jpg');
-    background-size: 127%;
-
-}
+/* Standard Choose Opponent */
 
 #divChooseOpponent{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-10%, -50%);
-  text-align: right;
-  font-family: 'Chewy';
-  letter-spacing: 1.7px;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.centeredStats{
-    position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.centered img {
-  width: 150px;
-  border-radius: 50%;
-}
-
-
-.login {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-form {
-    border: 3px solid #1f2833;
-}
-
-
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-
-button {
-    background-color: #0b0c10;
-    color: #66fcf1;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    border-radius: 10px;
-}
-
-button:hover {
-    opacity: 0.8;
-    
-}
-
-
-.imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-}
-
-
-
-.container {
-    padding: 16px;
-}
-
-span.psw {
-    float: right;
-    padding-top: 16px;
-}
-
-@media screen and (max-width: 300px) {
-    span.psw {
-        display: block;
-        float: none;
-    }
-    .cancelbtn {
-        width: 100%;
-    }
-}
-
-
-.nostretch{
-    transform: absolute;
-}
-
-
-
-.login, .guest, .signup {
-    margin: auto;
-}
-
-.tablebody {
-    display: table;
-    height: 100%;
-    margin: auto;
-    padding: 0;
-    width: 100%;
-  }
-  
-  .row {
-    display: table-row;
-    height: 33.3333%;
-  }
-  
-  .row:nth-child(1) {
-    background-color: #ffffff;
-  }
-  
-  .row:nth-child(2) {
-    background-color: #000000;
-  }
-
-  .row:nth-child(3) {
-    background-color: #1f2833;
-  }
-
-  .imagesize{
-      width: 90px;
-      height: 90px;
-      
-  }
-
-  .tablebodygamepage {
-    display: table;
-    margin: auto;
-    padding: 0;
-    height: 100%;
-    background-image: url('gamepagebackground.jpg');
-    background-size: 400%;
-    background-position-x: -85%;
-  }
-
-
-#login{
-    position: absolute;
-    top: 16.6666666666666%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-#signup{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    
-}
-
-#guest{
-    position: absolute;
-    top: 83.333333333333%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    
-}
-
-#textlogin{
-font-size: 30px;
-color: #111;
-}
-
-#textsignup{
-font-size: 30px;
-color: #1f2833;
-}
-
-#textguest{
-font-size: 30px;
-color: #111;
-}
-
-#logininput{
-    background-color: #1f2833;
-    font-size: 50px;
-    
-}
-
-#emailinput{
-    background-color: #1f2833;
-    font-size: 50px;
-}
-
-#passwordinput{
-    background-color: #1f2833;
-    font-size: 50px;
-}
-
-
-#loginimage{
-    width: 70%;
-    border-radius: 30%;
-}
-
-#loginbutton{
-    font-size: 60px;
-}
-
-#continueandforgot{
-    font-size: 35px;
-    font-style: normal;
-    color: #111;
-}
-
-#txtEmail{
-    background: #0b0c10;
-    outline: none;
-    color: #66fcf1;
-}
-
-#txtPassword{
-    background: #0b0c10;
-    color: #66fcf1;
-
-    outline: none;
-}
-
-::placeholder{
+    margin: 0 auto;
+    margin-top: 20%;
+    width: 80%;
+    background-color: white;
+    padding: 5px;
     color: black;
-    opacity: 1;
-}
-
-#btnLogin{
-background: #0b0c10;
-font: bold;
-color: #66fcf1;
-}
-
-.centerLoginBtn{
-border-radius: 50%;
-height: 100px;
-width: 100px;
-position: absolute;
-  top: 63%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-    
-}
-
-.centerLoginInput{
-    position: absolute;
-  top: 44%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.centerSignUpBtn{
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
-    background: #0b0c10;
-    position: absolute;
-      top: 75%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-        
-    }
-
-
-    #btnSignUp{
-        background: transparent;
-        font-size: 20px;
-    font-family: Chewy;
-    letter-spacing: 1.7;
-    }
-    .centerSignUpInput{
-        position: absolute;
-      top: 37%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
-
-    #txtNewEmail{
-        background: rgba(0, 0, 0, 0.377);
-        color: #66fcf1;
-
-    outline: none;
-    
-    }
-
-    #txtNewPassword{
-        background: rgba(0, 0, 0, 0.377);
-        color: #66fcf1;
-
-        outline: none;    }
-
-    #txtUsername{
-        background: rgba(0, 0, 0, 0.377);
-        color: #66fcf1;
-
-        outline: none;    }
-
-
-
-#AccountEditBtn{
-      margin: auto;
-      position: absolute;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-#AccountView{
-    margin: auto;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-#accountEditSubmitBtn{
-    margin: auto;
-    position: absolute;
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-#accountSubmitBtn{
-    background: transparent;
-    color: #66fcf1;
-    font-size: 35px;
-    font-family: Chewy;
-    letter-spacing: 1.7;
-}
-
-
-#accountEdit{
-    margin: auto;
-    position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.rowhalf{
-    display: table-row;
-    height: 50%;
-}
-
-
-
-#newUsername{
-    background: rgba(0, 0, 0, 0);    
-    outline: none;
-    color: #66fcf1;
-
-    color: #1f2833;
-}
-
-#txtFullname{
-    background: rgba(0, 0, 0, 0.377);
-    color: #66fcf1;
-    outline: none;}
-
-#opponentUname{
-    background: rgba(0, 0, 0, 0);    
-    outline: none;
-    color: #1f2833;
-    
-}
-
-#doesntExist{
-    color: #1f2833;
-    
-}
-
-#printRaceTo{
-    font-family: Chewy;
-    letter-spacing: 1.7;
-}
-
-#printGameType{
-    font-family: Chewy;
-    letter-spacing: 1.7;
-
-}
-
-#player1Name{
-    margin: auto;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #66fcf1;
-    font-family: Chewy;
-    letter-spacing: 1.7;
-}
-
-#player1NameOP{
-    margin: auto;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #66fcf1;
-    font-family: Chewy;
-    letter-spacing: 1.7;
-}
-
-#player2Name{
-    margin: auto;
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #66fcf1;
-    font-family: Chewy;
-    letter-spacing: 1.7;
-}
-
-#player2NameOP{
-    margin: auto;
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #66fcf1;
-    font-family: Chewy;
-    letter-spacing: 1.7;
-}
-
-
-
-#player1Score{
-    margin: auto;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #66fcf1;
-    font-size: 100px;
-    font-family: Chewy;
-    letter-spacing: 1.7;
-
-}
-
-#player1ScoreOP{
-    margin: auto;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #66fcf1;
-    font-size: 70px;
-    font-family: Chewy;
-    letter-spacing: 1.7;
-
-}
-
-#player1Count{
-    margin: auto;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #66fcf1;
-    font-size: 55px;
-    font-family: Chewy;
-    letter-spacing: 1.7;
-
-}
-
-#player2Score{
-    margin: auto;
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #66fcf1;
-    font-size: 100px;
-    font-family: Chewy;
-    letter-spacing: 1.7;
-
-}
-
-#player2ScoreOP{
-    margin: auto;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #66fcf1;
-    font-size: 70px;
-    font-family: Chewy;
-    letter-spacing: 1.7;
-
-}
-
-#player2Count{
-    margin: auto;
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #66fcf1;
-    font-size: 55px;
-    font-family: Chewy;
-    letter-spacing: 1.7;
-
-}
-
-
-#player1Up{
-    margin: auto;
-    position: absolute;
-    top: 25%;
-    left: 80%;
-    height: 100px;
-    width: 100px;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    background-color: #1f2833;
-    color: #66fcf1;
-    border-radius: 150px;
-    font-size: 50px;
-    
-}
-
-#player1UpOP{
-    margin: auto;
-    position: absolute;
-    top: 20%;
-    left: 80%;
-    height: 70px;
-    width: 70px;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    background-color: #1f2833;
-    color: #66fcf1;
-    border-radius: 150px;
-    font-size: 30px;
-    
-}
-
-#player1count1{
-    margin: auto;
-    position: absolute;
-    top: 35%;
-    left: 90%;
-    height: 40px;
-    width: 40px;
-    transform: translate(-50%, -50%);
-    background-color: #1f2833;
-    color: #66fcf1;
-    border-radius: 150px;
-    font-size: 10px;
-    
-}
-
-#player1count3{
-    margin: auto;
-    position: absolute;
-    top: 35%;
-    left: 80%;
-    height: 40px;
-    width: 40px;
-    transform: translate(-50%, -50%);
-    background-color: #1f2833;
-    color: #66fcf1;
-    border-radius: 150px;
-    font-size: 10px;
-    
-}
-
-#player1count5{
-    margin: auto;
-    position: absolute;
-    top: 35%;
-    left: 70%;
-    height: 40px;
-    width: 40px;
-    transform: translate(-50%, -50%);
-    background-color: #1f2833;
-    color: #66fcf1;
-    border-radius: 150px;
-    font-size: 10px;
-    
-}
-
-#player1countm1{
-    margin: auto;
-    position: absolute;
-    top: 35%;
-    left: 10%;
-    height: 40px;
-    width: 40px;
-    transform: translate(-50%, -50%);
-    background-color: #1f2833;
-    color: #66fcf1;
-    border-radius: 150px;
-    font-size: 10px;
-    
-}
-
-#player1countm3{
-    margin: auto;
-    position: absolute;
-    top: 35%;
-    left: 20%;
-    height: 40px;
-    width: 40px;
-    transform: translate(-50%, -50%);
-    background-color: #1f2833;
-    color: #66fcf1;
-    border-radius: 150px;
-    font-size: 10px;
-    
-}
-
-#player1countm5{
-    margin: auto;
-    position: absolute;
-    top: 35%;
-    left: 30%;
-    height: 40px;
-    width: 40px;
-    transform: translate(-50%, -50%);
-    background-color: #1f2833;
-    color: #66fcf1;
-    border-radius: 150px;
-    font-size: 10px;
-    
-}
-
-#player2count1{
-    margin: auto;
-    position: absolute;
-    top: 65%;
-    left: 90%;
-    height: 40px;
-    width: 40px;
-    transform: translate(-50%, -50%);
-    background-color: #1f2833;
-    color: #66fcf1;
-    border-radius: 150px;
-    font-size: 10px;
-    
-}
-
-#player2count3{
-    margin: auto;
-    position: absolute;
-    top: 65%;
-    left: 80%;
-    height: 40px;
-    width: 40px;
-    transform: translate(-50%, -50%);
-    background-color: #1f2833;
-    color: #66fcf1;
-    border-radius: 150px;
-    font-size: 10px;
-    
-}
-
-#player2count5{
-    margin: auto;
-    position: absolute;
-    top: 65%;
-    left: 70%;
-    height: 40px;
-    width: 40px;
-    transform: translate(-50%, -50%);
-    background-color: #1f2833;
-    color: #66fcf1;
-    border-radius: 150px;
-    font-size: 10px;
-    
-}
-
-#player2countm1{
-    margin: auto;
-    position: absolute;
-    top: 65%;
-    left: 10%;
-    height: 40px;
-    width: 40px;
-    transform: translate(-50%, -50%);
-    background-color: #1f2833;
-    color: #66fcf1;
-    border-radius: 150px;
-    font-size: 10px;
-    
-}
-
-#player2countm3{
-    margin: auto;
-    position: absolute;
-    top: 65%;
-    left: 20%;
-    height: 40px;
-    width: 40px;
-    transform: translate(-50%, -50%);
-    background-color: #1f2833;
-    color: #66fcf1;
-    border-radius: 150px;
-    font-size: 10px;
-    
-}
-
-#player2countm5{
-    margin: auto;
-    position: absolute;
-    top: 65%;
-    left: 30%;
-    height: 40px;
-    width: 40px;
-    transform: translate(-50%, -50%);
-    background-color: #1f2833;
-    color: #66fcf1;
-    border-radius: 150px;
-    font-size: 10px;
+    line-height: 35px;
+    border-radius: 20px;
     
 }
 
 
-#player1Down{
-    margin: auto;
-    position: absolute;
-    top: 25%;
-    left: 20%;
-    height: 100px;
-    width: 100px;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    background-color: #1f2833;
-    color: #66fcf1;
-    border-radius: 150px;
-    font-size: 50px;
-}
+/* Choose Game Standard*/
 
-#player1DownOP{
-    margin: auto;
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    height: 70px;
-    width: 70px;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    background-color: #1f2833;
-    color: #66fcf1;
-    border-radius: 150px;
-    font-size: 30px;
-}
-
-#player2Up{
-    margin: auto;
-    position: absolute;
-    top: 75%;
-    left: 80%;
-    height: 100px;
-    width: 100px;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    background-color: #1f2833;
-    color: #66fcf1;
-    border-radius: 150px;
-    font-size: 50px;
-}
-
-#player2UpOP{
-    margin: auto;
-    position: absolute;
-    top: 80%;
-    left: 80%;
-    height: 70px;
-    width: 70px;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    background-color: #1f2833;
-    color: #66fcf1;
-    border-radius: 150px;
-    font-size: 30px;
-}
-
-
-
-#player2Down{
-    margin: auto;
-    position: absolute;
-    top: 75%;
-    left: 20%;
-    height: 100px;
-    width: 100px;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    background-color: #1f2833;
-    color: #66fcf1;
-    border-radius: 150px;
-    font-size: 50px;
-}
-
-
-#player2DownOP{
-    margin: auto;
-    position: absolute;
-    top: 80%;
-    left: 20%;
-    height: 70px;
-    width: 70px;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    background-color: #1f2833;
-    color: #66fcf1;
-    border-radius: 150px;
-    font-size: 30px;
-}
-
-
-#whoWon {
-    color: #66fcf1;
-    font-size: 40px;
-    font-family: Chewy;
-    letter-spacing: 1.7;
-
-}
-
-#player2Warning{
-    color: #c5c6c7;
-
-}
-
-#player2Pwd{
-    background: rgba(0, 0, 0, 0);    
-    outline: none;
-    color: #66fcf1;
-    font-size: 18px;
-    font-family: Chewy;
-    letter-spacing: 1.7;
-    
-}
-
-
-#finishupbody{
-    background-image: url('finishupbackground.jpg');
-    background-size: 100%;
-}
-
-
-#submitMatch{
-    color: #66fcf1;
-    background-color: #1f2833;
-    font-family: Chewy;
-    letter-spacing: 1.7;
-    font-size: 22px;
-}
-#wrongPwd{
-background: rgba(0, 0, 0, 0);    
-outline: none;
-color: #66fcf1;
-}
-
-
-#deleteAccount{
-    color: #66fcf1;
-    font-family: Chewy;
-    letter-spacing: 1.7;
-    font-size: 22px;
-}
-
-#changePwd{
-    color: #66fcf1;
-    font-family: Chewy;
-    letter-spacing: 1.7;
-    font-size: 22px;
-}
-
-::placeholder{
-    color: #66fcf1;
-}
-
-#newPwd{
-    background: rgba(0, 0, 0, 0);    
-    outline: none;
-    color: #1f2833;
-}
-#repeatNewPwd{
-    background: rgba(0, 0, 0, 0);    
-    outline: none;
-    color: #1f2833;
-}
-#changePwdGetResponse{
-color: #1f2833;
-    }
-
-#editCategory{
-    background: rgba(0, 0, 0, 0.404);    
-    outline: none;
-    color: #1f2833;}
-
-#editCue{
-    background: rgba(0, 0, 0, 0.404);    
-    outline: none;
-    color: #1f2833;}
-
-#editKozoom{
-    background: rgba(0, 0, 0, 0.404);    
-    outline: none;
-    color: #1f2833;
-}
-
-
-#backToMainMenu{
-    font-style: normal;
+#chooseGameDiv
+{
+    margin: 0 auto;
+    margin-top: 20%;
+    width: 80%;
+    background-color: white;
+    padding: 5px;
     color: black;
-}
-
-#raceTo{
-    background-color: #111;
-    color: #1f2833;
-    border: none;
+    line-height: 35px;
+    border-radius: 20px;
 
 }
 
+/* Game Page Standard */
 
-
-#totalWon{
-font-size: 20px;
-color: #c5c6c7;
-}
-
-#totalLost{
-font-size: 20px;
-color: #c5c6c7;
-}
-
-#average{
-font-size: 27px;
-color: #c5c6c7;
-font-family: Chewy;
-    letter-spacing: 1.7;
-}
-
-#lastMatchup{
-    font-size: 27px;
-    color: #66fcf1;
-    font-family: Chewy;
-    letter-spacing: 1.7;
-}
-
-
-#lastMatchupScore{
-    font-size: 27px;
-    color: #66fcf1;
-    font-family: Chewy;
-    letter-spacing: 1.7;
-}
-
-#statsBody{
-    background-image: url('statsbackground.jpg');
-    background-size: 100%;
-}
-
-#backToMenu{
-    font-family: Chewy;
-    letter-spacing: 1.7;
-    font-size: 22px;
-
-}
-
-
-.tablebodyaccountpage{
-    display: table;
-    height: 100%;
-    margin: auto;
-    padding: 0;
-    width: 100%;
-    background-image: url('accountpagebackground.jpg');
-    background-size: 100%;
-}
-
-#name{
-    font-size: 30px;
-}
-
-#category{
-    font-size: 30px;
-    font-family: Chewy;
-    letter-spacing: 1.7;
-}
-
-#cue{
-    font-size: 30px;
-    font-family: Chewy;
-    letter-spacing: 1.7;
-}
-
-#kozoom{
-    font-size: 30px;
-    font-family: Chewy;
-    letter-spacing: 1.7;
-}
-
-#btnLogOut{
-    width: 50%;
-    font-size: 20px;
-    font-family: Chewy;
-    letter-spacing: 1.7;
-}
-
-.divGuest{
-position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  text-align: center;
-}
-
-#goBack{
-    font-size: 20px;
-    font-family: Chewy;
-    letter-spacing: 1.7;
-    background-color: #1f2833;
-    color: #66fcf1;
-}
-
-#welcomeBack{
-    font-size: 50px;
-    font-family: Chewy;
-    letter-spacing: 1.7;
-    color: #66fcf1;
-    top: 25%;
-    left: 50%;
+#player1 {
     position: absolute;
-    text-align: center;
-    transform: translate(-50%, -50%);
+    top: 10px;
+    left: calc(50% - 40%);
+    margin: 0 auto;
+    width: 80%;
+    background-color: white;
+    padding: 5px;
+    color: black;
+    line-height: 35px;
+    border-radius: 20px;
+
+    height: calc(50% - 10px - 50px);
 
 }
 
-#bodyWelcomePage{
-    background-image: url('welcomebackground.png');
-    background-size: 100%;
+#player2 {
+    position: absolute;
+    bottom: 10px;
+    left: calc(50% - 40%);
+    margin: 0 auto;
+    width: 80%;
+    background-color: white;
+    padding: 5px;
+    color: black;
+    line-height: 35px;
+    border-radius: 20px;
+
+    height: calc(50% - 10px - 50px);
+
 }
+
+#gameon {
+    position: absolute;
+    margin: 0;
+    left: calc(50% - 40%);
+    top: calc(50% - 30px);
+    width: 80%;
+    font-size: 30px;
+}
+
+/* Finish Up Standard */
+
+#finishup{
+    margin: 0 auto;
+    margin-top: 20%;
+    width: 80%;
+    background-color: white;
+    padding: 5px;
+    color: black;
+    line-height: 35px;
+    border-radius: 20px;
+
+}
+
+/* Stats Page */
+
+#centeredStats{
+    margin: 0 auto;
+    margin-top: 20%;
+    width: 80%;
+    background-color: white;
+    padding: 5px;
+    color: black;
+    line-height: 35px;
+    border-radius: 20px;
+
+}
+
+/* Account Page */
+
+#accountpage{
+    margin: 0 auto;
+    margin-top: 20%;
+    width: 80%;
+    background-color: white;
+    padding: 5px;
+    color: black;
+    line-height: 35px;
+    border-radius: 20px;
+
+}
+
+#name {
+
+    
+    left: calc(50% - 40%);
+    margin: 0;
+    margin-top: 40px;
+    width: 80%;
+
+}
+
+/* Edit Account */
+
+#accountedit{
+    margin: 0 auto;
+    margin-top: 20%;
+    width: 80%;
+    background-color: white;
+    padding: 5px;
+    color: black;
+    line-height: 35px;
+    border-radius: 20px;
+
+}
+
+/* Settings */
+
+ #settings{
+    margin: 0 auto;
+    margin-top: 20%;
+    width: 80%;
+    background-color: white;
+    padding: 5px;
+    color: black;
+    line-height: 35px;
+    border-radius: 20px;
+
+ }

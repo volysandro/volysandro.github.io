@@ -5,33 +5,41 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet" type="text/css">
+          <!-- Compiled and minified CSS -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+          <!-- Compiled and minified JavaScript -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
     <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
 </head>
-<body class="tablebody">
+<body>
 
-     <div class="rowhalf" style="background-color: #66fcf1">
+  
+  <div class="card center" id="accountedit">
+
+    <div id="accountEdit">
         
-        <div id="accountEdit">
-            
-            <input id="editCategory" type="text" placeholder="Category...">
-            <input id="editCue" type="text" placeholder="Cue...">
-            <input id="editKozoom" type="text" placeholder="Kozoom/other...">
-            <p id="detailsChanged"></p>
-            <button id="backToAccount">Back to account</button>
+        <input id="editCategory" type="text" placeholder="Category...">
+        <input id="editCue" type="text" placeholder="Cue...">
+        <input id="editKozoom" type="text" placeholder="Kozoom/other...">
+        <p id="detailsChanged"></p>
+        <button class="btn btn-action blue" id="backToAccount">Back to account</button>
+  
+  
+      
+    </div>
+  
+  
+    <div id="accountEditSubmitBtn">
+           
+      <button class="btn btn-action blue" id="accountSubmitBtn">Submit</button>
+     
+    </div>
 
 
-          
-        </div>
-      </div>
+  </div>
 
-
-      <div class="rowhalf" style="background-color: #111">
-        <div id="accountEditSubmitBtn">
-               
-          <button id="accountSubmitBtn">Submit</button>
-         
-        </div>
-      </div>
 
       
 

@@ -16,6 +16,9 @@ var config = {
   var uname2
   var myself
   var gameid
+  var raceto
+  var gameType
+
 
   firebase.auth().onAuthStateChanged(firebaseUser => {
     if(firebaseUser){
@@ -42,6 +45,9 @@ var config = {
                 console.log(snapshot.val())
                 player1 = snapshot.val().player1
                 player2 = snapshot.val().player2
+                raceto = snapshot.val().raceto
+                gameType = snapshot.val().gametype
+                document.getElementById("raceto").innerHTML += raceto
                 
     
                 firebase.database().ref('users/' + player1).once('value').then(function(snap) {
@@ -123,6 +129,7 @@ var config = {
 
 
     console.log(myself)
+    console.log(raceto)
     gameref.on("value", function(snapshot){
         document.getElementById("player1score").innerHTML = snapshot.val().player1score
         document.getElementById("player2score").innerHTML = snapshot.val().player2score
@@ -134,13 +141,111 @@ var config = {
             myscore = snapshot.val().player2score
 
         }
+        if(score1 >= raceto || score2 >= raceto){
+            document.getElementById("endgame").hidden = false
+        }else{
+            document.getElementById("endgame").hidden = true
+        }
+        if (snapshot.val().ended == true){
+            window.location = "Mainpage.html"
+        }
 
     })
 
   }
 
 
+  document.getElementById("endgame").addEventListener("click", E => {
+
+    if(score1 < score2){
+        var finalPlayer1Result = "lost"
+        var finalPlayer2Result = "won"
+    } else {
+        var finalPlayer1Result = "won"
+        var finalPlayer2Result = "lost"
+
+    }
 
 
+    var date = new Date();
+    const gameID = date + uname1 + ' vs ' + uname2;
+    firebase.database().ref('userstats/' + player1).once('value').then(function(snapshot) {
+        console.log(snapshot.val());
+
+    });
+
+
+    firebase.database().ref('lastgame/' + player1 + '/').set({
+      lastgame: gameID,
+      
+      });
+
+      firebase.database().ref('lastgame/' + player2 + '/').set({
+        lastgame: gameID,
+        
+        });
+
+
+
+
+
+
+    
+
+
+
+
+
+    firebase.database().ref('userstats/' + player1 + '/' + gameID).set({
+      opponent: uname2,
+      myscore: score1,
+      opponentscore: score2,
+      result: finalPlayer1Result,
+      });
+
+      firebase.database().ref('userstatsdifferentgames/' + player1 + '/' + gameType + '/' + gameID).set({
+        opponent: uname2,
+        myscore: score1,
+        opponentscore: score2,
+        result: finalPlayer1Result,
+        });
+  
+
+
+    
+
+      
+
+
+    firebase.database().ref('userstats/' + player2 + '/' + gameID).set({
+      opponent: uname1,
+      myscore: score2,
+      opponentscore: score1,
+      result: finalPlayer2Result,
+      });
+
+
+      firebase.database().ref('userstatsdifferentgames/' + player2 + '/' + gameType + '/' + gameID).set({
+        opponent: uname1,
+        myscore: score2,
+        opponentscore: score1,
+        result: finalPlayer2Result,
+          });
+
+
+
+        setTimeout(() => {
+
+            firebase.database().ref("live/" + player1).update({started: false})
+            firebase.database().ref("live/" + player2).update({started: false})
+
+
+            gameref.update({
+                ended: true
+            })
+        }, 3000);
+
+
+  })
 
 

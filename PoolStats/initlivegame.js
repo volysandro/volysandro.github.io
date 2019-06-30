@@ -37,22 +37,44 @@ var email
         
           });
 
-          firebase.database().ref('live/' + emailNC).set({
-            secret: secret,
-            started: false,
-            opponent: "none"            
-          }).then(function(){
-              liveref = firebase.database().ref('live/' + emailNC)
-              live(liveref)
-              document.getElementById("info").innerHTML += "key: " + secret
+
+
+          firebase.database().ref("live/" + emailNC).once("value").then(function(snapshot){
+            if (snapshot.val().started == true){
+              var answer = confirm("Continue previously started game?")
+              if (answer) {
+                  window.location = "livegamepage.html"
+              }
+              else {
+                  //some code
+                  firebase.database().ref('live/' + emailNC).set({
+                    secret: secret,
+                    started: false,
+                    opponent: "none"            
+                  }).then(function(){
+                      liveref = firebase.database().ref('live/' + emailNC)
+                      live(liveref)
+                      document.getElementById("info").innerHTML += "key: " + secret
+                  })
+              }
+            } else{
+              firebase.database().ref('live/' + emailNC).set({
+                secret: secret,
+                started: false,
+                opponent: "none"            
+              }).then(function(){
+                  liveref = firebase.database().ref('live/' + emailNC)
+                  live(liveref)
+                  document.getElementById("info").innerHTML += "key: " + secret
+              })
+
+            }
           })
 
-        firebase.database().ref('/tetriscounter').on('value', function(snapshot) {
+
+  
 
 
-
-
-        });
 
       
 
@@ -133,7 +155,8 @@ var email
         player1: emailNC,
         player2: opponentEmailNC,
         player1score: 0,
-        player2score: 0
+        player2score: 0,
+        ended: false
 
     })
 
@@ -155,3 +178,5 @@ var email
 
 
   }
+
+

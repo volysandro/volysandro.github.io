@@ -11,24 +11,29 @@
   <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   
 
 </head>
 <body style="background-color: #1f2833">
 
 
-<div class="centerLoginInput">
-  <p id="welcomeToLogin">Welcome back! <br> Please sign in...</p>
+<div class="card center" id="loginInfo">
+  <p id="welcomeToLogin"><b>Welcome back!</b> <br> Please sign in...</p>
   <input id="txtEmail" type="text" placeholder="Email...">
-  <input id="txtPassword" type="password" placeholder="Password..."><br><br>
-  <button id="btnLogin" class="btn btn-action">Log In</button>
-  <p style="color:#66fcf1" id="txtWrong"></p>
-  <button id="forgotPwd">Forgot Password</button>
-  <button id="requestResetEmail" hidden>Request Email</button>
+  <input id="txtPassword" type="password" placeholder="Password..."><br> <br>
+  <button id="btnLogin" class="btn btn-action blue">Log In</button>
+  <p style="color:#2196f3" id="txtWrong"></p>
+  <button class="btn btn-action blue" id="forgotPwd">Forgot Password</button> <br>
+  <button class="btn btn-action blue hide" id="requestResetEmail">Request Email</button> <br>
   <p style="color:#c5c6c7" id="emailSentOrNot"></p>
   
 
-
+</div>
 
   <script src="login.js"></script>
 </body>

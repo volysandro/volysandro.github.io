@@ -19,8 +19,9 @@
 
 btnForgot.addEventListener('click', e => {
   document.getElementById('emailSentOrNot').innerHTML = 'Enter your account-email in email input above.';
-  requestResetEmail.hidden = false;
-  document.getElementById('btnLogin').hidden = true;
+  document.getElementById("emailSentOrNot").style.color = "#2196f3"
+  requestResetEmail.className = "btn btn-action blue";
+  document.getElementById('btnLogin').className = "btn btn-action hide blue";
 });
 
 
@@ -29,12 +30,16 @@ requestResetEmail.addEventListener('click', e => {
 
 auth.sendPasswordResetEmail(txtEmail.value).then(function() {
   document.getElementById('emailSentOrNot').innerHTML = 'Email sent.'
-  requestResetEmail.hidden = true;
-  document.getElementById('btnLogin').hidden = false;
+  document.getElementById("emailSentOrNot").style.color = "#2196f3"
+
+  requestResetEmail.className = "btn btn-action hide blue";
+  document.getElementById('btnLogin').className = "btn btn-action blue";
 
 
 }).catch(function(error) {
   document.getElementById('emailSentOrNot').innerHTML = 'Error. Check email and try again.'
+  document.getElementById("emailSentOrNot").style.color = "#2196f3"
+
 });
 });
 

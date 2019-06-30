@@ -47,7 +47,7 @@ firebase.database().ref('lastgame/' + username).once('value').then(function(snap
         const opponentName = (snapshot.val() && snapshot.val().opponent) || 'N/A';
     
         document.getElementById('lastMatchup').innerHTML = 'You ' + lastGameResult + ' your last game against ' + opponentName;
-        document.getElementById('lastMatchupScore').innerHTML = lastGameMyScore + ' - ' + lastGameOpponentScore;
+        document.getElementById('lastMatchupScore').innerHTML = "<b>" + lastGameMyScore + ' - ' + lastGameOpponentScore + "</b>";
       });
 
   });
