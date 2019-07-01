@@ -16,8 +16,9 @@ var username
 var emailNC
 var email
 
-
-
+$(document).ready(function(){
+  $('select').formSelect();
+});
 
   firebase.auth().onAuthStateChanged(firebaseUser => {
     if(firebaseUser){
@@ -26,7 +27,15 @@ var email
       email = firebase.auth().currentUser.email;
       emailNC = email.replace('@', '').replace('.', '').replace('.', '').replace('.', '');
       let userref = firebase.database().ref('users/' + emailNC);
-  
+      var qrcode = new QRCode("qrcode", {
+        text: emailNC,
+        width: 128,
+        height: 128,
+        colorDark : "#000000",
+        colorLight : "#ffffff",
+        correctLevel : QRCode.CorrectLevel.H
+      });
+      
         console.log(userref)
 
     
@@ -40,6 +49,8 @@ var email
 
 
           firebase.database().ref("live/" + emailNC).once("value").then(function(snapshot){
+
+            
             if (snapshot.val().started == true){
               var answer = confirm("Continue previously started game?")
               if (answer) {
@@ -180,3 +191,92 @@ var email
   }
 
 
+
+
+  function openQRCamera(node) {
+
+
+      var reader = new FileReader();
+      reader.onload = function() {
+        node.value = "";
+        qrcode.callback = function(res) {
+          if(res instanceof Error) {
+            alert("No QR code found. Please make sure the QR code is within the camera's frame and try again.");
+          } else {
+            console.log(res)
+
+            if (document.getElementById("raceto").value > 0){
+              raceto = document.getElementById("raceto").value
+
+
+
+            } else {
+              var raceto = prompt("Race to?");
+    
+              if (raceto == null || raceto == "") {
+                txt = "User cancelled the prompt.";
+              } else {
+                document.getElementById("raceto").value = raceto
+                
+
+            }
+
+
+            }
+            if (document.getElementById("gametype").value != "none"){
+              gametype = document.getElementById("gametype").value
+            } else {
+              var gametype = prompt("What game would you like to play? (9, 8, 10)")
+              if (gametype == null || gametype == "") {
+                txt = "User cancelled the prompt.";
+              } 
+              else if (gametype == "10" || gametype == "9" || gametype == "8"){
+
+                if(gametype == "10"){
+                  gametype = "10-Ball"
+                } else if (gametype == "9"){
+                  gametype = "9-Ball"
+                } else if (gametype == "8"){
+                  gametype = "8-Ball"
+                }
+                
+                
+                
+                document.getElementById("gametype").value = gametype
+
+            }
+
+              }
+
+
+            var opponentEmailNC = res;
+            let opponentref = firebase.database().ref('users/' + opponentEmailNC);
+      
+      
+            firebase.database().ref('users/' + opponentEmailNC).once('value').then(function(snapshot) {
+              const opponentUname = (snapshot.val() && snapshot.val().username) || 'N/A';
+              console.log(opponentUname)
+            });
+
+
+            firebase.database().ref("live/" + opponentEmailNC).once("value").then(function(snapshot){
+
+                    startGame(snapshot.val().secret, opponentEmailNC, raceto, gametype)
+                    console.log(document.getElementById("gametype").value)
+      
+
+      
+            
+            
+            })
+
+
+
+
+          }
+        };
+        qrcode.decode(reader.result);
+      };
+      reader.readAsDataURL(node.files[0]);
+  
+    }

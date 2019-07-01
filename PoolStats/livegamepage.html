@@ -7,19 +7,33 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+                  <!-- Compiled and minified CSS -->
+                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+                  <!-- Compiled and minified JavaScript -->
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+                  <link rel="stylesheet" href="welcomeanimation.css">
 
 </head>
 <body>
 
-    <div id="player1"></div>
-    <div id="player1score"></div> <br>
-    <div id="player2"></div>
-    <div id="player2score"></div>
-    <div id="raceto">Race To: </div>
+        <div id="gameonrelative" class="clip-text clip-text_one"><b>GAME ON</b></div>
 
-    <button id="plus">+</button>
-    <button id="minus">-</button>
-    <button hidden id="endgame">End Game</button>
+
+    <div class="card center" id="livegamecard">
+
+        <h5 id="player1name"></h5>
+        <h4 id="player1score"></h4> <br>
+        <h5 id="player2name"></h5>
+        <h4 id="player2score"></h4>
+        <div id="raceto">Race To: </div>
+    
+        <button class="btn btn-action blue" id="plus">+</button>
+        <button class="btn btn-action blue" id="minus">-</button> <br>
+        <button class="btn-action blue hide" id="endgame">End Game</button>
+
+    </div>
+
     <script src='livegamepage.js'></script>
 
 </body>

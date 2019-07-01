@@ -53,13 +53,13 @@ var config = {
                 firebase.database().ref('users/' + player1).once('value').then(function(snap) {
                     console.log(snap.val())
                     uname1 = snap.val().username
-                    document.getElementById("player1").innerHTML = uname1
+                    document.getElementById("player1name").innerHTML = uname1
                 })
 
                 firebase.database().ref('users/' + player2).once('value').then(function(snap) {
                     console.log(snap.val())
                     uname2 = snap.val().username
-                    document.getElementById("player2").innerHTML = uname2
+                    document.getElementById("player2name").innerHTML = uname2
 
                 })
 
@@ -142,9 +142,9 @@ var config = {
 
         }
         if(score1 >= raceto || score2 >= raceto){
-            document.getElementById("endgame").hidden = false
+            document.getElementById("endgame").className = "btn btn-action blue"
         }else{
-            document.getElementById("endgame").hidden = true
+            document.getElementById("endgame").className = "btn btn-action blue hide"
         }
         if (snapshot.val().ended == true){
             window.location = "Mainpage.html"
