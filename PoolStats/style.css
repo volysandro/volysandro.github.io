@@ -374,3 +374,18 @@ margin-bottom: 30px;
     border-radius: 20px;
 
 }
+
+
+/* choose live game */
+
+#chooselivegame{
+    margin: 0 auto;
+    margin-top: 10%;
+    width: 90%;
+    background-color: white;
+    padding: 5px;
+    color: black;
+    line-height: 35px;
+    border-radius: 20px;
+
+}

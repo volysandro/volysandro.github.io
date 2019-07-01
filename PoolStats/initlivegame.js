@@ -15,6 +15,9 @@ console.log(secret);
 var username
 var emailNC
 var email
+var allowwatching
+var name
+var opponentname
 
 $(document).ready(function(){
   $('select').formSelect();
@@ -43,7 +46,8 @@ $(document).ready(function(){
             console.log(snapshot.val());
             username = (snapshot.val() && snapshot.val().username) || 'N/A';
             document.getElementById("info").innerHTML = "username: " + username + "<br>"
-        
+            name = snapshot.val().fullname
+            console.log(name)
           });
 
 
@@ -57,6 +61,10 @@ $(document).ready(function(){
                   window.location = "livegamepage.html"
               }
               else {
+
+                  firebase.database().ref("activegames/" + snapshot.val().id).update({
+                    ended: true
+                  })
                   //some code
                   firebase.database().ref('live/' + emailNC).set({
                     secret: secret,
@@ -102,6 +110,11 @@ $(document).ready(function(){
 
 
   document.getElementById("start").addEventListener("click", E => {
+
+      allowwatching = document.getElementById("watchingallowed").value
+
+
+
       var opponent = document.getElementById("opponent").value
       var opponentkey = document.getElementById("opponentkey").value
       console.log(opponent)
@@ -112,6 +125,7 @@ $(document).ready(function(){
 
       firebase.database().ref('users/' + opponentEmailNC).once('value').then(function(snapshot) {
         const opponentUname = (snapshot.val() && snapshot.val().username) || 'N/A';
+        opponentname = snapshot.val().fullname
         console.log(opponentUname)
       });
 
@@ -167,7 +181,11 @@ $(document).ready(function(){
         player2: opponentEmailNC,
         player1score: 0,
         player2score: 0,
-        ended: false
+        ended: false,
+        player1name: name,
+        player2name: opponentname,
+        id: gameid,
+        watchingallowed: allowwatching
 
     })
 
@@ -204,6 +222,7 @@ $(document).ready(function(){
             alert("No QR code found. Please make sure the QR code is within the camera's frame and try again.");
           } else {
             console.log(res)
+            allowwatching = document.getElementById("watchingallowed").value
 
             if (document.getElementById("raceto").value > 0){
               raceto = document.getElementById("raceto").value
@@ -255,20 +274,22 @@ $(document).ready(function(){
       
             firebase.database().ref('users/' + opponentEmailNC).once('value').then(function(snapshot) {
               const opponentUname = (snapshot.val() && snapshot.val().username) || 'N/A';
+              opponentname = snapshot.val().fullname
+
               console.log(opponentUname)
+              firebase.database().ref("live/" + opponentEmailNC).once("value").then(function(snapshot){
+  
+                      startGame(snapshot.val().secret, opponentEmailNC, raceto, gametype)
+                      console.log(document.getElementById("gametype").value)
+        
+  
+        
+              
+              
+              })
             });
 
 
-            firebase.database().ref("live/" + opponentEmailNC).once("value").then(function(snapshot){
-
-                    startGame(snapshot.val().secret, opponentEmailNC, raceto, gametype)
-                    console.log(document.getElementById("gametype").value)
-      
-
-      
-            
-            
-            })
 
 
 
