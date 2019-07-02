@@ -3,16 +3,18 @@
 <head>
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script> 
-        <script src="jquery.localscroll.js" type="text/javascript"></script> 
-        <script src="jquery.scrollTo.js" type="text/javascript"></script> 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Kali
     </title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    
-
+    <link rel="stylesheet" href="title.css">
 <script type="text/javascript">
 $(document).ready(function(){
     $( "a.scrollLink" ).click(function( event ) {
@@ -28,12 +30,6 @@ $(document).ready(function(){
 
 
 
-var fullHeight = $(document).height();
-var scrollTop = window.pageYOffset;
-
-if (scrollTop <= (fullHeight * (2/6))){
-    document.getElementById("footer").style.backgroundColor = "#2B2D42";
-}
 
 
 
@@ -47,7 +43,7 @@ if (scrollTop <= (fullHeight * (2/6))){
 
 <div class="welcomebox">
 
-<div id="gradient"></div>
+
 
 <!-- <div id="menu">
 
@@ -60,15 +56,24 @@ if (scrollTop <= (fullHeight * (2/6))){
     </div>
 </div> -->
 
+<div class="foo">
+    <span class="letter" data-letter="K">K</span>
+    <span class="letter" data-letter="A">A</span>
+    <span class="letter" data-letter="L">L</span>
+    <span class="letter" data-letter="I">I</span>
+    <h4 style="font-size:18px">CARBON SHAFTS</h4>
+
+  </div>
+
+
+  <a href="#" onclick="setLanguage('en')"><img id="english" src="english.png" alt=""></a>
+  <a href="#" onclick="setLanguage('de')"><img id="german" src="german.png" alt=""></a>
 
 
 
 
 
-
-
-
-    <a class="scroll-link" href="#training">
+    <a class="scroll-link" href="#info">
             <svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYMid meet">
                 <g fill="none" fill-rule="evenodd">
                     <rect width="70" height="118" x="1.5" y="1.5" stroke="#FFF" stroke-width="3" rx="36"/>
@@ -81,47 +86,32 @@ if (scrollTop <= (fullHeight * (2/6))){
 
     </div>
 
-    <div id="training">
+    <div id="info">
 
+
+        <div class="center card white hoverable" id="infocard"></div>
 
 
 
     </div>
 
-    <div id="team">
+    <div id="buy">
 
 
 
     </div>
 
     
-    <div id="news">
+    <div id="players">
         
 </div>
     
-    <div id="galerie">
+    <div id="more">
         
         
-            <script type="text/javascript">jssor_1_slider_init();</script></div>
         
 
 
-        <script>
-                var myIndex = 0;
-                carousel();
-                
-                function carousel() {
-                  var i;
-                  var x = document.getElementsByClassName("mySlides");
-                  for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";  
-                  }
-                  myIndex++;
-                  if (myIndex > x.length) {myIndex = 1}    
-                  x[myIndex-1].style.display = "block";  
-                  setTimeout(carousel, 2000); 
-                }
-                </script>
 
     </div>
     <div id="kontakt">

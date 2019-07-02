@@ -2,7 +2,23 @@
     background-color: #EDF2F4;
 }
 
+/* html, body{
+  height: 100%;
+  width: 100%;
+} */
 
+
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
+h4{
+  margin: 0;
+  padding: 0;
+  color: white;
+
+}
 
 .scroll-link {
     position: absolute;
@@ -58,8 +74,19 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
 
 
 
- 
+#german{
+  position: absolute;
+  height: 20px;
+  left: 5px;
+  top: 5px;
+}
 
+#english{
+  position: absolute;
+  height: 20px;
+  top: 30px;
+  left: 5px;
+}
   
 
  
@@ -119,7 +146,7 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
     left: 5%;
 }
 
-#training{
+#info{
     position: absolute;
     height: 100%;
     width: 100%;
@@ -128,9 +155,18 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
     left: 0%;
 
     margin: 0%;
+  }
+  
+  
+  #infocard{
+    width: 80%;
+    height: 50%;
+    margin: 0 auto;
+    margin-top: 10%;
 }
 
-#team{
+
+#buy{
     position: absolute;
     height: 100%;
     width: 100%;
@@ -154,7 +190,7 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
     z-index: 96;
 }
 
-#news{
+#players{
     position: absolute;
     height: 100%;
     width: 100%;
@@ -165,7 +201,7 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
 
 }
 
-#galerie{
+#more{
     position: absolute;
     height: 100%;
     width: 100%;
