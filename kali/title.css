@@ -3,7 +3,7 @@
   box-sizing:border-box;
 }
 body{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Kali', sans-serif;
     ;
 }
 div.foo{
@@ -17,8 +17,9 @@ div.foo{
   display: inline-block;
   font-weight: 900;
   font-size: 5em;
-  margin: 0.1em;
+  margin: 0em;
   margin-bottom: 0;
+  letter-spacing: 0;
   
   position: relative;
   color: #fff;
