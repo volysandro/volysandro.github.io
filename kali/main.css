@@ -606,3 +606,11 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
 
   .mySlides {display:none;}
 
+
+
+#youthInfoCard{
+  width: 80%;
+  height: 50%;
+
+border: 2px #232526;
+}

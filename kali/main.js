@@ -11,6 +11,8 @@ dataType: 'json', async: false, dataType: 'json',
 success: function (lang) { language = lang } });
 }
 
+
+
 function setLanguage(lang) {
 localStorage.setItem('language', lang);
 }
