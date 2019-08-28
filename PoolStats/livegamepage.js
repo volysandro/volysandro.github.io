@@ -127,6 +127,13 @@ var config = {
 
     })
 
+    firebase.database().ref("live/" + player1).on("value", function(snapshot){
+
+        if (snapshot.val().started == false){
+            window.location = "Mainpage.html"
+        }
+    })
+
 
     console.log(myself)
     console.log(raceto)

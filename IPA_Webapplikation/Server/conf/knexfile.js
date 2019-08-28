@@ -13,8 +13,8 @@ module.exports = {
         connection: {
             host: '127.0.0.1',
             user: 'root',
-            password: process.env.PASSWORD || 'gibbiX12345',
-            database: 'sporttag_db',
+            password: process.env.PASSWORD || '1120',
+            database: 'Sporttag_DB',
         }
     }
 }

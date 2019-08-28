@@ -26,6 +26,9 @@ module.exports = {
     // Compares the initails and password from the frontend to the one from the AD server
     async login(req, res) {
 
+        console.log("starting login")
+
+
         try {
             let {
                 username,
