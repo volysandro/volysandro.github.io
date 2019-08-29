@@ -5,8 +5,9 @@
   * Version:		  1.0
   * Date:		      01.03.2019
   * Description:	The registration form for the apprentices is summerized and sent to the backend.
+  * Code to check if logged in: v-if="this.$store.state.loggedIn" and formular in quotes
   -->
-  <v-container v-if="this.$store.state.loggedIn">
+  <v-container>
     <panel title="Anmeldeformular">
       <v-layout align-center justify-space-around row fill-height>
         <v-flex xs12 sm5>
@@ -96,14 +97,14 @@
     data() {
       return {
         formular: {
-          vorname: this.$store.state.user[0].Vorname,
-          nachname: this.$store.state.user[0].Nachname,
-          klasse: this.$store.state.user[0].Klassenname,
+          vorname: "this.$store.state.user[0].Vorname",
+          nachname: "this.$store.state.user[0].Nachname",
+          klasse: "this.$store.state.user[0].Klassenname",
           number: null,
           first: null,
           second: null,
           third: null,
-          userID: this.$store.state.user[0].ID_User
+          userID: "this.$store.state.user[0].ID_User"
         },
         activities: [],
         error: null,

@@ -186,13 +186,14 @@ function algo(studentsSet, sportsSet){
 
 
         console.log(sport + ": " + signedAsFirst.length + " times as first choice, " + signedAsSecond.length + " times as second choice, " + signedAsThird.length + " times as third choice, ")
-
+        console.log("")
         asport = []
         asport.push({
-            name: element.name
+            sportid: element.name,
+            room: element.count
         })
         
-        for (x = 0; x <= element.count; x++){
+        for (x = 0; x < element.count; x++){
 
             if (signedAsFirst.length > 0){
                 asport.push(signedAsFirst[0])
@@ -221,11 +222,37 @@ function algo(studentsSet, sportsSet){
         array.push(asport)
         
     });
+
+    array.forEach(element => {
+        console.log(element[0].sportid + ": " + (element.length -1) + " assigned!")
+    });
     
     
 
     console.log(studentsSet)
-    console.log(array)
+
+    while (studentsSet != 0){
+        studentsSet.forEach(element => {
+            console.log(element.name + " did not get matched. trying to match...")
+
+            trySport = array[Math.floor(Math.random()*array.length)]
+
+            console.log("Trying " + trySport[0].sportid + ", it has " + (trySport[0].room - (trySport.length -1)) + " room!")
+            if (trySport[0].room != trySport.length -1){
+                trySport.push({
+                    name: element.name,
+                    id: element.id
+                })
+                console.log("Got matched to " + trySport[0].sportid)
+                studentsSet.splice(studentsSet.findIndex(x => x.id == element.id), 1)
+
+            }
+
+        });
+    }
+
+
+    fs.writeFileSync("final.json", JSON.stringify(array, null, 2))
 
     return array
 }
