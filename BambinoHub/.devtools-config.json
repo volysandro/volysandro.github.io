@@ -21,5 +21,15 @@
     }
   ],
   "servers": [],
-  "websites": []
+  "websites": [
+    {
+      "websiteUrl": "https://vuetifyjs.com/en/getting-started/quick-start",
+      "name": "vuetify"
+    },
+    {
+      "websiteUrl": "http://localhost:8080",
+      "name": "Localhost 8080",
+      "timer": "30000"
+    }
+  ]
 }
