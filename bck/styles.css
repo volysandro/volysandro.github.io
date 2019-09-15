@@ -1,6 +1,6 @@
 body::before {
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
     content: '';
     will-change: transform;
     z-index: -1;
@@ -328,7 +328,6 @@ body .demo-blog {
   background-color: transparent;
 }
 .demo-blog--blogpost .demo-blog__posts > .mdl-card .mdl-card__media {
-  background-image: url('images/road_big.jpg');
   height: 280px;
 }
 .demo-blog--blogpost .comments {
