@@ -2,22 +2,10 @@
   "tools": [],
   "commands": [
     {
-      "rawCommandWithPath": "cd /home/sandro/volysandro.github.io/BambinoHub/bambinohub/ && x-terminal-emulator -e \"npm run serve\"",
+      "rawCommandWithPath": "cd /home/sandro/volysandro.github.io/BambinoHub/bambinohub && gnome-terminal -e \"npm run serve\"",
       "command": "npm run serve",
-      "name": "serve",
-      "path": "/home/sandro/volysandro.github.io/BambinoHub/bambinohub/"
-    },
-    {
-      "rawCommandWithPath": "cd /home/sandro/volysandro.github.io/BambinoHub/ && x-terminal-emulator -e \"code-insiders .\"",
-      "command": "code-insiders .",
-      "name": "code insider",
-      "path": "/home/sandro/volysandro.github.io/BambinoHub/"
-    },
-    {
-      "rawCommandWithPath": "cd /home/sandro/volysandro.github.io/BambinoHub/backend/ && x-terminal-emulator -e \"npm start\"",
-      "command": "npm start",
-      "name": "backend",
-      "path": "/home/sandro/volysandro.github.io/BambinoHub/backend/"
+      "name": "npm run serve",
+      "path": "/home/sandro/volysandro.github.io/BambinoHub/bambinohub"
     }
   ],
   "servers": [],

@@ -1,1 +1,0 @@
-cd /home/sandro/volysandro.github.io/BambinoHub/backend/ && x-terminal-emulator -e "npm start"

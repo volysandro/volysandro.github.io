@@ -1,1847 +1,1003 @@
 [
   {
     "name": "Joanne",
-<<<<<<< HEAD
-    "first": "Disc Golf",
-    "second": "Fechten",
-    "third": "Streetworkout",
-=======
-    "first": "Baseball",
-    "second": "Stadt-OL",
-    "third": "Beachvolleyball",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Skaten",
+    "second": "Minigolf",
+    "third": "Schwingen",
     "id": 0
   },
   {
     "name": "Leonard",
-<<<<<<< HEAD
-    "first": "Thaiboxen",
-    "second": "Beachvolleyball",
-    "third": "Bogenschiessen",
-=======
-    "first": "Hornussen",
-    "second": "Boule, kubb",
-    "third": "Squash",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Beachvolleyball",
+    "second": "Inlineskating Anfängerkurs",
+    "third": "Disc Golf",
     "id": 1
   },
   {
     "name": "Katherine",
-<<<<<<< HEAD
-    "first": "Boule, kubb",
-    "second": "Tennis",
-    "third": "Beachvolleyball",
-=======
-    "first": "Biken",
+    "first": "Squash",
     "second": "Skaten",
-    "third": "Boule, kubb",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "third": "Bouldern/Klettern",
     "id": 2
   },
   {
     "name": "Andrea",
-<<<<<<< HEAD
-    "first": "Baseball",
-    "second": "Bouldern/Klettern",
-    "third": "Tennis",
-=======
-    "first": "Stadt-OL",
-    "second": "Tischtennis",
-    "third": "Inlineskating Anfängerkurs",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Tennis",
+    "second": "Squash",
+    "third": "Minigolf",
     "id": 3
   },
   {
     "name": "Blake",
-<<<<<<< HEAD
-    "first": "Bogenschiessen",
-    "second": "Tennis",
-    "third": "Rugby",
-=======
-    "first": "Bouldern/Klettern",
-    "second": "Baseball",
-    "third": "Streetworkout",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Fechten",
+    "second": "Disc Golf",
+    "third": "HipHop",
     "id": 4
   },
   {
     "name": "Warren",
-<<<<<<< HEAD
-    "first": "HipHop",
-    "second": "Rugby",
-    "third": "Biken",
-=======
-    "first": "Streetworkout",
-    "second": "Disc Golf",
-    "third": "Inlineskating Anfängerkurs",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Bogenschiessen",
+    "second": "Biken",
+    "third": "Baseball",
     "id": 5
   },
   {
     "name": "Justin",
-<<<<<<< HEAD
-    "first": "Squash",
-    "second": "Tennis",
-    "third": "Biken",
-=======
-    "first": "Inlineskating Anfängerkurs",
-    "second": "Boule, kubb",
-    "third": "HipHop",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Stadt-OL",
+    "second": "Streetworkout",
+    "third": "Skaten",
     "id": 6
   },
   {
     "name": "Lily",
-<<<<<<< HEAD
-    "first": "HipHop",
-    "second": "Bouldern/Klettern",
-    "third": "Rugby",
-=======
-    "first": "Freestyle Trampolin",
-    "second": "Tennis",
-    "third": "Beachvolleyball",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Fechten",
+    "second": "Boule, kubb",
+    "third": "Streetworkout",
     "id": 7
   },
   {
     "name": "Eric",
-<<<<<<< HEAD
     "first": "Tennis",
-    "second": "Stadt-OL",
-    "third": "Tischtennis",
-=======
-    "first": "Skaten",
-    "second": "Inlineskating Anfängerkurs",
-    "third": "Beachsoccer",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "second": "Thaiboxen",
+    "third": "Biken",
     "id": 8
   },
   {
     "name": "Sarah",
-<<<<<<< HEAD
-    "first": "Beachvolleyball",
-    "second": "Squash",
-    "third": "Freestyle Trampolin",
-=======
-    "first": "Baseball",
-    "second": "Beachsoccer",
-    "third": "Tischtennis",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Squash",
+    "second": "Disc Golf",
+    "third": "Fechten",
     "id": 9
   },
   {
     "name": "Victoria",
-<<<<<<< HEAD
-    "first": "Rugby",
-    "second": "Inlineskating Anfängerkurs",
-    "third": "Stadt-OL",
-=======
-    "first": "Biken",
-    "second": "Rugby",
-    "third": "Freestyle Trampolin",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Beachvolleyball",
+    "second": "Hornussen",
+    "third": "Rugby",
     "id": 10
   },
   {
     "name": "Emily",
-<<<<<<< HEAD
-    "first": "Thaiboxen",
-    "second": "Tennis",
-    "third": "Boule, kubb",
-=======
-    "first": "Tischtennis",
-    "second": "Minigolf",
-    "third": "Tennis",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Fechten",
+    "second": "Baseball",
+    "third": "Disc Golf",
     "id": 11
   },
   {
     "name": "Trevor",
-<<<<<<< HEAD
-    "first": "Rugby",
-    "second": "Minigolf",
-    "third": "Boule, kubb",
-=======
-    "first": "Tennis",
-    "second": "HipHop",
-    "third": "Freestyle Trampolin",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Stadt-OL",
+    "second": "Biken",
+    "third": "Rugby",
     "id": 12
   },
   {
     "name": "Ian",
-<<<<<<< HEAD
-    "first": "Baseball",
-    "second": "Bogenschiessen",
-    "third": "Freestyle Trampolin",
-=======
-    "first": "HipHop",
-    "second": "Boule, kubb",
-    "third": "Tischtennis",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Squash",
+    "second": "Beachsoccer",
+    "third": "Fechten",
     "id": 13
   },
   {
     "name": "Luke",
-<<<<<<< HEAD
-    "first": "Inlineskating Anfängerkurs",
-    "second": "Schwingen",
-    "third": "Minigolf",
-=======
-    "first": "Stadt-OL",
-    "second": "HipHop",
+    "first": "Schwingen",
+    "second": "Freestyle Trampolin",
     "third": "Hornussen",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
     "id": 14
   },
   {
     "name": "Stephen",
-<<<<<<< HEAD
-    "first": "Tischtennis",
-    "second": "Freestyle Trampolin",
-    "third": "Skaten",
-=======
-    "first": "Minigolf",
-    "second": "Thaiboxen",
-    "third": "Schwingen",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Baseball",
+    "second": "Squash",
+    "third": "HipHop",
     "id": 15
   },
   {
     "name": "Adrian",
-<<<<<<< HEAD
-    "first": "Hornussen",
-    "second": "Beachsoccer",
-    "third": "Bouldern/Klettern",
-=======
-    "first": "Stadt-OL",
-    "second": "Squash",
-    "third": "Schwingen",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Tennis",
+    "second": "Stadt-OL",
+    "third": "Inlineskating Anfängerkurs",
     "id": 16
   },
   {
     "name": "Amy",
-<<<<<<< HEAD
-    "first": "Minigolf",
-    "second": "Rugby",
-    "third": "Thaiboxen",
-=======
-    "first": "Tischtennis",
-    "second": "Streetworkout",
-    "third": "Boule, kubb",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "HipHop",
+    "second": "Disc Golf",
+    "third": "Fechten",
     "id": 17
   },
   {
     "name": "Theresa",
-    "first": "Bouldern/Klettern",
-<<<<<<< HEAD
-    "second": "Hornussen",
-=======
-    "second": "Tischtennis",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
-    "third": "Squash",
+    "first": "Schwingen",
+    "second": "Disc Golf",
+    "third": "Thaiboxen",
     "id": 18
   },
   {
     "name": "Sebastian",
-<<<<<<< HEAD
-    "first": "Fechten",
-    "second": "Boule, kubb",
-    "third": "Rugby",
-=======
-    "first": "Streetworkout",
-    "second": "Biken",
-    "third": "Minigolf",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Disc Golf",
+    "second": "Beachsoccer",
+    "third": "Bogenschiessen",
     "id": 19
   },
   {
     "name": "Heather",
-<<<<<<< HEAD
-    "first": "Schwingen",
-    "second": "Boule, kubb",
-    "third": "Bogenschiessen",
-=======
-    "first": "Stadt-OL",
-    "second": "Boule, kubb",
-    "third": "Tischtennis",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Bouldern/Klettern",
+    "second": "Biken",
+    "third": "Hornussen",
     "id": 20
   },
   {
     "name": "Maria",
-<<<<<<< HEAD
-    "first": "Fechten",
-    "second": "Baseball",
-    "third": "Rugby",
-=======
-    "first": "Stadt-OL",
-    "second": "Hornussen",
-    "third": "Biken",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Squash",
+    "second": "Bouldern/Klettern",
+    "third": "Minigolf",
     "id": 21
   },
   {
     "name": "Kimberly",
-<<<<<<< HEAD
-    "first": "Fechten",
-    "second": "Beachsoccer",
-    "third": "Streetworkout",
-=======
-    "first": "Streetworkout",
-    "second": "Bogenschiessen",
-    "third": "Tennis",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Skaten",
+    "second": "Freestyle Trampolin",
+    "third": "Hornussen",
     "id": 22
   },
   {
     "name": "Tracey",
-<<<<<<< HEAD
-    "first": "Tennis",
-    "second": "Beachsoccer",
-    "third": "Fechten",
-=======
-    "first": "Skaten",
-    "second": "Fechten",
-    "third": "Bouldern/Klettern",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Hornussen",
+    "second": "Minigolf",
+    "third": "Freestyle Trampolin",
     "id": 23
   },
   {
     "name": "Samantha",
-<<<<<<< HEAD
-    "first": "Rugby",
-    "second": "Bouldern/Klettern",
-    "third": "Thaiboxen",
-=======
-    "first": "Minigolf",
+    "first": "Squash",
     "second": "Tischtennis",
-    "third": "Rugby",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "third": "Inlineskating Anfängerkurs",
     "id": 24
   },
   {
     "name": "Mary",
-<<<<<<< HEAD
-    "first": "Bogenschiessen",
-    "second": "Tischtennis",
-    "third": "Beachvolleyball",
-=======
-    "first": "Beachvolleyball",
-    "second": "Baseball",
-    "third": "Streetworkout",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Fechten",
+    "second": "Bouldern/Klettern",
+    "third": "Squash",
     "id": 25
   },
   {
     "name": "Kevin",
-<<<<<<< HEAD
-    "first": "Disc Golf",
-    "second": "Beachvolleyball",
-    "third": "Tennis",
-=======
-    "first": "Squash",
-    "second": "Rugby",
-    "third": "Beachsoccer",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Schwingen",
+    "second": "Baseball",
+    "third": "Beachvolleyball",
     "id": 26
   },
   {
     "name": "Harry",
-<<<<<<< HEAD
-    "first": "Rugby",
-    "second": "Baseball",
-    "third": "Streetworkout",
-=======
-    "first": "Inlineskating Anfängerkurs",
-    "second": "Baseball",
-    "third": "Bogenschiessen",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Thaiboxen",
+    "second": "HipHop",
+    "third": "Boule, kubb",
     "id": 27
   },
   {
     "name": "Benjamin",
-<<<<<<< HEAD
-    "first": "Thaiboxen",
-    "second": "Tennis",
-    "third": "Stadt-OL",
-=======
-    "first": "Inlineskating Anfängerkurs",
-    "second": "Biken",
-    "third": "Skaten",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Disc Golf",
+    "second": "Stadt-OL",
+    "third": "Rugby",
     "id": 28
   },
   {
     "name": "Amelia",
-<<<<<<< HEAD
-    "first": "Inlineskating Anfängerkurs",
-    "second": "Thaiboxen",
-    "third": "Disc Golf",
-=======
-    "first": "Rugby",
-    "second": "Inlineskating Anfängerkurs",
-    "third": "Fechten",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Bogenschiessen",
+    "second": "Minigolf",
+    "third": "Squash",
     "id": 29
   },
   {
     "name": "Carolyn",
-<<<<<<< HEAD
-    "first": "Stadt-OL",
-    "second": "Rugby",
-    "third": "Bouldern/Klettern",
-=======
-    "first": "Schwingen",
-    "second": "Hornussen",
-    "third": "Skaten",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Minigolf",
+    "second": "Tischtennis",
+    "third": "Beachvolleyball",
     "id": 30
   },
   {
     "name": "Matt",
-<<<<<<< HEAD
-    "first": "Schwingen",
-    "second": "Bouldern/Klettern",
-    "third": "Beachvolleyball",
-=======
-    "first": "Freestyle Trampolin",
-    "second": "Schwingen",
-    "third": "HipHop",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Beachvolleyball",
+    "second": "Tischtennis",
+    "third": "Freestyle Trampolin",
     "id": 31
   },
   {
     "name": "Colin",
-<<<<<<< HEAD
-    "first": "Tischtennis",
-    "second": "Skaten",
-    "third": "Streetworkout",
-=======
-    "first": "Bouldern/Klettern",
-    "second": "Streetworkout",
-    "third": "Fechten",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Inlineskating Anfängerkurs",
+    "second": "HipHop",
+    "third": "Skaten",
     "id": 32
   },
   {
     "name": "Frank",
-<<<<<<< HEAD
-    "first": "Freestyle Trampolin",
-    "second": "HipHop",
-    "third": "Hornussen",
-=======
-    "first": "Schwingen",
-    "second": "Rugby",
-    "third": "Thaiboxen",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Squash",
+    "second": "Minigolf",
+    "third": "Freestyle Trampolin",
     "id": 33
   },
   {
     "name": "Penelope",
-<<<<<<< HEAD
-    "first": "Schwingen",
-    "second": "Beachsoccer",
-    "third": "Minigolf",
-=======
-    "first": "Beachsoccer",
+    "first": "Inlineskating Anfängerkurs",
     "second": "Fechten",
-    "third": "Rugby",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "third": "Bogenschiessen",
     "id": 34
   },
   {
     "name": "Christian",
-<<<<<<< HEAD
-    "first": "HipHop",
-    "second": "Rugby",
-    "third": "Streetworkout",
-=======
-    "first": "Rugby",
-    "second": "Baseball",
-    "third": "Schwingen",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Disc Golf",
+    "second": "Beachsoccer",
+    "third": "Bogenschiessen",
     "id": 35
   },
   {
     "name": "Alison",
-    "first": "Squash",
-<<<<<<< HEAD
-    "second": "Streetworkout",
-    "third": "Stadt-OL",
-=======
-    "second": "Fechten",
-    "third": "Beachsoccer",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Hornussen",
+    "second": "Boule, kubb",
+    "third": "Rugby",
     "id": 36
   },
   {
     "name": "Amanda",
-<<<<<<< HEAD
-    "first": "Freestyle Trampolin",
-    "second": "Biken",
-    "third": "Hornussen",
-=======
-    "first": "Boule, kubb",
-    "second": "Schwingen",
-    "third": "HipHop",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Schwingen",
+    "second": "Stadt-OL",
+    "third": "Inlineskating Anfängerkurs",
     "id": 37
   },
   {
     "name": "Edward",
-<<<<<<< HEAD
-    "first": "Tennis",
-    "second": "Hornussen",
-    "third": "Tischtennis",
-=======
-    "first": "Thaiboxen",
-    "second": "Boule, kubb",
-    "third": "Minigolf",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Squash",
+    "second": "Streetworkout",
+    "third": "Beachsoccer",
     "id": 38
   },
   {
     "name": "Pippa",
-<<<<<<< HEAD
-    "first": "Tennis",
-    "second": "Bogenschiessen",
-    "third": "Baseball",
-=======
-    "first": "Disc Golf",
-    "second": "Tennis",
-    "third": "Thaiboxen",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Bogenschiessen",
+    "second": "Skaten",
+    "third": "HipHop",
     "id": 39
   },
   {
     "name": "Julia",
-<<<<<<< HEAD
-    "first": "Bouldern/Klettern",
-    "second": "Boule, kubb",
-    "third": "Baseball",
-=======
     "first": "Streetworkout",
-    "second": "Bogenschiessen",
-    "third": "Stadt-OL",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "second": "Skaten",
+    "third": "Bouldern/Klettern",
     "id": 40
   },
   {
     "name": "Stephanie",
-<<<<<<< HEAD
-    "first": "Streetworkout",
-    "second": "Beachvolleyball",
-    "third": "Bouldern/Klettern",
-=======
-    "first": "Fechten",
-    "second": "Beachsoccer",
-    "third": "Thaiboxen",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Freestyle Trampolin",
+    "second": "Thaiboxen",
+    "third": "Beachvolleyball",
     "id": 41
   },
   {
     "name": "Kylie",
-<<<<<<< HEAD
-    "first": "Fechten",
-    "second": "Biken",
-    "third": "Streetworkout",
-=======
-    "first": "Minigolf",
-    "second": "Squash",
-    "third": "Skaten",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Hornussen",
+    "second": "Freestyle Trampolin",
+    "third": "Inlineskating Anfängerkurs",
     "id": 42
   },
   {
     "name": "Jan",
-<<<<<<< HEAD
-    "first": "Beachsoccer",
-    "second": "Beachvolleyball",
-    "third": "HipHop",
-=======
-    "first": "Fechten",
-    "second": "Inlineskating Anfängerkurs",
-    "third": "Tischtennis",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Squash",
+    "second": "HipHop",
+    "third": "Baseball",
     "id": 43
   },
   {
     "name": "Anne",
-<<<<<<< HEAD
     "first": "Skaten",
-    "second": "Schwingen",
-    "third": "Bogenschiessen",
-=======
-    "first": "Minigolf",
-    "second": "Skaten",
-    "third": "Squash",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "second": "Hornussen",
+    "third": "Bouldern/Klettern",
     "id": 44
   },
   {
     "name": "Paul",
-<<<<<<< HEAD
-    "first": "Freestyle Trampolin",
-    "second": "Fechten",
-    "third": "Minigolf",
-=======
-    "first": "Disc Golf",
-    "second": "Streetworkout",
-    "third": "Biken",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Schwingen",
+    "second": "Minigolf",
+    "third": "Boule, kubb",
     "id": 45
   },
   {
     "name": "Yvonne",
-<<<<<<< HEAD
     "first": "Minigolf",
-    "second": "Thaiboxen",
-    "third": "Biken",
-=======
-    "first": "Inlineskating Anfängerkurs",
-    "second": "Tischtennis",
-    "third": "Freestyle Trampolin",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "second": "Inlineskating Anfängerkurs",
+    "third": "Bogenschiessen",
     "id": 46
   },
   {
     "name": "Jane",
-<<<<<<< HEAD
     "first": "Tischtennis",
-    "second": "Bouldern/Klettern",
-=======
-    "first": "Fechten",
-    "second": "Beachsoccer",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
-    "third": "Skaten",
+    "second": "Boule, kubb",
+    "third": "Beachvolleyball",
     "id": 47
   },
   {
     "name": "Piers",
-<<<<<<< HEAD
-    "first": "Thaiboxen",
-    "second": "HipHop",
-    "third": "Beachsoccer",
-=======
-    "first": "Inlineskating Anfängerkurs",
-    "second": "Fechten",
-    "third": "Bogenschiessen",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Hornussen",
+    "second": "Freestyle Trampolin",
+    "third": "Rugby",
     "id": 48
   },
   {
     "name": "Melanie",
-<<<<<<< HEAD
-    "first": "Freestyle Trampolin",
-    "second": "Hornussen",
-    "third": "Disc Golf",
-=======
-    "first": "Skaten",
-    "second": "Hornussen",
-    "third": "HipHop",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "HipHop",
+    "second": "Fechten",
+    "third": "Freestyle Trampolin",
     "id": 49
   },
   {
     "name": "Connor",
-<<<<<<< HEAD
-    "first": "Bouldern/Klettern",
-    "second": "Squash",
+    "first": "Rugby",
+    "second": "Hornussen",
     "third": "Skaten",
-=======
-    "first": "Biken",
-    "second": "Stadt-OL",
-    "third": "Fechten",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
     "id": 50
   },
   {
     "name": "Ryan",
-    "first": "Tischtennis",
-<<<<<<< HEAD
+    "first": "Minigolf",
     "second": "Tennis",
-    "third": "Disc Golf",
-=======
-    "second": "Bouldern/Klettern",
-    "third": "Skaten",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "third": "Hornussen",
     "id": 51
   },
   {
     "name": "Victor",
-<<<<<<< HEAD
-    "first": "Rugby",
-    "second": "Minigolf",
-    "third": "Beachvolleyball",
-=======
-    "first": "Boule, kubb",
-    "second": "Squash",
-    "third": "Disc Golf",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Minigolf",
+    "second": "Thaiboxen",
+    "third": "Boule, kubb",
     "id": 52
   },
   {
     "name": "Olivia",
-<<<<<<< HEAD
-    "first": "Boule, kubb",
-    "second": "Streetworkout",
-    "third": "Hornussen",
-=======
-    "first": "Bogenschiessen",
-    "second": "Hornussen",
-    "third": "Tennis",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Freestyle Trampolin",
+    "second": "Stadt-OL",
+    "third": "HipHop",
     "id": 53
   },
   {
     "name": "Simon",
-<<<<<<< HEAD
-    "first": "Schwingen",
-    "second": "Squash",
-    "third": "Streetworkout",
-=======
     "first": "Tennis",
-    "second": "Tischtennis",
-    "third": "HipHop",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "second": "Beachsoccer",
+    "third": "Stadt-OL",
     "id": 54
   },
   {
     "name": "Gavin",
-<<<<<<< HEAD
-    "first": "Thaiboxen",
-    "second": "Skaten",
-    "third": "Schwingen",
-=======
-    "first": "Hornussen",
-    "second": "Baseball",
-    "third": "Fechten",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Tennis",
+    "second": "Fechten",
+    "third": "Biken",
     "id": 55
   },
   {
     "name": "Lucas",
-<<<<<<< HEAD
-    "first": "Rugby",
-    "second": "HipHop",
-    "third": "Baseball",
-=======
-    "first": "HipHop",
-    "second": "Thaiboxen",
+    "first": "Disc Golf",
+    "second": "Fechten",
     "third": "Biken",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
     "id": 56
   },
   {
     "name": "Chloe",
-<<<<<<< HEAD
-    "first": "Tischtennis",
-    "second": "Squash",
-    "third": "Bogenschiessen",
-=======
-    "first": "Schwingen",
-    "second": "Squash",
-    "third": "Rugby",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Squash",
+    "second": "Boule, kubb",
+    "third": "Schwingen",
     "id": 57
   },
   {
     "name": "Tim",
-<<<<<<< HEAD
-    "first": "Beachvolleyball",
-    "second": "Stadt-OL",
-    "third": "Minigolf",
-=======
-    "first": "Freestyle Trampolin",
-    "second": "Fechten",
-    "third": "Hornussen",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Minigolf",
+    "second": "Skaten",
+    "third": "Biken",
     "id": 58
   },
   {
     "name": "Nicholas",
-<<<<<<< HEAD
-    "first": "Tennis",
-    "second": "Boule, kubb",
-    "third": "Baseball",
-=======
-    "first": "Rugby",
+    "first": "HipHop",
     "second": "Tischtennis",
-    "third": "Streetworkout",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "third": "Disc Golf",
     "id": 59
   },
   {
     "name": "Evan",
-<<<<<<< HEAD
-    "first": "Disc Golf",
-    "second": "Rugby",
-    "third": "Tennis",
-=======
-    "first": "Stadt-OL",
-    "second": "Tennis",
-    "third": "Biken",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Streetworkout",
+    "second": "Squash",
+    "third": "Stadt-OL",
     "id": 60
   },
   {
     "name": "Lillian",
-<<<<<<< HEAD
-    "first": "Boule, kubb",
-    "second": "Streetworkout",
-    "third": "Hornussen",
-=======
-    "first": "Inlineskating Anfängerkurs",
-    "second": "Bogenschiessen",
-    "third": "Thaiboxen",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Stadt-OL",
+    "second": "Inlineskating Anfängerkurs",
+    "third": "Fechten",
     "id": 61
   },
   {
     "name": "Sonia",
-<<<<<<< HEAD
-    "first": "Biken",
-    "second": "Baseball",
-    "third": "Hornussen",
-=======
-    "first": "Stadt-OL",
-    "second": "Minigolf",
-    "third": "Fechten",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Beachvolleyball",
+    "second": "Fechten",
+    "third": "Bouldern/Klettern",
     "id": 62
   },
   {
     "name": "Bella",
-<<<<<<< HEAD
-    "first": "Fechten",
-    "second": "Disc Golf",
-    "third": "Squash",
-=======
-    "first": "Thaiboxen",
-    "second": "Rugby",
+    "first": "Tischtennis",
+    "second": "Tennis",
     "third": "Beachvolleyball",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
     "id": 63
   },
   {
     "name": "Sophie",
-<<<<<<< HEAD
-    "first": "Disc Golf",
-    "second": "Stadt-OL",
-    "third": "Schwingen",
-=======
-    "first": "Stadt-OL",
-    "second": "Baseball",
-    "third": "Rugby",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Rugby",
+    "second": "Disc Golf",
+    "third": "Fechten",
     "id": 64
   },
   {
     "name": "Dan",
-<<<<<<< HEAD
-    "first": "Rugby",
-    "second": "Tennis",
-    "third": "HipHop",
-=======
-    "first": "Beachsoccer",
-    "second": "HipHop",
-    "third": "Tennis",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Thaiboxen",
+    "second": "Fechten",
+    "third": "Bogenschiessen",
     "id": 65
   },
   {
     "name": "Liam",
-<<<<<<< HEAD
-    "first": "Skaten",
-    "second": "HipHop",
-    "third": "Beachsoccer",
-=======
-    "first": "Biken",
-    "second": "Boule, kubb",
-    "third": "Thaiboxen",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Beachvolleyball",
+    "second": "Tischtennis",
+    "third": "Baseball",
     "id": 66
   },
   {
     "name": "Abigail",
-<<<<<<< HEAD
-    "first": "Inlineskating Anfängerkurs",
-    "second": "Beachsoccer",
-    "third": "Stadt-OL",
-=======
-    "first": "Stadt-OL",
-    "second": "Bouldern/Klettern",
-    "third": "Skaten",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Bouldern/Klettern",
+    "second": "Rugby",
+    "third": "Freestyle Trampolin",
     "id": 67
   },
   {
     "name": "Jason",
-<<<<<<< HEAD
-    "first": "HipHop",
-    "second": "Hornussen",
-    "third": "Disc Golf",
-=======
-    "first": "Squash",
-    "second": "Tischtennis",
-    "third": "Skaten",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Streetworkout",
+    "second": "Schwingen",
+    "third": "Fechten",
     "id": 68
   },
   {
     "name": "Oliver",
-<<<<<<< HEAD
-    "first": "Minigolf",
-    "second": "Tennis",
-    "third": "Streetworkout",
-=======
-    "first": "Streetworkout",
-    "second": "Bogenschiessen",
-    "third": "Beachvolleyball",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Bouldern/Klettern",
+    "second": "Stadt-OL",
+    "third": "Rugby",
     "id": 69
   },
   {
     "name": "Zoe",
-<<<<<<< HEAD
-    "first": "Fechten",
-    "second": "Bouldern/Klettern",
-    "third": "Streetworkout",
-=======
-    "first": "HipHop",
-    "second": "Rugby",
-    "third": "Skaten",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Freestyle Trampolin",
+    "second": "Streetworkout",
+    "third": "Hornussen",
     "id": 70
   },
   {
     "name": "Austin",
-<<<<<<< HEAD
-    "first": "Minigolf",
-    "second": "Tennis",
-    "third": "Fechten",
-=======
-    "first": "Baseball",
-    "second": "Skaten",
-    "third": "Beachvolleyball",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "HipHop",
+    "second": "Rugby",
+    "third": "Stadt-OL",
     "id": 71
   },
   {
     "name": "Wanda",
-<<<<<<< HEAD
-    "first": "Rugby",
-    "second": "Boule, kubb",
-    "third": "Schwingen",
-=======
-    "first": "Skaten",
-    "second": "Bouldern/Klettern",
-    "third": "Tischtennis",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Squash",
+    "second": "Inlineskating Anfängerkurs",
+    "third": "Thaiboxen",
     "id": 72
   },
   {
     "name": "Molly",
-<<<<<<< HEAD
-    "first": "Beachsoccer",
-    "second": "Fechten",
-    "third": "Inlineskating Anfängerkurs",
-=======
-    "first": "Beachvolleyball",
+    "first": "Squash",
     "second": "Stadt-OL",
-    "third": "Tischtennis",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "third": "Hornussen",
     "id": 73
   },
   {
     "name": "Neil",
-<<<<<<< HEAD
-    "first": "Skaten",
-    "second": "Streetworkout",
-    "third": "Minigolf",
-=======
-    "first": "Freestyle Trampolin",
-    "second": "Streetworkout",
-    "third": "Beachvolleyball",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Schwingen",
+    "second": "Boule, kubb",
+    "third": "Tennis",
     "id": 74
   },
   {
     "name": "Hannah",
-<<<<<<< HEAD
-    "first": "Hornussen",
-    "second": "Beachvolleyball",
-    "third": "Freestyle Trampolin",
-=======
-    "first": "Minigolf",
-    "second": "Baseball",
-    "third": "Fechten",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Freestyle Trampolin",
+    "second": "Streetworkout",
+    "third": "Thaiboxen",
     "id": 75
   },
   {
     "name": "Felicity",
-<<<<<<< HEAD
-    "first": "Biken",
-    "second": "Disc Golf",
-    "third": "Bouldern/Klettern",
-=======
-    "first": "Fechten",
-    "second": "Hornussen",
-    "third": "Squash",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Bogenschiessen",
+    "second": "Biken",
+    "third": "Fechten",
     "id": 76
   },
   {
     "name": "Gordon",
-<<<<<<< HEAD
-    "first": "Thaiboxen",
-    "second": "Minigolf",
-    "third": "Tennis",
-=======
-    "first": "Stadt-OL",
-    "second": "Beachsoccer",
-    "third": "Disc Golf",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Bouldern/Klettern",
+    "second": "Squash",
+    "third": "Biken",
     "id": 77
   },
   {
     "name": "Anthony",
-<<<<<<< HEAD
-    "first": "Hornussen",
+    "first": "Tennis",
     "second": "Fechten",
-    "third": "Squash",
-=======
-    "first": "Baseball",
-    "second": "Inlineskating Anfängerkurs",
-    "third": "Stadt-OL",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "third": "Biken",
     "id": 78
   },
   {
     "name": "Karen",
-<<<<<<< HEAD
-    "first": "Streetworkout",
-    "second": "Bogenschiessen",
-    "third": "Beachvolleyball",
-=======
-    "first": "Baseball",
-    "second": "Bogenschiessen",
-    "third": "Streetworkout",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Squash",
+    "second": "Freestyle Trampolin",
+    "third": "Bogenschiessen",
     "id": 79
   },
   {
     "name": "Michael",
-<<<<<<< HEAD
-    "first": "Squash",
-    "second": "Inlineskating Anfängerkurs",
-    "third": "HipHop",
-=======
-    "first": "Thaiboxen",
-    "second": "Skaten",
-    "third": "Disc Golf",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Beachvolleyball",
+    "second": "Beachsoccer",
+    "third": "Rugby",
     "id": 80
   },
   {
     "name": "Jacob",
-<<<<<<< HEAD
-    "first": "Baseball",
-    "second": "Stadt-OL",
-    "third": "Fechten",
-=======
-    "first": "Streetworkout",
-    "second": "Hornussen",
-    "third": "Boule, kubb",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Tennis",
+    "second": "Freestyle Trampolin",
+    "third": "Tischtennis",
     "id": 81
   },
   {
     "name": "William",
-<<<<<<< HEAD
-    "first": "Inlineskating Anfängerkurs",
-    "second": "Stadt-OL",
+    "first": "Minigolf",
+    "second": "Freestyle Trampolin",
     "third": "Bogenschiessen",
-=======
-    "first": "Thaiboxen",
-    "second": "Bouldern/Klettern",
-    "third": "Stadt-OL",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
     "id": 82
   },
   {
     "name": "Isaac",
-<<<<<<< HEAD
-    "first": "Biken",
-    "second": "Streetworkout",
-    "third": "Fechten",
-=======
-    "first": "Thaiboxen",
-    "second": "Freestyle Trampolin",
-    "third": "Squash",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Streetworkout",
+    "second": "Disc Golf",
+    "third": "Thaiboxen",
     "id": 83
   },
   {
     "name": "Vanessa",
-<<<<<<< HEAD
-    "first": "Beachvolleyball",
-    "second": "Tennis",
-=======
-    "first": "Skaten",
-    "second": "Beachvolleyball",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
-    "third": "Squash",
+    "first": "Tischtennis",
+    "second": "Stadt-OL",
+    "third": "Freestyle Trampolin",
     "id": 84
   },
   {
     "name": "Irene",
-<<<<<<< HEAD
-    "first": "Freestyle Trampolin",
-    "second": "Disc Golf",
-    "third": "Beachvolleyball",
-=======
-    "first": "Biken",
-    "second": "Minigolf",
-    "third": "Squash",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Streetworkout",
+    "second": "Squash",
+    "third": "Bouldern/Klettern",
     "id": 85
   },
   {
     "name": "Jack",
-<<<<<<< HEAD
-    "first": "HipHop",
-    "second": "Skaten",
-    "third": "Hornussen",
-=======
-    "first": "Hornussen",
-    "second": "Schwingen",
-    "third": "Skaten",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Rugby",
+    "second": "Disc Golf",
+    "third": "Fechten",
     "id": 86
   },
   {
     "name": "Ruth",
-<<<<<<< HEAD
-    "first": "Baseball",
-    "second": "Minigolf",
-    "third": "Schwingen",
-=======
-    "first": "HipHop",
-    "second": "Fechten",
-    "third": "Disc Golf",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Fechten",
+    "second": "Squash",
+    "third": "Baseball",
     "id": 87
   },
   {
     "name": "Julian",
-<<<<<<< HEAD
-    "first": "Thaiboxen",
-    "second": "Fechten",
-    "third": "Bouldern/Klettern",
-=======
-    "first": "Bouldern/Klettern",
-    "second": "Squash",
-    "third": "Minigolf",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Rugby",
+    "second": "Tischtennis",
+    "third": "Streetworkout",
     "id": 88
   },
   {
     "name": "Bernadette",
-<<<<<<< HEAD
-    "first": "Beachsoccer",
-    "second": "Tischtennis",
-    "third": "Inlineskating Anfängerkurs",
-=======
-    "first": "Bouldern/Klettern",
-    "second": "Tennis",
-    "third": "Beachsoccer",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Freestyle Trampolin",
+    "second": "Biken",
+    "third": "Boule, kubb",
     "id": 89
   },
   {
     "name": "Stewart",
-<<<<<<< HEAD
-    "first": "Beachvolleyball",
-    "second": "Fechten",
-    "third": "Minigolf",
-=======
-    "first": "Skaten",
-    "second": "Rugby",
-    "third": "Tischtennis",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Fechten",
+    "second": "Boule, kubb",
+    "third": "Disc Golf",
     "id": 90
   },
   {
     "name": "Brian",
-<<<<<<< HEAD
-    "first": "Bouldern/Klettern",
-    "second": "Baseball",
-    "third": "Stadt-OL",
-=======
-    "first": "Bogenschiessen",
-    "second": "Streetworkout",
-    "third": "Minigolf",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Tischtennis",
+    "second": "Boule, kubb",
+    "third": "HipHop",
     "id": 91
   },
   {
     "name": "Thomas",
-    "first": "Squash",
-<<<<<<< HEAD
-    "second": "Skaten",
-    "third": "Fechten",
-=======
-    "second": "Beachsoccer",
-    "third": "Tischtennis",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Hornussen",
+    "second": "Inlineskating Anfängerkurs",
+    "third": "Rugby",
     "id": 92
   },
   {
     "name": "Phil",
-<<<<<<< HEAD
-    "first": "Streetworkout",
-    "second": "Biken",
+    "first": "Rugby",
+    "second": "Squash",
     "third": "Inlineskating Anfängerkurs",
-=======
-    "first": "Biken",
-    "second": "Skaten",
-    "third": "HipHop",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
     "id": 93
   },
   {
     "name": "Joe",
-<<<<<<< HEAD
-    "first": "Rugby",
-    "second": "Streetworkout",
-    "third": "Stadt-OL",
-=======
-    "first": "Skaten",
-    "second": "Rugby",
-    "third": "Bouldern/Klettern",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Freestyle Trampolin",
+    "second": "Schwingen",
+    "third": "HipHop",
     "id": 94
   },
   {
     "name": "Megan",
-<<<<<<< HEAD
-    "first": "Streetworkout",
-    "second": "Skaten",
-    "third": "Squash",
-=======
-    "first": "Rugby",
-    "second": "Stadt-OL",
-    "third": "Streetworkout",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Inlineskating Anfängerkurs",
+    "second": "Beachsoccer",
+    "third": "Hornussen",
     "id": 95
   },
   {
     "name": "Dylan",
-<<<<<<< HEAD
-    "first": "Tischtennis",
+    "first": "HipHop",
     "second": "Beachsoccer",
-    "third": "Bogenschiessen",
-=======
-    "first": "Boule, kubb",
-    "second": "Skaten",
-    "third": "Streetworkout",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "third": "Tischtennis",
     "id": 96
   },
   {
     "name": "Lauren",
-<<<<<<< HEAD
-    "first": "Minigolf",
-    "second": "Streetworkout",
-    "third": "Inlineskating Anfängerkurs",
-=======
-    "first": "Bouldern/Klettern",
-    "second": "Hornussen",
-    "third": "Baseball",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Schwingen",
+    "second": "Thaiboxen",
+    "third": "Squash",
     "id": 97
   },
   {
     "name": "Adam",
-<<<<<<< HEAD
-    "first": "Minigolf",
-    "second": "Boule, kubb",
-    "third": "Disc Golf",
-=======
-    "first": "Squash",
-    "second": "Bogenschiessen",
-    "third": "Minigolf",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Biken",
+    "second": "Streetworkout",
+    "third": "Bogenschiessen",
     "id": 98
   },
   {
     "name": "Keith",
-<<<<<<< HEAD
-    "first": "Thaiboxen",
-    "second": "Baseball",
-    "third": "Skaten",
-=======
-    "first": "Tennis",
-    "second": "Skaten",
-    "third": "Boule, kubb",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Biken",
+    "second": "Streetworkout",
+    "third": "Disc Golf",
     "id": 99
   },
   {
     "name": "Dominic",
-<<<<<<< HEAD
-    "first": "Thaiboxen",
-    "second": "Squash",
-    "third": "Tennis",
-=======
-    "first": "Tennis",
-    "second": "Minigolf",
-    "third": "Schwingen",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Fechten",
+    "second": "Baseball",
+    "third": "Disc Golf",
     "id": 100
   },
   {
     "name": "Diane",
-<<<<<<< HEAD
-    "first": "Skaten",
-    "second": "Tischtennis",
-    "third": "Hornussen",
-=======
-    "first": "Beachvolleyball",
-    "second": "Bouldern/Klettern",
-    "third": "Rugby",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Thaiboxen",
+    "second": "Minigolf",
+    "third": "Freestyle Trampolin",
     "id": 101
   },
   {
     "name": "Sue",
-<<<<<<< HEAD
-    "first": "Bogenschiessen",
+    "first": "Schwingen",
     "second": "Thaiboxen",
-    "third": "Disc Golf",
-=======
-    "first": "Thaiboxen",
-    "second": "HipHop",
-    "third": "Baseball",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "third": "Boule, kubb",
     "id": 102
   },
   {
     "name": "Alexander",
-<<<<<<< HEAD
-    "first": "Rugby",
-    "second": "Stadt-OL",
-    "third": "Squash",
-=======
-    "first": "Bogenschiessen",
-    "second": "Beachvolleyball",
+    "first": "Stadt-OL",
+    "second": "Schwingen",
     "third": "Fechten",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
     "id": 103
   },
   {
     "name": "Jessica",
-<<<<<<< HEAD
-    "first": "Beachvolleyball",
+    "first": "Freestyle Trampolin",
     "second": "Stadt-OL",
-    "third": "Fechten",
-=======
-    "first": "Bogenschiessen",
-    "second": "HipHop",
-    "third": "Disc Golf",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "third": "Beachsoccer",
     "id": 104
   },
   {
     "name": "Carol",
-<<<<<<< HEAD
-    "first": "Freestyle Trampolin",
-    "second": "Disc Golf",
-    "third": "Baseball",
-=======
-    "first": "Inlineskating Anfängerkurs",
-    "second": "Baseball",
-    "third": "Bogenschiessen",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Beachvolleyball",
+    "second": "Streetworkout",
+    "third": "Fechten",
     "id": 105
   },
   {
     "name": "Grace",
-<<<<<<< HEAD
-    "first": "Beachvolleyball",
-    "second": "Baseball",
-    "third": "Beachsoccer",
-=======
-    "first": "Freestyle Trampolin",
-    "second": "Stadt-OL",
-    "third": "Thaiboxen",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Tischtennis",
+    "second": "Biken",
+    "third": "Schwingen",
     "id": 106
   },
   {
     "name": "Faith",
-<<<<<<< HEAD
-    "first": "Tischtennis",
-    "second": "Bogenschiessen",
-    "third": "Tennis",
-=======
-    "first": "HipHop",
-    "second": "Thaiboxen",
-    "third": "Biken",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Inlineskating Anfängerkurs",
+    "second": "HipHop",
+    "third": "Beachvolleyball",
     "id": 107
   },
   {
     "name": "Una",
-<<<<<<< HEAD
-    "first": "HipHop",
-    "second": "Fechten",
-    "third": "Baseball",
-=======
-    "first": "Beachsoccer",
-    "second": "Freestyle Trampolin",
-    "third": "Biken",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Tischtennis",
+    "second": "Bogenschiessen",
+    "third": "Tennis",
     "id": 108
   },
   {
     "name": "Michelle",
-<<<<<<< HEAD
-    "first": "Minigolf",
-    "second": "HipHop",
-    "third": "Skaten",
-=======
-    "first": "Boule, kubb",
-    "second": "Tischtennis",
-    "third": "Minigolf",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Bouldern/Klettern",
+    "second": "Squash",
+    "third": "Disc Golf",
     "id": 109
   },
   {
     "name": "Sally",
-<<<<<<< HEAD
-    "first": "HipHop",
-    "second": "Thaiboxen",
-    "third": "Skaten",
-=======
     "first": "Beachsoccer",
-    "second": "Inlineskating Anfängerkurs",
-    "third": "Squash",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "second": "Schwingen",
+    "third": "Tischtennis",
     "id": 110
   },
   {
     "name": "Madeleine",
-<<<<<<< HEAD
-    "first": "Beachvolleyball",
-    "second": "Tischtennis",
-=======
-    "first": "Schwingen",
-    "second": "Boule, kubb",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
-    "third": "Bogenschiessen",
+    "first": "Minigolf",
+    "second": "Stadt-OL",
+    "third": "Schwingen",
     "id": 111
   },
   {
     "name": "Wendy",
-<<<<<<< HEAD
-    "first": "Boule, kubb",
-    "second": "Skaten",
-    "third": "HipHop",
-=======
-    "first": "Baseball",
-    "second": "Tischtennis",
-    "third": "Fechten",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Tennis",
+    "second": "HipHop",
+    "third": "Tischtennis",
     "id": 112
   },
   {
     "name": "Rose",
-<<<<<<< HEAD
-    "first": "Boule, kubb",
-    "second": "Bogenschiessen",
-    "third": "Squash",
-=======
-    "first": "Inlineskating Anfängerkurs",
-    "second": "Fechten",
-    "third": "Beachvolleyball",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Baseball",
+    "second": "Beachvolleyball",
+    "third": "Stadt-OL",
     "id": 113
   },
   {
     "name": "Sean",
-<<<<<<< HEAD
-    "first": "Biken",
-    "second": "Beachsoccer",
-    "third": "Bogenschiessen",
-=======
-    "first": "Tischtennis",
-    "second": "Minigolf",
-    "third": "Freestyle Trampolin",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Streetworkout",
+    "second": "Bouldern/Klettern",
+    "third": "Boule, kubb",
     "id": 114
   },
   {
     "name": "Dorothy",
-<<<<<<< HEAD
-    "first": "Beachsoccer",
-    "second": "Bogenschiessen",
-    "third": "Schwingen",
-=======
-    "first": "Boule, kubb",
-    "second": "Rugby",
+    "first": "Freestyle Trampolin",
+    "second": "HipHop",
     "third": "Biken",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
     "id": 115
   },
   {
     "name": "Lisa",
-<<<<<<< HEAD
-    "first": "Thaiboxen",
-    "second": "Boule, kubb",
-    "third": "HipHop",
-=======
     "first": "Inlineskating Anfängerkurs",
-    "second": "Hornussen",
-    "third": "Biken",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "second": "Schwingen",
+    "third": "HipHop",
     "id": 116
   },
   {
     "name": "Rachel",
-<<<<<<< HEAD
-    "first": "Tischtennis",
-    "second": "Inlineskating Anfängerkurs",
-    "third": "Streetworkout",
-=======
-    "first": "Tennis",
-    "second": "Disc Golf",
-    "third": "Freestyle Trampolin",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Freestyle Trampolin",
+    "second": "Minigolf",
+    "third": "Tischtennis",
     "id": 117
   },
   {
     "name": "Ella",
-<<<<<<< HEAD
-    "first": "Baseball",
-    "second": "Rugby",
-    "third": "Tischtennis",
-=======
-    "first": "Rugby",
-    "second": "Boule, kubb",
-    "third": "HipHop",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Schwingen",
+    "second": "Freestyle Trampolin",
+    "third": "Stadt-OL",
     "id": 118
   },
   {
     "name": "Boris",
-<<<<<<< HEAD
-    "first": "Beachvolleyball",
-    "second": "Streetworkout",
-    "third": "Baseball",
-=======
-    "first": "Beachsoccer",
-    "second": "Minigolf",
-    "third": "Schwingen",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Bouldern/Klettern",
+    "second": "Freestyle Trampolin",
+    "third": "Rugby",
     "id": 119
   },
   {
     "name": "Deirdre",
-<<<<<<< HEAD
-    "first": "Skaten",
-    "second": "Minigolf",
-    "third": "Boule, kubb",
-=======
-    "first": "Rugby",
-    "second": "Hornussen",
-    "third": "Squash",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Biken",
+    "second": "Baseball",
+    "third": "Rugby",
     "id": 120
   },
   {
     "name": "Audrey",
-<<<<<<< HEAD
-    "first": "Bouldern/Klettern",
-    "second": "HipHop",
-    "third": "Baseball",
-=======
-    "first": "Fechten",
-    "second": "Streetworkout",
-    "third": "Disc Golf",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Bogenschiessen",
+    "second": "Beachsoccer",
+    "third": "Inlineskating Anfängerkurs",
     "id": 121
   },
   {
     "name": "Rebecca",
-<<<<<<< HEAD
-    "first": "Skaten",
-    "second": "Squash",
-    "third": "Minigolf",
-=======
-    "first": "Bouldern/Klettern",
-    "second": "Tennis",
-    "third": "Stadt-OL",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Schwingen",
+    "second": "Minigolf",
+    "third": "Streetworkout",
     "id": 122
   },
   {
     "name": "Andrew",
-<<<<<<< HEAD
-    "first": "Baseball",
-    "second": "Freestyle Trampolin",
-    "third": "Schwingen",
-=======
-    "first": "Tennis",
-    "second": "Bouldern/Klettern",
-    "third": "Inlineskating Anfängerkurs",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Disc Golf",
+    "second": "Beachsoccer",
+    "third": "Minigolf",
     "id": 123
   },
   {
     "name": "Owen",
-<<<<<<< HEAD
-    "first": "Inlineskating Anfängerkurs",
-    "second": "Hornussen",
-    "third": "Biken",
-=======
-    "first": "Streetworkout",
-    "second": "Skaten",
-    "third": "Stadt-OL",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Boule, kubb",
+    "second": "Inlineskating Anfängerkurs",
+    "third": "Thaiboxen",
     "id": 124
   },
   {
     "name": "Anna",
-<<<<<<< HEAD
-    "first": "Squash",
-    "second": "Beachvolleyball",
-    "third": "Fechten",
-=======
-    "first": "Skaten",
-    "second": "Baseball",
-    "third": "Squash",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Inlineskating Anfängerkurs",
+    "second": "Beachsoccer",
+    "third": "Freestyle Trampolin",
     "id": 125
   },
   {
     "name": "Joshua",
-<<<<<<< HEAD
-    "first": "Hornussen",
-    "second": "Schwingen",
-=======
-    "first": "Freestyle Trampolin",
-    "second": "Hornussen",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
-    "third": "Inlineskating Anfängerkurs",
+    "first": "Stadt-OL",
+    "second": "Thaiboxen",
+    "third": "Disc Golf",
     "id": 126
   },
   {
     "name": "Sam",
-<<<<<<< HEAD
-    "first": "Beachsoccer",
-    "second": "Schwingen",
-    "third": "Disc Golf",
-=======
-    "first": "Bogenschiessen",
-    "second": "Biken",
-    "third": "Minigolf",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Baseball",
+    "second": "Streetworkout",
+    "third": "Freestyle Trampolin",
     "id": 127
   },
   {
     "name": "Steven",
-<<<<<<< HEAD
-    "first": "Disc Golf",
-    "second": "Tennis",
-    "third": "Beachsoccer",
-=======
-    "first": "Hornussen",
-    "second": "Freestyle Trampolin",
-    "third": "Boule, kubb",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Beachsoccer",
+    "second": "Bouldern/Klettern",
+    "third": "HipHop",
     "id": 128
   },
   {
     "name": "Jennifer",
-    "first": "Bouldern/Klettern",
-<<<<<<< HEAD
-    "second": "Skaten",
-    "third": "Boule, kubb",
-=======
-    "second": "Beachvolleyball",
-    "third": "Stadt-OL",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Beachvolleyball",
+    "second": "Stadt-OL",
+    "third": "Disc Golf",
     "id": 129
   },
   {
     "name": "Ava",
-<<<<<<< HEAD
-    "first": "Disc Golf",
-    "second": "Bouldern/Klettern",
-    "third": "HipHop",
-=======
-    "first": "Stadt-OL",
-    "second": "Minigolf",
-    "third": "Rugby",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Streetworkout",
+    "second": "Tennis",
+    "third": "Disc Golf",
     "id": 130
   },
   {
     "name": "Charles",
-<<<<<<< HEAD
-    "first": "Squash",
-    "second": "Beachvolleyball",
-    "third": "Beachsoccer",
-=======
-    "first": "Baseball",
-    "second": "HipHop",
-    "third": "Thaiboxen",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "HipHop",
+    "second": "Freestyle Trampolin",
+    "third": "Hornussen",
     "id": 131
   },
   {
     "name": "Joseph",
-    "first": "Freestyle Trampolin",
-    "second": "Tischtennis",
-<<<<<<< HEAD
-    "third": "HipHop",
-=======
-    "third": "Hornussen",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Disc Golf",
+    "second": "Inlineskating Anfängerkurs",
+    "third": "Squash",
     "id": 132
   },
   {
     "name": "Elizabeth",
-    "first": "Schwingen",
-<<<<<<< HEAD
-    "second": "Beachvolleyball",
-    "third": "Boule, kubb",
-=======
-    "second": "Tischtennis",
-    "third": "Tennis",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Beachvolleyball",
+    "second": "Bouldern/Klettern",
+    "third": "Rugby",
     "id": 133
   },
   {
     "name": "Jonathan",
-<<<<<<< HEAD
-    "first": "Beachvolleyball",
-    "second": "Biken",
-    "third": "Hornussen",
-=======
-    "first": "Thaiboxen",
-    "second": "Bouldern/Klettern",
-    "third": "Stadt-OL",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Boule, kubb",
+    "second": "Hornussen",
+    "third": "Schwingen",
     "id": 134
   },
   {
     "name": "Joan",
-<<<<<<< HEAD
-    "first": "Stadt-OL",
-    "second": "Hornussen",
-=======
-    "first": "Tischtennis",
-    "second": "Stadt-OL",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
-    "third": "Streetworkout",
+    "first": "Biken",
+    "second": "Squash",
+    "third": "Hornussen",
     "id": 135
   },
   {
     "name": "John",
-<<<<<<< HEAD
-    "first": "Freestyle Trampolin",
-    "second": "Baseball",
-    "third": "Streetworkout",
-=======
-    "first": "Stadt-OL",
-    "second": "Skaten",
-    "third": "Freestyle Trampolin",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Minigolf",
+    "second": "Beachsoccer",
+    "third": "Baseball",
     "id": 136
   },
   {
     "name": "Caroline",
-<<<<<<< HEAD
-    "first": "Minigolf",
-    "second": "Bogenschiessen",
-    "third": "Schwingen",
-=======
-    "first": "Stadt-OL",
-    "second": "Schwingen",
-    "third": "Baseball",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Bouldern/Klettern",
+    "second": "HipHop",
+    "third": "Tischtennis",
     "id": 137
   },
   {
     "name": "Richard",
-<<<<<<< HEAD
-    "first": "Schwingen",
-    "second": "Minigolf",
-    "third": "Beachvolleyball",
-=======
-    "first": "Rugby",
-    "second": "Disc Golf",
-    "third": "Freestyle Trampolin",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Bogenschiessen",
+    "second": "Boule, kubb",
+    "third": "Hornussen",
     "id": 138
   },
   {
     "name": "Carl",
-<<<<<<< HEAD
-    "first": "Tennis",
-    "second": "Schwingen",
-    "third": "Thaiboxen",
-=======
-    "first": "Minigolf",
-    "second": "Beachsoccer",
-    "third": "Schwingen",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Fechten",
+    "second": "Skaten",
+    "third": "Hornussen",
     "id": 139
   },
   {
     "name": "Alexandra",
-<<<<<<< HEAD
-    "first": "Tischtennis",
-    "second": "Freestyle Trampolin",
-    "third": "HipHop",
-=======
-    "first": "HipHop",
-    "second": "Inlineskating Anfängerkurs",
-    "third": "Rugby",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Streetworkout",
+    "second": "Baseball",
+    "third": "Fechten",
     "id": 140
   },
   {
     "name": "Gabrielle",
-<<<<<<< HEAD
-    "first": "Minigolf",
-    "second": "Skaten",
-    "third": "Streetworkout",
-=======
-    "first": "HipHop",
-    "second": "Tennis",
-    "third": "Rugby",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "Disc Golf",
+    "second": "Freestyle Trampolin",
+    "third": "Fechten",
     "id": 141
   },
   {
     "name": "James",
-<<<<<<< HEAD
-    "first": "Bogenschiessen",
-    "second": "Inlineskating Anfängerkurs",
-    "third": "Schwingen",
-=======
-    "first": "Thaiboxen",
-    "second": "Rugby",
-    "third": "Hornussen",
->>>>>>> 8cbbbdfa9f27da9dacf3d499cd2c869eb7e8ea46
+    "first": "HipHop",
+    "second": "Skaten",
+    "third": "Freestyle Trampolin",
     "id": 142
   }
 ]

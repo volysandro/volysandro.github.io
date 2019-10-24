@@ -1,1 +1,0 @@
-cd /home/sandro/volysandro.github.io/BambinoHub/ && x-terminal-emulator -e "code-insiders ."
