@@ -5,7 +5,7 @@ body {
     height: 100%;
     overflow-x: hidden;
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .icon {
@@ -34,9 +34,10 @@ body {
 }
 
 #titel {
-    margin-top: 10%;
+    margin-top: 30%;
     text-align: center;
     margin-bottom: 40px;
+    width: 80%;
 }
 
 .center {
@@ -53,9 +54,8 @@ body {
 #sub {
     font-size: 20px;
     margin: 15px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 
 }
 
 #text {}
-
