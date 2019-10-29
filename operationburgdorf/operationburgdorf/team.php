@@ -48,12 +48,14 @@
 
               if($col == 4){
                 $col = 0;
+                $col++;
+
                 echo "
                 </div>
-                <div class=\"row\">;
+                <div style=\"margin-top: 80px;\" class=\"row\">
 
                 <div class=\"col s3 m3\">
-                  <div style=\"width: 350px; margin: 0; margin-top: 200px;\" class=\"person card hoverable\">
+                  <div style=\"width: 350px; margin: 0 auto; height: 500px; border-radius:10px;\" class=\"person card hoverable\">
                   <div style=\"height: 300px;\" class=\"card-image center\">
                   <img style=\"height: 300px;\" src=\"$img\">
                   </div>
@@ -64,10 +66,11 @@
                 ";
               }
               else{
+                $col++;
 
                 echo "
                 <div class=\"col s3 m3\">
-                  <div style=\"width: 350px; margin: 0; margin-top: 200px;\" class=\"person card hoverable\">
+                  <div style=\"width: 350px; margin: 0 auto; height: 500px; border-radius:10px;\" class=\"person card hoverable\">
                   <div style=\"height: 300px;\" class=\"card-image center\">
                   <img style=\"height: 300px;\" src=\"$img\">
                   </div>
@@ -76,7 +79,6 @@
                   </div>
                   </div>
                 ";
-                $col++;
               }
               //ausgabe
             }
