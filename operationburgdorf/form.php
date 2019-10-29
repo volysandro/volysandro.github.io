@@ -33,9 +33,9 @@
         if (!file_exists($path . "/" . $name)) {
 
         //Ordner erstellen
-        mkdir("$path" . "/$name", 0700);
-        mkdir("$path" . "/$name/img", 0700);
-        mkdir("$path" . "/$name/desc", 0700);
+        mkdir("$path" . "/$name", 0755);
+        mkdir("$path" . "/$name/img", 0755);
+        mkdir("$path" . "/$name/desc", 0755);
 
         //Beschreibung
         file_put_contents("$path/$name/desc/desc.txt", $desc);
