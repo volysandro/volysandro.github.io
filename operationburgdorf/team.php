@@ -31,6 +31,9 @@
             <div class="center" id="titel">
                 <h1 id="title">Team und Unterstützung</h1>
             </div>
+
+            <div>
+
             <?php
 
             $path = "./pers";
@@ -38,7 +41,6 @@
             $entries = count($pers);
             $col = 0;
 
-            echo "<div class=\"row\">";
         
             for ($i=2; $i <= $entries + 1; $i++) {
               //shit kriegen
@@ -46,43 +48,19 @@
               $desc = file_get_contents($path . "/" . $pers[$i] . "/" . $object[3]);
               $img = $path . "/" . $pers[$i] . "/" . $object[2];
 
-              if($col == 4){
-                $col = 0;
-                $col++;
 
                 echo "
-                </div>
-                <div style=\"margin-top: 80px;\" class=\"row\">
-
-                <div class=\"col s3 m3\">
-                  <div style=\"width: 350px; margin: 0 auto; height: 500px; border-radius:10px;\" class=\"person card hoverable\">
-                  <div style=\"height: 300px;\" class=\"card-image center\">
-                  <img style=\"height: 300px;\" src=\"$img\">
-                  </div>
-                  <h4>$pers[$i]</h4>
-                    <p>$desc</p>
-                  </div>
-                  </div>
-                ";
-              }
-              else{
-                $col++;
-
-                echo "
-                <div class=\"col s3 m3\">
-                  <div style=\"width: 350px; margin: 0 auto; height: 500px; border-radius:10px;\" class=\"person card hoverable\">
-                  <div style=\"height: 300px;\" class=\"card-image center\">
-                  <img style=\"height: 300px;\" src=\"$img\">
-                  </div>
-                  <h4>$pers[$i]</h4>
-                    <p>$desc</p>
-                  </div>
-                  </div>
+                  <div style=\"width: 350px; border-radius:10px; height: 500px; margin-top: 10%;\" class=\"person\">
+                  <img style=\"height: 50%;\" src=\"$img\">
+                  <h4 style=\"margin: 0px; \">$pers[$i]</h4>
+                    <p style=\"margin: 0px; height: 200px;\">$desc</p>
+                    </div>
                 ";
               }
               //ausgabe
-            }
              ?>
+
+            </div>
         
             
             <footer style="background-color: #f0f0f0;" class="page-footer">
