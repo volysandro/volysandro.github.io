@@ -44,11 +44,10 @@
         
             for ($i=2; $i <= $entries + 1; $i++) {
               //shit kriegen
-              $txtObject = scandir($path . "/" . $pers[$i] . "/desc/");
-              $imgObject = scandir($path . "/" . $pers[$i] . "/img/");
-              $desc = file_get_contents($path . "/" . $pers[$i] . "/desc/" . $txtObject[2]);
-              $img = $path . "/" . $pers[$i] . "/img/" . $imgObject[2];
-        
+              $object = scandir($path . "/" . $pers[$i]);
+              $desc = file_get_contents($path . "/" . $pers[$i] . "/" . $object[3]);
+              $img = $path . "/" . $pers[$i] . "/" . $object[2];
+
 
                 echo "
                   <div style=\"width: 350px; border-radius:10px; height: 500px; margin-top: 10%;\" class=\"person\">

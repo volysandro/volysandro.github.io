@@ -19,12 +19,12 @@
       <br>
     </form>
       <?php
-      session_start();
-      if(isset($_SESSION["verify"])AND password_verify($_SESSION["p"],$_SESSION["verify"])){
+      if(!isset($_SESSION["verify"])){
+
 
       $path = "./pers";
 
-      if (isset($_POST["name"]) AND isset($_POST["desc"])) {
+      if (isset($_POST["name"])) {
 
         $name = $_POST["name"];
         $desc = $_POST["desc"];
@@ -34,12 +34,14 @@
 
         //Ordner erstellen
         mkdir("$path" . "/$name", 0700);
+        mkdir("$path" . "/$name/img", 0700);
+        mkdir("$path" . "/$name/desc", 0700);
 
         //Beschreibung
-        file_put_contents("$path/$name/desc.txt", $desc);
+        file_put_contents("$path/$name/desc/desc.txt", $desc);
 
         //Bild
-        $target_dir = $path . "/$name/";
+        $target_dir = $path . "/$name/img/";
         $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
         $uploadOk = 1;
         $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
@@ -101,10 +103,9 @@
 
           for ($i=2; $i <= $entries + 1; $i++) {
             //shit kriegen
-            $object = scandir($path . "/" . $pers[$i]);
-            $desc = file_get_contents($path . "/" . $pers[$i] . "/" . $object[3]);
+            $txtObject = scandir($path . "/" . $pers[$i] . "/desc/");
+            $desc = file_get_contents($path . "/" . $pers[$i] . "/desc/" . $txtObject[2]);
             $value = array_search($pers[$i], $pers);
-            $img = $path . "/" . $pers[$i] . "/" . $object[2];
             //tabelle
             echo "
             <tr>
