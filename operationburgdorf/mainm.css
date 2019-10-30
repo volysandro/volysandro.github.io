@@ -58,4 +58,6 @@ body {
 
 }
 
-#text {}
+#text{
+    text-align: justify;
+}
