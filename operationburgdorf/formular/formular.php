@@ -7,11 +7,10 @@ function send_mail($to_mail,$subject,$message,$img_path, $header){
   # mail function
   $message .= "<img src=\"$img_path\"/>";
   mail($to_mail,$subject,$message, $header);
-  unlink("$img_path");
 }
 function addImage($n){
   $target_dir = "./tmp/";
-        $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+        $target_file = $target_dir . $n . basename($_FILES["fileToUpload"]["name"]);
         $uploadOk = 1;
         $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
         //Bildprüfung
