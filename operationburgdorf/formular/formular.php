@@ -3,10 +3,10 @@ function error($e,$p){
   echo "Fehler, " . $e;
   echo $p;
 }
-function send_mail($to_mail,$subject,$message,$img_path){
+function send_mail($to_mail,$subject,$message,$img_path, $header){
   # mail function
   $message .= "<img src=\"$img_path\"/>";
-  mail($to_mail,$subject,$message);
+  mail($to_mail,$subject,$message, $header);
   unlink("$img_path");
 }
 function addImage($n){
@@ -86,7 +86,7 @@ else{
     addImage($fullname);
     $image_path = scandir("./tmp/");
     $image_path = "./tmp/"  . $image_path[2];
-    send_mail($to_mail,$subject,$message,$image_path);
+    send_mail($to_mail,$subject,$message,$image_path, $headers);
   }
 }
 ?>
