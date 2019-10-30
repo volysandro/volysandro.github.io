@@ -10,7 +10,7 @@ function send_mail($to_mail,$subject,$message,$img_path, $header){
 }
 function addImage($n){
   $target_dir = "./tmp/";
-        $target_file = $target_dir . $n . basename($_FILES["fileToUpload"]["name"]);
+        $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
         $uploadOk = 1;
         $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
         //Bildprüfung
@@ -49,7 +49,6 @@ function addImage($n){
                     echo $n . " wurde hinzugefügt!";
                     echo "<br>";
                     echo "</div>";
-                    return $target_file;
                 } else {
                     echo "<div id=\"info\">";
                     echo "Unbekannter Fehler beim Upload!";
@@ -83,7 +82,9 @@ else{
 
     $subject = "Eintrag Webseite Burgdorf, " . $name . " " . $lastname;
     $message = "Vorname: " . $name . ", " . "Nachname: " . $lastname . ", " . "Beschreibung: " . $desc;
-    $image_path = addImage($fullname);
+    addImage($fullname);
+    $image_path = scandir("./tmp/");
+    $image_path = "./tmp/"  . $image_path[2];
     send_mail($to_mail,$subject,$message,$image_path, $headers);
   }
 }
