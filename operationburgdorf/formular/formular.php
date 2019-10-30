@@ -84,7 +84,10 @@ else{
     $subject = "Eintrag Webseite Burgdorf, " . $name . " " . $lastname;
     $message = "Vorname: " . $name . ", " . "Nachname: " . $lastname . ", " . "Beschreibung: " . $desc;
     $image_path = addImage($fullname);
-    send_mail($to_mail,$subject,$message,$image_path,$headers);
+    if($image_path){
+      send_mail($to_mail,$subject,$message,$image_path,$headers);
+
+    }
   }
 }
 ?>
