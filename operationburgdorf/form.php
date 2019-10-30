@@ -6,18 +6,28 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <form action="form.php" method="post" enctype="multipart/form-data">
-      Name: <input type="text" name="name" value="">
-      <br>
-      Beschreibung: <input type="text" name="desc" value="">
-      <br>
-      Bild: <input type="file" name="fileToUpload" id="fileToUpload">
-      <br>
-      <br>
-      <input type="Submit" value="Eintragen">
-      <br>
-      <br>
-    </form>
+    <div id="input">
+      <form action="form.php" method="post" enctype="multipart/form-data" id="form">
+        Name:
+        <br>
+        <input type="text" name="name" value="" id="inputField">
+        <br>
+        Beschreibung:
+        <br>
+        <textarea type="text" name="desc" value="" id="textField"></textarea>
+        <br>
+        Bild:
+        <br>
+        <br>
+        <label id="uploadButton" for="fileToUpload">Bild auswählen</label>
+        <br>
+        <br>
+        <input type="file" name="fileToUpload" id="fileToUpload">
+        <input type="Submit" value="Eintragen" id="submitButton">
+        <br>
+        <br>
+      </form>
+    </div>
       <?php
       if(!isset($_SESSION["verify"])){
 
@@ -33,9 +43,9 @@
         if (!file_exists($path . "/" . $name)) {
 
         //Ordner erstellen
-        mkdir("$path" . "/$name", 0755);
-        mkdir("$path" . "/$name/img", 0755);
-        mkdir("$path" . "/$name/desc", 0755);
+        mkdir("$path" . "/$name", 0700);
+        mkdir("$path" . "/$name/img", 0700);
+        mkdir("$path" . "/$name/desc", 0700);
 
         //Beschreibung
         file_put_contents("$path/$name/desc/desc.txt", $desc);
@@ -49,51 +59,68 @@
         if(isset($_POST["submit"])) {
             $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
             if($check !== false) {
+                echo "<div id=\"info\">";
                 echo "Dateityp: " . $check["mime"];
                 echo "<br>";
+                echo "</div>";
                 $uploadOk = 1;
             } else {
+                echo "<div id=\"info\">";
                 echo "Invalider Dateityp!";
                 echo "<br>";
+                echo "</div>";
                 $uploadOk = 0;
               }
             }
             if ($_FILES["fileToUpload"]["size"] > 500000) {
+              echo "<div id=\"info\">";
               echo "Zu grosse Datei!";
               echo "<br>";
+              echo "</div>";
               $uploadOk = 0;
             }
             if ($uploadOk == 0) {
+                echo "<div id=\"info\">";
                 echo "Fehler beim Upload!";
                 echo "<br>";
+                echo "</div>";
             } else {
               //Upload
                 if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-                    echo basename( $_FILES["fileToUpload"]["name"]). " wurde hochgeladen!";
+                    echo "<div id=\"info\">";
+                    echo $name . " wurde hinzugefügt!";
+                    echo "<br>";
+                    echo "</div>";
                 } else {
+                    echo "<div id=\"info\">";
                     echo "Unbekannter Fehler beim Upload!";
                     echo "<br>";
+                    echo "</div>";
                 }
         }
       }
         //Doppeleintrag
         else {
+          echo "<div id=\"info\">";
           echo "Bereits Eingetragen!";
           echo "<br>";
+          echo "</div>";
         }
       }
         //Fehlerhaftes Formular
         else {
+          echo "<div id=\"info\">";
           echo "Unvollständige Angaben!";
           echo "<br>";
+          echo "</div>";
         }
       }
 
        ?>
-        <table style="width:100%">
-          <tr>
-            <th>Person</th>
-            <th>Beschreibung</th>
+        <table>
+          <tr id="tableHead">
+            <th width="20%">Name</th>
+            <th width="90%">Beschreibung</th>
             <th>Optionen</th>
           </tr>
           <?php
@@ -108,11 +135,11 @@
             $value = array_search($pers[$i], $pers);
             //tabelle
             echo "
-            <tr>
+            <tr id=\"TableBody\">
               <th>$pers[$i]</th>
               <th>$desc</th>
               <th><form action=\"form.php\" method=\"post\">
-                <input type=\"submit\" name=\"edit\" value=\"Löschen\" />
+                <input type=\"submit\" name=\"edit\" value=\"Löschen\" id=\"deleteButton\"/>
                 <input type=\"text\" name=\"del\" value=\"$value\" id=\"hidden\">
                 </form></th>
             </tr>
@@ -124,11 +151,11 @@
             $del = $pers[$_POST["del"]];
             //alert
             echo "        <div class=\"alert\">
-                      <h1>$del wirklich Löschen?</h1>
+                      <p>$del wirklich Löschen?<p>
                       <form class=\"confirm\" action=\"form.php\" method=\"get\">
                         <input type=\"text\" name=\"del\" value=\"$del\" id=\"hidden\">
-                        <input type=\"Submit\" name=\"confirm\" value=\"Ja\">
-                        <input type=\"Submit\" name=\"confirm\" value=\"Nein\">
+                        <input id=\"submitButton\" type=\"Submit\" name=\"confirm\" value=\"Ja\">
+                        <input id=\"submitButton\" type=\"Submit\" name=\"confirm\" value=\"Nein\">
                       </form>
                     </div>";
           }
@@ -137,16 +164,16 @@
               $del = $_GET["del"];
               rename($path . "/$del", "./deleted/$del");
               echo "<div class=\"alert\">
-                        <h1>$del wurde gelöscht!</h1>
+                        <p>$del wurde gelöscht!</p>
                         <form class=\"confirm\" action=\"form.php\" method=\"get\">
-                          <input type=\"Submit\" value=\"OK\">
+                          <input id=\"submitButton\" type=\"Submit\" value=\"OK\">
                         </form>";
             }
             else {
               echo "<div class=\"alert\">
-                        <h1>Vorgang abgebrochen!</h1>
+                        <p>Vorgang abgebrochen!</p>
                         <form class=\"confirm\" action=\"form.php\" method=\"get\">
-                          <input type=\"Submit\" value=\"OK\">
+                          <input id=\"submitButton\" type=\"Submit\" value=\"OK\">
                         </form>";
             }
           }
