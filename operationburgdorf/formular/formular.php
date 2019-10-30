@@ -1,0 +1,90 @@
+<?php
+function error($e,$p){
+  echo "Fehler, " . $e;
+  echo $p;
+}
+function send_mail($to_mail,$subject,$message,$img_path){
+  # mail function
+  $message .= "<img src=\"$img_path\"/>";
+  mail($to_mail,$subject,$message);
+  unlink("$img_path");
+}
+function addImage($n){
+  $target_dir = "./tmp/";
+        $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+        $uploadOk = 1;
+        $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+        //Bildprüfung
+        if(isset($_POST["submit"])) {
+            $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+            if($check !== false) {
+                echo "<div id=\"info\">";
+                echo "Dateityp: " . $check["mime"];
+                echo "<br>";
+                echo "</div>";
+                $uploadOk = 1;
+            } else {
+                echo "<div id=\"info\">";
+                echo "Invalider Dateityp!";
+                echo "<br>";
+                echo "</div>";
+                $uploadOk = 0;
+              }
+            }
+            if ($_FILES["fileToUpload"]["size"] > 500000) {
+              echo "<div id=\"info\">";
+              echo "Zu grosse Datei!";
+              echo "<br>";
+              echo "</div>";
+              $uploadOk = 0;
+            }
+            if ($uploadOk == 0) {
+                echo "<div id=\"info\">";
+                echo "Fehler beim Upload!";
+                echo "<br>";
+                echo "</div>";
+            } else {
+              //Upload
+                if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+                    echo "<div id=\"info\">";
+                    echo $n . " wurde hinzugefügt!";
+                    echo "<br>";
+                    echo "</div>";
+                } else {
+                    echo "<div id=\"info\">";
+                    echo "Unbekannter Fehler beim Upload!";
+                    echo "<br>";
+                    echo "</div>";
+                }
+        }
+      }
+$name = $_POST["name"];
+$lastname = $_POST["lastname"];
+$desc = $_POST["description"];
+
+$fullname = $name . " " . $lastname;
+
+
+$page = file_get_contents("index.html");
+
+if(!isset($name) OR !isset($lastname) OR !isset($desc)){
+  # some vars not set
+  error("füllen Sie bitte alle Felder aus!",$page);
+}
+else{
+  if($name == "" OR $lastname == "" OR $desc == ""){
+    # some text-inputs empty
+    error("füllen Sie bitte alle Felder aus!",$page);
+  }
+  else{
+    # inputs OK
+    $to_mail = "sandro@volery.com";
+    $subject = "Eintrag Webseite Burgdorf, " . $name . " " . $lastname;
+    $message = "Vorname: " . $name . ", " . "Nachname: " . $lastname . ", " . "Beschreibung: " . $desc;
+    addImage($fullname);
+    $image_path = scandir("./tmp/");
+    $image_path = "./tmp/"  . $image_path[2];
+    send_mail($to_mail,$subject,$message,$image_path);
+  }
+}
+?>
