@@ -26,6 +26,7 @@
     if($uname_test == $u AND password_verify($p,$pword_test)){
       # username & password correct
       echo "<br>Login successful!";
+      header("Location: form.php");
       # aufruf seite
     }
     else{

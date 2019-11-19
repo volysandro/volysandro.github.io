@@ -171,6 +171,7 @@ p {
   left: 40%;
   font-size: 150%;
   text-align: center;
+  box-shadow: 7px 7px 7px #06719A;
 }
 
 #info {

@@ -15,24 +15,29 @@
 <body>
         <header>
                 <div id="navigation">
-        
+
                     <div class="center" id="icons">
                         <a href="index.html"><img class="icon" src="assets/icon_home.png" alt=""></a>
                         <a href=""><img class="icon" src="assets/icon_user.png" alt=""></a>
                         <a href="formular/index.html"><img class="icon" src="assets/icon_message.png" alt=""></a>
                     </div>
-        
+
                 </div>
-        
-        
-        
+
+
+
             </header>
 
             <div class="center" id="titel">
                 <h1 id="title">Team und Unterstützung</h1>
             </div>
 
-            <div>
+            <table>
+              <tr id="tableHead">
+                <th width="40%">Name</th>
+                <th width="40%">Beschreibung</th>
+                <th width="40%">Wohnort</th>
+              </tr>
 
             <?php
 
@@ -41,29 +46,32 @@
             $entries = count($pers);
             $col = 0;
 
-        
+
             for ($i=2; $i <= $entries + 1; $i++) {
               //shit kriegen
               $txtObject = scandir($path . "/" . $pers[$i] . "/desc/");
-              $imgObject = scandir($path . "/" . $pers[$i] . "/img/");
+              $locObject = scandir($path . "/" . $pers[$i] . "/loc/");
               $desc = file_get_contents($path . "/" . $pers[$i] . "/desc/" . $txtObject[2]);
-              $img = $path . "/" . $pers[$i] . "/img/" . $imgObject[2];
-        
+              $location = file_get_contents($path . "/" . $pers[$i] . "/loc/" . $locObject[2]);
+
 
                 echo "
-                  <div style=\"width: 350px; border-radius:10px; height: 500px; margin-top: 10%;\" class=\"person\">
-                  <img style=\"height: 50%;\" src=\"$img\">
-                  <h4 style=\"margin: 0px; \">$pers[$i]</h4>
-                    <p style=\"margin: 0px; height: 200px;\">$desc</p>
-                    </div>
-                ";
+                      <tr id=\"TableBody\">
+                        <th>$pers[$i]</th>
+                        <th>$desc</th>
+                        <th>$location</th>
+                        <th><form action=\"form.php\" method=\"post\">
+                          </form></th>
+                      </tr>
+                      ";
               }
+              echo "</table>";
               //ausgabe
              ?>
 
-            </div>
-        
-            
+            <br>
+            <br>
+            <br>
             <footer style="background-color: #f0f0f0;" class="page-footer">
                 <div style="color: #0082b4;" class="container">
                   <div class="row">
@@ -88,7 +96,7 @@
                   </div>
                 </div>
               </footer>
-                
+
 </body>
 </html>
 
