@@ -33,7 +33,7 @@ else{
     $headers = "From: noreply@volery.org\nMIME-Version: 1.0\nContent-Type: text/html; charset=utf-8\n";
 
     $subject = "Neue Frage bezüglich Interessensgemeinschaft, " . $name . " " . $lastname;
-    $message = "Vorname: " . $name . ", " . "Nachname: " . $lastname . ", " . "Frage: " . $desc . "Antwort an: " . $email;
+    $message = "Vorname: " . $name . ", " . "Nachname: " . $lastname . ", " . " \nFrage: " . $desc . " \nAntwort an: " . $email;
     echo $message;
     send_mail($to_mail,$subject,$message,$headers);
   }
