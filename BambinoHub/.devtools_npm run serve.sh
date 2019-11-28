@@ -1,1 +1,0 @@
-cd /home/sandro/volysandro.github.io/BambinoHub/bambinohub && gnome-terminal -e "npm run serve"

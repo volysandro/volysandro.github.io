@@ -2,10 +2,10 @@
   "tools": [],
   "commands": [
     {
-      "rawCommandWithPath": "cd /home/sandro/volysandro.github.io/BambinoHub/bambinohub && gnome-terminal -e \"npm run serve\"",
+      "rawCommandWithPath": "cd /home/sandro/volysandro.github.io/BambinoHub/bambinohub/ && terminator -x npm run serve",
       "command": "npm run serve",
-      "name": "npm run serve",
-      "path": "/home/sandro/volysandro.github.io/BambinoHub/bambinohub"
+      "name": "serve",
+      "path": "/home/sandro/volysandro.github.io/BambinoHub/bambinohub/"
     }
   ],
   "servers": [],
