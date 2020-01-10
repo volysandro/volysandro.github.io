@@ -381,4 +381,17 @@
 
 </body>
 
+<script>
+  var num = Math.floor((Math.random() * 3) + 1);
+
+  if (num == 3) {
+    var alert = confirm(
+      "One in three visitors of volery.org will be redirected for a chance to donate towards the australian wildfires."
+      )
+    if (alert == true) {
+      window.location = "https://support.wwf.org.uk/australia-bushfires"
+    }
+  }
+</script>
+
 </html>

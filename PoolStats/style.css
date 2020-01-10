@@ -1,14 +1,18 @@
-html, body{
+html,
+body {
     height: 100%;
     width: 100%;
     overflow: hidden;
 }
 
-body{
-    background: #56CCF2;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }
+body {
+    background: #56CCF2;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2F80ED, #56CCF2);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
 
 
@@ -25,7 +29,7 @@ body{
 /* Welcome Page */
 
 
-#welcomeButtonBoxes{
+#welcomeButtonBoxes {
     margin: 0 auto;
     margin-top: 20%;
     width: 80%;
@@ -40,7 +44,7 @@ body{
 
 /* Login Page */
 
-#loginInfo{
+#loginInfo {
     margin: 0 auto;
     margin-top: 20%;
     width: 80%;
@@ -54,7 +58,7 @@ body{
 
 /* Sign Up Page */
 
-#centerSignUpInput{
+#centerSignUpInput {
     margin: 0 auto;
     margin-top: 20%;
     width: 80%;
@@ -70,7 +74,7 @@ body{
 
 /* Main Page */
 
-#mainPageBoxes{
+#mainPageBoxes {
     margin: 0 auto;
     margin-top: 20%;
     width: 80%;
@@ -82,7 +86,7 @@ body{
 
 }
 
-#welcome{
+#welcome {
     left: calc(50% - 40%);
     margin: 0;
     margin-top: 100px;
@@ -94,7 +98,7 @@ body{
 
 /* Standard Choose Opponent */
 
-#divChooseOpponent{
+#divChooseOpponent {
     margin: 0 auto;
     margin-top: 20%;
     width: 80%;
@@ -103,14 +107,13 @@ body{
     color: black;
     line-height: 35px;
     border-radius: 20px;
-    
+
 }
 
 
 /* Choose Game Standard*/
 
-#chooseGameDiv
-{
+#chooseGameDiv {
     margin: 0 auto;
     margin-top: 20%;
     width: 80%;
@@ -213,7 +216,7 @@ body{
 
 /* Finish Up Standard */
 
-#finishup{
+#finishup {
     margin: 0 auto;
     margin-top: 20%;
     width: 80%;
@@ -227,7 +230,7 @@ body{
 
 /* Stats Page */
 
-#centeredStats{
+#centeredStats {
     margin: 0 auto;
     margin-top: 20%;
     width: 80%;
@@ -241,7 +244,7 @@ body{
 
 /* Account Page */
 
-#accountpage{
+#accountpage {
     margin: 0 auto;
     margin-top: 20%;
     width: 80%;
@@ -255,7 +258,7 @@ body{
 
 #name {
 
-    
+
     left: calc(50% - 40%);
     margin: 0;
     margin-top: 40px;
@@ -265,7 +268,7 @@ body{
 
 /* Edit Account */
 
-#accountedit{
+#accountedit {
     margin: 0 auto;
     margin-top: 20%;
     width: 80%;
@@ -279,7 +282,7 @@ body{
 
 /* Settings */
 
- #settings{
+#settings {
     margin: 0 auto;
     margin-top: 10%;
     width: 80%;
@@ -289,35 +292,35 @@ body{
     line-height: 35px;
     border-radius: 20px;
 
- }
+}
 
 
- /* Live Game Init */
+/* Live Game Init */
 
- .qrcode-text-btn {
+.qrcode-text-btn {
     display: inline-block;
     cursor: pointer;
-  }
-  
-  .qrcode-text-btn > input[type=file] {
+}
+
+.qrcode-text-btn>input[type=file] {
     position: absolute;
     overflow: hidden;
     opacity: 0;
-  }
+}
 
-  .qrcode-text {
+.qrcode-text {
     padding-right: 1.7em;
     margin-right: 0;
     vertical-align: middle;
-  }
-  
-  .qrcode-text + .qrcode-text-btn {
+}
+
+.qrcode-text+.qrcode-text-btn {
     width: 1.7em;
     margin-left: -1.7em;
     vertical-align: middle;
-  }
+}
 
-  #initlive{
+#initlive {
     margin: 0 auto;
     margin-top: 10%;
     width: 80%;
@@ -327,19 +330,19 @@ body{
     line-height: 35px;
     border-radius: 20px;
 
-  }
+}
 
-#qrcode{
+#qrcode {
 
-margin-left: calc(50% - 64px);
-margin-top: 30px;
-margin-bottom: 30px;
+    margin-left: calc(50% - 64px);
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 
 /* Live Game Page */
 
-#livegamecard{
+#livegamecard {
     margin: 0 auto;
     margin-top: 10%;
     width: 80%;
@@ -351,7 +354,7 @@ margin-bottom: 30px;
 
 }
 
-#gameonrelative{
+#gameonrelative {
     position: relative;
     margin: 0;
     margin-left: calc(50% - 40%);
@@ -363,7 +366,7 @@ margin-bottom: 30px;
 
 /* Choose Gammme Guest */
 
-#divGuest{
+#divGuest {
     margin: 0 auto;
     margin-top: 40%;
     width: 50%;
@@ -378,7 +381,7 @@ margin-bottom: 30px;
 
 /* choose live game */
 
-#chooselivegame{
+#chooselivegame {
     margin: 0 auto;
     margin-top: 10%;
     width: 90%;
@@ -388,4 +391,20 @@ margin-bottom: 30px;
     line-height: 35px;
     border-radius: 20px;
 
+}
+
+
+/* All Players */
+
+#players {
+    width: 97%;
+    margin-top: 100px;
+
+}
+
+.playerdiv {
+    color: black;
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
 }
