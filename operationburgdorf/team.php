@@ -15,29 +15,25 @@
 <body>
         <header>
                 <div id="navigation">
-
+        
                     <div class="center" id="icons">
                         <a href="index.html"><img class="icon" src="assets/icon_home.png" alt=""></a>
                         <a href=""><img class="icon" src="assets/icon_user.png" alt=""></a>
-                        <a href="formular/index.html"><img class="icon" src="assets/icon_message.png" alt=""></a>
+                        <a href="contact.html"><img class="icon" src="assets/icon_message.png" alt=""></a>
+                <a href="formular/index.html"><img class="icon" src="adduser.png" alt=""></a>
                     </div>
-
+        
                 </div>
-
-
-
+        
+        
+        
             </header>
 
             <div class="center" id="titel">
                 <h1 id="title">Team und Unterstützung</h1>
             </div>
 
-            <table>
-              <tr id="tableHead">
-                <th width="40%">Name</th>
-                <th width="40%">Beschreibung</th>
-                <th width="40%">Wohnort</th>
-              </tr>
+            <div>
 
             <?php
 
@@ -46,32 +42,28 @@
             $entries = count($pers);
             $col = 0;
 
-
+        
             for ($i=2; $i <= $entries + 1; $i++) {
               //shit kriegen
               $txtObject = scandir($path . "/" . $pers[$i] . "/desc/");
-              $locObject = scandir($path . "/" . $pers[$i] . "/loc/");
+              $imgObject = scandir($path . "/" . $pers[$i] . "/img/");
               $desc = file_get_contents($path . "/" . $pers[$i] . "/desc/" . $txtObject[2]);
-              $location = file_get_contents($path . "/" . $pers[$i] . "/loc/" . $locObject[2]);
-
+              $img = $path . "/" . $pers[$i] . "/img/" . $imgObject[2];
+        
 
                 echo "
-                      <tr id=\"TableBody\">
-                        <th>$pers[$i]</th>
-                        <th>$desc</th>
-                        <th>$location</th>
-                        <th><form action=\"form.php\" method=\"post\">
-                          </form></th>
-                      </tr>
-                      ";
+                  <div style=\"width: 350px; border-radius:10px; height: 500px; margin-top: 0%; margin-bottom: 0%;\" class=\"person\">
+                  <img style=\"height: 50%;\" src=\"$img\">
+                  <h4 style=\"margin: 0px; \">$pers[$i]</h4>
+                    </div>
+                ";
               }
-              echo "</table>";
               //ausgabe
              ?>
 
-            <br>
-            <br>
-            <br>
+            </div>
+        
+            
             <footer style="background-color: #f0f0f0;" class="page-footer">
                 <div style="color: #0082b4;" class="container">
                   <div class="row">
@@ -84,7 +76,6 @@
                       <ul>
                         <li><a class="" href="team.html">Team</a></li>
                         <li><a class="" href="contact.html">Kontakt</a></li>
-                        <li><a class="" href="login/login.php">Login</a></li>
 
                       </ul>
                     </div>
@@ -92,11 +83,11 @@
                 </div>
                 <div style="color: #000000;" class="footer-copyright">
                   <div class="container">
-                  © 2019 Samis Moser, Liam Benedetti, Sandro Volery - Abteilung Informatik
+                  © 2019 Abteilung Informatik
                   </div>
                 </div>
               </footer>
-
+                
 </body>
 </html>
 

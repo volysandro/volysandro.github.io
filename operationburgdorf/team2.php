@@ -20,6 +20,7 @@
                         <a href="index.html"><img class="icon" src="assets/icon_home.png" alt=""></a>
                         <a href=""><img class="icon" src="assets/icon_user.png" alt=""></a>
                         <a href="contact.html"><img class="icon" src="assets/icon_message.png" alt=""></a>
+                <a href="formular/index.html"><img class="icon" src="adduser.png" alt=""></a>
                     </div>
         
                 </div>
@@ -81,7 +82,7 @@
                 </div>
                 <div style="color: #000000;" class="footer-copyright">
                   <div class="container">
-                  © 2019 Samis Moser, Liam Benedetti, Sandro Volery - Abteilung Informatik
+                  © 2019 Abteilung Informatik
                   </div>
                 </div>
               </footer>

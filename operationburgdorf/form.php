@@ -12,14 +12,17 @@
         <br>
         <input type="text" name="name" value="" id="inputField">
         <br>
-        Wohnort:
-        <br>
-        <input type="text" name="location" value="" id="inputField">
-        <br>
         Beschreibung:
         <br>
         <textarea type="text" name="desc" value="" id="textField"></textarea>
         <br>
+        Bild:
+        <br>
+        <br>
+        <label id="uploadButton" for="fileToUpload">Bild auswählen</label>
+        <br>
+        <br>
+        <input type="file" name="fileToUpload" id="fileToUpload">
         <input type="Submit" value="Eintragen" id="submitButton">
         <br>
         <br>
@@ -35,20 +38,66 @@
 
         $name = $_POST["name"];
         $desc = $_POST["desc"];
-        $loc = $_POST["location"];
 
       if ($name != "" AND $desc != "") {
         if (!file_exists($path . "/" . $name)) {
 
         //Ordner erstellen
         mkdir("$path" . "/$name", 0755);
-        mkdir("$path" . "/$name/loc", 0755);
+        mkdir("$path" . "/$name/img", 0755);
         mkdir("$path" . "/$name/desc", 0755);
 
         //Beschreibung
         file_put_contents("$path/$name/desc/desc.txt", $desc);
 
-        file_put_contents("$path/$name/loc/loc.txt", $loc);
+        //Bild
+        $target_dir = $path . "/$name/img/";
+        $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+        $uploadOk = 1;
+        $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+        //Bildprüfung
+        if(isset($_POST["submit"])) {
+            $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+            if($check !== false) {
+                echo "<div id=\"info\">";
+                echo "Dateityp: " . $check["mime"];
+                echo "<br>";
+                echo "</div>";
+                $uploadOk = 1;
+            } else {
+                echo "<div id=\"info\">";
+                echo "Invalider Dateityp!";
+                echo "<br>";
+                echo "</div>";
+                $uploadOk = 0;
+              }
+            }
+            if ($_FILES["fileToUpload"]["size"] > 500000) {
+              echo "<div id=\"info\">";
+              echo "Zu grosse Datei!";
+              echo "<br>";
+              echo "</div>";
+              $uploadOk = 0;
+            }
+            if ($uploadOk == 0) {
+                echo "<div id=\"info\">";
+                echo "Fehler beim Upload!";
+                echo "<br>";
+                echo "</div>";
+            } else {
+              //Upload
+                if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+                    echo "<div id=\"info\">";
+                    echo $name . " wurde hinzugefügt!";
+                    echo "<br>";
+                    echo "</div>";
+                } else {
+                    echo "<div id=\"info\">";
+                    echo "Unbekannter Fehler beim Upload!";
+                    echo "<br>";
+                    echo "</div>";
+                }
+        }
       }
         //Doppeleintrag
         else {
@@ -71,8 +120,7 @@
         <table>
           <tr id="tableHead">
             <th width="20%">Name</th>
-            <th width="40%">Beschreibung</th>
-            <th width="40%">Wohnort</th>
+            <th width="90%">Beschreibung</th>
             <th>Optionen</th>
           </tr>
           <?php
@@ -81,22 +129,15 @@
           $entries = count($pers);
 
           for ($i=2; $i <= $entries + 1; $i++) {
-            //Desc kriegen
+            //shit kriegen
             $txtObject = scandir($path . "/" . $pers[$i] . "/desc/");
             $desc = file_get_contents($path . "/" . $pers[$i] . "/desc/" . $txtObject[2]);
-
-            //Wohnort kriegen
-            $txtObject = scandir($path . "/" . $pers[$i] . "/loc/");
-            $location = file_get_contents($path . "/" . $pers[$i] . "/loc/" . $txtObject[2]);
-
-            //value
             $value = array_search($pers[$i], $pers);
             //tabelle
             echo "
             <tr id=\"TableBody\">
               <th>$pers[$i]</th>
               <th>$desc</th>
-              <th>$location</th>
               <th><form action=\"form.php\" method=\"post\">
                 <input type=\"submit\" name=\"edit\" value=\"Löschen\" id=\"deleteButton\"/>
                 <input type=\"text\" name=\"del\" value=\"$value\" id=\"hidden\">

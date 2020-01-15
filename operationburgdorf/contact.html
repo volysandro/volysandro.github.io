@@ -1,77 +1,72 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>Kontakt</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Kontakt</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 </head>
-
 <body>
-  <header>
-    <div id="navigation">
+        <header>
+                <div id="navigation">
+        
+                    <div class="center" id="icons">
+                        <a href="index.html"><img class="icon" src="assets/icon_home.png" alt=""></a>
+                        <a href="team.php"><img class="icon" src="assets/icon_user.png" alt=""></a>
+                        <a href="contact.html"><img class="icon" src="assets/icon_message.png" alt=""></a>
+                        <a href="formular/index.html"><img class="icon" src="adduser.png" alt=""></a>
+                            </div>
+        
+                </div>
+        
+        
+        
+            </header>
+        
+            <div class="center" id="titel">
+                <h1 id="title">Kontaktieren Sie uns für Fragen!</h1>
+            </div>
 
-      <div class="center" id="icons">
-        <a href="index.html"><img class="icon" src="assets/icon_home.png" alt=""></a>
-        <a href="team.php"><img class="icon" src="assets/icon_user.png" alt=""></a>
-        <a href="contact.html"><img class="icon" src="assets/icon_message.png" alt=""></a>
-      </div>
+            <div class="row">
+                <form style="width: 40%;" class="myForm center" action="kontakt.php" method="post" enctype="multipart/form-data">
+                  <p style="margin: 0;">Name: <input type="text" name="name"></p><br>
+                  <p style="margin: 0;">E-Mail: <input type="text" name="email"></p><br>
+                  <p style="margin: 0;">Anliegen: </p><textarea resize="none"maxlength="300" rows="5" cols="50" velue="" name="description"></textarea><br>
+                  <input style="background-color: #0082b4" class="btn" type="submit" value="Absenden">
+            
+                </form>
+                              </div>
+                        
+                  <footer style="background-color: #f0f0f0;" class="page-footer">
+                    <div style="color: #0082b4;" class="container">
+                      <div class="row">
+                        <div class="col l6 s12">
+                          <h5 class="">Credits</h5>
+                          <p class="">Erstellt mit viel Liebe von Schülern der Technischen Fachschule Bern.</p>
+                        </div>
+                        <div class="col l4 offset-l2 s12">
+                          <h5 class="">Links</h5>
+                          <ul>
+                            <li><a class="" href="team.html">Team</a></li>
+                            <li><a class="" href="contact.html">Kontakt</a></li>
 
-    </div>
-
-
-
-  </header>
-
-  <div class="center" id="titel">
-    <h1 id="title">Kontaktieren Sie uns für Nachfragen!</h1>
-  </div>
-
-  <div class="row">
-    <form style="width: 40%;" class="myForm center" action="contact.php" method="post" enctype="multipart/form-data">
-      <p style="margin: 0;">Vorname: <input type="text" name="name"></p><br>
-      <p style="margin: 0;">Nachname: <input type="text" name="lastname"></p><br>
-      <p style="margin: 0;">Email: <input type="text" name="email" id="fileToUpload"></p><br>
-      <p style="margin: 0;">Beschreibung: </p><textarea resize="none" maxlength="300" rows="5" cols="50" velue=""
-        name="description"></textarea><br>
-      <input style="background-color: #0082b4" class="btn" type="submit" value="Absenden">
-
-    </form>
-  </div>
-
-  <footer style="background-color: #f0f0f0;" class="page-footer">
-    <div style="color: #0082b4;" class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="">Credits</h5>
-          <p class="">Erstellt mit viel Liebe von Schülern der Technischen Fachschule Bern.</p>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="">Links</h5>
-          <ul>
-            <li><a class="" href="team.html">Team</a></li>
-            <li><a class="" href="contact.html">Kontakt</a></li>
-            <li><a class="" href="login/login.php">Login</a></li>
-
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div style="color: #000000;" class="footer-copyright">
-      <div class="container">
-        © 2019 Samis Moser, Liam Benedetti, Sandro Volery - Abteilung Informatik
-      </div>
-    </div>
-  </footer>
-
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="color: #000000;" class="footer-copyright">
+                      <div class="container">
+                          © 2019 Abteilung Informatik
+                        </div>
+                    </div>
+                  </footer>
+                        
 </body>
-
 </html>
