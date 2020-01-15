@@ -30,7 +30,7 @@
             </header>
 
             <div class="center" id="titel">
-                <h1 id="title">Team und Unterstützung</h1>
+                <h1 id="title">Mitglieder IGTFBern</h1>
             </div>
 
             <div>

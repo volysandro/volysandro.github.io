@@ -11,18 +11,6 @@
         Name:
         <br>
         <input type="text" name="name" value="" id="inputField">
-        <br>
-        Beschreibung:
-        <br>
-        <textarea type="text" name="desc" value="" id="textField"></textarea>
-        <br>
-        Bild:
-        <br>
-        <br>
-        <label id="uploadButton" for="fileToUpload">Bild auswählen</label>
-        <br>
-        <br>
-        <input type="file" name="fileToUpload" id="fileToUpload">
         <input type="Submit" value="Eintragen" id="submitButton">
         <br>
         <br>
@@ -37,67 +25,15 @@
       if (isset($_POST["name"])) {
 
         $name = $_POST["name"];
-        $desc = $_POST["desc"];
 
-      if ($name != "" AND $desc != "") {
+      if ($name != "") {
         if (!file_exists($path . "/" . $name)) {
 
         //Ordner erstellen
         mkdir("$path" . "/$name", 0755);
-        mkdir("$path" . "/$name/img", 0755);
-        mkdir("$path" . "/$name/desc", 0755);
 
-        //Beschreibung
-        file_put_contents("$path/$name/desc/desc.txt", $desc);
 
-        //Bild
-        $target_dir = $path . "/$name/img/";
-        $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-        $uploadOk = 1;
-        $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-        //Bildprüfung
-        if(isset($_POST["submit"])) {
-            $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-            if($check !== false) {
-                echo "<div id=\"info\">";
-                echo "Dateityp: " . $check["mime"];
-                echo "<br>";
-                echo "</div>";
-                $uploadOk = 1;
-            } else {
-                echo "<div id=\"info\">";
-                echo "Invalider Dateityp!";
-                echo "<br>";
-                echo "</div>";
-                $uploadOk = 0;
-              }
-            }
-            if ($_FILES["fileToUpload"]["size"] > 500000) {
-              echo "<div id=\"info\">";
-              echo "Zu grosse Datei!";
-              echo "<br>";
-              echo "</div>";
-              $uploadOk = 0;
-            }
-            if ($uploadOk == 0) {
-                echo "<div id=\"info\">";
-                echo "Fehler beim Upload!";
-                echo "<br>";
-                echo "</div>";
-            } else {
-              //Upload
-                if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-                    echo "<div id=\"info\">";
-                    echo $name . " wurde hinzugefügt!";
-                    echo "<br>";
-                    echo "</div>";
-                } else {
-                    echo "<div id=\"info\">";
-                    echo "Unbekannter Fehler beim Upload!";
-                    echo "<br>";
-                    echo "</div>";
-                }
-        }
+
       }
         //Doppeleintrag
         else {
@@ -120,7 +56,6 @@
         <table>
           <tr id="tableHead">
             <th width="20%">Name</th>
-            <th width="90%">Beschreibung</th>
             <th>Optionen</th>
           </tr>
           <?php
@@ -137,7 +72,6 @@
             echo "
             <tr id=\"TableBody\">
               <th>$pers[$i]</th>
-              <th>$desc</th>
               <th><form action=\"form.php\" method=\"post\">
                 <input type=\"submit\" name=\"edit\" value=\"Löschen\" id=\"deleteButton\"/>
                 <input type=\"text\" name=\"del\" value=\"$value\" id=\"hidden\">

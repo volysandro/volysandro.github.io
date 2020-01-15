@@ -30,36 +30,38 @@
             </header>
 
             <div class="center" id="titel">
-                <h1 id="title">Team und Unterstützung</h1>
+                <h1 id="title">Mitglieder IGTFBern</h1>
             </div>
 
             <div>
 
-            <?php
+            <table class="table">
+          <tr id="tableHead">
+            <th width="20%">Unsere Mitglieder:</th>
+          </tr>
+          <?php
+          $path = "./pers";
+          $pers = preg_grep('/^([^.])/', scandir($path));
+          $entries = count($pers);
 
-            $path = "./pers";
-            $pers = preg_grep('/^([^.])/', scandir($path));
-            $entries = count($pers);
-            $col = 0;
-
+          for ($i=2; $i <= $entries + 1; $i++) {
+            //shit kriegen
+            $txtObject = scandir($path . "/" . $pers[$i] . "/desc/");
+            $value = array_search($pers[$i], $pers);
+            //tabelle
+            echo "
+            <tr id=\"TableBody\">
+              <th>$pers[$i]</th>
+              <th><form action=\"form.php\" method=\"post\">
+                </form></th>
+            </tr>
+            ";
+          }
+          echo "</table>";
         
-            for ($i=2; $i <= $entries + 1; $i++) {
-              //shit kriegen
-              $txtObject = scandir($path . "/" . $pers[$i] . "/desc/");
-              $imgObject = scandir($path . "/" . $pers[$i] . "/img/");
-              $desc = file_get_contents($path . "/" . $pers[$i] . "/desc/" . $txtObject[2]);
-              $img = $path . "/" . $pers[$i] . "/img/" . $imgObject[2];
-        
 
-                echo "
-                  <div style=\"width: 350px; border-radius:10px; height: 500px; margin-top: 0%; margin-bottom: 0%;\" class=\"person\">
-                  <img style=\"height: 50%;\" src=\"$img\">
-                  <h4 style=\"margin: 0px; \">$pers[$i]</h4>
-                    </div>
-                ";
-              }
-              //ausgabe
-             ?>
+          ?>
+        </table>
 
             </div>
         

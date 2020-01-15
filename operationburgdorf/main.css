@@ -68,3 +68,8 @@ body {
     margin: 50px;
     padding: 0px;
 }
+
+.table{
+    width: 20%;
+    margin: 0 auto;
+}
