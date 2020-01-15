@@ -60,7 +60,6 @@ function addImage($n){
       }
 $name = $_POST["name"];
 $lastname = $_POST["lastname"];
-$desc = $_POST["description"];
 
 $fullname = $name . " " . $lastname;
 
@@ -82,7 +81,7 @@ else{
     $headers = "From: noreply@volery.com\nMIME-Version: 1.0\nContent-Type: text/html; charset=utf-8\n";
 
     $subject = "Eintrag Webseite Burgdorf, " . $name . " " . $lastname;
-    $message = "Vorname: " . $name . ", " . "Nachname: " . $lastname . ", " . "Beschreibung: " . $desc;
+    $message = "Vorname: " . $name . ", " . "Nachname: " . $lastname;
     $image_path = addImage($fullname);
     if($image_path){
       send_mail($to_mail,$subject,$message,$image_path,$headers);
