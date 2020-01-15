@@ -6,17 +6,16 @@ function error($e,$p){
 $name = $_POST["name"];
 $desc = $_POST["description"];
 $email = $_POST["email"];
-$fullname = $name . " " . $lastname;
 
 
 $page = file_get_contents("index.html");
 
-if(!isset($name) OR !isset($lastname) OR !isset($desc)){
+if(!isset($name) OR !isset($desc)){
   # some vars not set
   error("füllen Sie bitte alle Felder aus!",$page);
 }
 else{
-  if($name == "" OR $lastname == "" OR $desc == ""){
+  if($name == "" OR $desc == ""){
     # some text-inputs empty
     error("füllen Sie bitte alle Felder aus!",$page);
   }
