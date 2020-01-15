@@ -27,7 +27,7 @@ else{
     $subject = "Frage IGTFBern, " . $name;
     $message = $desc . " Von: " . $email;
     mail($to_mail,$subject,$message,$headers);
-    echo "mail gesendet!"
+    echo "mail gesendet!";
   }
 }
 ?>
