@@ -33,11 +33,11 @@
                 <h1 id="title">Mitglieder IGTFBern</h1>
             </div>
 
-            <div>
+            <div id="tableDiv">
 
             <table class="table">
           <tr id="tableHead">
-            <th width="20%">Unsere Mitglieder:</th>
+            <th>Unsere Mitglieder:</th>
           </tr>
           <?php
           $path = "./pers";
@@ -66,7 +66,7 @@
             </div>
         
             
-            <footer style="background-color: #f0f0f0;" class="page-footer">
+            <footer style="background-color: #f0f0f0; margin-top: 10%;" class="page-footer">
                 <div style="color: #0082b4;" class="container">
                   <div class="row">
                     <div class="col l6 s12">
@@ -76,7 +76,7 @@
                     <div class="col l4 offset-l2 s12">
                       <h5 class="">Links</h5>
                       <ul>
-                        <li><a class="" href="team.html">Team</a></li>
+                        <li><a class="" href="team.php">Mitglieder</a></li>
                         <li><a class="" href="contact.html">Kontakt</a></li>
 
                       </ul>
@@ -91,6 +91,16 @@
               </footer>
                 
 </body>
+<script>
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  
+    document.getElementById("titel").style.marginTop = "23%";
+  
+  
+  
+  }
+</script>
+
 </html>
 
 <style>

@@ -179,3 +179,8 @@ p {
   left: 750px;
   font-size: 150%;
 }
+
+#footer{
+  position: absolute;
+  bottom: 0;
+}

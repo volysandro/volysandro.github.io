@@ -21,7 +21,7 @@ else{
   }
   else{
     # inputs OK
-    $to_mail = "sandro@volery.org";
+    $to_mail = "leonie.frei@tfbern.ch";
     $headers = "From: noreply@volery.com\nMIME-Version: 1.0\nContent-Type: text/html; charset=utf-8\n";
 
     $subject = "Frage IGTFBern, " . $name;

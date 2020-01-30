@@ -61,7 +61,6 @@ body {
 
 }
 
-#text {}
 
 .person{
     display: inline-block;
@@ -69,7 +68,16 @@ body {
     padding: 0px;
 }
 
+#tableDiv {
+    width: 100%;
+    text-align: center;
+}
+
 .table{
-    width: 20%;
+    width: 60%;
     margin: 0 auto;
+}
+th{
+    width: 100%;
+    padding: 0px;
 }
