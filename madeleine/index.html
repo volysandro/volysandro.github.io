@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Material Gold</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.scss">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+
+<body>
+    <header>
+        <div id="header" class="card hoverable">
+            <div id="goldblock"></div>
+            <a href="#" data-target="slide-out" class="sidenav-trigger">
+
+                <i id="menu-icon" class="material-icons">menu</i>
+            </a>
+            <a href="index.html">
+                <h1 id="logo"><b> mAnahata Yoga</b></h1>
+
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="title">ROBERT DEVELOPER</div>
+        <div class="subtitle"> geek + smart + curious + nerd + ingenious + cunning = ME </div>
+    </div>
+
+    <div id="fm-medium-embed"></div>
+
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <img style="width: 80%;border-radius: 20px;" src="files/Madeleine_Yoga_Website.jpg">
+                <span class="name">Sandro Volery</span>
+                <span class="email">sandro@volery.com</span>
+            </div>
+        </li>
+        <li><a style="color: #a4559c" href="https://sandro.volery.com">mAnahata Yoga</a></li>
+        <li><a style="color: #a4559c" href="https://sandro.volery.com">Über Madeleine</a></li>
+        <li><a style="color: #a4559c" href="https://sandro.volery.com">Events & Workshops</a></li>
+
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="subheader">Links</a></li>
+        <li><a class="waves-effect" href="https://www.github.com/volysandro">Instagram</a></li>
+        <li><a class="waves-effect" href="https://www.github.com/volysandro">Facebook</a></li>
+
+    </ul>
+
+
+</body>
+
+</html>
+
+<script>
+    $(document).ready(function () {
+        $('.sidenav').sidenav({
+
+            'edge': "right",
+        });
+    });
+</script>
+<script src='main.js'></script>
