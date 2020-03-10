@@ -30,7 +30,7 @@
         if (!file_exists($path . "/" . $name)) {
 
         //Ordner erstellen
-        mkdir("$path" . "/$name", 0755);
+        mkdir("$path" . "/$name", 0777);
 
 
 
