@@ -59,7 +59,8 @@
             <th>Optionen</th>
           </tr>
           <?php
-          $path = "./pers";
+          $path = "./pers/";
+          $trash = "./deleted/";
           $pers = preg_grep('/^([^.])/', scandir($path));
           $entries = count($pers);
 
@@ -96,7 +97,7 @@
           if (isset($_GET["confirm"])) {
             if ($_GET["confirm"] == "Ja") {
               $del = $_GET["del"];
-              rename($path . "/$del", "./deleted/$del");
+              rename($path . $del, $trash . $del);
               echo "<div class=\"alert\">
                         <p>$del wurde gelöscht!</p>
                         <form class=\"confirm\" action=\"form.php\" method=\"get\">
