@@ -1,0 +1,32 @@
+body, html{
+    height: 100%;
+    width: 100%;
+    background: #3C3B3F;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.social{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.song{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.main{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#icons{
+    margin-top: 13%;
+}

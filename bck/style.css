@@ -1,0 +1,140 @@
+#header {
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    border-radius: 0;
+    z-index: 999;
+    background-image: url("images/wallpaper2.jpg");
+    background-position-y: 49%;
+    background-size: 100%;
+}
+
+#goldblock {
+    position: absolute;
+    right: 0px;
+    margin: 0px;
+    background-color: red;
+    height: 100%;
+    width: 75px;
+}
+
+#logo {
+    color: black;
+    font-size: 30px;
+    margin: 12.5px;
+    margin-left: 15px;
+}
+
+#menu-icon {
+    position: fixed;
+    right: 8px;
+    font-size: 50px;
+    margin: 5px;
+    color: white;
+}
+
+#fm-medium-embed {
+    position: relative;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+a {
+    color: red;
+}
+
+.fm-post-read-more {
+    color: red;
+}
+
+
+.fm-post-wrapper {
+    padding: 15px;
+    border-left: 3px solid #f8b500;
+    border-radius: 11px;
+}
+
+.fm-medium-profile {
+    visibility: hidden;
+}
+
+#upcoming {
+    position: fixed;
+    padding: 10px;
+    left: 0px;
+    top: 200px;
+    margin: 0;
+    width: 300px;
+    height: 170px;
+}
+
+#home-1 {
+    margin: 0 auto;
+    position: relative;
+    margin-top: 0px;
+    width: 40%;
+}
+
+#home-2 {
+    margin: 0 auto;
+    position: relative;
+    width: 40%;
+    margin-top: 40px;
+
+}
+
+.news {
+    margin-top: 40px;
+}
+
+#eventbtn {
+    position: fixed;
+    left: 20px;
+    top: 100px;
+}
+
+#event {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: red;
+    border-radius: 50px;
+}
+
+#eventtrigger {
+    position: fixed;
+    left: 10px;
+    top: 70px;
+    background-color: red;
+    border-radius: 100px;
+    visibility: hidden;
+    z-index: 999;
+}
+
+#taptarget {
+    background-color: red;
+}
+
+#modal1 {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+#bcklogo {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: block;
+    visibility: hidden;
+}
+
+#wallpaper {
+    opacity: 0.15;
+    position: fixed;
+    top: 0px;
+    filter: grayscale(100%);
+}

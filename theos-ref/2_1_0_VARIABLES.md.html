@@ -1,0 +1,31 @@
+<link href="../theosref.css" rel="stylesheet">
+
+<h1>Variables</h1>
+
+<p>%INDENT%</p>
+
+<p>Theos provides variables that can be modified to control the build process on a global and per-<a href="./2_1_2_INSTANCES.md">instance</a> basis.</p>
+
+<p>For general information on <em>make Variables</em>, refer to <a href="http://www.gnu.org/software/make/manual/make.html#Using-Variables"><em>Using Variables</em></a> in the GNU make Manual.</p>
+
+<p>%INDENTEND%</p>
+
+<h2>Variable Types and Scope</h2>
+
+<p>%INDENT%</p>
+
+<ul>
+<li><p><strong>Constants (<span class="readonly">read-only</span>)</strong>: Variables whose values should not be changed. They are used for querying the build environment and theos settings. They are valid across all Theos Makefiles.</p></li>
+<li><p><strong>System Variables (<span class="scope">system</span>)</strong>: Variables that can be set to modify global state for all instances and sub-instances under a given Makefile. Variables of this sort are shared between make and sub-make instances.</p></li>
+<li><p><strong>Command-line Variables (<span class="scope">command-line</span>)</strong>: Variables specifically designed to be set during a command-line invocation of <code>make</code>. These variables also modify state for all instances and sub-instances under a given Makefile.</p></li>
+<li><p><strong>Local Variables (<span class="scope">local</span>)</strong>: Variables whose value is valid only on the Make instance where they are defined.</p></li>
+<li><p><strong>Private Variables</strong>: Undocumented variables which are either deprecated or aren't meant to be used.</p></li>
+</ul>
+
+<p>For more detail on the scoping of make variables, refer to <a href="http://www.gnu.org/software/make/manual/make.html#Recursion"><em>Recursive Use of Make</em></a> in the GNU make Manual.</p>
+
+<p>A Theos convention holds that, save <code>THEOS_</code>-prepended variables, lowercase variable names are to be used as Command-Line Variables and uppercase ones to be defined in Makefiles. This will be discussed further on a per-variable basis.</p>
+
+<p>This section of the documentation is split into two main parts: <strong>Master Variables</strong> (which specify global build settings) and <strong>Instance Variables</strong> (which specify instance-specific build settings). For more details on instances, refer to <a href="./2_1_2_INSTANCES.md">Section 2.1.2</a>.</p>
+
+<p>%INDENTEND%</p>

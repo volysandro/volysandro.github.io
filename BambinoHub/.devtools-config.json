@@ -1,0 +1,23 @@
+{
+  "tools": [],
+  "commands": [
+    {
+      "rawCommandWithPath": "cd /home/sandro/volysandro.github.io/BambinoHub/bambinohub/ && terminator -x npm run serve",
+      "command": "npm run serve",
+      "name": "serve",
+      "path": "/home/sandro/volysandro.github.io/BambinoHub/bambinohub/"
+    }
+  ],
+  "servers": [],
+  "websites": [
+    {
+      "websiteUrl": "https://vuetifyjs.com/en/getting-started/quick-start",
+      "name": "vuetify"
+    },
+    {
+      "websiteUrl": "http://localhost:8080",
+      "name": "Localhost 8080",
+      "timer": "30000"
+    }
+  ]
+}

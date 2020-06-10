@@ -1,0 +1,29 @@
+<link href="../theosref.css" rel="stylesheet">
+
+<h1>Introduction</h1>
+
+<p>%INDENT%</p>
+
+<p><strong>Theos</strong> (formerly iphone-framework) is a set of Makefiles designed to take away the complexity of building and organizing iPhoneOS projects without the use of Xcode (or even Mac OS X).</p>
+
+<p>Theos is developed mainly by Dustin Howett (DHowett) and available via <a href="http://github.com/DHowett/theos/"><strong>Git</strong></a> and <a href="http://svn.howett.net/svn/theos/">Subversion</a>.</p>
+
+<p>Theos features a robust build system driven by <a href="http://www.gnu.org/software/make/"><strong>GNU Make</strong></a>, which makes its Makefiles easily-read, concise, and extensible.</p>
+
+<p>Getting started is as simple as <code>git clone git://github.com/DHowett/theos</code>: Theos's installation is designed to be easy and portable. One of Theos' principles was to never require any bootstrapping.</p>
+
+<p>Theos also features a set of other components such as <a href="http://iphonedevwiki.net/index.php/Logos"><strong>Logos</strong></a> and <a href="http://theos.howett.net/nic"><strong>NIC</strong></a>, which are documented elsewhere. This document will focus on Theos' Makefile system.</p>
+
+<p>%INDENTEND%</p>
+
+<h2>Conceptual Notes</h2>
+
+<p>%INDENT%</p>
+
+<p>A <strong>project</strong> refers to a directory hierarchy containing a Theos Makefile, related files and subprojects.</p>
+
+<p>Theos Makefiles are written in <em>make</em> (specifically, <em>GNU make</em>). As such, all Make syntax is valid, including rules, variable definitions, and so forth. Theos provides built-in variables and rules (herein documented), but can be side-stepped and expanded wherever necessary.</p>
+
+<p>For a (very) in-depth reference on Make, check the <a href="http://www.gnu.org/software/make/manual/make.html">GNU `make' manual</a>.</p>
+
+<p>%INDENTEND%</p>

@@ -1,0 +1,616 @@
+
+@font-face {
+  font-family: 'kali';
+  src: url('./css/spaceage.ttf');
+}
+
+
+.body{
+    background-color: #EDF2F4;
+}
+
+/* html, body{
+  height: 100%;
+  width: 100%;
+} */
+
+
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
+h4{
+  margin: 0;
+  padding: 0;
+  color: white;
+
+}
+
+.scroll-link {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    
+  }
+  .mouse {
+    max-width: 2.5rem;
+    width: 100%;
+    height: auto;
+  }
+
+  @keyframes scroll {
+    0%, 20% {
+    transform: translateY(0) scaleY(1);
+    }
+
+    10% {
+        opacity: 1;
+        }
+    100% {
+        transform: translateY(36px) scaleY(2);
+        opacity: 0.01;
+        }
+  }
+
+  .scroll {
+    animation-name: scroll;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.650, -0.550, 0.250, 1.500);
+    animation-iteration-count: infinite;
+    transform-origin: 50% 20.5px;
+    will-change: transform;
+  }
+
+  .welcomebox{
+      
+    /* background-image: url("background.jpg"); */
+    background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    z-index: 97;
+  }
+
+
+
+#german{
+  position: absolute;
+  height: 20px;
+  left: 5px;
+  top: 5px;
+}
+
+#english{
+  position: absolute;
+  height: 20px;
+  top: 30px;
+  left: 5px;
+}
+  
+
+ 
+
+  
+
+  #welcomecontent{
+
+    background-color: white;
+    height: 1000cm;
+    width: 100%;
+  }
+
+  #title{
+
+    font-size: 500%;;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: auto;
+}
+
+  #boxclubinbern{
+      margin: auto;
+    
+  }
+
+#titlebox{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    
+
+}
+
+#menu{
+    
+    
+    position: fixed;
+    right: 0%;
+    top: 0%;
+    height: 100%;
+    width: 130px;
+    background-color: #EDF2F4;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    z-index: 99;
+    
+}
+
+#menubutton{
+    color: #2B2D42;
+    text-decoration: none;
+}
+
+#menubuttons{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+
+#info{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    top: 100%;
+    left: 0%;
+
+    margin: 0%;
+  }
+  
+  
+  #infocard{
+    width: 80%;
+    height: 50%;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+
+#buy{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        top: 200%;
+    left: 0%;
+
+    margin: 0%;
+}
+
+#kontakt{
+    position: absolute;
+    height: 120%;
+    width: 100%;
+    background-color: white;
+    top: 500%;
+    margin: 0%;
+    left: 0%;
+    z-index: 96;
+}
+
+#players{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    top: 300%;
+    margin: 0%;
+    left: 0%;
+
+}
+
+#more{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        top: 400%;
+    margin: 0%;
+    left: 0%;
+}
+
+#titleboxright{
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    
+
+}
+
+#titleboxleft{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    
+
+}
+
+#titleleft{
+    font-size: 400%;;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: auto;
+    color: #EF233C;
+}
+
+#titleright{
+    font-size: 400%;;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: auto;
+    color: #2B2D42;
+}
+
+#contentright{
+    text-align-last: right;
+    position: absolute;
+    right: 20%;
+    top: 35%;
+    width: 60%;
+}
+
+#contentleft{
+    text-align: left;
+    position: absolute;
+    left: 20%;
+    top: 35%;
+    color: #EDF2F4;
+    width: 60%;
+
+}
+
+#footer{
+    position: fixed;
+    top: 90%;
+    height: 10%;
+    width: 100%;
+   background-color: #A9A9A9;
+    z-index: 95;
+    left: 0%;
+}
+
+#footerleft{
+
+    position: absolute;
+    left: 15%;
+    color: #2B2D42;
+    top: 40%;
+    text-align: left;
+
+}
+
+#footerright{
+
+    position: absolute;
+    right: 15%;
+    color: #2B2D42;
+    top: 40%;
+    text-align: right;
+
+}
+
+
+#footermiddle{
+    text-align: center;
+    color: #2B2D42;
+    font-size: 30px;
+    
+}
+
+#footermiddlewhere{
+    position: absolute;
+    top: 25%;
+    text-align: center;
+    width: 100%;
+    
+}
+
+#trainingsplan{
+    color: #EDF2F4;
+    border-radius: 8px;
+    background-color: #2B2D42;
+    border: none;
+    font-size: 30px;
+    margin: 30px;
+    margin-top: 0px;
+}
+
+#trainingsabos{
+    color: #EDF2F4;
+    border-radius: 8px;
+    background-color: #2B2D42;
+    border: none;
+    font-size: 30px;
+    margin-top: 0px;
+}
+
+
+#infoplaene{
+
+    position: absolute;
+    bottom: 25%;
+    left: 15%;
+    width: 25%;
+    margin: auto;
+    margin-right: 10px;
+    border-style: solid;
+    border-color: #2B2D42;
+    border-width: 5px;
+    border-radius: 8px;
+    padding: 7px;
+    background-color: #EDF2F4;
+
+}
+
+#infoabos{
+    position: absolute;
+    bottom: 25%;
+    left: 15%;
+    width: 25%;
+    margin: auto;
+    margin-right: 10px;
+    border-style: solid;
+    border-color: #2B2D42;
+    border-width: 5px;
+    border-radius: 8px;
+    padding: 7px;
+    background-color: #EDF2F4;
+}
+
+
+.svg-wrapper {
+    height: 300px;
+      margin: 0 auto;
+    position: absolute;
+    top: 25%;
+    left: 14%;
+    width: 700px;
+  }
+  
+  .shape {
+    fill: transparent;
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -400;
+    stroke-width: 8px;
+    stroke: #D90429;
+  }
+  
+  .text {
+    color: #fff;
+    font-family: 'Roboto Condensed';
+    font-size: 22px;
+    letter-spacing: 8px;
+    line-height: 32px;
+    position: absolute;
+    top: 20%;
+    left: 3%;
+  }
+  
+  @keyframes draw {
+    0% {
+      stroke-dasharray: 140 540;
+      stroke-dashoffset: -400;
+      stroke-width: 8px;
+    }
+    100% {
+      stroke-dasharray: 1500;
+      stroke-dashoffset: 0;
+      stroke-width: 5px;
+    }
+  }
+  
+  .svg-wrapper:hover .shape {
+    -webkit-animation: 0.3s draw linear forwards;
+    animation: 0.3s draw linear forwards;
+  }
+
+  #trainerprofis{
+      color: #EDF2F4;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 25px;
+      
+      
+  }
+
+  #teamlinks{
+      position: absolute;
+      top: 20%;
+      left: 45%;
+      background-color: #2B2D42;
+  }
+
+  table{
+      border-collapse: collapse;
+  }
+
+  table, th, td{
+    border: 1px #2B2D42;
+  }
+
+  tr{
+      height: 20%;
+  }
+
+
+  .card1 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 300px;
+    height: 433px;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 10%;
+    
+  }
+
+  .card2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 300px;
+    height: 433px;
+    background-color: white;
+    margin: auto;
+    padding: 0px;
+    
+    margin-bottom: 30px;
+
+  }
+
+  .card3 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 300px;
+    height: 433px;
+    background-color: white;
+    margin: auto;
+    padding: 0px;
+    margin-bottom: 10%;
+
+      }
+  
+  .card1:hover {
+    box-shadow: 0 8px 16px 0 white;
+  }
+  .card2:hover {
+    box-shadow: 0 8px 16px 0 white;
+  }
+  .card3:hover {
+    box-shadow: 0 8px 16px 0 white;
+  }
+  
+  .card4 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 10%;
+    
+  }
+
+  .card5 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    margin: auto;
+    padding: 0px;
+    
+    margin-bottom: 30px;
+
+  }
+
+  .card6 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    margin: auto;
+    padding: 0px;
+    margin-bottom: 10%;
+
+      }
+  
+  .card4:hover {
+    box-shadow: 0 8px 16px 0 white;
+  }
+  .card5:hover {
+    box-shadow: 0 8px 16px 0 white;
+  }
+  .card6:hover {
+    box-shadow: 0 8px 16px 0 white;
+  }
+
+
+  .container {
+    padding: 2px 16px;
+  }
+
+  img {
+    border-radius: 5px 5px 0 0;
+  }
+
+  #cards{
+      height: 400px;
+      width: 100%;
+  }
+
+
+  .newscard1 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 80%;
+    height: 10%;
+    background-color: #EDF2F4;
+    margin: auto;
+    margin-bottom: 30px;
+    
+  }
+
+  .newscard2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 80%;
+    height: 10%;
+    background-color: #EDF2F4;
+    margin: auto;
+    padding: 0px;
+    margin-bottom: 30px;
+
+  }
+
+  .newscard3 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 80%;
+    height: 10%;
+    background-color: #EDF2F4;
+    margin: auto;
+    padding: 0px;
+    margin-bottom: 10%;
+
+      }
+  
+  .newscard1:hover {
+    box-shadow: 0 8px 16px 0 #2B2D42;
+  }
+  .newscard2:hover {
+    box-shadow: 0 8px 16px 0 #2B2D42;
+  }
+  .newscard3:hover {
+    box-shadow: 0 8px 16px 0 #2B2D42;
+  }
+
+  .mySlides {display:none;}
+
+
+
+#youthInfoCard{
+  width: 80%;
+  height: 50%;
+
+border: 2px #232526;
+}

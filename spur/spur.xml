@@ -1,0 +1,3092 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tracklist>
+   <list name="track" type="obj">
+      <obj class="MAudioTrackEvent" ID="1151976096">
+         <int name="Flags" value="1"/>
+         <float name="Start" value="0"/>
+         <float name="Length" value="575207.93900000001303851604461669921875"/>
+         <obj class="MListNode" name="Node" ID="1151010240">
+            <string name="Name" value="xd (D)" wide="true"/>
+            <member name="Domain">
+               <int name="Type" value="0"/>
+               <obj class="MTempoTrackEvent" name="Tempo Track" ID="1024855040">
+                  <list name="TempoEvent" type="obj">
+                     <obj class="MTempoEvent" ID="1018952464">
+                        <float name="BPM" value="86"/>
+                        <float name="PPQ" value="0"/>
+                     </obj>
+                  </list>
+                  <float name="RehearsalTempo" value="120"/>
+                  <member name="Additional Attributes">
+                     <int name="Lock" value="0"/>
+                  </member>
+               </obj>
+               <obj class="MSignatureTrackEvent" name="Signature Track" ID="1024852096">
+                  <list name="SignatureEvent" type="obj">
+                     <obj class="MTimeSignatureEvent" ID="932395184">
+                        <int name="Flags" value="8"/>
+                        <float name="Start" value="0"/>
+                        <float name="Length" value="1"/>
+                        <int name="Bar" value="0"/>
+                        <int name="Numerator" value="4"/>
+                        <int name="Denominator" value="4"/>
+                        <int name="Position" value="0"/>
+                     </obj>
+                  </list>
+                  <member name="Additional Attributes">
+                     <int name="LocS" value="0"/>
+                  </member>
+               </obj>
+            </member>
+            <list name="Events" type="obj">
+               <obj class="MAudioEvent" ID="1130502016">
+                  <float name="Start" value="26700"/>
+                  <float name="Length" value="1283346.10771745420061051845550537109375"/>
+                  <float name="Offset" value="44100.892282545610214583575725555419921875"/>
+                  <float name="SnapPoint" value="44100.892282545566558837890625"/>
+                  <int name="Priority" value="1"/>
+                  <string name="Description" value="xd (D)_05" wide="true"/>
+                  <obj class="PAudioClip" name="AudioClip" ID="1268328064">
+                     <string name="Name" value="xd (D)_05" wide="true"/>
+                     <member name="Domain">
+                        <int name="Type" value="10"/>
+                        <float name="Period" value="2.2675736961451247629883640199999206288339337334037e-05"/>
+                     </member>
+                     <list name="Events" type="obj">
+                        <obj class="MHitPointEvent" ID="1262422896">
+                           <float name="Time" value="31852"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="2"/>
+                           <float name="Peak" value="0.03171861171722412109375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262414976">
+                           <float name="Time" value="36687"/>
+                           <float name="Weight" value="0.06209687888622283935546875"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="2"/>
+                           <float name="Peak" value="0.0133457183837890625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262420608">
+                           <float name="Time" value="40778"/>
+                           <float name="Weight" value="0.61204230785369873046875"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="2"/>
+                           <float name="Peak" value="0.013163089752197265625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262413216">
+                           <float name="Time" value="48168"/>
+                           <float name="Weight" value="0.2917276322841644287109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="2"/>
+                           <float name="Peak" value="0.011278629302978515625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262422544">
+                           <float name="Time" value="50978"/>
+                           <float name="Weight" value="0.0898285806179046630859375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="2"/>
+                           <float name="Peak" value="0.0098617076873779296875"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262416736">
+                           <float name="Time" value="56484"/>
+                           <float name="Weight" value="0.11497716605663299560546875"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="2"/>
+                           <float name="Peak" value="0.00933039188385009765625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262416384">
+                           <float name="Time" value="59485"/>
+                           <float name="Weight" value="0.125258624553680419921875"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="2"/>
+                           <float name="Peak" value="0.00581991672515869140625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262420784">
+                           <float name="Time" value="86361"/>
+                           <float name="Weight" value="0.22733591496944427490234375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="2"/>
+                           <float name="Peak" value="0.00969779491424560546875"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262417440">
+                           <float name="Time" value="102215"/>
+                           <float name="Weight" value="0.190042316913604736328125"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="2"/>
+                           <float name="Peak" value="0.01387321949005126953125"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262414800">
+                           <float name="Time" value="107722"/>
+                           <float name="Weight" value="0.094378776848316192626953125"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="2"/>
+                           <float name="Peak" value="0.0076344013214111328125"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262413568">
+                           <float name="Time" value="190589"/>
+                           <float name="Weight" value="0.076620034873485565185546875"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="2"/>
+                           <float name="Peak" value="0.00461483001708984375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262417616">
+                           <float name="Time" value="210484"/>
+                           <float name="Weight" value="0.420658767223358154296875"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="2"/>
+                           <float name="Peak" value="0.0109653472900390625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262416912">
+                           <float name="Time" value="215786"/>
+                           <float name="Weight" value="0.125395238399505615234375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="2"/>
+                           <float name="Peak" value="0.01935589313507080078125"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262417792">
+                           <float name="Time" value="220791"/>
+                           <float name="Weight" value="0.02829919196665287017822265625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="2"/>
+                           <float name="Peak" value="0.01376163959503173828125"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262416560">
+                           <float name="Time" value="234162"/>
+                           <float name="Weight" value="0.48026335239410400390625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.1138384342193603515625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262420080">
+                           <float name="Time" value="240415"/>
+                           <float name="Weight" value="0.64241921901702880859375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.441474437713623046875"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262419728">
+                           <float name="Time" value="248009"/>
+                           <float name="Weight" value="0.03111932240426540374755859375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.26183116436004638671875"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262417968">
+                           <float name="Time" value="254067"/>
+                           <float name="Weight" value="0.2560513317584991455078125"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.2374036312103271484375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262415152">
+                           <float name="Time" value="268903"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.32161426544189453125"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262415680">
+                           <float name="Time" value="279011"/>
+                           <float name="Weight" value="0.3701679706573486328125"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.19127047061920166015625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262420432">
+                           <float name="Time" value="284710"/>
+                           <float name="Weight" value="0.529060661792755126953125"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.3493802547454833984375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262413040">
+                           <float name="Time" value="292296"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.46871817111968994140625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262421840">
+                           <float name="Time" value="296425"/>
+                           <float name="Weight" value="0.07585380971431732177734375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.34581816196441650390625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262415328">
+                           <float name="Time" value="305981"/>
+                           <float name="Weight" value="0.0343701355159282684326171875"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.29471492767333984375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262414096">
+                           <float name="Time" value="313654"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.25926744937896728515625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262419024">
+                           <float name="Time" value="324776"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.12987244129180908203125"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262418144">
+                           <float name="Time" value="329388"/>
+                           <float name="Weight" value="0.078781284391880035400390625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.3091771602630615234375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262418320">
+                           <float name="Time" value="337679"/>
+                           <float name="Weight" value="0.4465395510196685791015625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.2232701778411865234375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262411984">
+                           <float name="Time" value="343140"/>
+                           <float name="Weight" value="0.032519079744815826416015625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.07501852512359619140625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262418496">
+                           <float name="Time" value="346390"/>
+                           <float name="Weight" value="0.159176290035247802734375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.41613519191741943359375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262423072">
+                           <float name="Time" value="360948"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.415402889251708984375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262421136">
+                           <float name="Time" value="365094"/>
+                           <float name="Weight" value="0.08084948360919952392578125"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.5138571262359619140625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262413744">
+                           <float name="Time" value="376881"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.2758350372314453125"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262413920">
+                           <float name="Time" value="387781"/>
+                           <float name="Weight" value="0.10233439505100250244140625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.13078939914703369140625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262417088">
+                           <float name="Time" value="392689"/>
+                           <float name="Weight" value="0.102539412677288055419921875"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.10091531276702880859375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262417264">
+                           <float name="Time" value="395449"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.66458594799041748046875"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262418672">
+                           <float name="Time" value="402320"/>
+                           <float name="Weight" value="0.240883290767669677734375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.34275758266448974609375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262418848">
+                           <float name="Time" value="408756"/>
+                           <float name="Weight" value="0.072026900947093963623046875"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.2787425518035888671875"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262419200">
+                           <float name="Time" value="416785"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.3081057071685791015625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262416208">
+                           <float name="Time" value="423290"/>
+                           <float name="Weight" value="0.62951290607452392578125"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.469181060791015625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262412688">
+                           <float name="Time" value="431890"/>
+                           <float name="Weight" value="0.07021377980709075927734375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.23863613605499267578125"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262419376">
+                           <float name="Time" value="439268"/>
+                           <float name="Weight" value="0.39252221584320068359375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.2532479763031005859375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262414272">
+                           <float name="Time" value="449142"/>
+                           <float name="Weight" value="0.0283587910234928131103515625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.28472614288330078125"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262412336">
+                           <float name="Time" value="458093"/>
+                           <float name="Weight" value="0.0892733037471771240234375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.140378475189208984375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262419552">
+                           <float name="Time" value="462087"/>
+                           <float name="Weight" value="0.031698115170001983642578125"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.3091471195220947265625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262421312">
+                           <float name="Time" value="469469"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.23089599609375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262412160">
+                           <float name="Time" value="476072"/>
+                           <float name="Weight" value="0.12629012763500213623046875"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.22677326202392578125"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262419904">
+                           <float name="Time" value="484220"/>
+                           <float name="Weight" value="0.626641094684600830078125"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.37089264392852783203125"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262420256">
+                           <float name="Time" value="494283"/>
+                           <float name="Weight" value="0.55225718021392822265625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.24936878681182861328125"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262412512">
+                           <float name="Time" value="499522"/>
+                           <float name="Weight" value="0.13930438458919525146484375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.30248773097991943359375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262421488">
+                           <float name="Time" value="506849"/>
+                           <float name="Weight" value="0.3747352659702301025390625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.2907240390777587890625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262422016">
+                           <float name="Time" value="517666"/>
+                           <float name="Weight" value="0.15275563299655914306640625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.3858850002288818359375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262422192">
+                           <float name="Time" value="528170"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.222590923309326171875"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262414448">
+                           <float name="Time" value="534080"/>
+                           <float name="Weight" value="0.114369817078113555908203125"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.16032469272613525390625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262414624">
+                           <float name="Time" value="537933"/>
+                           <float name="Weight" value="0.376473009586334228515625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.1487901210784912109375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262422368">
+                           <float name="Time" value="547991"/>
+                           <float name="Weight" value="0.20150218904018402099609375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.4251081943511962890625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262415504">
+                           <float name="Time" value="557946"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.17498242855072021484375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262415856">
+                           <float name="Time" value="569957"/>
+                           <float name="Weight" value="0.040737308561801910400390625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.07544553279876708984375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262430640">
+                           <float name="Time" value="579663"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.4247615337371826171875"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262424480">
+                           <float name="Time" value="584774"/>
+                           <float name="Weight" value="0.0860273540019989013671875"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.22328412532806396484375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262431168">
+                           <float name="Time" value="593102"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.25807094573974609375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262434336">
+                           <float name="Time" value="600576"/>
+                           <float name="Weight" value="0.1269325315952301025390625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.24276864528656005859375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262429056">
+                           <float name="Time" value="625155"/>
+                           <float name="Weight" value="0.10774166882038116455078125"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.3206570148468017578125"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262424304">
+                           <float name="Time" value="639617"/>
+                           <float name="Weight" value="0.128902494907379150390625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.36122953891754150390625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262428000">
+                           <float name="Time" value="643477"/>
+                           <float name="Weight" value="0.0568132735788822174072265625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.36377203464508056640625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262423600">
+                           <float name="Time" value="646402"/>
+                           <float name="Weight" value="0.1336953938007354736328125"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.25863516330718994140625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262424656">
+                           <float name="Time" value="652729"/>
+                           <float name="Weight" value="0.091955833137035369873046875"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.25492346286773681640625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262433104">
+                           <float name="Time" value="663188"/>
+                           <float name="Weight" value="0.0621444769203662872314453125"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.09694182872772216796875"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262432224">
+                           <float name="Time" value="669585"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.42578351497650146484375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262426064">
+                           <float name="Time" value="676557"/>
+                           <float name="Weight" value="0.056623391807079315185546875"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.29544389247894287109375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262429232">
+                           <float name="Time" value="682908"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.2661516666412353515625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262433808">
+                           <float name="Time" value="685770"/>
+                           <float name="Weight" value="0.023423731327056884765625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.310436248779296875"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262426592">
+                           <float name="Time" value="692845"/>
+                           <float name="Weight" value="0.146857917308807373046875"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.26791131496429443359375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262426416">
+                           <float name="Time" value="698578"/>
+                           <float name="Weight" value="0.0570632033050060272216796875"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.22393143177032470703125"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262433280">
+                           <float name="Time" value="702867"/>
+                           <float name="Weight" value="0.2158738672733306884765625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.09265530109405517578125"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262427120">
+                           <float name="Time" value="708335"/>
+                           <float name="Weight" value="0.39422738552093505859375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.57635891437530517578125"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262424128">
+                           <float name="Time" value="716143"/>
+                           <float name="Weight" value="0.140661418437957763671875"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.3288478851318359375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262429760">
+                           <float name="Time" value="723909"/>
+                           <float name="Weight" value="0.0609934292733669281005859375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.20423233509063720703125"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262427296">
+                           <float name="Time" value="740789"/>
+                           <float name="Weight" value="0.102568514645099639892578125"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.04813444614410400390625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262430288">
+                           <float name="Time" value="745188"/>
+                           <float name="Weight" value="0.4317875802516937255859375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.1548173427581787109375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262431344">
+                           <float name="Time" value="760936"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.15504205226898193359375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262433456">
+                           <float name="Time" value="774604"/>
+                           <float name="Weight" value="0.047433741390705108642578125"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.06132352352142333984375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262424832">
+                           <float name="Time" value="796780"/>
+                           <float name="Weight" value="0.02554385364055633544921875"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="2"/>
+                           <float name="Peak" value="0.00993525981903076171875"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262428704">
+                           <float name="Time" value="801674"/>
+                           <float name="Weight" value="0.02050842531025409698486328125"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="2"/>
+                           <float name="Peak" value="0.02302944660186767578125"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262426240">
+                           <float name="Time" value="816915"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.13852488994598388671875"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262433632">
+                           <float name="Time" value="820000"/>
+                           <float name="Weight" value="0.260857045650482177734375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.50877988338470458984375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262432928">
+                           <float name="Time" value="856037"/>
+                           <float name="Weight" value="0.14440684020519256591796875"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.415693759918212890625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262433984">
+                           <float name="Time" value="865388"/>
+                           <float name="Weight" value="0.0493629910051822662353515625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.1378715038299560546875"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262432400">
+                           <float name="Time" value="871471"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.39269530773162841796875"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262425008">
+                           <float name="Time" value="878197"/>
+                           <float name="Weight" value="0.02969789691269397735595703125"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.21835720539093017578125"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262434160">
+                           <float name="Time" value="886232"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.3203451633453369140625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262425184">
+                           <float name="Time" value="900214"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.2481038570404052734375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262425360">
+                           <float name="Time" value="909432"/>
+                           <float name="Weight" value="0.230847179889678955078125"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.28001415729522705078125"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262430464">
+                           <float name="Time" value="917189"/>
+                           <float name="Weight" value="0.114254318177700042724609375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.37529408931732177734375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262423248">
+                           <float name="Time" value="920303"/>
+                           <float name="Weight" value="0.0344094075262546539306640625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.3921167850494384765625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262425536">
+                           <float name="Time" value="925894"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.09605324268341064453125"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262430816">
+                           <float name="Time" value="931116"/>
+                           <float name="Weight" value="0.4485458433628082275390625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.54688799381256103515625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262425712">
+                           <float name="Time" value="938073"/>
+                           <float name="Weight" value="0.14129771292209625244140625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.15625751018524169921875"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262423424">
+                           <float name="Time" value="948873"/>
+                           <float name="Weight" value="0.0290978588163852691650390625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.33567845821380615234375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262432576">
+                           <float name="Time" value="957883"/>
+                           <float name="Weight" value="0.0841280519962310791015625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.06437695026397705078125"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262426768">
+                           <float name="Time" value="961198"/>
+                           <float name="Weight" value="0.427975594997406005859375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.34739959239959716796875"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262429408">
+                           <float name="Time" value="977785"/>
+                           <float name="Weight" value="0.121116101741790771484375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.2774813175201416015625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262429936">
+                           <float name="Time" value="980390"/>
+                           <float name="Weight" value="0.045209266245365142822265625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.42997920513153076171875"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262431520">
+                           <float name="Time" value="988051"/>
+                           <float name="Weight" value="0.0515193529427051544189453125"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.1615521907806396484375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262429584">
+                           <float name="Time" value="994106"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.4228460788726806640625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262425888">
+                           <float name="Time" value="1005488"/>
+                           <float name="Weight" value="0.0491442419588565826416015625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.21207630634307861328125"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262431696">
+                           <float name="Time" value="1009769"/>
+                           <float name="Weight" value="0.135825335979461669921875"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.4827282428741455078125"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262430112">
+                           <float name="Time" value="1029011"/>
+                           <float name="Weight" value="0.052344985306262969970703125"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.05720484256744384765625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262431872">
+                           <float name="Time" value="1034694"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.2826311588287353515625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262426944">
+                           <float name="Time" value="1040400"/>
+                           <float name="Weight" value="0.1987403929233551025390625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.49605715274810791015625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262423952">
+                           <float name="Time" value="1054335"/>
+                           <float name="Weight" value="0.16852653026580810546875"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.38463723659515380859375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262427472">
+                           <float name="Time" value="1060470"/>
+                           <float name="Weight" value="0.55787885189056396484375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.21187245845794677734375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262427824">
+                           <float name="Time" value="1067804"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.23055088520050048828125"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262428176">
+                           <float name="Time" value="1071308"/>
+                           <float name="Weight" value="0.0450750552117824554443359375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.40743315219879150390625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262432752">
+                           <float name="Time" value="1079108"/>
+                           <float name="Weight" value="0.14199541509151458740234375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.3124320507049560546875"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262428528">
+                           <float name="Time" value="1094276"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.34385144710540771484375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262428880">
+                           <float name="Time" value="1103495"/>
+                           <float name="Weight" value="0.24718029797077178955078125"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.32070505619049072265625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262432048">
+                           <float name="Time" value="1109757"/>
+                           <float name="Weight" value="0.075065590441226959228515625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.24046719074249267578125"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262438736">
+                           <float name="Time" value="1115686"/>
+                           <float name="Weight" value="0.06671567261219024658203125"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.33050262928009033203125"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262441024">
+                           <float name="Time" value="1121779"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.27735483646392822265625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262444192">
+                           <float name="Time" value="1130367"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.59079742431640625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262444720">
+                           <float name="Time" value="1135592"/>
+                           <float name="Weight" value="0.042149253189563751220703125"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.4154322147369384765625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262443488">
+                           <float name="Time" value="1138979"/>
+                           <float name="Weight" value="0.08140896260738372802734375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.22458064556121826171875"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262435392">
+                           <float name="Time" value="1145496"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.4073269367218017578125"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262437152">
+                           <float name="Time" value="1147837"/>
+                           <float name="Weight" value="0.046188451349735260009765625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.604162693023681640625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262438208">
+                           <float name="Time" value="1156440"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.209246158599853515625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262445072">
+                           <float name="Time" value="1181803"/>
+                           <float name="Weight" value="0.14180041849613189697265625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.20994913578033447265625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262435744">
+                           <float name="Time" value="1186755"/>
+                           <float name="Weight" value="0.02210957370698451995849609375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.1830108165740966796875"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262435568">
+                           <float name="Time" value="1195051"/>
+                           <float name="Weight" value="0.076759822666645050048828125"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.3939189910888671875"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262436096">
+                           <float name="Time" value="1204365"/>
+                           <float name="Weight" value="0.070168606936931610107421875"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.149784564971923828125"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262444544">
+                           <float name="Time" value="1216084"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.1912696361541748046875"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262438384">
+                           <float name="Time" value="1222241"/>
+                           <float name="Weight" value="0.2293333113193511962890625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.13242685794830322265625"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262438032">
+                           <float name="Time" value="1232225"/>
+                           <float name="Weight" value="0.0967950522899627685546875"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.10631549358367919921875"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262445600">
+                           <float name="Time" value="1237857"/>
+                           <float name="Weight" value="0.635205745697021484375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.23322427272796630859375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262437504">
+                           <float name="Time" value="1248038"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.15072667598724365234375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262441200">
+                           <float name="Time" value="1254969"/>
+                           <float name="Weight" value="0.19681835174560546875"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.2326819896697998046875"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262441728">
+                           <float name="Time" value="1267284"/>
+                           <float name="Weight" value="0.345016896724700927734375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.10795724391937255859375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262445248">
+                           <float name="Time" value="1279771"/>
+                           <float name="Weight" value="0.02894972451031208038330078125"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.08825194835662841796875"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262436272">
+                           <float name="Time" value="1290205"/>
+                           <float name="Weight" value="0.693197190761566162109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.07213032245635986328125"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262439616">
+                           <float name="Time" value="1295690"/>
+                           <float name="Weight" value="0.026367105543613433837890625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.04333961009979248046875"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262436448">
+                           <float name="Time" value="1304202"/>
+                           <float name="Weight" value="0.2049270570278167724609375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="2"/>
+                           <float name="Peak" value="0.009593486785888671875"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262438560">
+                           <float name="Time" value="1309294"/>
+                           <float name="Weight" value="0.02070448733866214752197265625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="2"/>
+                           <float name="Peak" value="0.01105320453643798828125"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262436624">
+                           <float name="Time" value="1316597"/>
+                           <float name="Weight" value="0.04498945176601409912109375"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="2"/>
+                           <float name="Peak" value="0.03331661224365234375"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262439440">
+                           <float name="Time" value="1322857"/>
+                           <float name="Weight" value="0.02834337390959262847900390625"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.04714763164520263671875"/>
+                        </obj>
+                        <obj class="MHitPointEvent" ID="1262442080">
+                           <float name="Time" value="1326272"/>
+                           <float name="Weight" value="0.14170591533184051513671875"/>
+                           <int name="Flags" value="0"/>
+                           <int name="FilterFlags" value="0"/>
+                           <float name="Peak" value="0.03975391387939453125"/>
+                        </obj>
+                     </list>
+                     <obj class="FNPath" name="Path" ID="1259782208">
+                        <string name="Name" value="xd (D)_05.wav" wide="true"/>
+                        <string name="Path" value="C:\Users\Tom\Documents\Cubase Projects\Unbenannt-48\Audio\" wide="true"/>
+                        <member name="FileType">
+                           <int name="MacType" value="1463899717"/>
+                           <string name="DosType" value="wav" wide="true"/>
+                           <string name="UnixType" value="wav" wide="true"/>
+                           <string name="Name" value="Wave-Datei" wide="true"/>
+                        </member>
+                     </obj>
+                     <float name="Origin Time" value="37.80811791383219855333663872443139553070068359375"/>
+                     <member name="Additional Attributes">
+                        <obj name="GridDef" ID="1018521168"/>
+                        <int name="HPFilterMode" value="0"/>
+                        <float name="HPPeakThreshold" value="0.038600655259757199466719157499028369784355163574219"/>
+                        <float name="HPThreshold" value="0"/>
+                        <obj name="StretchPreset" ID="446818480"/>
+                        <int name="SyncPoint" value="44100"/>
+                     </member>
+                     <obj class="AudioCluster" name="Cluster" ID="1139905536">
+                        <list name="Substreams" type="obj">
+                           <obj class="AudioFile" ID="1249405680">
+                              <obj name="FPath" ID="1259782208"/>
+                              <int name="FrameCount" value="1327447"/>
+                              <int name="Sample Size" value="24"/>
+                              <int name="Frame Size" value="3"/>
+                              <int name="Channels" value="1"/>
+                              <float name="Rate" value="44100"/>
+                              <int name="Format" value="65536"/>
+                              <int name="ByteOrder" value="0"/>
+                              <int name="DataOffset" value="80"/>
+                              <obj name="archivePath" ID="1259711920"/>
+                           </obj>
+                        </list>
+                        <list name="Segments" type="list">
+                           <item>
+                              <obj name="Stream" ID="1249405680"/>
+                              <int name="Offset" value="0"/>
+                              <int name="Length" value="1327447"/>
+                              <int name="Start" value="0"/>
+                           </item>
+                        </list>
+                     </obj>
+                     <int name="version" value="2"/>
+                     <int name="ownership" value="1"/>
+                     <list name="UID" type="string">
+                        <item value="65B6210DD4794CBD974E7F115F8CFEF4"/>
+                     </list>
+                  </obj>
+               </obj>
+            </list>
+         </obj>
+         <member name="Additional Attributes">
+            <obj class="MTrackVariationCollection" name="TVCi" ID="1082561392">
+               <int name="ownership" value="2"/>
+               <list name="obj" type="obj">
+                  <obj class="MTrackVariation" ID="1125405424">
+                     <string name="name" value="v1" wide="true"/>
+                     <int name="variationID" value="0"/>
+                  </obj>
+               </list>
+            </obj>
+            <obj class="PChordTrackParam" name="CTPi" ID="1210914384">
+               <int name="flags" value="0"/>
+               <int name="mapMode" value="0"/>
+               <int name="liveMapMode" value="0"/>
+               <int name="selectedSingleVoiceIndex" value="0"/>
+               <string name="voicingLib" value="chordtrack"/>
+               <member name="voicingSetup">
+                  <int name="bassLow" value="36"/>
+                  <int name="voicingLow" value="52"/>
+                  <int name="voicingHigh" value="86"/>
+                  <int name="activeStyles" value="-1"/>
+                  <int name="flags" value="1"/>
+                  <int name="startIndex" value="0"/>
+               </member>
+               <int name="uniqueID" value="1134066720"/>
+               <int name="catchRange" value="0"/>
+               <int name="chordPadVoicingModuleIndex" value="0"/>
+            </obj>
+            <obj class="PTrackIconData" name="tidm" ID="1068170240">
+               <string name="currentImageNameData" value="Kein Bild" wide="true"/>
+               <int name="magnifyValueData" value="0"/>
+               <int name="tintingValueData" value="0"/>
+               <int name="imageCenterXCoordData" value="0"/>
+               <int name="imageCenterYCoordData" value="0"/>
+               <int name="rotateValueData" value="0"/>
+            </obj>
+            <member name="Insp">
+            </member>
+            <int name="Eths" value="-38323736"/>
+         </member>
+         <obj class="MAudioTrack" name="Track Device" ID="1136183936">
+            <int name="Connection Type" value="1"/>
+            <string name="Device Name" value="VST Multitrack"/>
+            <int name="Channel ID" value="1"/>
+            <member name="DeviceAttributes">
+               <int name="RuntimeID" value="1082"/>
+               <member name="Name">
+                  <string name="String" value="xd (D)" wide="true"/>
+               </member>
+               <int name="Type" value="1"/>
+               <member name="InputFilter">
+                  <member name="Plugin UID">
+                     <string name="GUID" value="D56B9C6CA4F946018EED73EB83A74B58" wide="true"/>
+                  </member>
+                  <string name="Plugin Name" value="Input Filter" wide="true"/>
+                  <int name="Audio Input Count" value="1"/>
+                  <list name="Audio Input Arrangement" type="list">
+                     <item>
+                        <list name="Type" type="int">
+                           <item value="0"/>
+                        </list>
+                     </item>
+                  </list>
+                  <int name="Audio Output Count" value="1"/>
+                  <list name="Audio Output Arrangement" type="list">
+                     <item>
+                        <list name="Type" type="int">
+                           <item value="0"/>
+                        </list>
+                     </item>
+                  </list>
+                  <int name="Event Input Count" value="0"/>
+                  <int name="Event Output Count" value="0"/>
+                  <bin name="audioComponent">
+							30060000696E7075740000000000000000000000000000000000000000000000
+							0000000000000000000000000000000000000000000000000000000000000000
+							0000000000000000000000000000000000000000000000000000000000000000
+							0000000000000000000000000000000000000000000000000000000000000000
+							000000000000000000000000000000007068617365696E766572740000000000
+							0000000000000000000000000000000000000000000000000000000000000000
+							0000000000000000000000000000000000000000000000000000000000000000
+							0000000000000000000000000000000000000000000000000000000000000000
+							000000000000000000000000000000000100000000000000000000006C6F7763
+							75746F6E00000000000000000000000000000000000000000000000000000000
+							0000000000000000000000000000000000000000000000000000000000000000
+							0000000000000000000000000000000000000000000000000000000000000000
+							0000000000000000000000000000000000000000000000000000000002000000
+							00000000000000006C6F77637574667265710000000000000000000000000000
+							0000000000000000000000000000000000000000000000000000000000000000
+							0000000000000000000000000000000000000000000000000000000000000000
+							0000000000000000000000000000000000000000000000000000000000000000
+							0000000000000000030000000000000000003440686967686375746F6E000000
+							0000000000000000000000000000000000000000000000000000000000000000
+							0000000000000000000000000000000000000000000000000000000000000000
+							0000000000000000000000000000000000000000000000000000000000000000
+							0000000000000000000000000000000000000000040000000000000000000000
+							6869676863757466726571000000000000000000000000000000000000000000
+							0000000000000000000000000000000000000000000000000000000000000000
+							0000000000000000000000000000000000000000000000000000000000000000
+							0000000000000000000000000000000000000000000000000000000000000000
+							05000000000000000088D3406279706173730000000000000000000000000000
+							0000000000000000000000000000000000000000000000000000000000000000
+							0000000000000000000000000000000000000000000000000000000000000000
+							0000000000000000000000000000000000000000000000000000000000000000
+							0000000000000000000000000600000000000000000000006163746976650000
+							0000000000000000000000000000000000000000000000000000000000000000
+							0000000000000000000000000000000000000000000000000000000000000000
+							0000000000000000000000000000000000000000000000000000000000000000
+							0000000000000000000000000000000000000000000000000700000000000000
+							0000000066617374706172616D6368616E676500000000000000000000000000
+							0000000000000000000000000000000000000000000000000000000000000000
+							0000000000000000000000000000000000000000000000000000000000000000
+							0000000000000000000000000000000000000000000000000000000000000000
+							000000000800000000000000000000006C6F77637574736C6F70650000000000
+							0000000000000000000000000000000000000000000000000000000000000000
+							0000000000000000000000000000000000000000000000000000000000000000
+							0000000000000000000000000000000000000000000000000000000000000000
+							0000000000000000000000000000000009000000000000000000F03F68696768
+							637574736C6F7065000000000000000000000000000000000000000000000000
+							0000000000000000000000000000000000000000000000000000000000000000
+							0000000000000000000000000000000000000000000000000000000000000000
+							000000000000000000000000000000000000000000000000000000000A000000
+							000000000000F03F
+                  </bin>
+                  <bin name="editController">
+                  </bin>
+                  <int name="Version" value="1"/>
+                  <int name="Editor Size Count" value="0"/>
+                  <int name="Active" value="1"/>
+                  <string name="IDString" value="InputFilter"/>
+                  <int name="BypassTag" value="4207"/>
+                  <int name="RuntimeID" value="1182"/>
+               </member>
+               <member name="InputGain">
+                  <float name="Value" value="16383.5"/>
+               </member>
+               <int name="InputPhase" value="0"/>
+               <member name="Volume">
+                  <float name="Value" value="25856"/>
+                  <float name="AnchorValue" value="0"/>
+               </member>
+               <member name="InsertFolder">
+                  <int name="RuntimeID" value="1088"/>
+                  <int name="Bypass" value="0"/>
+                  <int name="SeparationPosition" value="14"/>
+                  <list name="Slot" type="list">
+                     <item>
+                        <int name="RuntimeID" value="1089"/>
+                        <int name="State" value="0"/>
+                        <int name="SlotType" value="-1"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1090"/>
+                        <int name="State" value="0"/>
+                        <int name="SlotType" value="-1"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1091"/>
+                        <int name="State" value="0"/>
+                        <int name="SlotType" value="-1"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1092"/>
+                        <int name="State" value="0"/>
+                        <int name="SlotType" value="-1"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1093"/>
+                        <int name="State" value="0"/>
+                        <int name="SlotType" value="-1"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1094"/>
+                        <int name="State" value="0"/>
+                        <int name="SlotType" value="-1"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1095"/>
+                        <int name="State" value="0"/>
+                        <int name="SlotType" value="-1"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1096"/>
+                        <int name="State" value="0"/>
+                        <int name="SlotType" value="-1"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1097"/>
+                        <int name="State" value="0"/>
+                        <int name="SlotType" value="-1"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1098"/>
+                        <int name="State" value="0"/>
+                        <int name="SlotType" value="-1"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1099"/>
+                        <int name="State" value="0"/>
+                        <int name="SlotType" value="-1"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1100"/>
+                        <int name="State" value="0"/>
+                        <int name="SlotType" value="-1"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1101"/>
+                        <int name="State" value="0"/>
+                        <int name="SlotType" value="-1"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1102"/>
+                        <int name="State" value="0"/>
+                        <int name="SlotType" value="-1"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1103"/>
+                        <int name="State" value="0"/>
+                        <int name="SlotType" value="-1"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1104"/>
+                        <int name="State" value="0"/>
+                        <int name="SlotType" value="-1"/>
+                     </item>
+                  </list>
+                  <int name="SummingMode" value="1"/>
+               </member>
+               <int name="hasAudioStrips" value="1"/>
+               <member name="StripFolder">
+                  <int name="RuntimeID" value="1105"/>
+                  <int name="Bypass" value="0"/>
+                  <int name="SeparationPosition" value="6"/>
+                  <list name="Slot" type="list">
+                     <item>
+                        <int name="RuntimeID" value="1106"/>
+                        <int name="State" value="0"/>
+                        <int name="SlotType" value="5"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1107"/>
+                        <int name="State" value="0"/>
+                        <int name="SlotType" value="6"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1108"/>
+                        <string name="Plugin isA" value="VstCtrlEQ"/>
+                        <member name="Plugin">
+                           <member name="Plugin UID">
+                              <string name="GUID" value="297BA567D83144E1AE921DEF07B41156" wide="true"/>
+                           </member>
+                           <string name="Plugin Name" value="EQ" wide="true"/>
+                           <int name="Audio Input Count" value="1"/>
+                           <list name="Audio Input Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="0"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Audio Output Count" value="1"/>
+                           <list name="Audio Output Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="0"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Event Input Count" value="0"/>
+                           <int name="Event Output Count" value="0"/>
+                           <bin name="audioComponent">
+										C00F00006F6E3100000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										000000001700000000000000000000006C667479706500000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										000000000000000000000000000000001B00000000000000000014406761696E
+										6C66000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										000000000000000000000000000000000000000000000000000000001F000000
+										0000000000000000667265716C66000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000230000000000004000005940716C66000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										000000000000000000000000000000000000000027000000000000000000F03F
+										6F6E320000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										1800000000000000000000007031747970650000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000001C000000000000000000F03F6761696E70310000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000002000000000000000
+										0000000066726571703100000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000024000000000000400000894071703100000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000028000000000000000000F03F6F6E3300
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000019000000
+										0000000000000000703274797065000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										00000000000000001D000000000000000000F03F6761696E7032000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000210000000000000000000000
+										6672657170320000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										250000000000006000409F407170320000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										00000000000000000000000029000000000000000000F03F6F6E340000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000001A00000000000000
+										0000000068667479706500000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										000000001E00000000000000000014406761696E686600000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000022000000000000000000000066726571
+										6866000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000026000000
+										000000000070C740716866000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										00000000000000002A000000000000000000F03F627970617373000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000030000000000000000000000
+										696E766572743100000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										3D2700000000000000000000696E766572743200000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000003E2700000000000000000000696E766572743300
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000003F27000000000000
+										00000000696E7665727434000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										00000000402700000000000000000000696E76657274416C6C00000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000038270000000000000000000072657365
+										7400000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										000000000000000066617374706172616D6368616E6765000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000000000000000000000000000000000000000000000000000
+										0000000000000000592700000000000000000000
+                           </bin>
+                           <bin name="editController">
+                           </bin>
+                           <int name="Version" value="1"/>
+                           <int name="Editor Size Count" value="0"/>
+                           <int name="Active" value="1"/>
+                           <string name="IDString" value="297BA567D83144E1AE921DEF07B41156-9"/>
+                           <string name="Bay Program" value="" wide="true"/>
+                           <int name="BypassTag" value="4204"/>
+                           <int name="RuntimeID" value="1176"/>
+                        </member>
+                        <member name="Patcher">
+                           <list name="Prev Output Connections" type="list">
+                              <item>
+                                 <int name="Prev Output Speaker Type" value="0"/>
+                                 <list name="Prev Output Connection" type="list">
+                                    <item>
+                                       <int name="ID" value="0"/>
+                                       <int name="Arrangement Index" value="0"/>
+                                       <int name="Speaker Type" value="0"/>
+                                    </item>
+                                 </list>
+                              </item>
+                           </list>
+                           <list name="Input Connections" type="list">
+                              <item>
+                                 <int name="Input Speaker Type" value="0"/>
+                                 <list name="Input Connection" type="list">
+                                    <item>
+                                       <int name="ID" value="0"/>
+                                       <int name="Arrangement Index" value="0"/>
+                                       <int name="Speaker Type" value="0"/>
+                                    </item>
+                                 </list>
+                              </item>
+                           </list>
+                        </member>
+                        <int name="WasEnableBeforeFreeze" value="0"/>
+                        <int name="State" value="1"/>
+                        <int name="SlotType" value="4"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1109"/>
+                        <int name="State" value="0"/>
+                        <int name="SlotType" value="9"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1110"/>
+                        <int name="State" value="0"/>
+                        <int name="SlotType" value="8"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1111"/>
+                        <int name="State" value="0"/>
+                        <int name="SlotType" value="7"/>
+                     </item>
+                  </list>
+                  <int name="SummingMode" value="1"/>
+               </member>
+               <int name="ChannelStripsPreInserts" value="0"/>
+               <member name="EQ">
+                  <int name="Bypass" value="0"/>
+                  <list name="Band" type="list">
+                     <item>
+                        <int name="Enable" value="0"/>
+                        <int name="Type" value="5"/>
+                        <float name="Gain" value="0"/>
+                        <float name="Freq" value="100.0000152587890625"/>
+                        <float name="Q" value="0.091736115515232086181640625"/>
+                     </item>
+                     <item>
+                        <int name="Enable" value="0"/>
+                        <int name="Type" value="1"/>
+                        <float name="Gain" value="0"/>
+                        <float name="Freq" value="800.0001220703125"/>
+                        <float name="Q" value="0.091736115515232086181640625"/>
+                     </item>
+                     <item>
+                        <int name="Enable" value="0"/>
+                        <int name="Type" value="1"/>
+                        <float name="Gain" value="0"/>
+                        <float name="Freq" value="2000.0003662109375"/>
+                        <float name="Q" value="0.091736115515232086181640625"/>
+                     </item>
+                     <item>
+                        <int name="Enable" value="0"/>
+                        <int name="Type" value="5"/>
+                        <float name="Gain" value="0"/>
+                        <float name="Freq" value="12000"/>
+                        <float name="Q" value="0.091736115515232086181640625"/>
+                     </item>
+                  </list>
+               </member>
+               <member name="SendFolder">
+                  <int name="RuntimeID" value="1112"/>
+                  <int name="Bypass" value="0"/>
+                  <int name="SeparationPosition" value="14"/>
+                  <list name="Slot" type="list">
+                     <item>
+                        <int name="RuntimeID" value="1113"/>
+                        <member name="Volume">
+                           <float name="Value" value="25856"/>
+                           <float name="AnchorValue" value="0"/>
+                        </member>
+                        <member name="Output">
+                           <int name="Value" value="0"/>
+                        </member>
+                        <member name="Panner">
+                           <member name="Default SurroundPan UID V2">
+                              <string name="GUID" value="A3CA1186A3A241FEA552717108932238" wide="true"/>
+                           </member>
+                           <member name="Default SurroundPan UID">
+                              <string name="GUID" value="56535453506132737572726F756E6470" wide="true"/>
+                           </member>
+                           <member name="PannerType">
+                              <int name="Value" value="3"/>
+                              <int name="Min" value="0"/>
+                              <int name="Max" value="11"/>
+                           </member>
+                           <member name="Default DownmixPan UID">
+                              <string name="GUID" value="4A18B5A88A6B44D4B78F6E2FCC4746A2" wide="true"/>
+                           </member>
+                           <member name="Plugin UID">
+                              <string name="GUID" value="44E1149EDB3E4387BDD827FEA3A39EE7" wide="true"/>
+                           </member>
+                           <string name="Plugin Name" value="Standard Panner" wide="true"/>
+                           <int name="Audio Input Count" value="1"/>
+                           <list name="Audio Input Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Audio Output Count" value="1"/>
+                           <list name="Audio Output Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Event Input Count" value="0"/>
+                           <int name="Event Output Count" value="0"/>
+                           <bin name="audioComponent">
+										0000003F0000003F010000000200000000000000
+                           </bin>
+                           <bin name="editController">
+                           </bin>
+                           <int name="Version" value="1"/>
+                           <int name="Editor Size Count" value="0"/>
+                           <int name="Active" value="1"/>
+                           <string name="IDString" value="Panner"/>
+                           <string name="Bay Program" value="" wide="true"/>
+                           <int name="BypassTag" value="4301"/>
+                           <int name="RuntimeID" value="1114"/>
+                        </member>
+                        <int name="OldOn" value="0"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1116"/>
+                        <member name="Volume">
+                           <float name="Value" value="25856"/>
+                           <float name="AnchorValue" value="0"/>
+                        </member>
+                        <member name="Output">
+                           <int name="Value" value="0"/>
+                        </member>
+                        <member name="Panner">
+                           <member name="Default SurroundPan UID V2">
+                              <string name="GUID" value="A3CA1186A3A241FEA552717108932238" wide="true"/>
+                           </member>
+                           <member name="Default SurroundPan UID">
+                              <string name="GUID" value="56535453506132737572726F756E6470" wide="true"/>
+                           </member>
+                           <member name="PannerType">
+                              <int name="Value" value="3"/>
+                              <int name="Min" value="0"/>
+                              <int name="Max" value="11"/>
+                           </member>
+                           <member name="Default DownmixPan UID">
+                              <string name="GUID" value="4A18B5A88A6B44D4B78F6E2FCC4746A2" wide="true"/>
+                           </member>
+                           <member name="Plugin UID">
+                              <string name="GUID" value="44E1149EDB3E4387BDD827FEA3A39EE7" wide="true"/>
+                           </member>
+                           <string name="Plugin Name" value="Standard Panner" wide="true"/>
+                           <int name="Audio Input Count" value="1"/>
+                           <list name="Audio Input Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Audio Output Count" value="1"/>
+                           <list name="Audio Output Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Event Input Count" value="0"/>
+                           <int name="Event Output Count" value="0"/>
+                           <bin name="audioComponent">
+										0000003F0000003F010000000200000000000000
+                           </bin>
+                           <bin name="editController">
+                           </bin>
+                           <int name="Version" value="1"/>
+                           <int name="Editor Size Count" value="0"/>
+                           <int name="Active" value="1"/>
+                           <string name="IDString" value="Panner"/>
+                           <string name="Bay Program" value="" wide="true"/>
+                           <int name="BypassTag" value="4301"/>
+                           <int name="RuntimeID" value="1117"/>
+                        </member>
+                        <int name="OldOn" value="0"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1119"/>
+                        <member name="Volume">
+                           <float name="Value" value="25856"/>
+                           <float name="AnchorValue" value="0"/>
+                        </member>
+                        <member name="Output">
+                           <int name="Value" value="0"/>
+                        </member>
+                        <member name="Panner">
+                           <member name="Default SurroundPan UID V2">
+                              <string name="GUID" value="A3CA1186A3A241FEA552717108932238" wide="true"/>
+                           </member>
+                           <member name="Default SurroundPan UID">
+                              <string name="GUID" value="56535453506132737572726F756E6470" wide="true"/>
+                           </member>
+                           <member name="PannerType">
+                              <int name="Value" value="3"/>
+                              <int name="Min" value="0"/>
+                              <int name="Max" value="11"/>
+                           </member>
+                           <member name="Default DownmixPan UID">
+                              <string name="GUID" value="4A18B5A88A6B44D4B78F6E2FCC4746A2" wide="true"/>
+                           </member>
+                           <member name="Plugin UID">
+                              <string name="GUID" value="44E1149EDB3E4387BDD827FEA3A39EE7" wide="true"/>
+                           </member>
+                           <string name="Plugin Name" value="Standard Panner" wide="true"/>
+                           <int name="Audio Input Count" value="1"/>
+                           <list name="Audio Input Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Audio Output Count" value="1"/>
+                           <list name="Audio Output Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Event Input Count" value="0"/>
+                           <int name="Event Output Count" value="0"/>
+                           <bin name="audioComponent">
+										0000003F0000003F010000000200000000000000
+                           </bin>
+                           <bin name="editController">
+                           </bin>
+                           <int name="Version" value="1"/>
+                           <int name="Editor Size Count" value="0"/>
+                           <int name="Active" value="1"/>
+                           <string name="IDString" value="Panner"/>
+                           <string name="Bay Program" value="" wide="true"/>
+                           <int name="BypassTag" value="4301"/>
+                           <int name="RuntimeID" value="1120"/>
+                        </member>
+                        <int name="OldOn" value="0"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1122"/>
+                        <member name="Volume">
+                           <float name="Value" value="25856"/>
+                           <float name="AnchorValue" value="0"/>
+                        </member>
+                        <member name="Output">
+                           <int name="Value" value="0"/>
+                        </member>
+                        <member name="Panner">
+                           <member name="Default SurroundPan UID V2">
+                              <string name="GUID" value="A3CA1186A3A241FEA552717108932238" wide="true"/>
+                           </member>
+                           <member name="Default SurroundPan UID">
+                              <string name="GUID" value="56535453506132737572726F756E6470" wide="true"/>
+                           </member>
+                           <member name="PannerType">
+                              <int name="Value" value="3"/>
+                              <int name="Min" value="0"/>
+                              <int name="Max" value="11"/>
+                           </member>
+                           <member name="Default DownmixPan UID">
+                              <string name="GUID" value="4A18B5A88A6B44D4B78F6E2FCC4746A2" wide="true"/>
+                           </member>
+                           <member name="Plugin UID">
+                              <string name="GUID" value="44E1149EDB3E4387BDD827FEA3A39EE7" wide="true"/>
+                           </member>
+                           <string name="Plugin Name" value="Standard Panner" wide="true"/>
+                           <int name="Audio Input Count" value="1"/>
+                           <list name="Audio Input Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Audio Output Count" value="1"/>
+                           <list name="Audio Output Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Event Input Count" value="0"/>
+                           <int name="Event Output Count" value="0"/>
+                           <bin name="audioComponent">
+										0000003F0000003F010000000200000000000000
+                           </bin>
+                           <bin name="editController">
+                           </bin>
+                           <int name="Version" value="1"/>
+                           <int name="Editor Size Count" value="0"/>
+                           <int name="Active" value="1"/>
+                           <string name="IDString" value="Panner"/>
+                           <string name="Bay Program" value="" wide="true"/>
+                           <int name="BypassTag" value="4301"/>
+                           <int name="RuntimeID" value="1123"/>
+                        </member>
+                        <int name="OldOn" value="0"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1125"/>
+                        <member name="Volume">
+                           <float name="Value" value="25856"/>
+                           <float name="AnchorValue" value="0"/>
+                        </member>
+                        <member name="Output">
+                           <int name="Value" value="0"/>
+                        </member>
+                        <member name="Panner">
+                           <member name="Default SurroundPan UID V2">
+                              <string name="GUID" value="A3CA1186A3A241FEA552717108932238" wide="true"/>
+                           </member>
+                           <member name="Default SurroundPan UID">
+                              <string name="GUID" value="56535453506132737572726F756E6470" wide="true"/>
+                           </member>
+                           <member name="PannerType">
+                              <int name="Value" value="3"/>
+                              <int name="Min" value="0"/>
+                              <int name="Max" value="11"/>
+                           </member>
+                           <member name="Default DownmixPan UID">
+                              <string name="GUID" value="4A18B5A88A6B44D4B78F6E2FCC4746A2" wide="true"/>
+                           </member>
+                           <member name="Plugin UID">
+                              <string name="GUID" value="44E1149EDB3E4387BDD827FEA3A39EE7" wide="true"/>
+                           </member>
+                           <string name="Plugin Name" value="Standard Panner" wide="true"/>
+                           <int name="Audio Input Count" value="1"/>
+                           <list name="Audio Input Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Audio Output Count" value="1"/>
+                           <list name="Audio Output Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Event Input Count" value="0"/>
+                           <int name="Event Output Count" value="0"/>
+                           <bin name="audioComponent">
+										0000003F0000003F010000000200000000000000
+                           </bin>
+                           <bin name="editController">
+                           </bin>
+                           <int name="Version" value="1"/>
+                           <int name="Editor Size Count" value="0"/>
+                           <int name="Active" value="1"/>
+                           <string name="IDString" value="Panner"/>
+                           <string name="Bay Program" value="" wide="true"/>
+                           <int name="BypassTag" value="4301"/>
+                           <int name="RuntimeID" value="1126"/>
+                        </member>
+                        <int name="OldOn" value="0"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1128"/>
+                        <member name="Volume">
+                           <float name="Value" value="25856"/>
+                           <float name="AnchorValue" value="0"/>
+                        </member>
+                        <member name="Output">
+                           <int name="Value" value="0"/>
+                        </member>
+                        <member name="Panner">
+                           <member name="Default SurroundPan UID V2">
+                              <string name="GUID" value="A3CA1186A3A241FEA552717108932238" wide="true"/>
+                           </member>
+                           <member name="Default SurroundPan UID">
+                              <string name="GUID" value="56535453506132737572726F756E6470" wide="true"/>
+                           </member>
+                           <member name="PannerType">
+                              <int name="Value" value="3"/>
+                              <int name="Min" value="0"/>
+                              <int name="Max" value="11"/>
+                           </member>
+                           <member name="Default DownmixPan UID">
+                              <string name="GUID" value="4A18B5A88A6B44D4B78F6E2FCC4746A2" wide="true"/>
+                           </member>
+                           <member name="Plugin UID">
+                              <string name="GUID" value="44E1149EDB3E4387BDD827FEA3A39EE7" wide="true"/>
+                           </member>
+                           <string name="Plugin Name" value="Standard Panner" wide="true"/>
+                           <int name="Audio Input Count" value="1"/>
+                           <list name="Audio Input Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Audio Output Count" value="1"/>
+                           <list name="Audio Output Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Event Input Count" value="0"/>
+                           <int name="Event Output Count" value="0"/>
+                           <bin name="audioComponent">
+										0000003F0000003F010000000200000000000000
+                           </bin>
+                           <bin name="editController">
+                           </bin>
+                           <int name="Version" value="1"/>
+                           <int name="Editor Size Count" value="0"/>
+                           <int name="Active" value="1"/>
+                           <string name="IDString" value="Panner"/>
+                           <string name="Bay Program" value="" wide="true"/>
+                           <int name="BypassTag" value="4301"/>
+                           <int name="RuntimeID" value="1129"/>
+                        </member>
+                        <int name="OldOn" value="0"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1131"/>
+                        <member name="Volume">
+                           <float name="Value" value="25856"/>
+                           <float name="AnchorValue" value="0"/>
+                        </member>
+                        <member name="Output">
+                           <int name="Value" value="0"/>
+                        </member>
+                        <member name="Panner">
+                           <member name="Default SurroundPan UID V2">
+                              <string name="GUID" value="A3CA1186A3A241FEA552717108932238" wide="true"/>
+                           </member>
+                           <member name="Default SurroundPan UID">
+                              <string name="GUID" value="56535453506132737572726F756E6470" wide="true"/>
+                           </member>
+                           <member name="PannerType">
+                              <int name="Value" value="3"/>
+                              <int name="Min" value="0"/>
+                              <int name="Max" value="11"/>
+                           </member>
+                           <member name="Default DownmixPan UID">
+                              <string name="GUID" value="4A18B5A88A6B44D4B78F6E2FCC4746A2" wide="true"/>
+                           </member>
+                           <member name="Plugin UID">
+                              <string name="GUID" value="44E1149EDB3E4387BDD827FEA3A39EE7" wide="true"/>
+                           </member>
+                           <string name="Plugin Name" value="Standard Panner" wide="true"/>
+                           <int name="Audio Input Count" value="1"/>
+                           <list name="Audio Input Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Audio Output Count" value="1"/>
+                           <list name="Audio Output Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Event Input Count" value="0"/>
+                           <int name="Event Output Count" value="0"/>
+                           <bin name="audioComponent">
+										0000003F0000003F010000000200000000000000
+                           </bin>
+                           <bin name="editController">
+                           </bin>
+                           <int name="Version" value="1"/>
+                           <int name="Editor Size Count" value="0"/>
+                           <int name="Active" value="1"/>
+                           <string name="IDString" value="Panner"/>
+                           <string name="Bay Program" value="" wide="true"/>
+                           <int name="BypassTag" value="4301"/>
+                           <int name="RuntimeID" value="1132"/>
+                        </member>
+                        <int name="OldOn" value="0"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1134"/>
+                        <member name="Volume">
+                           <float name="Value" value="25856"/>
+                           <float name="AnchorValue" value="0"/>
+                        </member>
+                        <member name="Output">
+                           <int name="Value" value="0"/>
+                        </member>
+                        <member name="Panner">
+                           <member name="Default SurroundPan UID V2">
+                              <string name="GUID" value="A3CA1186A3A241FEA552717108932238" wide="true"/>
+                           </member>
+                           <member name="Default SurroundPan UID">
+                              <string name="GUID" value="56535453506132737572726F756E6470" wide="true"/>
+                           </member>
+                           <member name="PannerType">
+                              <int name="Value" value="3"/>
+                              <int name="Min" value="0"/>
+                              <int name="Max" value="11"/>
+                           </member>
+                           <member name="Default DownmixPan UID">
+                              <string name="GUID" value="4A18B5A88A6B44D4B78F6E2FCC4746A2" wide="true"/>
+                           </member>
+                           <member name="Plugin UID">
+                              <string name="GUID" value="44E1149EDB3E4387BDD827FEA3A39EE7" wide="true"/>
+                           </member>
+                           <string name="Plugin Name" value="Standard Panner" wide="true"/>
+                           <int name="Audio Input Count" value="1"/>
+                           <list name="Audio Input Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Audio Output Count" value="1"/>
+                           <list name="Audio Output Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Event Input Count" value="0"/>
+                           <int name="Event Output Count" value="0"/>
+                           <bin name="audioComponent">
+										0000003F0000003F010000000200000000000000
+                           </bin>
+                           <bin name="editController">
+                           </bin>
+                           <int name="Version" value="1"/>
+                           <int name="Editor Size Count" value="0"/>
+                           <int name="Active" value="1"/>
+                           <string name="IDString" value="Panner"/>
+                           <string name="Bay Program" value="" wide="true"/>
+                           <int name="BypassTag" value="4301"/>
+                           <int name="RuntimeID" value="1135"/>
+                        </member>
+                        <int name="OldOn" value="0"/>
+                     </item>
+                  </list>
+                  <int name="SummingMode" value="1"/>
+               </member>
+               <member name="Panner">
+                  <member name="Default SurroundPan UID V2">
+                     <string name="GUID" value="A3CA1186A3A241FEA552717108932238" wide="true"/>
+                  </member>
+                  <member name="Default SurroundPan UID">
+                     <string name="GUID" value="56535453506132737572726F756E6470" wide="true"/>
+                  </member>
+                  <member name="PannerType">
+                     <int name="Value" value="4"/>
+                     <int name="Min" value="0"/>
+                     <int name="Max" value="11"/>
+                  </member>
+                  <member name="Default DownmixPan UID">
+                     <string name="GUID" value="4A18B5A88A6B44D4B78F6E2FCC4746A2" wide="true"/>
+                  </member>
+                  <member name="Plugin UID">
+                     <string name="GUID" value="44E1149EDB3E4387BDD827FEA3A39EE7" wide="true"/>
+                  </member>
+                  <string name="Plugin Name" value="Standard Panner" wide="true"/>
+                  <int name="Audio Input Count" value="1"/>
+                  <list name="Audio Input Arrangement" type="list">
+                     <item>
+                        <list name="Type" type="int">
+                           <item value="0"/>
+                        </list>
+                     </item>
+                  </list>
+                  <int name="Audio Output Count" value="1"/>
+                  <list name="Audio Output Arrangement" type="list">
+                     <item>
+                        <list name="Type" type="int">
+                           <item value="1"/>
+                           <item value="2"/>
+                        </list>
+                     </item>
+                  </list>
+                  <int name="Event Input Count" value="0"/>
+                  <int name="Event Output Count" value="0"/>
+                  <bin name="audioComponent">
+							0000003F0000003F040000000200000000000000
+                  </bin>
+                  <bin name="editController">
+                  </bin>
+                  <int name="Version" value="1"/>
+                  <int name="Editor Size Count" value="0"/>
+                  <int name="Active" value="1"/>
+                  <string name="IDString" value="Panner"/>
+                  <string name="Bay Program" value="" wide="true"/>
+                  <int name="BypassTag" value="4301"/>
+                  <int name="RuntimeID" value="1086"/>
+               </member>
+               <int name="VUSelect" value="1"/>
+               <int name="VURange" value="0"/>
+               <member name="Monitor">
+                  <int name="Value" value="0"/>
+                  <int name="Min" value="0"/>
+                  <int name="Max" value="2"/>
+               </member>
+               <member name="OwnInputBus">
+                  <string name="Name" value="Audio 2"/>
+                  <int name="Bus UID" value="991"/>
+                  <int name="Bus Type" value="13"/>
+                  <member name="Input Arrangement">
+                     <list name="Type" type="int">
+                        <item value="0"/>
+                     </list>
+                  </member>
+                  <member name="Output Arrangement">
+                     <list name="Type" type="int">
+                        <item value="0"/>
+                     </list>
+                  </member>
+               </member>
+               <member name="InputBusValue">
+                  <int name="Value" value="2000990"/>
+               </member>
+               <member name="OutputBusValue">
+                  <int name="Value" value="6"/>
+               </member>
+               <int name="FreezePosition" value="13"/>
+               <int name="Listen Mode" value="0"/>
+               <int name="LinkedPanner" value="0"/>
+               <string name="IDString" value="Audio 6"/>
+               <member name="foldbackSendFolder">
+                  <int name="RuntimeID" value="1137"/>
+                  <int name="Bypass" value="0"/>
+                  <int name="SeparationPosition" value="14"/>
+                  <list name="Slot" type="list">
+                     <item>
+                        <int name="RuntimeID" value="1138"/>
+                        <member name="Volume">
+                           <float name="Value" value="25856"/>
+                           <float name="AnchorValue" value="0"/>
+                        </member>
+                        <member name="Output">
+                           <int name="Value" value="0"/>
+                        </member>
+                        <member name="Panner">
+                           <member name="Default SurroundPan UID V2">
+                              <string name="GUID" value="A3CA1186A3A241FEA552717108932238" wide="true"/>
+                           </member>
+                           <member name="Default SurroundPan UID">
+                              <string name="GUID" value="56535453506132737572726F756E6470" wide="true"/>
+                           </member>
+                           <member name="PannerType">
+                              <int name="Value" value="3"/>
+                              <int name="Min" value="0"/>
+                              <int name="Max" value="11"/>
+                           </member>
+                           <member name="Default DownmixPan UID">
+                              <string name="GUID" value="4A18B5A88A6B44D4B78F6E2FCC4746A2" wide="true"/>
+                           </member>
+                           <member name="Plugin UID">
+                              <string name="GUID" value="44E1149EDB3E4387BDD827FEA3A39EE7" wide="true"/>
+                           </member>
+                           <string name="Plugin Name" value="Standard Panner" wide="true"/>
+                           <int name="Audio Input Count" value="1"/>
+                           <list name="Audio Input Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Audio Output Count" value="1"/>
+                           <list name="Audio Output Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Event Input Count" value="0"/>
+                           <int name="Event Output Count" value="0"/>
+                           <bin name="audioComponent">
+										0000003F0000003F010000000200000000000000
+                           </bin>
+                           <bin name="editController">
+                           </bin>
+                           <int name="Version" value="1"/>
+                           <int name="Editor Size Count" value="0"/>
+                           <int name="Active" value="1"/>
+                           <string name="IDString" value="Panner"/>
+                           <string name="Bay Program" value="" wide="true"/>
+                           <int name="BypassTag" value="4301"/>
+                           <int name="RuntimeID" value="1139"/>
+                        </member>
+                        <int name="OldOn" value="0"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1141"/>
+                        <member name="Volume">
+                           <float name="Value" value="25856"/>
+                           <float name="AnchorValue" value="0"/>
+                        </member>
+                        <member name="Output">
+                           <int name="Value" value="0"/>
+                        </member>
+                        <member name="Panner">
+                           <member name="Default SurroundPan UID V2">
+                              <string name="GUID" value="A3CA1186A3A241FEA552717108932238" wide="true"/>
+                           </member>
+                           <member name="Default SurroundPan UID">
+                              <string name="GUID" value="56535453506132737572726F756E6470" wide="true"/>
+                           </member>
+                           <member name="PannerType">
+                              <int name="Value" value="3"/>
+                              <int name="Min" value="0"/>
+                              <int name="Max" value="11"/>
+                           </member>
+                           <member name="Default DownmixPan UID">
+                              <string name="GUID" value="4A18B5A88A6B44D4B78F6E2FCC4746A2" wide="true"/>
+                           </member>
+                           <member name="Plugin UID">
+                              <string name="GUID" value="44E1149EDB3E4387BDD827FEA3A39EE7" wide="true"/>
+                           </member>
+                           <string name="Plugin Name" value="Standard Panner" wide="true"/>
+                           <int name="Audio Input Count" value="1"/>
+                           <list name="Audio Input Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Audio Output Count" value="1"/>
+                           <list name="Audio Output Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Event Input Count" value="0"/>
+                           <int name="Event Output Count" value="0"/>
+                           <bin name="audioComponent">
+										0000003F0000003F010000000200000000000000
+                           </bin>
+                           <bin name="editController">
+                           </bin>
+                           <int name="Version" value="1"/>
+                           <int name="Editor Size Count" value="0"/>
+                           <int name="Active" value="1"/>
+                           <string name="IDString" value="Panner"/>
+                           <string name="Bay Program" value="" wide="true"/>
+                           <int name="BypassTag" value="4301"/>
+                           <int name="RuntimeID" value="1142"/>
+                        </member>
+                        <int name="OldOn" value="0"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1144"/>
+                        <member name="Volume">
+                           <float name="Value" value="25856"/>
+                           <float name="AnchorValue" value="0"/>
+                        </member>
+                        <member name="Output">
+                           <int name="Value" value="0"/>
+                        </member>
+                        <member name="Panner">
+                           <member name="Default SurroundPan UID V2">
+                              <string name="GUID" value="A3CA1186A3A241FEA552717108932238" wide="true"/>
+                           </member>
+                           <member name="Default SurroundPan UID">
+                              <string name="GUID" value="56535453506132737572726F756E6470" wide="true"/>
+                           </member>
+                           <member name="PannerType">
+                              <int name="Value" value="3"/>
+                              <int name="Min" value="0"/>
+                              <int name="Max" value="11"/>
+                           </member>
+                           <member name="Default DownmixPan UID">
+                              <string name="GUID" value="4A18B5A88A6B44D4B78F6E2FCC4746A2" wide="true"/>
+                           </member>
+                           <member name="Plugin UID">
+                              <string name="GUID" value="44E1149EDB3E4387BDD827FEA3A39EE7" wide="true"/>
+                           </member>
+                           <string name="Plugin Name" value="Standard Panner" wide="true"/>
+                           <int name="Audio Input Count" value="1"/>
+                           <list name="Audio Input Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Audio Output Count" value="1"/>
+                           <list name="Audio Output Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Event Input Count" value="0"/>
+                           <int name="Event Output Count" value="0"/>
+                           <bin name="audioComponent">
+										0000003F0000003F010000000200000000000000
+                           </bin>
+                           <bin name="editController">
+                           </bin>
+                           <int name="Version" value="1"/>
+                           <int name="Editor Size Count" value="0"/>
+                           <int name="Active" value="1"/>
+                           <string name="IDString" value="Panner"/>
+                           <string name="Bay Program" value="" wide="true"/>
+                           <int name="BypassTag" value="4301"/>
+                           <int name="RuntimeID" value="1145"/>
+                        </member>
+                        <int name="OldOn" value="0"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1147"/>
+                        <member name="Volume">
+                           <float name="Value" value="25856"/>
+                           <float name="AnchorValue" value="0"/>
+                        </member>
+                        <member name="Output">
+                           <int name="Value" value="0"/>
+                        </member>
+                        <member name="Panner">
+                           <member name="Default SurroundPan UID V2">
+                              <string name="GUID" value="A3CA1186A3A241FEA552717108932238" wide="true"/>
+                           </member>
+                           <member name="Default SurroundPan UID">
+                              <string name="GUID" value="56535453506132737572726F756E6470" wide="true"/>
+                           </member>
+                           <member name="PannerType">
+                              <int name="Value" value="3"/>
+                              <int name="Min" value="0"/>
+                              <int name="Max" value="11"/>
+                           </member>
+                           <member name="Default DownmixPan UID">
+                              <string name="GUID" value="4A18B5A88A6B44D4B78F6E2FCC4746A2" wide="true"/>
+                           </member>
+                           <member name="Plugin UID">
+                              <string name="GUID" value="44E1149EDB3E4387BDD827FEA3A39EE7" wide="true"/>
+                           </member>
+                           <string name="Plugin Name" value="Standard Panner" wide="true"/>
+                           <int name="Audio Input Count" value="1"/>
+                           <list name="Audio Input Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Audio Output Count" value="1"/>
+                           <list name="Audio Output Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Event Input Count" value="0"/>
+                           <int name="Event Output Count" value="0"/>
+                           <bin name="audioComponent">
+										0000003F0000003F010000000200000000000000
+                           </bin>
+                           <bin name="editController">
+                           </bin>
+                           <int name="Version" value="1"/>
+                           <int name="Editor Size Count" value="0"/>
+                           <int name="Active" value="1"/>
+                           <string name="IDString" value="Panner"/>
+                           <string name="Bay Program" value="" wide="true"/>
+                           <int name="BypassTag" value="4301"/>
+                           <int name="RuntimeID" value="1148"/>
+                        </member>
+                        <int name="OldOn" value="0"/>
+                     </item>
+                  </list>
+                  <int name="SummingMode" value="1"/>
+               </member>
+               <member name="Quick Controls">
+                  <int name="NumberOfQuickControls" value="8"/>
+                  <obj class="CmArray" name="QCDestinations" ID="1152424696">
+                     <int name="ownership" value="1"/>
+                     <list name="obj" type="obj">
+                        <obj class="QCDestinationValue" ID="1151047536">
+                           <int name="ParameterTag" value="-1"/>
+                           <string name="NodePath" value=""/>
+                           <string name="OriginalName" value=""/>
+                           <int name="IsRelativePath" value="0"/>
+                           <string name="String" value="" wide="true"/>
+                        </obj>
+                        <obj class="QCDestinationValue" ID="1151047872">
+                           <int name="ParameterTag" value="-1"/>
+                           <string name="NodePath" value=""/>
+                           <string name="OriginalName" value=""/>
+                           <int name="IsRelativePath" value="0"/>
+                           <string name="String" value="" wide="true"/>
+                        </obj>
+                        <obj class="QCDestinationValue" ID="1151050896">
+                           <int name="ParameterTag" value="-1"/>
+                           <string name="NodePath" value=""/>
+                           <string name="OriginalName" value=""/>
+                           <int name="IsRelativePath" value="0"/>
+                           <string name="String" value="" wide="true"/>
+                        </obj>
+                        <obj class="QCDestinationValue" ID="1151052240">
+                           <int name="ParameterTag" value="-1"/>
+                           <string name="NodePath" value=""/>
+                           <string name="OriginalName" value=""/>
+                           <int name="IsRelativePath" value="0"/>
+                           <string name="String" value="" wide="true"/>
+                        </obj>
+                        <obj class="QCDestinationValue" ID="1151052576">
+                           <int name="ParameterTag" value="-1"/>
+                           <string name="NodePath" value=""/>
+                           <string name="OriginalName" value=""/>
+                           <int name="IsRelativePath" value="0"/>
+                           <string name="String" value="" wide="true"/>
+                        </obj>
+                        <obj class="QCDestinationValue" ID="1151052912">
+                           <int name="ParameterTag" value="-1"/>
+                           <string name="NodePath" value=""/>
+                           <string name="OriginalName" value=""/>
+                           <int name="IsRelativePath" value="0"/>
+                           <string name="String" value="" wide="true"/>
+                        </obj>
+                        <obj class="QCDestinationValue" ID="1140456912">
+                           <int name="ParameterTag" value="-1"/>
+                           <string name="NodePath" value=""/>
+                           <string name="OriginalName" value=""/>
+                           <int name="IsRelativePath" value="0"/>
+                           <string name="String" value="" wide="true"/>
+                        </obj>
+                        <obj class="QCDestinationValue" ID="1140457248">
+                           <int name="ParameterTag" value="-1"/>
+                           <string name="NodePath" value=""/>
+                           <string name="OriginalName" value=""/>
+                           <int name="IsRelativePath" value="0"/>
+                           <string name="String" value="" wide="true"/>
+                        </obj>
+                     </list>
+                  </obj>
+                  <int name="RuntimeID" value="1083"/>
+                  <string name="DeviceNode Name" value="Quick Controls" wide="true"/>
+                  <string name="ClassName" value="Quick Controls"/>
+                  <string name="IDString" value="Quick Controls"/>
+                  <int name="NodeFlags" value="0"/>
+                  <int name="NumberClassIDs" value="2"/>
+                  <list name="ClassIDs" type="string">
+                     <item value="AB9705CD467B4D7A946C8860C504F492"/>
+                     <item value="CA1729D088FC4857937F78CC37D45B48"/>
+                  </list>
+               </member>
+               <member name="directRoutingFolder">
+                  <int name="RuntimeID" value="1150"/>
+                  <int name="Bypass" value="0"/>
+                  <int name="SeparationPosition" value="14"/>
+                  <list name="Slot" type="list">
+                     <item>
+                        <int name="RuntimeID" value="1151"/>
+                        <member name="Volume">
+                           <float name="Value" value="25856"/>
+                           <float name="AnchorValue" value="0"/>
+                        </member>
+                        <member name="Output">
+                           <int name="Value" value="0"/>
+                        </member>
+                        <member name="Panner">
+                           <member name="Default SurroundPan UID V2">
+                              <string name="GUID" value="A3CA1186A3A241FEA552717108932238" wide="true"/>
+                           </member>
+                           <member name="Default SurroundPan UID">
+                              <string name="GUID" value="56535453506132737572726F756E6470" wide="true"/>
+                           </member>
+                           <member name="PannerType">
+                              <int name="Value" value="3"/>
+                              <int name="Min" value="0"/>
+                              <int name="Max" value="11"/>
+                           </member>
+                           <member name="Default DownmixPan UID">
+                              <string name="GUID" value="4A18B5A88A6B44D4B78F6E2FCC4746A2" wide="true"/>
+                           </member>
+                           <member name="Plugin UID">
+                              <string name="GUID" value="44E1149EDB3E4387BDD827FEA3A39EE7" wide="true"/>
+                           </member>
+                           <string name="Plugin Name" value="Standard Panner" wide="true"/>
+                           <int name="Audio Input Count" value="1"/>
+                           <list name="Audio Input Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Audio Output Count" value="1"/>
+                           <list name="Audio Output Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Event Input Count" value="0"/>
+                           <int name="Event Output Count" value="0"/>
+                           <bin name="audioComponent">
+										0000003F0000003F010000000200000000000000
+                           </bin>
+                           <bin name="editController">
+                           </bin>
+                           <int name="Version" value="1"/>
+                           <int name="Editor Size Count" value="0"/>
+                           <int name="Active" value="1"/>
+                           <string name="IDString" value="Panner"/>
+                           <string name="Bay Program" value="" wide="true"/>
+                           <int name="BypassTag" value="4301"/>
+                           <int name="RuntimeID" value="1152"/>
+                        </member>
+                        <int name="OldOn" value="0"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1154"/>
+                        <member name="Volume">
+                           <float name="Value" value="25856"/>
+                           <float name="AnchorValue" value="0"/>
+                        </member>
+                        <member name="Output">
+                           <int name="Value" value="0"/>
+                        </member>
+                        <member name="Panner">
+                           <member name="Default SurroundPan UID V2">
+                              <string name="GUID" value="A3CA1186A3A241FEA552717108932238" wide="true"/>
+                           </member>
+                           <member name="Default SurroundPan UID">
+                              <string name="GUID" value="56535453506132737572726F756E6470" wide="true"/>
+                           </member>
+                           <member name="PannerType">
+                              <int name="Value" value="3"/>
+                              <int name="Min" value="0"/>
+                              <int name="Max" value="11"/>
+                           </member>
+                           <member name="Default DownmixPan UID">
+                              <string name="GUID" value="4A18B5A88A6B44D4B78F6E2FCC4746A2" wide="true"/>
+                           </member>
+                           <member name="Plugin UID">
+                              <string name="GUID" value="44E1149EDB3E4387BDD827FEA3A39EE7" wide="true"/>
+                           </member>
+                           <string name="Plugin Name" value="Standard Panner" wide="true"/>
+                           <int name="Audio Input Count" value="1"/>
+                           <list name="Audio Input Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Audio Output Count" value="1"/>
+                           <list name="Audio Output Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Event Input Count" value="0"/>
+                           <int name="Event Output Count" value="0"/>
+                           <bin name="audioComponent">
+										0000003F0000003F010000000200000000000000
+                           </bin>
+                           <bin name="editController">
+                           </bin>
+                           <int name="Version" value="1"/>
+                           <int name="Editor Size Count" value="0"/>
+                           <int name="Active" value="1"/>
+                           <string name="IDString" value="Panner"/>
+                           <string name="Bay Program" value="" wide="true"/>
+                           <int name="BypassTag" value="4301"/>
+                           <int name="RuntimeID" value="1155"/>
+                        </member>
+                        <int name="OldOn" value="0"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1157"/>
+                        <member name="Volume">
+                           <float name="Value" value="25856"/>
+                           <float name="AnchorValue" value="0"/>
+                        </member>
+                        <member name="Output">
+                           <int name="Value" value="0"/>
+                        </member>
+                        <member name="Panner">
+                           <member name="Default SurroundPan UID V2">
+                              <string name="GUID" value="A3CA1186A3A241FEA552717108932238" wide="true"/>
+                           </member>
+                           <member name="Default SurroundPan UID">
+                              <string name="GUID" value="56535453506132737572726F756E6470" wide="true"/>
+                           </member>
+                           <member name="PannerType">
+                              <int name="Value" value="3"/>
+                              <int name="Min" value="0"/>
+                              <int name="Max" value="11"/>
+                           </member>
+                           <member name="Default DownmixPan UID">
+                              <string name="GUID" value="4A18B5A88A6B44D4B78F6E2FCC4746A2" wide="true"/>
+                           </member>
+                           <member name="Plugin UID">
+                              <string name="GUID" value="44E1149EDB3E4387BDD827FEA3A39EE7" wide="true"/>
+                           </member>
+                           <string name="Plugin Name" value="Standard Panner" wide="true"/>
+                           <int name="Audio Input Count" value="1"/>
+                           <list name="Audio Input Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Audio Output Count" value="1"/>
+                           <list name="Audio Output Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Event Input Count" value="0"/>
+                           <int name="Event Output Count" value="0"/>
+                           <bin name="audioComponent">
+										0000003F0000003F010000000200000000000000
+                           </bin>
+                           <bin name="editController">
+                           </bin>
+                           <int name="Version" value="1"/>
+                           <int name="Editor Size Count" value="0"/>
+                           <int name="Active" value="1"/>
+                           <string name="IDString" value="Panner"/>
+                           <string name="Bay Program" value="" wide="true"/>
+                           <int name="BypassTag" value="4301"/>
+                           <int name="RuntimeID" value="1158"/>
+                        </member>
+                        <int name="OldOn" value="0"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1160"/>
+                        <member name="Volume">
+                           <float name="Value" value="25856"/>
+                           <float name="AnchorValue" value="0"/>
+                        </member>
+                        <member name="Output">
+                           <int name="Value" value="0"/>
+                        </member>
+                        <member name="Panner">
+                           <member name="Default SurroundPan UID V2">
+                              <string name="GUID" value="A3CA1186A3A241FEA552717108932238" wide="true"/>
+                           </member>
+                           <member name="Default SurroundPan UID">
+                              <string name="GUID" value="56535453506132737572726F756E6470" wide="true"/>
+                           </member>
+                           <member name="PannerType">
+                              <int name="Value" value="3"/>
+                              <int name="Min" value="0"/>
+                              <int name="Max" value="11"/>
+                           </member>
+                           <member name="Default DownmixPan UID">
+                              <string name="GUID" value="4A18B5A88A6B44D4B78F6E2FCC4746A2" wide="true"/>
+                           </member>
+                           <member name="Plugin UID">
+                              <string name="GUID" value="44E1149EDB3E4387BDD827FEA3A39EE7" wide="true"/>
+                           </member>
+                           <string name="Plugin Name" value="Standard Panner" wide="true"/>
+                           <int name="Audio Input Count" value="1"/>
+                           <list name="Audio Input Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Audio Output Count" value="1"/>
+                           <list name="Audio Output Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Event Input Count" value="0"/>
+                           <int name="Event Output Count" value="0"/>
+                           <bin name="audioComponent">
+										0000003F0000003F010000000200000000000000
+                           </bin>
+                           <bin name="editController">
+                           </bin>
+                           <int name="Version" value="1"/>
+                           <int name="Editor Size Count" value="0"/>
+                           <int name="Active" value="1"/>
+                           <string name="IDString" value="Panner"/>
+                           <string name="Bay Program" value="" wide="true"/>
+                           <int name="BypassTag" value="4301"/>
+                           <int name="RuntimeID" value="1161"/>
+                        </member>
+                        <int name="OldOn" value="0"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1163"/>
+                        <member name="Volume">
+                           <float name="Value" value="25856"/>
+                           <float name="AnchorValue" value="0"/>
+                        </member>
+                        <member name="Output">
+                           <int name="Value" value="0"/>
+                        </member>
+                        <member name="Panner">
+                           <member name="Default SurroundPan UID V2">
+                              <string name="GUID" value="A3CA1186A3A241FEA552717108932238" wide="true"/>
+                           </member>
+                           <member name="Default SurroundPan UID">
+                              <string name="GUID" value="56535453506132737572726F756E6470" wide="true"/>
+                           </member>
+                           <member name="PannerType">
+                              <int name="Value" value="3"/>
+                              <int name="Min" value="0"/>
+                              <int name="Max" value="11"/>
+                           </member>
+                           <member name="Default DownmixPan UID">
+                              <string name="GUID" value="4A18B5A88A6B44D4B78F6E2FCC4746A2" wide="true"/>
+                           </member>
+                           <member name="Plugin UID">
+                              <string name="GUID" value="44E1149EDB3E4387BDD827FEA3A39EE7" wide="true"/>
+                           </member>
+                           <string name="Plugin Name" value="Standard Panner" wide="true"/>
+                           <int name="Audio Input Count" value="1"/>
+                           <list name="Audio Input Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Audio Output Count" value="1"/>
+                           <list name="Audio Output Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Event Input Count" value="0"/>
+                           <int name="Event Output Count" value="0"/>
+                           <bin name="audioComponent">
+										0000003F0000003F010000000200000000000000
+                           </bin>
+                           <bin name="editController">
+                           </bin>
+                           <int name="Version" value="1"/>
+                           <int name="Editor Size Count" value="0"/>
+                           <int name="Active" value="1"/>
+                           <string name="IDString" value="Panner"/>
+                           <string name="Bay Program" value="" wide="true"/>
+                           <int name="BypassTag" value="4301"/>
+                           <int name="RuntimeID" value="1164"/>
+                        </member>
+                        <int name="OldOn" value="0"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1166"/>
+                        <member name="Volume">
+                           <float name="Value" value="25856"/>
+                           <float name="AnchorValue" value="0"/>
+                        </member>
+                        <member name="Output">
+                           <int name="Value" value="0"/>
+                        </member>
+                        <member name="Panner">
+                           <member name="Default SurroundPan UID V2">
+                              <string name="GUID" value="A3CA1186A3A241FEA552717108932238" wide="true"/>
+                           </member>
+                           <member name="Default SurroundPan UID">
+                              <string name="GUID" value="56535453506132737572726F756E6470" wide="true"/>
+                           </member>
+                           <member name="PannerType">
+                              <int name="Value" value="3"/>
+                              <int name="Min" value="0"/>
+                              <int name="Max" value="11"/>
+                           </member>
+                           <member name="Default DownmixPan UID">
+                              <string name="GUID" value="4A18B5A88A6B44D4B78F6E2FCC4746A2" wide="true"/>
+                           </member>
+                           <member name="Plugin UID">
+                              <string name="GUID" value="44E1149EDB3E4387BDD827FEA3A39EE7" wide="true"/>
+                           </member>
+                           <string name="Plugin Name" value="Standard Panner" wide="true"/>
+                           <int name="Audio Input Count" value="1"/>
+                           <list name="Audio Input Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Audio Output Count" value="1"/>
+                           <list name="Audio Output Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Event Input Count" value="0"/>
+                           <int name="Event Output Count" value="0"/>
+                           <bin name="audioComponent">
+										0000003F0000003F010000000200000000000000
+                           </bin>
+                           <bin name="editController">
+                           </bin>
+                           <int name="Version" value="1"/>
+                           <int name="Editor Size Count" value="0"/>
+                           <int name="Active" value="1"/>
+                           <string name="IDString" value="Panner"/>
+                           <string name="Bay Program" value="" wide="true"/>
+                           <int name="BypassTag" value="4301"/>
+                           <int name="RuntimeID" value="1167"/>
+                        </member>
+                        <int name="OldOn" value="0"/>
+                     </item>
+                     <item>
+                        <int name="RuntimeID" value="1169"/>
+                        <member name="Volume">
+                           <float name="Value" value="25856"/>
+                           <float name="AnchorValue" value="0"/>
+                        </member>
+                        <member name="Output">
+                           <int name="Value" value="0"/>
+                        </member>
+                        <member name="Panner">
+                           <member name="Default SurroundPan UID V2">
+                              <string name="GUID" value="A3CA1186A3A241FEA552717108932238" wide="true"/>
+                           </member>
+                           <member name="Default SurroundPan UID">
+                              <string name="GUID" value="56535453506132737572726F756E6470" wide="true"/>
+                           </member>
+                           <member name="PannerType">
+                              <int name="Value" value="3"/>
+                              <int name="Min" value="0"/>
+                              <int name="Max" value="11"/>
+                           </member>
+                           <member name="Default DownmixPan UID">
+                              <string name="GUID" value="4A18B5A88A6B44D4B78F6E2FCC4746A2" wide="true"/>
+                           </member>
+                           <member name="Plugin UID">
+                              <string name="GUID" value="44E1149EDB3E4387BDD827FEA3A39EE7" wide="true"/>
+                           </member>
+                           <string name="Plugin Name" value="Standard Panner" wide="true"/>
+                           <int name="Audio Input Count" value="1"/>
+                           <list name="Audio Input Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Audio Output Count" value="1"/>
+                           <list name="Audio Output Arrangement" type="list">
+                              <item>
+                                 <list name="Type" type="int">
+                                    <item value="1"/>
+                                    <item value="2"/>
+                                 </list>
+                              </item>
+                           </list>
+                           <int name="Event Input Count" value="0"/>
+                           <int name="Event Output Count" value="0"/>
+                           <bin name="audioComponent">
+										0000003F0000003F010000000200000000000000
+                           </bin>
+                           <bin name="editController">
+                           </bin>
+                           <int name="Version" value="1"/>
+                           <int name="Editor Size Count" value="0"/>
+                           <int name="Active" value="1"/>
+                           <string name="IDString" value="Panner"/>
+                           <string name="Bay Program" value="" wide="true"/>
+                           <int name="BypassTag" value="4301"/>
+                           <int name="RuntimeID" value="1170"/>
+                        </member>
+                        <int name="OldOn" value="0"/>
+                     </item>
+                  </list>
+                  <int name="SummingMode" value="0"/>
+               </member>
+               <member name="outputBusEnable">
+                  <int name="Value" value="1"/>
+                  <int name="Min" value="0"/>
+                  <int name="Max" value="1"/>
+               </member>
+               <list name="MixCons-DevPanel" type="list">
+                  <item>
+                     <member name="DevicePanel">
+                     </member>
+                  </item>
+                  <item>
+                     <member name="DevicePanel">
+                     </member>
+                  </item>
+                  <item>
+                     <member name="DevicePanel">
+                     </member>
+                  </item>
+               </list>
+               <int name="InputBusArrangementType" value="0"/>
+            </member>
+            <int name="Flags" value="0"/>
+         </obj>
+         <obj class="MAutomationNode" name="Automation" ID="1140252000">
+            <string name="Name" value="Automation" wide="true"/>
+            <member name="Domain">
+               <int name="Type" value="0"/>
+               <obj name="Tempo Track" ID="1024855040"/>
+               <obj name="Signature Track" ID="1024852096"/>
+            </member>
+            <list name="Tracks" type="obj">
+               <obj class="MAutomationTrackEvent" ID="1075813232">
+                  <float name="Start" value="0"/>
+                  <float name="Length" value="575207.93900000001303851604461669921875"/>
+                  <obj class="MAutoListNode" name="Node" ID="1151013600">
+                     <member name="Domain">
+                        <int name="Type" value="0"/>
+                        <obj name="Tempo Track" ID="1024855040"/>
+                        <obj name="Signature Track" ID="1024852096"/>
+                     </member>
+                  </obj>
+                  <obj class="MAutomationTrack" name="Track Device" ID="1151010576">
+                     <int name="Connection Type" value="2"/>
+                     <int name="Read" value="0"/>
+                     <int name="Write" value="0"/>
+                  </obj>
+                  <int name="Tag" value="1025"/>
+               </obj>
+            </list>
+            <obj name="Track Device" ID="1151010576"/>
+            <int name="Expanded" value="0"/>
+         </obj>
+      </obj>
+   </list>
+   <obj class="PArrangeSetup" name="Setup" ID="1025823040">
+      <member name="Length">
+         <float name="Time" value="836.058020926199560562963597476482391357421875"/>
+         <member name="Domain">
+            <int name="Type" value="1"/>
+            <float name="Period" value="1"/>
+         </member>
+      </member>
+      <int name="BarOffset" value="0"/>
+      <int name="FrameType" value="5"/>
+      <int name="TimeType" value="0"/>
+      <float name="SampleRate" value="44100"/>
+      <int name="SampleSize" value="24"/>
+      <int name="SampleFormatSize" value="3"/>
+      <int name="PanLaw" value="6"/>
+      <int name="VolumeMax" value="0"/>
+      <int name="HmtType" value="0"/>
+      <int name="HmtDepth" value="100"/>
+   </obj>
+
+   <obj class="PGridDefinition" ID="1018521168">
+      <float name="Tempo" value="86"/>
+      <int name="SigNom" value="4"/>
+      <int name="SigDenom" value="4"/>
+      <int name="Beats" value="44"/>
+      <float name="Offset" value="1.26164813078450066541336127556860446929931640625"/>
+      <float name="offsetTempo" value="86"/>
+   </obj>
+
+   <obj class="ElastiquePreset" ID="446818480">
+      <string name="processingMode" value="pro default"/>
+      <string name="stereoMode" value="left-right"/>
+      <int name="formantPreservation" value="0"/>
+      <int name="tapeStyleMode" value="0"/>
+      <int name="pitchAccurateMode" value="0"/>
+   </obj>
+
+   <obj class="FNPath" ID="1259711920">
+      <string name="Name" value="xd (D)_05.wav" wide="true"/>
+      <string name="Path" value="C:\Users\Tom\volysandro.github.io\spur\Media\" wide="true"/>
+      <member name="FileType">
+         <int name="MacType" value="1463899717"/>
+         <string name="DosType" value="wav" wide="true"/>
+         <string name="UnixType" value="wav" wide="true"/>
+         <string name="Name" value="Wave-Datei" wide="true"/>
+      </member>
+   </obj>
+
+</tracklist>

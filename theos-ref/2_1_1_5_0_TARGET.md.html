@@ -1,0 +1,279 @@
+<link href="../theosref.css" rel="stylesheet">
+
+<h1>Targets and Platforms</h1>
+
+<p>This section pertains to:</p>
+
+<ul>
+<li>Detailed explanation of setting the <code>TARGET</code> variable, defined in previous sections as a way of controlling the build process.</li>
+<li>Information on how targets and platforms are defined and handled by Theos.</li>
+</ul>
+
+<h2>Selecting a target</h2>
+
+<p>%INDENT%</p>
+
+<h6>TARGET <span class="scope">system</span> (String)</h6>
+
+<p>The system for which Theos is to build projects. Also defines miscellaneous build aspects. <br />
+Defaults and availability are platform-wise.</p>
+
+<p>TARGET flags are split by colons (<code>:</code>), and different targets may parse these flags in different ways. The first flag is always used to define the target name, still.</p>
+
+<p>For more information on how Theos' default targets handle flags, read <a href="./2_1_1_5_1_DEFAULT_TARGETS.md">Theos Default Targets</a>. This document focuses on the behavior of Theos regarding targets.</p>
+
+<p>Theos Targets should never directly read from <code>TARGET</code>. For more information, refer to <a href="nolink">_THEOS_TARGET_ARG_X</a>.</p>
+
+<p>%INDENTEND%</p>
+
+<h2>Platforms</h2>
+
+<p>%INDENT%</p>
+
+<p>Platforms are automatically picked by Theos through the output of <code>uname -s</code> (kernel name). For more information on this tool, refer to <a href="http://linux.die.net/man/1/uname">uname(1)</a>.</p>
+
+<p>Each platform has a makefile included to define special behavior through variables. This makefile is placed at <code>$(THEOS_MAKE_PATH)/platforms/&lt;platform name&gt;.mk</code>.</p>
+
+<p>These variables are described as follows. This section does not focus on the behavior defined by default Theos platforms. For such information, refer to <a href="./2_1_1_5_2_DEFAULT_PLATFORMS.md">Theos Default Platforms</a>.</p>
+
+<h6>_THEOS_PLATFORM_LOADED %?% (Boolean)</h6>
+
+<p>Defines whether Theos has loaded a platform.</p>
+
+<p>Each platform should check for this value to be undefined before defining platform variables, and when doing so, it should set this variable to <a href="./2_1_1_X_VARIABLE_CLASSES.md#Boolean">TRUE</a>.</p>
+
+<p>Defaults to empty.</p>
+
+<h6>THEOS_PLATFORM_NAME %?% (String)</h6>
+
+<p>The human-readable name of this platform, rather than the kernel name of the system.</p>
+
+<p>Defaults to empty.</p>
+
+<h6>_THEOS_PLATFORM_DEFAULT_TARGET %?% (String)</h6>
+
+<p>The default target for the platform to build to. Refer to <a href="./2_1_1_5_TARGETS.md#targets">Target Selection</a> for more detail.</p>
+
+<p>Defaults to empty.</p>
+
+<h6>_THEOS_PLATFORM_DU_EXCLUDE %?% (String)</h6>
+
+<p>The exclude flag for <a href="http://linux.die.net/man/1/du">du(1)</a>.</p>
+
+<p>Defaults to empty.</p>
+
+<h6>_THEOS_PLATFORM_MD5SUM %?% (String)</h6>
+
+<p>The name of the MD5 Sum generation program in the system.</p>
+
+<p>Defaults to empty.</p>
+
+<p>%INDENTEND%</p>
+
+<h2>Targets</h2>
+
+<p>%INDENT%</p>
+
+<p>Targets are picked by Theos through the Target Name. The Target Name can be defined either on the platform (through the <a href="needlink">_THEOS_PLATFORM_DEFAULT_TARGET</a> variable, or through the first flag of the <a href="needlink">TARGET</a> variable.</p>
+
+<p>Targets can be part of one of the following categories:</p>
+
+<ul>
+<li>Native: It describes the building process having as a target the same platform it's built at.</li>
+<li>Non-native: It describes the building process having as a target a different platform from the one it's built at.</li>
+</ul>
+
+<p>Each target has a makefile included to define special behavior through variables. This makefile should be placed at <code>$(THEOS_MAKE_PATH)/targets/&lt;platform name&gt;/&lt;target name&gt;.mk</code>. Usually, platform target directories should contain a <code>native.mk</code> makefile symlinking to the native target.</p>
+
+<p>These variables are defined as follows. This section does not focus on the behavior defined by default Theos platforms. For such information, refer to <a href="./2_1_1_5_2_DEFAULT_TARGETS.md">Theos Default Targets</a>.</p>
+
+<p>These variables should <em>only</em> be set by the target if they are previously undefined, otherwise the user's build configuration might be overriden.</p>
+
+<p>Before defining these variables, check for <code>_THEOS_TARGET_LOADED</code> being undefined. They should only be set if this condition is true.</p>
+
+<p>Some rules can also be defined or overriden in these makefiles.</p>
+
+<p><em>(NOTE: In this context variables marked as system-wise are usually <strong>only</strong> to be written in this context, and should be considered read-only for other purposes.)</em></p>
+
+<h3>Target Variables</h3>
+
+<p>%INDENT%</p>
+
+<h6>_THEOS_TARGET_LOADED (Boolean)</h6>
+
+<p>Defines whether the target was loaded. <br />
+Should always be set to <code>true</code> on the start of the target Makefile.</p>
+
+<p>Defaults to empty.</p>
+
+<h6>THEOS_TARGET_NAME</h6>
+
+<p>Defines the name of the target. <br />
+Should always be set.</p>
+
+<p>Defaults to empty.</p>
+
+<h6>TARGET_EXE_EXT <span class="scope">system</span> (String)</h6>
+
+<p>Defines the extension for binaries for the target.</p>
+
+<p>Defaults to empty.</p>
+
+<h6>TARGET_LIB_EXT <span class="scope">system</span> (String)</h6>
+
+<p>Defines the extension for libraries for the target.</p>
+
+<p>Defaults to empty.</p>
+
+<h6>TARGET_CC <span class="scope">system</span> (String)</h6>
+
+<p>Defines the path of the C compiler for the target.</p>
+
+<p>Defaults to empty.</p>
+
+<h6>TARGET_CXX <span class="scope">system</span> (String)</h6>
+
+<p>Defines the path of the C++ compiler for the target.</p>
+
+<p>Defaults to empty.</p>
+
+<h6>TARGET_LD <span class="scope">system</span> (String)</h6>
+
+<p>Defines the path of the linker for the target. <br />
+Should usually be set to the C++ compiler.</p>
+
+<p>Defaults to empty.</p>
+
+<h6>_THEOS_TARGET_CFLAGS <span class="scope">system</span> (String)</h6>
+
+<p>Defines compiler flags specially from the target.  </p>
+
+<p>Defaults to empty.</p>
+
+<h6>TARGET_CFLAGS_DYNAMICLIB</h6>
+
+<p>The compiler flags to be applied when building a dynamic library for the target.</p>
+
+<p>Defaults to empty.</p>
+
+<h6>_THEOS_TARGET_ONLY_OBJCFLAGS</h6>
+
+<p>????????</p>
+
+<p>Defaults to empty.</p>
+
+<h6>_THEOS_TARGET_LDFLAGS <span class="scope">system</span> (String)</h6>
+
+<p>Defines linker flags specially from the target. <br />
+Should contain <code>-multiply_defined suppress</code>.</p>
+
+<p>Defaults to empty.</p>
+
+<h6>TARGET_LDFLAGS_DYNAMICLIB</h6>
+
+<p>The linker flags to be applied when building a dynamic library for the target.</p>
+
+<p>Defaults to empty.</p>
+
+<h6>TARGET_STRIP</h6>
+
+<p>Defines the path of the <a href="http://linux.die.net/man/1/strip">strip(1)</a> tool.</p>
+
+<p>Defaults to empty.</p>
+
+<h6>TARGET_STRIP_FLAGS</h6>
+
+<p>Defines the flags for the <a href="http://linux.die.net/man/1/strip">strip(1)</a> tool.</p>
+
+<p>Defaults to empty.</p>
+
+<h6>TARGET_CODESIGN_ALLOCATE</h6>
+
+<p>Defines the path for the <a href="http://developer.apple.com/library/Mac/#documentation/Darwin/Reference/ManPages/man1/codesign_allocate.1.html">codesign_allocate(1)</a> tool.</p>
+
+<p>Defaults to empty.</p>
+
+<h6>TARGET_CODESIGN</h6>
+
+<p>Defines the path for the codesigning tool. <br />
+It can be usually set to <a href="https://developer.apple.com/library/mac/#documentation/Darwin/Reference/ManPages/man1/codesign.1.html">codesign(1)</a> or <code>ldid</code>.</p>
+
+<p>Defaults to empty.</p>
+
+<h6>TARGET_CODESIGN_FLAGS</h6>
+
+<p>Defines the flags for the codesigning tool.</p>
+
+<p>Defaults to empty.</p>
+
+<h6>TARGET_PRIVATE_FRAMEWORK_PATH</h6>
+
+<p>The path to private frameworks inside the sysroot.</p>
+
+<p>Defaults to empty.</p>
+
+<h6>ARCHS</h6>
+
+<p>Defines the architecture of the output object files for the target.</p>
+
+<p>Defaults to empty.</p>
+
+<h6>_THEOS_TARGET_SUPPORTS_BUNDLES (Boolean)</h6>
+
+<p>An unused variable.</p>
+
+<p>Defaults to empty.</p>
+
+<h6>_THEOS_TARGET_BUNDLE_INFO_PLIST_SUBDIRECTORY</h6>
+
+<p>When creating a bundle with <code>bundle.mk</code>, the subdirectory where the Info.plist file will be placed.</p>
+
+<p>Defaults to empty.</p>
+
+<h6>_THEOS_TARGET_BUNDLE_RESOURCE_SUBDIRECTORY</h6>
+
+<p>When creating a bundle with <code>bundle.mk</code>, the subdirectory where the bundle resources will be placed.</p>
+
+<p>Defaults to empty.</p>
+
+<h6>_THEOS_TARGET_BUNDLE_BINARY_SUBDIRECTORY</h6>
+
+<p>When creating a bundle with <code>bundle.mk</code>, the subdirectory where the bundle main executable will be placed.</p>
+
+<p>Defaults to empty.</p>
+
+<p>%INDENTEND%</p>
+
+<h3>Target Data Variables</h3>
+
+<p>%INDENT%</p>
+
+<p>These variables can be read by the target to suit itself to the project's needs.</p>
+
+<h6>__THEOS_TARGET_ARG_X</h6>
+
+<p>Special variable name. Here, <em>X</em> is a number which starts on 1.</p>
+
+<p>This variable can be used for querying the Xth flag of the <code>TARGET</code> variable, instead of directly parsing the <code>TARGET</code> variable.</p>
+
+<p>This variable is empty if the Xth flag of <code>TARGET</code> is empty. Otherwise, it is filled with content.</p>
+
+<h6>SYSROOT</h6>
+
+<p>This variable, if defined, specifies the desired system root for the target. Its data should then be considered when setting <code>_THEOS_TARGET_CFLAGS</code> and <code>_THEOS_TARGET_LDFLAGS</code>.</p>
+
+<p>Defaults to empty.</p>
+
+<p>%INDENTEND%</p>
+
+<h3>Common Variables</h3>
+
+<p>%INDENT%</p>
+
+<p>When some target variables are common across targets (for instance, for all Windows targets, the executable extension will be .exe), by convention a makefile should be created at <code>$(THEOS_MAKE_PATH)/targets/_common/&lt;common name&gt;.mk</code>, and this makefile should be included by all targets that have this common variable.</p>
+
+<p>The documentation of which common targets Theos offers and which target variables are usually placed there, refer to <a href="./2_1_1_5_3_DEFAULT_COMMON_TARGETS.md">Default Common Targets</a>.</p>
+
+<p>%INDENTEND%</p>
+
+<p>%INDENTEND%</p>

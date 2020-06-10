@@ -1,0 +1,22 @@
+<link href="../theosref.css" rel="stylesheet">
+
+<h1>The Instance Variable System</h1>
+
+<p>Theos features an "instance" system based on that of <a href="http://www.gnustep.org/resources/documentation/Developer/Make/Manual/make_toc.html">GNUStep Make</a>, which allows the developer to manage multiple build targets (libraries, tools, applications...) inside a single project.</p>
+
+<p>Instances specify <strong>what should be built</strong> and <strong>how</strong>, as well as <strong>where it belongs on the filesystem</strong>.</p>
+
+<p>We understand instance variables as variables that, for determined instance, define how something should be built, as opposed to master variables, that apply globally for an entire project. For example, taking <code>program</code> as an instance name:</p>
+
+<p>%CODE%</p>
+
+<pre><code>program_FILES = file.c main.c
+program_FRAMEWORKS = UIKit
+program_INSTALL_PATH = /usr/bin
+</code></pre>
+
+<p>%CODEEND%</p>
+
+<p>A list of instance names to be built by a project is specified by the <a href="./2_1_1_6_INSTANCES.md">Instance Specifier Variables</a>, documented elsewhere.</p>
+
+<p>This section will document a list of instance variables, both general ones that apply for all instances and specific one for each instance type, and will discuss the application of each instance type in Theos, as well as how to extend Theos by creating instance types.</p>
