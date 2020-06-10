@@ -19,23 +19,55 @@
 </head>
 
 <body>
+    <form class="col s12">
     <div class="row">
-        <form class="col s12">
+
+          <p>
+            <p style="text-indent: 10px;">
+                <label>
+                  <input type="checkbox" />
+                  <span>industrielle Berufe</span>
+                </label>
+              </p>
+              <p style="text-indent: 10px; color: #0082b4;">
+                <label>
+                  <input type="checkbox" style="color: #0082b4;" />
+                  <span>gewerbliche Berufe</span>
+                </label>
+              </p>
+              <input placeholder="  Datum" type="text" class="datepicker">
+              <select style="margin-top: 20px;" class="browser-default">
+                  <option value="" disabled selected>Wähle die gewünschte Besuchszeit:</option>
+                  <option value="1"> 08.30 - 11.15</option>
+                  <option value="2">13.30 - 16.15</option>
+                </select>
+        </div>
             <div class="row">
-                <div class="input-field col s5">
+                <div class="input-field col s8">
                     <input placeholder="Schule" id="schule" type="text" class="validate">
                     <label for="schule"></label>
                 </div>
-                <div class="input-field col s5">
-                    <input placeholder="Klasse" id="klasse" type="text" class="validate">
-                    <label for="klasse"></label>
-                </div>
-                <div class="input-field col s2">
+                <div class="input-field col s4">
                         <input placeholder="0" id="anzahl" type="text" class="validate">
                         <label for="anzahl">Anzahl Besucher</label>
-                    </div>
+                </div>
     
+                    <select style="margin-top: 20px;" class="browser-default">
+                        <option value="" disabled selected>Stufe:</option>
+                        <option value="1">Real</option>
+                        <option value="2">Sek</option>
+                        <option value="3">Real/Sek</option>
+                    </select>
+                    <select style="margin-top: 20px;" class="browser-default">
+                        <option value="" disabled selected>Klasse:</option>
+                        <option value="1">7. Klasse</option>
+                        <option value="2">8. Klasse</option>
+                        <option value="3">9. Klasse</option>
+                    </select>
+
             </div>
+
+
             <div class="row">
 
                 <div class="input-field col s6">
@@ -46,32 +78,19 @@
                             <input placeholder="Nachname" id="nachname" type="text" class="validate">
                             <label for="nachname"></label>
                         </div>
+                        <div class="input-field col s6">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field col s6">
+                                <input id="telefon" type="text" class="validate">
+                                <label for="telefon">Telefon</label>
+                            </div>
             </div>
     
-            <input placeholder="Datum" type="text" class="datepicker">
-            <select style="margin-top: 30px;" class="browser-default">
-                    <option value="" disabled selected>Wähle den Standort:</option>
-                    <option value="1">Felsenau</option>
-                    <option value="2">Lorraine</option>
-            </select>
-            <select style="margin-top: 20px;" class="browser-default">
-                    <option value="" disabled selected>Wähle die gewünschte Besuchszeit:</option>
-                    <option value="1">Vormittag</option>
-                    <option value="2">Nachmittag</option>
-            </select>
+
 
                 
-            <div class="row">
-                <div class="input-field col s6">
-                    <input id="email" type="email" class="validate">
-                    <label for="email">Email</label>
-                </div>
-                <div class="input-field col s6">
-                        <input id="telefon" type="text" class="validate">
-                        <label for="telefon">Telefon</label>
-                    </div>
-    
-            </div>
 
             <button class="btn" style="background-color: #0082b4">Bestätigen</button>
         </form>
