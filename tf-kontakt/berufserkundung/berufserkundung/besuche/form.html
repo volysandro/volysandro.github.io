@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <form class="col s12">
+    <form style="margin: 15px;" class="col s12">
     <div class="row">
 
           <p>
@@ -37,7 +37,7 @@
               </p>
               <input placeholder="  Datum" type="text" class="datepicker">
               <select style="margin-top: 20px;" class="browser-default">
-                  <option value="" disabled selected>Wähle die gewünschte Besuchszeit:</option>
+                  <option value="" disabled selected>Wählen Sie die gewünschte Besuchszeit:</option>
                   <option value="1"> 08.30 - 11.15</option>
                   <option value="2">13.30 - 16.15</option>
                 </select>
@@ -48,8 +48,14 @@
                     <label for="schule"></label>
                 </div>
                 <div class="input-field col s4">
-                        <input placeholder="0" id="anzahl" type="text" class="validate">
-                        <label for="anzahl">Anzahl Besucher</label>
+                        <select class="browser-default">
+                          <option value="" disabled selected>Anzahl Besucher</option>
+                          <option value="1">10-15</option>
+                          <option value="2">15-20</option>
+                          <option value="3">20-25</option>
+
+                        </select>
+        
                 </div>
     
                     <select style="margin-top: 20px;" class="browser-default">
@@ -93,6 +99,8 @@
                 
 
             <button class="btn" style="background-color: #0082b4">Bestätigen</button>
+
+            <img src="standort.png" style="width: 100%; margin-top: 50px;" alt="">
         </form>
     </div>
 </body>
