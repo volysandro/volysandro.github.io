@@ -10,7 +10,7 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "firebase": "^5.9.1",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "vue": "^2.6.6",
     "vue-router": "^3.0.1",
     "vue-socket.io": "^3.0.7",
