@@ -1,77 +1,471 @@
 <!DOCTYPE html>
-<html>
+<html lang="zxx">
 
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Material Gold</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="style.scss">
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="description" content="Directing Template">
+    <meta name="keywords" content="Directing, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Madeleine Cécile | Yoga</title>
 
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/barfiller.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
-    <header>
-        <div id="header" class="card hoverable">
-            <div id="goldblock"></div>
-            <a href="#" data-target="slide-out" class="sidenav-trigger">
-
-                <i id="menu-icon" class="material-icons">menu</i>
-            </a>
-            <a href="index.html">
-                <h1 id="logo"><b> mAnahata Yoga</b></h1>
-
-            </a>
-        </div>
-    </header>
-
-    <div class="container">
-        <div class="title">ROBERT DEVELOPER</div>
-        <div class="subtitle"> geek + smart + curious + nerd + ingenious + cunning = ME </div>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
     </div>
 
-    <div id="fm-medium-embed"></div>
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu">
+        <div id="mobile-menu-wrap"></div>
+        <nav class="header__menu">
+            <ul class="mobile-menu">
+                <li class="active"><a href="./index.html">Home</a></li>
 
-    <ul id="slide-out" class="sidenav">
-        <li>
-            <div class="user-view">
-                <img style="width: 80%;border-radius: 20px;" src="files/Madeleine_Yoga_Website.jpg">
-                <span class="name">Sandro Volery</span>
-                <span class="email">sandro@volery.com</span>
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="#">Menupunkt</a></li>
+                <li><a href="#">Menupunkt</a></li>
+                <li><a href="#">Menupunkt</a></li>
+                <li><a href="#">Menupunkt</a></li>
+
+           </ul>
+        </nav>
+        <div class="offcanvas__social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                        <div class="header__logo">
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-9">
+                        <div class="header__top__widget">
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas__open">
+                    <i class="fa fa-bars"></i>
+                </div>
             </div>
-        </li>
-        <li><a style="color: #a4559c" href="https://sandro.volery.com">mAnahata Yoga</a></li>
-        <li><a style="color: #a4559c" href="https://sandro.volery.com">Über Madeleine</a></li>
-        <li><a style="color: #a4559c" href="https://sandro.volery.com">Events & Workshops</a></li>
+        </div>
+        <div class="header__nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-9">
+                        <nav class="header__menu">
+                            <ul>
+                                <li class="active"><a href="./index.html">Home</a></li>
+                                <li><a href="#">Menupunkt</a></li>
+                                <li><a href="#">Menupunkt</a></li>
+                                <li><a href="#">Menupunkt</a></li>
+                                <li><a href="#">Blog</a>
+                                    <ul class="dropdown">
+                                        <li><a href="#">Lifestyle</a></li>
+                                        <li><a href="#">Food</a></li>
+                                    </ul>
+                                </li>
 
-        <li>
-            <div class="divider"></div>
-        </li>
-        <li><a class="subheader">Links</a></li>
-        <li><a class="waves-effect" href="https://www.github.com/volysandro">Instagram</a></li>
-        <li><a class="waves-effect" href="https://www.github.com/volysandro">Facebook</a></li>
+                           </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        <div class="header__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
 
-    </ul>
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="hero__sliders owl-carousel">
+            <div class="hero__items set-bg" data-setbg="content/cover.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="hero__text">
+                                <span>Yoga...</span>
+                                <h2>hilft dir dabei, Körper, Geist und Seele in Einklang zu bringen. </h2>
+                                <a href="#" class="primary-btn">MEHR ERFAHREN</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__items set-bg" data-setbg="content/MedialeBeratung.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="hero__text">
+                                <span>Mediale Beratung...</span>
+                                <h2>hilft dir dabei, Klarheit und deinen Herzensweg zu finden. </h2>
+                                <a href="#" class="primary-btn">MEHR ERFAHREN</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__items set-bg" data-setbg="content/soulart/PuraVida.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="hero__text">
+                                <span>SoulArt...</span>
+                                <h2>bedeutet Menschen zu berühren und sie auf die Schönheit des Lebens aufmerksam zu machen. </h2>
+                                <a href="#" class="primary-btn">MEHR ERFAHREN</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Begin -->
+    <section class="home-about spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="home__about__pic">
+                        <div class="home__about__pic__item large-item set-bg" data-setbg="content/SoulArt/Om.jpg"></div>
+                        <div class="home__about__pic__item">
+                            <div class="home__about__pic__item__inner set-bg" data-setbg="content/portrait.jpg"></div>
+                            <div class="home__about__pic__item__inner set-bg" data-setbg="content/kinderyoga.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="home__about__text">
+                        <div class="section-title">
+                            <img src="img/icon.png" alt="">
+                            <h2>Über Madeleine Cécile</h2>
+                        </div>
+                        <span>Hi, ich bin Madeleine – <br>
+                            Yogalehrerin, soulArtistin und mediale Lebensberaterin!
+                            </span>
+                        <p>Herzlich willkommen auf meiner Website. Ich freue mich, dass du den Weg hierher gefunden hast &#128522 Hier möchte ich dir einen Einblick in mein Leben geben: Was mich inspiriert, begeistert und vorantreibt. Viel Freude beim Eintauchen.</p>
+                        <p class="para-2">Am glücklichsten bin ich aber, wenn ich meine Leidenschaft für Yoga und soulArt mit anderen teilen kann und Menschen wie dich dazu inspirieren darf, deine Einzigartigkeit und Schönheit zu leben. &#128522
+                            Mit meinen Angeboten möchte ich dich auf deinem persönlichen Herzens-Weg unterstützen und dir dabei helfen, dein inneres Licht zum Strahlen bringen und deine einzigartigen Gaben in die Welt zu tragen. <br> <br>
+                            
+                            Lass uns gemeinsam vor Lebensfreude sprühen und Liebe in die Welt bringen! <br> <br>
+                            
+                            * Namasté, love & light 
+                            </p>
+                        <a href="#" class="primary-btn">MEHR</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Services Section Begin -->
+    <section class="services spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <img src="img/icon.png" alt="">
+                        <h2>Geniesse Alle Aspekte des Yoga</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="services__list">
+                <div class="row">
+                    <div class="col-xl-3 col-md-4 col-sm-6">
+                        <div class="services__item">
+                            <img src="img/services/services-1.png" alt="">
+                            <h5>Asana</h5>
+                            <p>Überwiegend ruhende Körperstellungen die den Gedankenfluss in das Reine bringen.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-sm-6">
+                        <div class="services__item">
+                            <img src="img/services/services-2.png" alt="">
+                            <h5>Meditation</h5>
+                            <p>Meditation beschreibt einen Bewusstseinszustand, und den Versuch innere Einkehr zu finden.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-sm-6">
+                        <div class="services__item">
+                            <img src="img/services/services-3.png" alt="">
+                            <h5>Mudra</h5>
+                            <p>„Mud“ heißt Freude, „ra“ geben. Davon gibt es viele Arten, jedoch alle mit demselben Ziel: Ruhe und Freude.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 col-sm-6">
+                        <div class="services__item">
+                            <img src="img/services/services-4.png" alt="">
+                            <h5>Bandhas</h5>
+                            <p>"Maha Bandha" beschreibt das Einsetzen von allen drei Muskelgruppen. Dabei entsteht eine Festigkeit im Rumpfbereich und Raum für Bewegung. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
 
 
+    <!-- Classes Section Begin -->
+    <section class="upcoming-classes spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title normal-title">
+                        <h2>Angebote</h2>
+                        <p>Text</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="classes__item">
+                        <div class="classes__item__pic set-bg" data-setbg="content/DSCF3516.jpg">
+                            <span>Montags, 19.45 - 20.45</span>
+                        </div>
+                        <div class="classes__item__text">
+                            <p>Yoga Lenzburg</p>
+                            <h4><a href="#">Slow Flow Yoga</a></h4>
+                            <h6>Madeleine Cécile <span>- Yoga Teacher</span></h6>
+                            <a href="#" class="class-btn">KONTAKTIEREN</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="classes__item">
+                        <div class="classes__item__pic set-bg" data-setbg="content/Kinderyoga.jpg">
+                            <span>Mittwochs, 17.00 - 18.00</span>
+                        </div>
+                        <div class="classes__item__text">
+                            <p>Yoga Lenzburg</p>
+                            <h4><a href="#">Yoga für Jugendliche</a></h4>
+                            <h6>Madeleine Cécile <span>- Yoga Teacher</span></h6>
+                            <a href="#" class="class-btn">KONTAKTIEREN</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="classes__item">
+                        <div class="classes__item__pic set-bg" data-setbg="content/MedialeBeratung.jpg">
+                            <span>Auf Anfrage, 60min</span>
+                        </div>
+                        <div class="classes__item__text">
+                            <p>Persönlich oder via Zoom</p>
+                            <h4><a href="#">Mediale Beratung</a></h4>
+                            <h6>Madeleine Cécile <span>- Yoga Teacher</span></h6>
+                            <a href="#" class="class-btn">KONTAKTIEREN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Classes Section End -->
+
+    <!-- Gallery Section Begin -->
+    <section class="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title normal-title">
+                        <h2>Galerie</h2>
+                        <p>Text</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-6 p-0">
+                    <div class="gallery__pic">
+                        <img src="content/15420869_1903625526538872_8670300159174614379_n.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 p-0">
+                    <div class="gallery__pic">
+                        <img style="object-fit: contain;" src="content/squares/DSCF3504.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 p-0">
+                    <div class="gallery__pic">
+                        <img src="content/squares/square-20.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 p-0">
+                    <div class="gallery__pic">
+                        <img src="content/squares/DSCF3516.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 p-0">
+                    <div class="gallery__pic">
+                        <img src="content/squares/DSCF3536.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 p-0">
+                    <div class="gallery__pic">
+                        <img src="content/squares/square-29.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 p-0">
+                    <div class="gallery__pic">
+                        <img src="content/squares/DSCF3527.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 p-0">
+                    <div class="gallery__pic">
+                        <img src="content/squares/square-31.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section End -->
+
+    <!-- Appoinment Section Begin -->
+    <section class="appointment">
+        <div class="container">
+            <div class="appointment__text">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title">
+                            <img src="img/icon-white.png" alt="">
+                            <h2>Kontakt</h2>
+                        </div>
+                    </div>
+                </div>
+                <form action="#" class="appointment__form">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" placeholder="Email">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" placeholder="Telefon">
+                        </div>
+                        <div class="col-lg-6">
+                            <select class="class-select">
+                                <option value="">Kurs</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <textarea placeholder="Anliegen"></textarea>
+                            <button type="submit">Absenden</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <ul>
+                            <li><i class="fa fa-clock-o"></i> Zeit</li>
+                            <li><i class="fa fa-clock-o"></i> Zeit</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h5>Menu</h5>
+                        <ul>
+                            <li><a href="#">Punkt</a></li>
+                            <li><a href="#">Punkt</a></li>
+                            <li><a href="#">Punkt</a></li>
+                            <li><a href="#">Punkt</a></li>
+                            <li><a href="#">Punkt</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h5>Über</h5>
+                        <ul>
+                            <li><a href="#">Punkt</a></li>
+                            <li><a href="#">Punkt</a></li>
+                            <li><a href="#">Punkt</a></li>
+                            <li><a href="#">Punkt</a></li>
+                            <li><a href="#">Punkt</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__widget">
+                        <h5>Kontakt</h5>
+                        <ul class="footer-address">
+                            <li><i class="fa fa-phone"></i> Telefon</li>
+                            <li><i class="fa fa-envelope"></i> Email</li>
+                            <li><i class="fa fa-location-arrow"></i> Adresse</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="footer__copyright__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.barfiller.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
-
-<script>
-    $(document).ready(function () {
-        $('.sidenav').sidenav({
-
-            'edge': "right",
-        });
-    });
-</script>
-<script src='main.js'></script>
