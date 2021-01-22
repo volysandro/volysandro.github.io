@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sandro Volery - Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/ionicons.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="KW_progressContainer">
+    <div class="KW_progressBar">
+
+    </div>
+  </div>
+  <div class="page">
+    <nav id="colorlib-main-nav" role="navigation">
+      <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
+      <div class="js-fullheight colorlib-table">
+        <div class="img" style="background-image: url(images/portfolio/photoshoot02.jpg);"></div>
+        <div class="colorlib-table-cell js-fullheight">
+          <div class="row no-gutters">
+            <div class="col-md-12 text-center">
+              <h1 class="mb-4"><a href="index.html" class="logo">Sandro Volery</a></h1>
+              <ul>
+                <li><a href="index.html"><span><small>01</small>Home</span></a></li>
+                <li><a href="about.html"><span><small>02</small>Resume</span></a></li>
+                <li><a href="services.html"><span><small>03</small>Services</span></a></li>
+                <li><a href="portfolio.html"><span><small>04</small>Portfolio</span></a></li>
+                <li class="active"><a href="contact.html"><span><small>05</small>Contact</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div id="colorlib-page">
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="colorlib-navbar-brand">
+                <a class="colorlib-logo" href="index.html"><span class="logo-img"
+                    style="background-image: url(images/portfolio/redbull.jpg);"></span>Sandro Volery</a>
+              </div>
+              <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="ftco-section contact-section">
+        <div class="container mt-5">
+            <img style="width: 15%; margin: auto" src="delivery_img/c55af6eadd5b60bac831d73c1a951327.webp" alt="">
+          <div class="row d-flex mb-5 contact-info">
+            <h2 id="delivery-writeup-by-volery">Delivery WriteUp by Volery</h2>
+            <p>So we are going to be looking at an easier box which was the delivery one on hackthebox.eu, altough it is a pretty crazy one when it comes to enumeration and sort of guessing what is going on. </p>
+            <p><strong>Initial Enumeration</strong><br>
+            Lets take a look at the open ports:
+            <img src="delivery_img/nmap_ports.PNG" alt="" srcset="">
+        </p>
+
+            <p>We can see that it is running the common ssh service plus a web server on port 80. Lets head over to their website to see if we can find anything valuable to use.</p>
+            <p>Their website is looking pretty nice, but that is beside the point :D Upon looking around we can immediately find the helpdesk link, and within &quot;contact us&quot; there is another link to the mattermost server. Altough, we are currently not able to access these pages since we are missing the correct settings to resolve the hostnames. So let&#39;s fix that:
+                <img src="delivery_img/hosts_file.PNG" alt="" srcset="">
+            </p>
+            <p>As seen in this image, we can simply add both the helpdesk.delivery.htb as well as the normal delivery.htb domain into the hostfile, so it will resolve the correct ip address.</p>
+            <p><strong>User Foothold</strong><br>
+            As we look at the Mattermost webpage, we don&#39;t seem to be able to create an account since it does require an invite token or a pre-confirmed e-mail address:
+            <img src="delivery_img/confirm_email.PNG" alt="" srcset="">
+        </p>
+            <p>This means, that there has got to be something more. Let&#39;s take a closer look at the helpdesk.
+            As we navigate to helpdesk.delivery.htb we can see that there is also an option to create an account, but same thing: we would need to confirm our e-mail address. This gives us a pretty good idea on the goal of the first foothold, which is getting hold of a confirmed address.</p>
+            <p>There is, however, other options on the helpdesk: We can open a new ticket and check the ticket status as guest. Let&#39;s try that and see if we can find something of good value there.
+            We simply fill the page with random information, and choose the only option that is currently available to us: &quot;Contact Us&quot;.
+            <img src="delivery_img/create_ticket.PNG" alt="" srcset="">
+        </p>
+            <p>As we submit the ticket, we are greeted with a confirmation message that is also mentioning an e-mail address which we can contact. This address uses the exact ticket id as our ticket in the user so in my case it is 7743418@delivery.htb. As we have stumbled upon some clues before when we were not able to create an account, we can be certain that this e-mail which seems to be newly created is another clue to solving the puzzle. Let&#39;s try to log in!
+            This is simply a problem of guessing: Using the e-mail address given to us does not work, but it does recognize the address we have specified in the ticket submission as registered now. After guessing again, we find out that the password is our ticket id, and we are in!</p>
+            <p>Since this is a ticketing service, and we now have access to the tickets on 7743418@delivery.htb, we can head over to the Mattermost software and sign up with said address. And just as expected, we will get our confirmation link in the form of a post in the ticketing software. So we successfully logged in to mattermost and have access to the internal chat.</p>
+            <p><strong>Grabbing the user flag</strong><br>
+            Right in the internal chat, we can literally just read the credentials and use them to log in to the maildeliverer server, which will give us our first user hash/flag:
+            <img src="delivery_img/internal_chat.PNG" alt="" srcset="">
+        </p>
+            <p><strong>Enumeration is key</strong><br>
+            So now we have the user flag. For this box, it is really important to do a lot of enumeration and find the right foothold. It can be a pain, since we don&#39;t really know what we are searching for. But luckily, we already have some clues within the internal chat: &quot;if any hacker manages to get our hashes...&quot;. So this gives us a pretty good idea as to what we are looking for.</p>
+            <p>Now the right path to go down, is to search for the Mattermost configuration files, which are stored in /opt/mattermost/config. There we can find a file called &quot;config.json&quot;, which contains our next clue to go down the road of cracking our root password:
+                <img src="delivery_img/sql_hint.PNG" alt="" srcset="">
+            </p>
+            <p>If you have read everything carefully, you could not miss the part where it gives us a hint as to where we have to search.
+            The SQL username and password are given to us and even contain another hint: &quot;Crack_The_MM_Admin_PW&quot;, MM in this case being Mattermost.</p>
+            <p>We can now log in to the mysql database using our credentials, and retreive the hash for our admin account on mattermost, the username being root.
+            &quot;select * from Users where username = &#39;root&#39;;&quot;</p>
+            <p><strong>Now what?</strong><br>
+            So now we have our hash. The internal chat on mattermost told us, that we are able to crack it using common words and phrases, hashcat rules and it also gives us an example password: &quot;PleaseSubscribe!&quot;.</p>
+            <p>Putting all these things together we have a rough idea on what we are supposed to do. Breaking it down:</p>
+            <ol>
+            <li>Create a file containing &quot;PleaseSubscribe!&quot;</li>
+            <li>Use the hashcat best64 rule to create a wordlist from it</li>
+            <li>Take the wordlist and crack the password within seconds</li>
+            </ol>
+            <p>The hash is a bcrypt hash, so we are using mode 3200 according to the man page.
+            As for the exact commands they are:</p>
+            <ul>
+            <li>echo &quot;PleaseSubscribe!&quot; &gt; wordlist</li>
+            <li>hashcat wordlist -r /usr/share/hashcat/rules/best64.rule --stdout | vim -          -&gt; Then take a look and save the file as whatever you want, I&#39;ll be using &quot;finalWordlist&quot;</li>
+            <li>hashcat -m 3200 hash finalWordlist </li>
+            </ul>
+            <p>Watch as the magic happens :D</p>
+        </div>
+        <img style="filter: invert(100%); width: 15%; margin: auto" src="signature.png" alt="">
+
+
+        </div>
+    </div>
+  </div>
+  </section>
+
+  <footer class="ftco-footer ftco-bg-dark ftco-section">
+    <div class="container">
+      <div class="row mb-5 justify-content-center">
+        <div class="col-md-5 text-center">
+          <div class="ftco-footer-widget mb-5">
+        
+
+            <ul class="ftco-footer-social list-unstyled">
+              <li><a href="https://twitter.com/volerysandro"><span class="icon-twitter"></span></a></li>
+              <li><a href="https://www.facebook.com/sandrovolery"><span class="icon-facebook"></span></a></li>
+              <li><a href="https://www.instagram.com/1voly/"><span class="icon-instagram"></span></a></li>
+            </ul>
+          </div>
+          <div class="ftco-footer-widget">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" /></svg></div>
+
+  </div>
+
+  </div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false">
+  </script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+<style>
+    img { display:block; } 
+</style>
+
+
+</html>
